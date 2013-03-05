@@ -1,0 +1,266 @@
+Debugging log of Inform 7
+Inform called as: C:\Program Files (x86)\Inform 7\Compilers\ni -release -rules C:\Program Files (x86)\Inform 7\Inform7\Extensions -package D:\prog\GP_AW_cmps148_IF\Rooms.inform -extension=z5 
+
+
+-----------------------------------------------------
+Phase I ... Lexical analysis
+-----------------------------------------------------
+
+I've now read your source text, which is 204 words long.
+
+
+-----------------------------------------------------
+Phase II ... Semantic analysis Ia
+-----------------------------------------------------
+
+I've also read Standard Rules by Graham Nelson, which is 39455 words long.
+
+
+-----------------------------------------------------
+Phase III ... Initialise language semantics
+-----------------------------------------------------
+
+
+
+-----------------------------------------------------
+Phase IV ... Semantic analysis Ib
+-----------------------------------------------------
+
+
+
+-----------------------------------------------------
+Phase V ... Semantic analysis II
+-----------------------------------------------------
+
+
+
+-----------------------------------------------------
+Phase VI ... Semantic analysis III
+-----------------------------------------------------
+
+
+
+-----------------------------------------------------
+Phase VII ... First pass through assertions
+-----------------------------------------------------
+
+
+
+-----------------------------------------------------
+Phase VIII ... Second pass through assertions
+-----------------------------------------------------
+
+
+
+-----------------------------------------------------
+Phase IX ... Making the model world
+-----------------------------------------------------
+
+
+
+-----------------------------------------------------
+Phase X ... Tables and grammar
+-----------------------------------------------------
+
+
+
+-----------------------------------------------------
+Phase XI ... Phrases and rules
+-----------------------------------------------------
+
+
+
+-----------------------------------------------------
+Phase XII ... Code generation
+-----------------------------------------------------
+
+
+
+==== Phase XII.1 ... Compiling the storage for the model world ====
+
+
+
+==== Phase XII.2 ... Compiling the tables ====
+
+
+
+==== Phase XII.3 ... Compiling the equations ====
+
+
+
+==== Phase XII.4 ... Compiling the named action patterns ====
+
+
+
+==== Phase XII.5 ... Compiling the action routines ====
+
+
+
+==== Phase XII.6 ... Compiling first block of phrases ====
+
+
+
+==== Phase XII.7 ... Compiling the rulebooks ====
+
+
+
+==== Phase XII.8 ... Compiling scene details ====
+
+
+
+==== Phase XII.9 ... CTNL ====
+
+
+
+==== Phase XII.10 ... Slashing grammar (G1) ====
+
+
+
+==== Phase XII.11 ... Determining grammar (G2) ====
+
+
+
+==== Phase XII.12 ... Compiling GPR tokens for parsing various kinds of value ====
+
+
+
+==== Phase XII.13 ... Compiling noun and scope filter tokens ====
+
+
+
+==== Phase XII.14 ... Compiling second block of phrases ====
+
+                (a.2) problem message:
+                found: (A)'player is in the basement of the first time'/UNKNOWN/UNKNOWN
+                expected: (G)'condition'/CONDITION_FMY/UNKNOWN
+                Problem C16Unknown issued from Chapter 16/Type Checking.w, line 821
+
+                  >--> In the sentence '"[if the player is in the basement [...] le with
+                    various medical utilities."' (source text, line 6), I was expecting to read
+                    a condition, but instead found some text that I couldn't understand -
+                    'player is in the basement of the first time'.
+
+
+    I was trying to match one of these phrases:
+
+
+    1. say "[if player is in the basement of the first time - a
+    condition]" 
+
+
+    2. say "if the player is in the basement of the first time - text" 
+
+
+    3. say "[if the player is in the basement of the first time - number]" 
+
+
+    4. say "[if the player is in the basement of the first time - unicode
+    character]" 
+
+
+    5. say "[if the player is in the basement of the first time - sayable
+    value]" 
+
+
+    6. say ""A huge basement that gives off some bad vibes. It seems like the
+    most unlikely escape from this prison, but there must be some clues around.
+    The first thing you notice is large steel cage, its door swong wide open."
+    - text" 
+
+
+    7. say "endif - text" 
+
+
+    8. say "[endif - number]" 
+
+
+    9. say "[endif - unicode character]" 
+
+
+    10. say "[endif - sayable value]" 
+
+
+    11. say "" The cage rests in a corner. You can also see a damaged old
+    painting on the wall, some old boxes" - text" 
+
+
+    12. say "[unless player has pushed the boxes - a condition]" 
+
+
+    13. say "unless the player has pushed the boxes - text" 
+
+
+    14. say "[unless the player has pushed the boxes - number]" 
+
+
+    15. say "[unless the player has pushed the boxes - unicode character]" 
+
+
+    16. say "[unless the player has pushed the boxes - sayable value]" 
+
+
+    17. say ""from which a hint of moonlight seems to be peering in" - text" 
+
+
+    18. say "endif - text" 
+
+
+    19. say "[endif - number]" 
+
+
+    20. say "[endif - unicode character]" 
+
+
+    21. say "[endif - sayable value]" 
+
+
+    22. say "", and a table with various medical utilities." - text" 
+
+
+    This was what I found out:
+
+
+    player is in the basement of the first time = something unrecognised
+
+
+    if the player is in the basement of the first time = something
+    unrecognised
+
+
+    endif = something unrecognised
+
+
+    player has pushed the boxes = something unrecognised
+
+
+    unless the player has pushed the boxes = something unrecognised
+
+
+    endif = something unrecognised
+
+
+
+-----------------------------------------------------
+Phase XIII ... Compilation now complete
+-----------------------------------------------------
+
+Total of 4 files written as streams.
+
+That concludes the debugging log from this run of Inform.
+Its contents were as follows, and can be changed by placing
+text like 'Include property creations in the debugging log.'
+or 'Omit everything from the debugging log.' in the source.
+
+Included:
+  debugging log contents  debugging log inclusions
+Omitted:
+  action creations   action pattern compilation  action pattern parsing  assemblies    assertions    case insensitive filehandling
+  conditions    constructed past participles  constructed plurals   description compilation   excerpt meanings   excerpt parsing 
+  expressions    extensions census   figure creations   grammar    grammar construction   headings  
+  implications    inferences    kind changes   kind checking   kind creations   lexical output 
+  local variables   matching    meaning list allocation  memory allocation   noun resolution   object compilation 
+  object creations   object tree   phrase comparisons   phrase compilation   phrase creations   phrase registration 
+  phrase usage   predicate calculus   predicate calculus workings  pronouns    property assignments   property creations 
+  property provision   property translations   relation definitions   rule attachments   rulebook compilation   spatial map 
+  spatial map workings  specification permissions   specification usage   specificities    table construction   template reading 
+  text substitutions   time periods   variable creations   verifications    vocabulary  
