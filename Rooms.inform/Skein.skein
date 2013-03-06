@@ -1,13 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Skein rootNode="node-0x03203730" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+<Skein rootNode="node-0x026C43F8" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Inform 7 for Windows</generator>
-  <activeNode nodeId="node-0x03203730"/>
-  <item nodeId="node-0x03203730">
+  <activeNode nodeId="node-0x02C7DAB8"/>
+  <item nodeId="node-0x026C43F8">
     <command xml:space="preserve">- start -</command>
-    <result xml:space="preserve"></result>
+    <result xml:space="preserve">Rooms&#x000A;An Interactive Fiction by Gerardo Perez&#x000A;Release 1 / Serial number 130305 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD&#x000A;&#x000A;foyer&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
+    <played>YES</played>
     <changed>NO</changed>
     <temporary score="0">NO</temporary>
+    <children>
+      <child nodeId="node-0x02C7D968"/>
+      <child nodeId="node-0x02C7D738"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02C7D968">
+    <command xml:space="preserve">lok</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02C7D6C8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02C7D6C8">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">foyer&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02C7D738">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">basement&#x000A;A huge basement that gives off some bad vibes. It seems like the most unlikely escape from this prison, but there must be some clues around. The first thing you notice is large steel cage, its door swong wide open.  The cage rests in a corner. You can also see a damaged old painting on the wall, some old boxes from which a hint of moonlight seems to be peering in, and a table with various medical utilities.&#x000A;&#x000A;You can see a box and a painting here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02C7D9D8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02C7D9D8">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">basement&#x000A;A huge basement that gives off some bad vibes. It seems like the most unlikely escape from this prison, but there must be some clues around. The first thing you notice is large steel cage, its door swong wide open.  The cage rests in a corner. You can also see a damaged old painting on the wall, some old boxes from which a hint of moonlight seems to be peering in, and a table with various medical utilities.&#x000A;&#x000A;You can see a box and a painting here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02C7D888"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02C7D888">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">foyer&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02C7D8F8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02C7D8F8">
+    <command xml:space="preserve">a</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02C7DA48"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02C7DA48">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">basement&#x000A; The cage rests in a corner. You can also see a damaged old painting on the wall, some old boxes from which a hint of moonlight seems to be peering in, and a table with various medical utilities.&#x000A;&#x000A;You can see a box and a painting here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02C7DB98"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02C7DB98">
+    <command xml:space="preserve">x painting</command>
+    <result xml:space="preserve">A painting of the deep blue sea melding with a beatiful red sunset.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02C7DC08"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02C7DC08">
+    <command xml:space="preserve">take painintg</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02C7DAB8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02C7DAB8">
+    <command xml:space="preserve">take painting</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
   </item>
 </Skein>
