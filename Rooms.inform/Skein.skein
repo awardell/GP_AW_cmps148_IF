@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Skein rootNode="node-0x03143730" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+<Skein rootNode="node-0x02DA32B0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Inform 7 for Windows</generator>
-  <activeNode nodeId="node-0x027634D0"/>
-  <item nodeId="node-0x03143730">
+  <activeNode nodeId="node-0x02DAFE70"/>
+  <item nodeId="node-0x02DA32B0">
     <command xml:space="preserve">- start -</command>
-    <result xml:space="preserve">Rooms&#x000A;An Interactive Fiction by Gerardo Perez&#x000A;Release 1 / Serial number 130312 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD&#x000A;&#x000A;foyer&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Rooms&#x000A;An Interactive Fiction by Gerardo Perez&#x000A;Release 1 / Serial number 130313 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD&#x000A;&#x000A;foyer&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
     <temporary score="0">NO</temporary>
     <children>
-      <child nodeId="node-0x027643F8"/>
-      <child nodeId="node-0x03149FF8"/>
+      <child nodeId="node-0x02DA3320"/>
+      <child nodeId="node-0x02474590"/>
     </children>
   </item>
-  <item nodeId="node-0x027643F8">
+  <item nodeId="node-0x02DA3320">
     <command xml:space="preserve">lok</command>
     <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -22,10 +22,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02764468"/>
+      <child nodeId="node-0x02474520"/>
     </children>
   </item>
-  <item nodeId="node-0x02764468">
+  <item nodeId="node-0x02474520">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">foyer&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -33,19 +33,19 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x03149FF8">
+  <item nodeId="node-0x02474590">
     <command xml:space="preserve">s</command>
-    <result xml:space="preserve">basement&#x000A;A huge basement that gives off some bad vibes. It seems like the most unlikely escape from this prison, but there must be some clues around. The first thing you notice is large steel cage, its door swong wide open.  The cage rests in a corner. You can also see a damaged old painting on the wall, some old boxes from which a hint of moonlight seems to be peering in, and a table with various medical utilities.&#x000A;&#x000A;You can see a box and a painting here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">basement&#x000A;A huge basement that gives off some bad vibes. It seems like the most unlikely escape from this prison, but there must be some clues around. The first thing you notice is large steel cage, its door swong wide open. The cage rests in a corner. You can also see a damaged old painting on the wall, some old boxes from which a hint of moonlight seems to be peering in, and a table with various medical utilities.&#x000A;&#x000A;A box rests in the corner.&#x000A;&#x000A;You can also see a painting here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x0314A420"/>
-      <child nodeId="node-0x027632A0"/>
+      <child nodeId="node-0x02DAA3C8"/>
+      <child nodeId="node-0x02DAB4E8"/>
     </children>
   </item>
-  <item nodeId="node-0x0314A420">
+  <item nodeId="node-0x02DAA3C8">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">basement&#x000A;A huge basement that gives off some bad vibes. It seems like the most unlikely escape from this prison, but there must be some clues around. The first thing you notice is large steel cage, its door swong wide open.  The cage rests in a corner. You can also see a damaged old painting on the wall, some old boxes from which a hint of moonlight seems to be peering in, and a table with various medical utilities.&#x000A;&#x000A;You can see a box and a painting here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -53,10 +53,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x0314A490"/>
+      <child nodeId="node-0x02DAA438"/>
     </children>
   </item>
-  <item nodeId="node-0x0314A490">
+  <item nodeId="node-0x02DAA438">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">foyer&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -64,10 +64,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x0314A560"/>
+      <child nodeId="node-0x02DAA508"/>
     </children>
   </item>
-  <item nodeId="node-0x0314A560">
+  <item nodeId="node-0x02DAA508">
     <command xml:space="preserve">a</command>
     <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -75,10 +75,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x0314A7D8"/>
+      <child nodeId="node-0x02DAA780"/>
     </children>
   </item>
-  <item nodeId="node-0x0314A7D8">
+  <item nodeId="node-0x02DAA780">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">basement&#x000A; The cage rests in a corner. You can also see a damaged old painting on the wall, some old boxes from which a hint of moonlight seems to be peering in, and a table with various medical utilities.&#x000A;&#x000A;You can see a box and a painting here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -86,10 +86,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x0314A920"/>
+      <child nodeId="node-0x02DAA8C8"/>
     </children>
   </item>
-  <item nodeId="node-0x0314A920">
+  <item nodeId="node-0x02DAA8C8">
     <command xml:space="preserve">x painting</command>
     <result xml:space="preserve">A painting of the deep blue sea melding with a beatiful red sunset.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -97,10 +97,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x0314A9F0"/>
+      <child nodeId="node-0x02DAA998"/>
     </children>
   </item>
-  <item nodeId="node-0x0314A9F0">
+  <item nodeId="node-0x02DAA998">
     <command xml:space="preserve">take painintg</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -108,10 +108,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x0314AA90"/>
+      <child nodeId="node-0x02DAB208"/>
     </children>
   </item>
-  <item nodeId="node-0x0314AA90">
+  <item nodeId="node-0x02DAB208">
     <command xml:space="preserve">take painting</command>
     <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -119,51 +119,52 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x027632A0">
+  <item nodeId="node-0x02DAB4E8">
     <command xml:space="preserve">s</command>
-    <result xml:space="preserve">study&#x000A;You can tell the Doctor spends much of his time here. There are two bookshelves, a small desk covered with neat piles of papers, and a chair. You can also see a cabinet with glass doors. Something is faintly reflecting light in there.&#x000A;&#x000A;You can see a cabinet (in which is a yellow gem) here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Study&#x000A;You can tell the Doctor spends much of his time here. There are two bookshelves, a small desk covered with neat piles of papers, and a chair. You can also see a cabinet with glass doors. Something is faintly reflecting light in there.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02763380"/>
+      <child nodeId="node-0x02DAB670"/>
+      <child nodeId="node-0x02DAF930"/>
     </children>
   </item>
-  <item nodeId="node-0x02763380">
+  <item nodeId="node-0x02DAB670">
     <command xml:space="preserve">x cabinet</command>
-    <result xml:space="preserve">There's a  small lock on the cabinet, although the doors seem to be made of fragile glass.&#x000A;&#x000A;In the cabinet is a yellow gem.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">There's a  small lock on the cabinet, although the doors seem to be made of fragile glass.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02763230"/>
+      <child nodeId="node-0x02DAB6E0"/>
     </children>
   </item>
-  <item nodeId="node-0x02763230">
+  <item nodeId="node-0x02DAB6E0">
     <command xml:space="preserve">break cabinet</command>
-    <result xml:space="preserve">it breaks.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You break the cabinet with a loud crash.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x027630E0"/>
+      <child nodeId="node-0x02DAF230"/>
     </children>
   </item>
-  <item nodeId="node-0x027630E0">
+  <item nodeId="node-0x02DAF230">
     <command xml:space="preserve">smash cabinet</command>
-    <result xml:space="preserve">it breaks.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Violence isn't the answer to this one.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x027633F0"/>
+      <child nodeId="node-0x02DAF2A0"/>
     </children>
   </item>
-  <item nodeId="node-0x027633F0">
+  <item nodeId="node-0x02DAF2A0">
     <command xml:space="preserve">attack ear</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -171,10 +172,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02763310"/>
+      <child nodeId="node-0x02DAF310"/>
     </children>
   </item>
-  <item nodeId="node-0x02763310">
+  <item nodeId="node-0x02DAF310">
     <command xml:space="preserve">att cabinet</command>
     <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -182,32 +183,32 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02763460"/>
+      <child nodeId="node-0x02DAF380"/>
     </children>
   </item>
-  <item nodeId="node-0x02763460">
+  <item nodeId="node-0x02DAF380">
     <command xml:space="preserve">attack cabinet</command>
-    <result xml:space="preserve">it breaks.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Violence isn't the answer to this one.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02763770"/>
+      <child nodeId="node-0x02DAF3F0"/>
     </children>
   </item>
-  <item nodeId="node-0x02763770">
+  <item nodeId="node-0x02DAF3F0">
     <command xml:space="preserve">break cabinet</command>
-    <result xml:space="preserve">it breaks.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">I can't break that.&#x000A;&#x000A;You break the cabinet with a loud crash.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02763700"/>
+      <child nodeId="node-0x02DAF460"/>
     </children>
   </item>
-  <item nodeId="node-0x02763700">
+  <item nodeId="node-0x02DAF460">
     <command xml:space="preserve">break door</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -215,48 +216,177 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02763690"/>
+      <child nodeId="node-0x02DAF4D0"/>
     </children>
   </item>
-  <item nodeId="node-0x02763690">
+  <item nodeId="node-0x02DAF4D0">
     <command xml:space="preserve">break cabinet</command>
-    <result xml:space="preserve">it breaks.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">I can't break that.&#x000A;&#x000A;You break the cabinet with a loud crash.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02763620"/>
+      <child nodeId="node-0x02DAF540"/>
     </children>
   </item>
-  <item nodeId="node-0x02763620">
+  <item nodeId="node-0x02DAF540">
     <command xml:space="preserve">break gem</command>
-    <result xml:space="preserve">no.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x027635B0"/>
+      <child nodeId="node-0x02DAF5B0"/>
     </children>
   </item>
-  <item nodeId="node-0x027635B0">
+  <item nodeId="node-0x02DAF5B0">
     <command xml:space="preserve">open cabinet</command>
-    <result xml:space="preserve">That's not something you can open.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You open the cabinet, revealing a yellow gem.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02DAF620"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02DAF620">
+    <command xml:space="preserve">kill cabinet</command>
+    <result xml:space="preserve">Violence isn't the answer to this one.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02DAF930">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Study&#x000A;You can tell the Doctor spends much of his time here. There are two bookshelves, a small desk covered with neat piles of papers, and a chair. You can also see a cabinet with glass doors. Something is faintly reflecting light in there.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x027634D0"/>
+      <child nodeId="node-0x02DAF7E0"/>
     </children>
   </item>
-  <item nodeId="node-0x027634D0">
-    <command xml:space="preserve">kill cabinet</command>
-    <result xml:space="preserve">it breaks.&#x000A;&#x000A;&gt;</result>
+  <item nodeId="node-0x02DAF7E0">
+    <command xml:space="preserve">break gem</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02DAF850"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02DAF850">
+    <command xml:space="preserve">x gem</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02DAFAF0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02DAFAF0">
+    <command xml:space="preserve">open cabinet</command>
+    <result xml:space="preserve">It seems to be locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02DAFB60"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02DAFB60">
+    <command xml:space="preserve">break cabinet</command>
+    <result xml:space="preserve">You break the glass cabinet with a loud crash.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02DAFBD0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02DAFBD0">
+    <command xml:space="preserve">break gem</command>
+    <result xml:space="preserve">You can't break that.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02DAFD20"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02DAFD20">
+    <command xml:space="preserve">break cabinet</command>
+    <result xml:space="preserve">It's already broken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02DAFD90"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02DAFD90">
+    <command xml:space="preserve">x gem</command>
+    <result xml:space="preserve">A beautiful yellow gem.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02DAFE00"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02DAFE00">
+    <command xml:space="preserve">lool</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02DAFCB0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02DAFCB0">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Study&#x000A;You can tell the Doctor spends much of his time here. There are two bookshelves, a small desk covered with neat piles of papers, and a chair. You can also see a cabinet with glass doors. Something is faintly reflecting light in there.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02DAFC40"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02DAFC40">
+    <command xml:space="preserve">break glass</command>
+    <result xml:space="preserve">It's already broken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02DAFE70"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02DAFE70">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">basement&#x000A;The cage rests in a corner. You can also see a damaged old painting on the wall, some old boxes from which a hint of moonlight seems to be peering in, and a table with various medical utilities.&#x000A;&#x000A;A box rests in the corner.&#x000A;&#x000A;You can also see a painting here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
     <temporary score="0">YES</temporary>
   </item>
 </Skein>

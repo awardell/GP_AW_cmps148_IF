@@ -9,10 +9,10 @@ A thing can be breakable or unbreakable. [A thing is usually unbreakable.]
 A thing can be broken or okay. A thing is usually okay. 
 
 Pusing is an action applying to one thing.
-There is a box in the basement. The box is pushable.
-The Basement is a room. "[if the player is in The Basement for the first time]A huge basement that gives off some bad vibes. It seems like the most unlikely escape from this prison, but there must be some clues around. The first thing you notice is large steel cage, its door swong wide open. [end if] The cage rests in a corner. You can also see a damaged old painting on the wall, some old boxes from which a hint of moonlight seems to be peering in, and a table with various medical utilities."
+There is a box in the basement. The box is pushable. The initial appearance is "A box rests in the corner."
+The Basement is a room. "[if the player is in The Basement for the first time]A huge basement that gives off some bad vibes. It seems like the most unlikely escape from this prison, but there must be some clues around. The first thing you notice is large steel cage, its door swong wide open. [end if]The cage rests in a corner. You can also see a damaged old painting on the wall, some old boxes from which a hint of moonlight seems to be peering in, and a table with various medical utilities."
 
-The basement is south of the foyer.
+The Basement is south of the foyer.
 
 A painting is in the basement. The description of the painting is "A painting of the deep blue sea melding with a beatiful red sunset."
 [Instead of pushing boxes away say "You push the boxes away, revealing a path leading to the cellar door"]
@@ -20,38 +20,19 @@ A painting is in the basement. The description of the painting is "A painting of
 [after taking painting say "When picking up the painting you notice some text written on the back."
 [The back of the painting is part of the painting. The description is "Written on the painting is 'To my cherished comrade, {}. Please keep this close to our mutual friend, as he adores this color'."]]
 
-The study is a room.  "You can tell the Doctor spends much of his time here. There are two bookshelves, a small desk covered with neat piles of papers, and a chair. You can also see a cabinet with glass doors. [if the cabinet contains a yellow gem]Something is faintly reflecting light in there.[end if]".
+The Study is a room.  "You can tell the Doctor spends much of his time here. There are two bookshelves, a small desk covered with neat piles of papers, and a chair. You can also see a cabinet with glass doors. [if the cabinet contains a yellow gem]Something is faintly reflecting light in there.[end if]".
 The study is south of the basement. 
 [In drawer: "Among the various notebooks and journals is a black key."]
-The cabinet is a  closed openable breakable container in the study. The description of the cabinet is "There's a  small lock on the cabinet, although the doors seem to be made of fragile glass."
+The glass cabinet is a locked, openable, breakable , scenery, container in the study. The description of the cabinet is "There's a  small lock on the cabinet, although the doors seem to be made of fragile glass."
 There is a yellow gem in the cabinet. The description of the yellow gem is "A beautiful yellow gem."
 There is a pile of paper on desk. 
 
 
-Instead of attacking something:
-	if the noun is breakable:
-		now the noun is broken;
-		now the 
-		say "it breaks.";
-	otherwise :
-		say "no.";
-[breaking-glass is an action applying to one visible thing.  Understand "break [something]" as breaking-glass.
-
-
-Check breaking-glass:
-	if the noun is not breakable:
-		say "I can't break [italic type]that[roman type].";
-Carry out breaking-glass:
-	now the noun is broken;
-	now the noun is unbreakable;
-Report breaking-glass:
-	say "You break [the noun] with a loud crash.";
-	]
-
 The Armory is a room.  "This room is lined with gun racks. Too bad they're all empty, as if the place had been robbed. There is also a cabinet to the left of the room and lots of ammo boxes strewn around."
 Ammo boxes are in the armory. The description of the ammo boxes is "The only kinds I can find are shotgun and rifle ammo."
 Instead of taking ammo:
-	say "No point in taking these without the proper gun."
+	say "No point in taking these without the proper gun.";
+	stop the action;
 
 [Cabinet: There is some gun cleaning equipment. [Unless the player has taken the gun]In the corner though, lies a small pistol[endif].]
 
@@ -75,6 +56,25 @@ The mirror is in Bathroom One. The description of the mirror is "Looks expensive
 [Description after gem is removed "Doesn't look as fancy without its gem."]
 
 The Control Room is a room. 
+
+
+[-------------Functions----------------]
+Understand the command "break" as something new.
+Breaking is an action applying to one  thing.  Understand "break [something]" as breaking.
+
+Check breaking:
+	if the noun is not breakable:
+		say "You can't break [italic type]that[roman type].";
+		stop the action;
+	if the noun is breakable and the noun is broken:
+		say "It's already broken.";
+		stop the action;
+Carry out breaking:
+	now the noun is broken;
+	if the noun is a container:
+		now the noun is open;
+Report breaking:
+	say "You break [the noun] with a loud crash.";
 
 [Some Game Rules:
 One shot severely wounds the beast, and promptly after it moves to another room. Two shots kills it.
