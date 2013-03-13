@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Skein rootNode="node-0x0288F240" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+  <generator>Inform 7 for Windows</generator>
+  <activeNode nodeId="node-0x0288F240"/>
+  <item nodeId="node-0x0288F240">
+    <command xml:space="preserve">- start -</command>
+    <result xml:space="preserve">Kitchen Bathroom Skrillex&#x000A;Skeletor Mothra Bedroom&#x000A;Godzilla Hallway Bukake&#x000A;&#x000A;The Mansion&#x000A;An Interactive Fiction by Adam Wardell and Gerardo Perez&#x000A;Release 1 / Serial number 130313 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD&#x000A;&#x000A;Entryway&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">NO</temporary>
+    <children>
+      <child nodeId="node-0x0288F2B0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0288F2B0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Bee6&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0288F320"/>
+      <child nodeId="node-0x028A5660"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0288F320">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Bee4&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0289ACF8"/>
+      <child nodeId="node-0x0289B5D8"/>
+      <child nodeId="node-0x0289B798"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0289ACF8">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0289AD68"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0289AD68">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x0289B5D8">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0289B648"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0289B648">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0289B6B8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0289B6B8">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0289B728"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0289B728">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Entry Hall&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x0289B798">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Bee4&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0289B808"/>
+      <child nodeId="node-0x0289D0C0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0289B808">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Hexagonal Room&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0289CC80"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0289CC80">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Hexagonal Room&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0289CEA8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0289CEA8">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Hexagonal Room&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x0289D0C0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Bee4&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0289D2F0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0289D2F0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Bee4&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0289D360"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0289D360">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Bee4&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0289D3D0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0289D3D0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Bee7&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0289D440"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0289D440">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Bee2&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0289D4B0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0289D4B0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Bee1&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0289D520"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0289D520">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Bee1&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0289D590"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0289D590">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Bee6&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0289D600"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0289D600">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Bee9&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0289D670"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0289D670">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Bee4&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0289D6E0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0289D6E0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Bee4&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0289D750"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0289D750">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Bee4&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0289D7C0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0289D7C0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Bee4&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0289D830"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0289D830">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Bee4&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0289D8A0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0289D8A0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Bee3&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0289D910"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0289D910">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Bee7&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0289D980"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0289D980">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Bee2&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0289D9F0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0289D9F0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Bee1&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0289DA60"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0289DA60">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Bee1&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0289DAD0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0289DAD0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Bee1&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0289DB40"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0289DB40">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Bee6&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0289DBB0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0289DBB0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Bee9&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0289DC20"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0289DC20">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Bee4&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0289DC90"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0289DC90">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Bee4&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0289DD00"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0289DD00">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Bee4&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0289DD70"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0289DD70">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Bee4&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0289DDE0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0289DDE0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Bee3&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0289DE50"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0289DE50">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Bee7&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0289DEC0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0289DEC0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Bee2&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0289DF30"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0289DF30">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Bee1&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0289DFA0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0289DFA0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Bee1&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0289E010"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0289E010">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Bee1&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0289E080"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0289E080">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Bee1&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0289E0F0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0289E0F0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Bee1&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0289E160"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0289E160">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Bee1&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0289E1D0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0289E1D0">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0289E240"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0289E240">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x028A4F60"/>
+    </children>
+  </item>
+  <item nodeId="node-0x028A4F60">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x028A4FD0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x028A4FD0">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x028A5040"/>
+    </children>
+  </item>
+  <item nodeId="node-0x028A5040">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x028A50B0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x028A50B0">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x028A5120"/>
+    </children>
+  </item>
+  <item nodeId="node-0x028A5120">
+    <command xml:space="preserve">fuck you</command>
+    <result xml:space="preserve">I only understood you as far as wanting to fuck.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x028A5190"/>
+    </children>
+  </item>
+  <item nodeId="node-0x028A5190">
+    <command xml:space="preserve">drink you</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x028A5200"/>
+    </children>
+  </item>
+  <item nodeId="node-0x028A5200">
+    <command xml:space="preserve">elaborate you</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x028A5270"/>
+    </children>
+  </item>
+  <item nodeId="node-0x028A5270">
+    <command xml:space="preserve">destroy you</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x028A52E0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x028A52E0">
+    <command xml:space="preserve">laugh you</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x028A5350"/>
+    </children>
+  </item>
+  <item nodeId="node-0x028A5350">
+    <command xml:space="preserve">screw you</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x028A53C0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x028A53C0">
+    <command xml:space="preserve">beautify you</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x028A5430"/>
+    </children>
+  </item>
+  <item nodeId="node-0x028A5430">
+    <command xml:space="preserve">fuck you</command>
+    <result xml:space="preserve">I only understood you as far as wanting to fuck.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x028A54A0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x028A54A0">
+    <command xml:space="preserve">fuck table</command>
+    <result xml:space="preserve">I only understood you as far as wanting to fuck.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x028A5510"/>
+    </children>
+  </item>
+  <item nodeId="node-0x028A5510">
+    <command xml:space="preserve">attack</command>
+    <result xml:space="preserve">What do you want to attack?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x028A55F0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x028A55F0">
+    <command xml:space="preserve">attack myself</command>
+    <result xml:space="preserve">Violence isn't the answer to this one.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x028A5660">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Hexagonal Room&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x028A56D0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x028A56D0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Hexagonal Room&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x028A5740"/>
+    </children>
+  </item>
+  <item nodeId="node-0x028A5740">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Hexagonal Room&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x028A57B0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x028A57B0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Hexagonal Room&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x028A5820"/>
+    </children>
+  </item>
+  <item nodeId="node-0x028A5820">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Hexagonal Room&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x028A5890"/>
+    </children>
+  </item>
+  <item nodeId="node-0x028A5890">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Hexagonal Room&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x028A5900"/>
+    </children>
+  </item>
+  <item nodeId="node-0x028A5900">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Hexagonal Room&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x028A5970"/>
+    </children>
+  </item>
+  <item nodeId="node-0x028A5970">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Hexagonal Room&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x028A59E0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x028A59E0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Hexagonal Room&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+</Skein>
