@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Skein rootNode="node-0x02DA32B0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Inform 7 for Windows</generator>
-  <activeNode nodeId="node-0x02DAFE70"/>
+  <activeNode nodeId="node-0x02DB00A0"/>
   <item nodeId="node-0x02DA32B0">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">Rooms&#x000A;An Interactive Fiction by Gerardo Perez&#x000A;Release 1 / Serial number 130313 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD&#x000A;&#x000A;foyer&#x000A;&#x000A;&gt;</result>
@@ -38,7 +38,7 @@
     <result xml:space="preserve">basement&#x000A;A huge basement that gives off some bad vibes. It seems like the most unlikely escape from this prison, but there must be some clues around. The first thing you notice is large steel cage, its door swong wide open. The cage rests in a corner. You can also see a damaged old painting on the wall, some old boxes from which a hint of moonlight seems to be peering in, and a table with various medical utilities.&#x000A;&#x000A;A box rests in the corner.&#x000A;&#x000A;You can also see a painting here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
-    <changed>YES</changed>
+    <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
       <child nodeId="node-0x02DAA3C8"/>
@@ -384,6 +384,61 @@
   <item nodeId="node-0x02DAFE70">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">basement&#x000A;The cage rests in a corner. You can also see a damaged old painting on the wall, some old boxes from which a hint of moonlight seems to be peering in, and a table with various medical utilities.&#x000A;&#x000A;A box rests in the corner.&#x000A;&#x000A;You can also see a painting here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02DAFFC0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02DAFFC0">
+    <command xml:space="preserve">insert</command>
+    <result xml:space="preserve">I didn't understand that sentence.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02DAFF50"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02DAFF50">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Study&#x000A;You can tell the Doctor spends much of his time here. There are two bookshelves, a small desk covered with neat piles of papers, and a chair. You can also see a cabinet with glass doors. Something is faintly reflecting light in there.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02DAFEE0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02DAFEE0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Master Bedroom&#x000A;There is a rather large bed in the room. Some things you could check are a dresser a closet.&#x000A;&#x000A;There is a statue resting a the corner of the room.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02DB0030"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02DB0030">
+    <command xml:space="preserve">x statue</command>
+    <result xml:space="preserve">A life-size statue of a man. He shows a serene smile as he holds out both hands. You notice something peculiar about this statue's chest.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02DB00A0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02DB00A0">
+    <command xml:space="preserve">x chest</command>
+    <result xml:space="preserve">On its right chest are two octogonal shaped indentations that look like they might have held something..&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>YES</changed>
