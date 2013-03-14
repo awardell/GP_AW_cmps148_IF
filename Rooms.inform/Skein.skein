@@ -4,7 +4,7 @@
   <activeNode nodeId="node-0x02DA32B0"/>
   <item nodeId="node-0x02DA32B0">
     <command xml:space="preserve">- start -</command>
-    <result xml:space="preserve">Rooms&#x000A;An Interactive Fiction by Gerardo Perez&#x000A;Release 1 / Serial number 130314 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD&#x000A;&#x000A;foyer&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Suddenly, all of the windows are slammed shut and barricaded.&#x000A;&#x000A;You hear a click on the front door.&#x000A; As you stand there, trying to collect yourself, another loud bang shakes you up. Someone or something is coming upstairs. Something big.&#x000A;&#x000A;Rooms&#x000A;An Interactive Fiction by Gerardo Perez&#x000A;Release 1 / Serial number 130314 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD&#x000A;&#x000A;foyer&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
@@ -709,7 +709,7 @@
   </item>
   <item nodeId="node-0x04AB6128">
     <command xml:space="preserve">s</command>
-    <result xml:space="preserve">Master Bedroom&#x000A;There is a rather large bed in the room. Some things you could check are a dresser and a closet.&#x000A;&#x000A;There is a statue resting a the corner of the room.&#x000A;&#x000A;You can also see a blue gem and a red gem here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Master Bedroom&#x000A;There is a rather large bed in the room. Some things you could check are a dresser and a closet.&#x000A;&#x000A;There is a statue resting a the corner of the room.&#x000A;&#x000A;You can also see a blue gem here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
@@ -927,7 +927,7 @@
   </item>
   <item nodeId="node-0x02E66C50">
     <command xml:space="preserve">take red gem</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
@@ -938,7 +938,7 @@
   </item>
   <item nodeId="node-0x02E66CC0">
     <command xml:space="preserve">put red gem in statue</command>
-    <result xml:space="preserve">You insert the red gem into the statue's chest. It fits perfectly.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
@@ -960,7 +960,7 @@
   </item>
   <item nodeId="node-0x02E66DA0">
     <command xml:space="preserve">take red gem</command>
-    <result xml:space="preserve">You remove the red gem from the statue's chest.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
@@ -971,7 +971,7 @@
   </item>
   <item nodeId="node-0x02E66EF0">
     <command xml:space="preserve">take red gem</command>
-    <result xml:space="preserve">You already have that.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
@@ -1004,7 +1004,7 @@
   </item>
   <item nodeId="node-0x04AA7AC8">
     <command xml:space="preserve">insert red gem in statue</command>
-    <result xml:space="preserve">Put a key in room.&#x000A;&#x000A;You insert the red gem into the statue's chest. It fits perfectly.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>

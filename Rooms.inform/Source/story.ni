@@ -1,21 +1,33 @@
 "Rooms" by Gerardo Perez
 
-The foyer is a room.
+Use no scoring.
+
+A person can be free or locked-in.
+The player is locked-in.
+
+Trapped is a scene. Trapped begins when the player is locked-in. [after owner stops talking to you]
+
+When Trapped begins:
+	say "Suddenly, all of the windows are slammed shut and barricaded.[line break]You hear a click on the front door.[line break] As you stand there, trying to collect yourself, another loud bang shakes you up. Someone or something is coming upstairs. Something big.";
+[Lock all doors to living room or lock just the front door, start beast movement algorithmn]
+
 [The steps running down to the basement should be attached to a certain room]
-A thing can be pushable or unpushable . A thing is usually unpushable.
 A thing can be breakable or unbreakable. A thing is usually unbreakable.
 A thing can be broken or unbroken. A thing is usually unbroken. 
 A gem is a kind of thing.
 
-Pusing is an action applying to one thing.
+The Living Room is a room. "[if the player is in the living room for the first time]What used to be such a welcoming place is now the last place you want to be. It seems there is no way out of here. Your first instinct is to explore the rest of the mansion to try and find a way out.[line break][end if]There is a small table in the middle of the room, next to the couch. The fireplace burns."
+The couch is scenery.
+The living room table is scenery. The description is "There is no phone or anything on here that could help me find help."
+The fireplace is scenery. The description is "Earlier you noticed the doctor discretely tossing something into the fireplace. You didn't think much of it before, but it might have been a key or something that could get you out of here."
 
 The Basement is a room. "[if the player is in The Basement for the first time]A huge basement that gives off some bad vibes and a sickly smell. It seems like the most unlikely escape from this prison, but there must be some clues around. The first thing you notice is large steel cage, its door swong wide open. [end if]The cage rests in a corner. You can also see a damaged old painting on the wall, some old boxes from which a hint of moonlight seems to be peering in, and a table with various medical utilities."
 
 The Basement is south of the foyer.
 
-There is a box in the basement. The box is pushable. The initial appearance is "A box rests in the corner."
-The cage is scenery. The description of the cage is "This is surely where that monster is kept. The bars of the cage seem to be heavily reinforced, yet somehow damaged. The cage's opening doesn't seem to use a traditional lock. It looks electronic, but there is no way to input a combination. It must be controlled remotely."
-The cage lock is part of the cage.  The description of the cage lock is "A steel black box."
+[There is a box in the basement. The box is pushable. The initial appearance is "A box rests in the corner."]
+The cage is scenery. The description of the cage is "This is surely where that monster is kept. The bars of the cage seem to be heavily reinforced, yet somehow damaged. The cage's opening doesn't seem to use a traditional lock. It looks electronic, but there is no way to input a combination."
+The cage lock is part of the cage.  The description of the cage lock is "A steel black box. Must be controlled remotely."
 A painting is in the basement. The description of the painting is "A painting of the deep blue sea melding with a beatiful red sunset."
 
 [psuedocode Instead of pushing boxes away say "You push the boxes away, revealing a path leading to the cellar door"]
@@ -50,29 +62,33 @@ Instead of taking ammo:
 The Master Bedroom is a room. "There is a rather large bed in the room. Some things you could check are a dresser and a closet."
 The bed is scenery. The description of the bed is "It looks untouched. I doubt that madman even sleeps."
 The closet is an open enterable container. 
-The statue is in the master bedroom.  The description of the statue is "A life-size statue of a man. He shows a serene smile as he holds out both hands. You notice something peculiar about this statue's chest." The initial appearance is "There is a statue resting a the corner of the room."
-The statue's chest is part of the statue. The description of the statue's chest is "[if the number of things that are part of the chest is 0]On its right chest are two octogonal shaped indentations that look like they might have held something.[otherwise]List the gems in slots[end if]." 
+The statue is in the master bedroom. The description of the statue is "A life-size statue of a man. He shows a serene smile as he holds out both hands. You notice something peculiar about this statue's chest." The initial appearance is "There is a statue resting a the corner of the room."
+The statue's chest is part of the statue. The statue's chest has a number called capacity. The capacity of the chest is 2. The description of the statue's chest is "[if the number of things that are part of the  statue's chest is 0]On its right chest are two octogonal shaped indentations that look like they might have held something.[otherwise]Right now it holds: [list of things that are part of the statue's chest][end if]." 
 
 the master bedroom is south of the study.
 
 [The man giving you the key represents this guy allowing you to leave.]
 
-Bathroom  One is a room.  "A standard bathroom with a shower, toilet and sink. There is a large mirror with a fancy border near the sink." 
-
+Bathroom One is a room.  "A standard bathroom with a shower, toilet and sink. There is a large mirror with a fancy border near the sink." 
 The toilet is scenery. The sink is scenery.
 
-The mirror is a breakable thing in Bathroom One. The description of the mirror is "Looks expensive.  This thing is embedded with a large red gem that appears to be removable."
-[Description after gem is removed "Doesn't look as fancy without its gem."]
+the bathroom is north of the foyer.
 
+The mirror is a breakable thing in Bathroom One. The mirror has a number called capacity. The capacity of the mirror is 1. The description of the mirror is "Looks expensive. [if something is part of the mirror]This mirror is embedded with a [list of things that are part of the mirror] that appears to be removable."
+The red gem is a gem. The red gem is part of the mirror.
+
+Bathroom Two is a room. "There is nothing of interest here."
 [This room should be locked]
 The Control Room is a room. 
 [Have a switch that unbarricades windows and unlocks front door.]
-The blue gem is a gem in the master bedroom. The red gem is a gem in the master bedroom.
 
 
+The Guest Room is a room. "A typical bedroom. There ".
+[this room is where the player learns of past victims]
+The blue gem is a gem. The blue gem is in the guest room.
 [-------------Actions----------------]
 Understand the command "break" as something new.
-Breaking is an action applying to one  thing.  Understand "break [something]" as breaking.
+Breaking is an action applying to one thing.  Understand "break [something]" as breaking.
 
 Check breaking:
 	if the noun is not breakable:
@@ -88,11 +104,13 @@ Carry out breaking:
 Report breaking:
 	say "You break [the noun] with a loud crash.";
 
-
-Gem-inserting it in is  an action applying to one carried thing and one thing. Understand "gem-insert [something] in [something]" as gem-inserting it in. 
+Gem-inserting it in is an action applying to one carried thing and one thing. Understand "gem-insert [something] in [something]" as gem-inserting it in. 
 Check gem-inserting:
 	if the noun is not a gem:
 		say "It doesn't fit.";
+		stop the action;
+	if the number of things that are part of the second noun is the capacity of the second noun:
+		say "There's already [capacity of the second noun] gems here. Try removing one of them.";
 		stop the action;
 Carry out gem-inserting:
 	now the noun is part of the second noun;
@@ -101,23 +119,22 @@ Carry out gem-inserting:
 Report gem-inserting:
 		say "You insert [the noun] into [the second noun]. It fits perfectly.";
 
-Instead of taking a gem that is part of something:
-	if the noun is part of the chest:
-		say "You remove [the noun] from the statue's chest.";
-	if the noun is part of a mirror:
-		say "You take out [the noun] from the mirror.";
+Instead of taking a gem that is part of something (called the holder):
+	say "You remove [the noun] from [the holder].";
 	now the player carries the noun;
 Instead of inserting something into the statue's chest:
 	try gem-inserting the noun in the chest instead.
 Instead of inserting something into the statue:
 	try gem-inserting the noun in the chest instead.
+Instead of inserting something into the mirror:
+	try gem-inserting the noun in the mirror instead.
 
 [Some Game Rules:
 One shot severely wounds the beast, and promptly after it moves to another room. Two shots kills it.
 There is a large key dangling from the beast's neck. Thus, killing it eguarantees an escape through the front door.]
 
 
-[using an action ticks algorithm, moving from room to room causes a bigger step]
+[using an action ticks beast algorithm, moving from room to room causes a bigger step]
 
 [Premise, the beast walking around is the man's best friends. He feels the best he could do was at least feed him]
 [The beast is sick and old, and starving, so it is not very agile]
