@@ -5,6 +5,7 @@ The foyer is a room.
 A thing can be pushable or unpushable . A thing is usually unpushable.
 A thing can be breakable or unbreakable. A thing is usually unbreakable.
 A thing can be broken or unbroken. A thing is usually unbroken. 
+A gem is a kind of thing.
 
 Pusing is an action applying to one thing.
 There is a box in the basement. The box is pushable. The initial appearance is "A box rests in the corner."
@@ -22,7 +23,7 @@ The Study is a room.  "You can tell the Doctor spends much of his time here. The
 The study is south of the basement. 
 [In drawer: "Among the various notebooks and journals is a black key."]
 The glass cabinet is a locked, openable, breakable , scenery, container in the study. The description of the cabinet is "There's a  small lock on the cabinet, although the doors seem to be made of fragile glass."
-There is a yellow gem in the cabinet. The description of the yellow gem is "A beautiful yellow gem."
+There is a gem called the yellow gem in the cabinet. The description of the yellow gem is "A beautiful yellow gem."
 There is a pile of paper on desk. 
 
 
@@ -42,7 +43,7 @@ The bed is scenery. The description of the bed is "It looks untouched. I doubt t
 The closet is an open enterable container. 
 
 The statue is in the master bedroom.  The description of the statue is "A life-size statue of a man. He shows a serene smile as he holds out both hands. You notice something peculiar about this statue's chest." The initial appearance is "There is a statue resting a the corner of the room."
-The chest is part of the statue. The description of the chest is "[if the number of things that are part of the chest is 0]On its right chest are two octogonal shaped indentations that look like they might have held something.[otherwise]じゃねえよ[end if]." 
+The chest is part of the statue. The description of the chest is "[if the number of things that are part of the chest is 0]On its right chest are two octogonal shaped indentations that look like they might have held something.[otherwise]List the gems in slots[end if]." 
 
 
 the master bedroom is south of the study.
@@ -77,13 +78,24 @@ Carry out breaking:
 		now the noun is open;
 Report breaking:
 	say "You break [the noun] with a loud crash.";
-	
-Instead of inserting something into the chest (called the item):
-	try gem-insert noun into the item instead.
 
-Gem-insert is an action applying to two things. 
 
-Check gem-insert 
+Gem-inserting it in is  an action applying to one carried thing and one thing. Understand "gem-insert [something] in [something]" as gem-inserting it in. 
+Check gem-inserting:
+	if the noun is not a gem:
+		say "It doesn't fit.";
+		stop the action;
+Carry out gem-inserting:
+	say "you did it";
+	now the noun is part of the second noun;
+
+Instead of taking a gem that is part of the chest:
+	say "You remove [the noun] from the statue's chest.";
+	now the player carries the noun;
+Instead of inserting something into the chest:
+	try gem-inserting the noun in the chest instead.
+Instead of inserting something into the statue:
+	try gem-inserting the noun in the chest instead.
 
 [Some Game Rules:
 One shot severely wounds the beast, and promptly after it moves to another room. Two shots kills it.
