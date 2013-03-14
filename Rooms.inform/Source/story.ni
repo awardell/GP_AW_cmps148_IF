@@ -8,26 +8,36 @@ A thing can be broken or unbroken. A thing is usually unbroken.
 A gem is a kind of thing.
 
 Pusing is an action applying to one thing.
-There is a box in the basement. The box is pushable. The initial appearance is "A box rests in the corner."
-The Basement is a room. "[if the player is in The Basement for the first time]A huge basement that gives off some bad vibes. It seems like the most unlikely escape from this prison, but there must be some clues around. The first thing you notice is large steel cage, its door swong wide open. [end if]The cage rests in a corner. You can also see a damaged old painting on the wall, some old boxes from which a hint of moonlight seems to be peering in, and a table with various medical utilities."
+
+The Basement is a room. "[if the player is in The Basement for the first time]A huge basement that gives off some bad vibes and a sickly smell. It seems like the most unlikely escape from this prison, but there must be some clues around. The first thing you notice is large steel cage, its door swong wide open. [end if]The cage rests in a corner. You can also see a damaged old painting on the wall, some old boxes from which a hint of moonlight seems to be peering in, and a table with various medical utilities."
 
 The Basement is south of the foyer.
 
+There is a box in the basement. The box is pushable. The initial appearance is "A box rests in the corner."
+The cage is scenery. The description of the cage is "This is surely where that monster is kept. The bars of the cage seem to be heavily reinforced, yet somehow damaged. The cage's opening doesn't seem to use a traditional lock. It looks electronic, but there is no way to input a combination. It must be controlled remotely."
+The cage lock is part of the cage.  The description of the cage lock is "A steel black box."
 A painting is in the basement. The description of the painting is "A painting of the deep blue sea melding with a beatiful red sunset."
+
 [psuedocode Instead of pushing boxes away say "You push the boxes away, revealing a path leading to the cellar door"]
 [Cellar door: "Escape is close. You can feel the fresh cool wind blowing in. However, there is a sturdy lock preventing you from opening the door."] 
 [after taking painting say "When picking up the painting you notice some text written on the back."]
 [The back of the painting is part of the painting. The description is "Written on the painting is 'To my cherished comrade, {}. Please keep this close to our mutual friend, as he adores this color'."]
 
-The Study is a room.  "You can tell the Doctor spends much of his time here. There are two bookshelves, a small desk covered with neat piles of papers, and a chair. You can also see a cabinet with glass doors. [if the cabinet contains a yellow gem]Something is faintly reflecting light in there.[end if]".
+The Study is a room. "You can tell the Doctor spends much of his time here. There are two bookshelves, a small desk covered with neat piles of papers, and a chair. You can also see a cabinet with glass doors. [if the cabinet contains a yellow gem]Something is faintly reflecting light in there.[end if]".
 The study is south of the basement. 
-[In drawer: "Among the various notebooks and journals is a black key."]
-The glass cabinet is a locked, openable, breakable , scenery, container in the study. The description of the cabinet is "There's a  small lock on the cabinet, although the doors seem to be made of fragile glass."
+The glass cabinet is a locked, openable, breakable , scenery, container in the study. The description of the cabinet is "[if the cabinet is unbroken]There's a  small lock on the cabinet, although the doors seem to be made of fragile glass.[otherwise]'I guess the lock was just for decoration.'"
 There is a gem called the yellow gem in the cabinet. The description of the yellow gem is "A beautiful yellow gem."
-There is a pile of paper on desk. 
+The desk is scenery in the study.  The description of the desk is "Lots of business documents and paperwork. The desk has a drawer."
+The drawer is part of the desk. The drawer is a closed openable container. 
+The black key is in the drawer.
+A journal is in the drawer. The description of the journal is  "Words words words."
 
+Understand "read [journal]" as examining.
+Before examining the journal:
+	if the player is not carrying the journal:
+		try taking the journal;
 
-The Armory is a room.  "This room is lined with gun racks. Too bad they're all empty, as if the place had been robbed. There is also a cabinet to the left of the room and lots of ammo boxes strewn around."
+The Armory is a room. "This room is lined with gun racks. Too bad they're all empty, as if the place had been robbed. There is also a cabinet to the left of the room and lots of ammo boxes strewn around."
 Ammo boxes are in the armory. The description of the ammo boxes is "The only kinds I can find are shotgun and rifle ammo."
 Instead of taking ammo:
 	say "No point in taking these without the proper gun.";
@@ -37,18 +47,14 @@ Instead of taking ammo:
 
 [Ammo boxes unfortunately are for shotguns and rifles only, no handgun ammo]
 
-The Master Bedroom is a room. "There is a rather large bed in the room. Some things you could check are a dresser a closet."
-
+The Master Bedroom is a room. "There is a rather large bed in the room. Some things you could check are a dresser and a closet."
 The bed is scenery. The description of the bed is "It looks untouched. I doubt that madman even sleeps."
 The closet is an open enterable container. 
-
 The statue is in the master bedroom.  The description of the statue is "A life-size statue of a man. He shows a serene smile as he holds out both hands. You notice something peculiar about this statue's chest." The initial appearance is "There is a statue resting a the corner of the room."
-The chest is part of the statue. The description of the chest is "[if the number of things that are part of the chest is 0]On its right chest are two octogonal shaped indentations that look like they might have held something.[otherwise]List the gems in slots[end if]." 
-
+The statue's chest is part of the statue. The description of the statue's chest is "[if the number of things that are part of the chest is 0]On its right chest are two octogonal shaped indentations that look like they might have held something.[otherwise]List the gems in slots[end if]." 
 
 the master bedroom is south of the study.
 
-[When the wrong crystal is inserted: "Nothing happened."]
 [The man giving you the key represents this guy allowing you to leave.]
 
 Bathroom  One is a room.  "A standard bathroom with a shower, toilet and sink. There is a large mirror with a fancy border near the sink." 
@@ -58,10 +64,13 @@ The toilet is scenery. The sink is scenery.
 The mirror is a breakable thing in Bathroom One. The description of the mirror is "Looks expensive.  This thing is embedded with a large red gem that appears to be removable."
 [Description after gem is removed "Doesn't look as fancy without its gem."]
 
+[This room should be locked]
 The Control Room is a room. 
+[Have a switch that unbarricades windows and unlocks front door.]
+The blue gem is a gem in the master bedroom. The red gem is a gem in the master bedroom.
 
 
-[-------------Functions----------------]
+[-------------Actions----------------]
 Understand the command "break" as something new.
 Breaking is an action applying to one  thing.  Understand "break [something]" as breaking.
 
@@ -86,13 +95,19 @@ Check gem-inserting:
 		say "It doesn't fit.";
 		stop the action;
 Carry out gem-inserting:
-	say "you did it";
 	now the noun is part of the second noun;
+	if the blue gem is part of the second noun and the red gem is part of the second noun:
+		say "Put a key in room.";
+Report gem-inserting:
+		say "You insert [the noun] into [the second noun]. It fits perfectly.";
 
-Instead of taking a gem that is part of the chest:
-	say "You remove [the noun] from the statue's chest.";
+Instead of taking a gem that is part of something:
+	if the noun is part of the chest:
+		say "You remove [the noun] from the statue's chest.";
+	if the noun is part of a mirror:
+		say "You take out [the noun] from the mirror.";
 	now the player carries the noun;
-Instead of inserting something into the chest:
+Instead of inserting something into the statue's chest:
 	try gem-inserting the noun in the chest instead.
 Instead of inserting something into the statue:
 	try gem-inserting the noun in the chest instead.
