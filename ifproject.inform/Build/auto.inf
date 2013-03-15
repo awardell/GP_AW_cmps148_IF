@@ -29,7 +29,7 @@ Array UUID_ARRAY string "UUID://18DA3582-B1D4-4A62-8A2E-CB1D2E2C829A//";
 Constant Story "The Mansion";
 Constant Headline "An Interactive Fiction";
 Constant Story_Author SC_2;
-Serial "130314";
+Serial "130315";
 
 Default Story 0;
 Default Headline 0;
@@ -4292,7 +4292,7 @@ Global lightflag = false;
 ];
 
 
-Constant REQUISITION_STACK_SIZE = 3*43;
+Constant REQUISITION_STACK_SIZE = 3*45;
 Array requisition_stack --> REQUISITION_STACK_SIZE;
 Global requisition_stack_pointer = 0;
 
@@ -8302,7 +8302,7 @@ Constant START_ROOM_INIS = 2;
 Constant START_TIME_INIS = 3;
 Constant DONE_INIS = 4;
 
-Array InitialSituation --> selfobj nothing I89_entryway 540 0;
+Array InitialSituation --> selfobj nothing I88_mansion_grounds 540 0;
 
 
 
@@ -8602,49 +8602,50 @@ Constant p56 = vector;
 Constant p57 = room_index;
 Constant p58 = door_dir;
 Constant p59 = door_to;
-Constant p60 = absent;
-Constant p61 = list_together;
-Constant p62 = cap_short_name;
-Constant p63 = mark_as_room;
-Constant p64 = mark_as_thing;
-Constant p65 = component_parent;
-Constant p66 = component_child;
-Constant p67 = component_sibling;
-Constant p68 = regional_found_in;
-Constant p69 = IK1_Count;
-Constant p70 = IK1_Link;
-Constant p71 = IK2_Count;
-Constant p72 = IK2_Link;
-Constant p73 = IK3_Count;
-Constant p74 = IK3_Link;
-Constant p75 = IK4_Count;
-Constant p76 = IK4_Link;
-Constant p77 = IK5_Count;
-Constant p78 = IK5_Link;
-Constant p79 = IK6_Count;
-Constant p80 = IK6_Link;
-Constant p81 = IK7_Count;
-Constant p82 = IK7_Link;
-Constant p83 = IK8_Count;
-Constant p84 = IK8_Link;
-Constant p85 = IK9_Count;
-Constant p86 = IK9_Link;
-Constant p87 = IK10_Count;
-Constant p88 = IK10_Link;
-Constant p89 = IK11_Count;
-Constant p90 = IK11_Link;
-Constant p91 = IK12_Count;
-Constant p92 = IK12_Link;
-Constant p93 = IK13_Count;
-Constant p94 = IK13_Link;
-Constant p95 = IK14_Count;
-Constant p96 = IK14_Link;
-Constant p97 = IK15_Count;
-Constant p98 = IK15_Link;
-Constant p99 = KD_Count;
-Constant p100 = name;
-Constant p101 = parse_name;
-Constant p102 = action_bitmap;
+Constant p60 = found_in;
+Constant p61 = absent;
+Constant p62 = list_together;
+Constant p63 = cap_short_name;
+Constant p64 = mark_as_room;
+Constant p65 = mark_as_thing;
+Constant p66 = component_parent;
+Constant p67 = component_child;
+Constant p68 = component_sibling;
+Constant p69 = regional_found_in;
+Constant p70 = IK1_Count;
+Constant p71 = IK1_Link;
+Constant p72 = IK2_Count;
+Constant p73 = IK2_Link;
+Constant p74 = IK3_Count;
+Constant p75 = IK3_Link;
+Constant p76 = IK4_Count;
+Constant p77 = IK4_Link;
+Constant p78 = IK5_Count;
+Constant p79 = IK5_Link;
+Constant p80 = IK6_Count;
+Constant p81 = IK6_Link;
+Constant p82 = IK7_Count;
+Constant p83 = IK7_Link;
+Constant p84 = IK8_Count;
+Constant p85 = IK8_Link;
+Constant p86 = IK9_Count;
+Constant p87 = IK9_Link;
+Constant p88 = IK10_Count;
+Constant p89 = IK10_Link;
+Constant p90 = IK11_Count;
+Constant p91 = IK11_Link;
+Constant p92 = IK12_Count;
+Constant p93 = IK12_Link;
+Constant p94 = IK13_Count;
+Constant p95 = IK13_Link;
+Constant p96 = IK14_Count;
+Constant p97 = IK14_Link;
+Constant p98 = IK15_Count;
+Constant p99 = IK15_Link;
+Constant p100 = KD_Count;
+Constant p101 = name;
+Constant p102 = parse_name;
+Constant p103 = action_bitmap;
 
 Constant FBNA_PROP_NUMBER = p54_recurring;
 Object property_numberspace_forcer
@@ -8736,97 +8737,99 @@ Array property_metadata -->
     "<nameless>" NULL
     ! offset 151: property door_to
     "<nameless>" K4_door NULL
-    ! offset 154: property absent
+    ! offset 154: property found_in
     "<nameless>" NULL
-    ! offset 156: property list_together
+    ! offset 156: property absent
     "<nameless>" NULL
-    ! offset 158: property cap_short_name
+    ! offset 158: property list_together
     "<nameless>" NULL
-    ! offset 160: property mark_as_room
+    ! offset 160: property cap_short_name
     "<nameless>" NULL
-    ! offset 162: property mark_as_thing
+    ! offset 162: property mark_as_room
     "<nameless>" NULL
-    ! offset 164: property component_parent
+    ! offset 164: property mark_as_thing
     "<nameless>" NULL
-    ! offset 166: property component_child
+    ! offset 166: property component_parent
     "<nameless>" NULL
-    ! offset 168: property component_sibling
+    ! offset 168: property component_child
     "<nameless>" NULL
-    ! offset 170: property regional_found_in
+    ! offset 170: property component_sibling
     "<nameless>" NULL
-    ! offset 172: property IK1_Count
+    ! offset 172: property regional_found_in
     "<nameless>" NULL
-    ! offset 174: property IK1_Link
+    ! offset 174: property IK1_Count
     "<nameless>" NULL
-    ! offset 176: property IK2_Count
+    ! offset 176: property IK1_Link
     "<nameless>" NULL
-    ! offset 178: property IK2_Link
+    ! offset 178: property IK2_Count
     "<nameless>" NULL
-    ! offset 180: property IK3_Count
+    ! offset 180: property IK2_Link
     "<nameless>" NULL
-    ! offset 182: property IK3_Link
+    ! offset 182: property IK3_Count
     "<nameless>" NULL
-    ! offset 184: property IK4_Count
+    ! offset 184: property IK3_Link
     "<nameless>" NULL
-    ! offset 186: property IK4_Link
+    ! offset 186: property IK4_Count
     "<nameless>" NULL
-    ! offset 188: property IK5_Count
+    ! offset 188: property IK4_Link
     "<nameless>" NULL
-    ! offset 190: property IK5_Link
+    ! offset 190: property IK5_Count
     "<nameless>" NULL
-    ! offset 192: property IK6_Count
+    ! offset 192: property IK5_Link
     "<nameless>" NULL
-    ! offset 194: property IK6_Link
+    ! offset 194: property IK6_Count
     "<nameless>" NULL
-    ! offset 196: property IK7_Count
+    ! offset 196: property IK6_Link
     "<nameless>" NULL
-    ! offset 198: property IK7_Link
+    ! offset 198: property IK7_Count
     "<nameless>" NULL
-    ! offset 200: property IK8_Count
+    ! offset 200: property IK7_Link
     "<nameless>" NULL
-    ! offset 202: property IK8_Link
+    ! offset 202: property IK8_Count
     "<nameless>" NULL
-    ! offset 204: property IK9_Count
+    ! offset 204: property IK8_Link
     "<nameless>" NULL
-    ! offset 206: property IK9_Link
+    ! offset 206: property IK9_Count
     "<nameless>" NULL
-    ! offset 208: property IK10_Count
+    ! offset 208: property IK9_Link
     "<nameless>" NULL
-    ! offset 210: property IK10_Link
+    ! offset 210: property IK10_Count
     "<nameless>" NULL
-    ! offset 212: property IK11_Count
+    ! offset 212: property IK10_Link
     "<nameless>" NULL
-    ! offset 214: property IK11_Link
+    ! offset 214: property IK11_Count
     "<nameless>" NULL
-    ! offset 216: property IK12_Count
+    ! offset 216: property IK11_Link
     "<nameless>" NULL
-    ! offset 218: property IK12_Link
+    ! offset 218: property IK12_Count
     "<nameless>" NULL
-    ! offset 220: property IK13_Count
+    ! offset 220: property IK12_Link
     "<nameless>" NULL
-    ! offset 222: property IK13_Link
+    ! offset 222: property IK13_Count
     "<nameless>" NULL
-    ! offset 224: property IK14_Count
+    ! offset 224: property IK13_Link
     "<nameless>" NULL
-    ! offset 226: property IK14_Link
+    ! offset 226: property IK14_Count
     "<nameless>" NULL
-    ! offset 228: property IK15_Count
+    ! offset 228: property IK14_Link
     "<nameless>" NULL
-    ! offset 230: property IK15_Link
+    ! offset 230: property IK15_Count
     "<nameless>" NULL
-    ! offset 232: property KD_Count
+    ! offset 232: property IK15_Link
     "<nameless>" NULL
-    ! offset 234: property name
+    ! offset 234: property KD_Count
     "<nameless>" NULL
-    ! offset 236: property parse_name
+    ! offset 236: property name
     "<nameless>" NULL
-    ! offset 238: property action_bitmap
+    ! offset 238: property parse_name
+    "<nameless>" NULL
+    ! offset 240: property action_bitmap
     "<nameless>" NULL
 ;
 
 Constant attributed_property_offsets_SIZE 48;
 Array attributed_property_offsets --> attributed_property_offsets_SIZE;
-Constant valued_property_offsets_SIZE (100 + 103 + INDIV_PROP_START-48);
+Constant valued_property_offsets_SIZE (100 + 104 + INDIV_PROP_START-48);
 Array valued_property_offsets --> valued_property_offsets_SIZE;
 
 [ CreatePropertyOffsets i;
@@ -8874,49 +8877,50 @@ Array valued_property_offsets --> valued_property_offsets_SIZE;
     valued_property_offsets-->room_index = 147;
     valued_property_offsets-->door_dir = 149;
     valued_property_offsets-->door_to = 151;
-    attributed_property_offsets-->absent = 154;
-    valued_property_offsets-->list_together = 156;
-    valued_property_offsets-->cap_short_name = 158;
-    attributed_property_offsets-->mark_as_room = 160;
-    attributed_property_offsets-->mark_as_thing = 162;
-    valued_property_offsets-->component_parent = 164;
-    valued_property_offsets-->component_child = 166;
-    valued_property_offsets-->component_sibling = 168;
-    valued_property_offsets-->regional_found_in = 170;
-    valued_property_offsets-->IK1_Count = 172;
-    valued_property_offsets-->IK1_Link = 174;
-    valued_property_offsets-->IK2_Count = 176;
-    valued_property_offsets-->IK2_Link = 178;
-    valued_property_offsets-->IK3_Count = 180;
-    valued_property_offsets-->IK3_Link = 182;
-    valued_property_offsets-->IK4_Count = 184;
-    valued_property_offsets-->IK4_Link = 186;
-    valued_property_offsets-->IK5_Count = 188;
-    valued_property_offsets-->IK5_Link = 190;
-    valued_property_offsets-->IK6_Count = 192;
-    valued_property_offsets-->IK6_Link = 194;
-    valued_property_offsets-->IK7_Count = 196;
-    valued_property_offsets-->IK7_Link = 198;
-    valued_property_offsets-->IK8_Count = 200;
-    valued_property_offsets-->IK8_Link = 202;
-    valued_property_offsets-->IK9_Count = 204;
-    valued_property_offsets-->IK9_Link = 206;
-    valued_property_offsets-->IK10_Count = 208;
-    valued_property_offsets-->IK10_Link = 210;
-    valued_property_offsets-->IK11_Count = 212;
-    valued_property_offsets-->IK11_Link = 214;
-    valued_property_offsets-->IK12_Count = 216;
-    valued_property_offsets-->IK12_Link = 218;
-    valued_property_offsets-->IK13_Count = 220;
-    valued_property_offsets-->IK13_Link = 222;
-    valued_property_offsets-->IK14_Count = 224;
-    valued_property_offsets-->IK14_Link = 226;
-    valued_property_offsets-->IK15_Count = 228;
-    valued_property_offsets-->IK15_Link = 230;
-    valued_property_offsets-->KD_Count = 232;
-    valued_property_offsets-->name = 234;
-    valued_property_offsets-->parse_name = 236;
-    valued_property_offsets-->action_bitmap = 238;
+    valued_property_offsets-->found_in = 154;
+    attributed_property_offsets-->absent = 156;
+    valued_property_offsets-->list_together = 158;
+    valued_property_offsets-->cap_short_name = 160;
+    attributed_property_offsets-->mark_as_room = 162;
+    attributed_property_offsets-->mark_as_thing = 164;
+    valued_property_offsets-->component_parent = 166;
+    valued_property_offsets-->component_child = 168;
+    valued_property_offsets-->component_sibling = 170;
+    valued_property_offsets-->regional_found_in = 172;
+    valued_property_offsets-->IK1_Count = 174;
+    valued_property_offsets-->IK1_Link = 176;
+    valued_property_offsets-->IK2_Count = 178;
+    valued_property_offsets-->IK2_Link = 180;
+    valued_property_offsets-->IK3_Count = 182;
+    valued_property_offsets-->IK3_Link = 184;
+    valued_property_offsets-->IK4_Count = 186;
+    valued_property_offsets-->IK4_Link = 188;
+    valued_property_offsets-->IK5_Count = 190;
+    valued_property_offsets-->IK5_Link = 192;
+    valued_property_offsets-->IK6_Count = 194;
+    valued_property_offsets-->IK6_Link = 196;
+    valued_property_offsets-->IK7_Count = 198;
+    valued_property_offsets-->IK7_Link = 200;
+    valued_property_offsets-->IK8_Count = 202;
+    valued_property_offsets-->IK8_Link = 204;
+    valued_property_offsets-->IK9_Count = 206;
+    valued_property_offsets-->IK9_Link = 208;
+    valued_property_offsets-->IK10_Count = 210;
+    valued_property_offsets-->IK10_Link = 212;
+    valued_property_offsets-->IK11_Count = 214;
+    valued_property_offsets-->IK11_Link = 216;
+    valued_property_offsets-->IK12_Count = 218;
+    valued_property_offsets-->IK12_Link = 220;
+    valued_property_offsets-->IK13_Count = 222;
+    valued_property_offsets-->IK13_Link = 224;
+    valued_property_offsets-->IK14_Count = 226;
+    valued_property_offsets-->IK14_Link = 228;
+    valued_property_offsets-->IK15_Count = 230;
+    valued_property_offsets-->IK15_Link = 232;
+    valued_property_offsets-->KD_Count = 234;
+    valued_property_offsets-->name = 236;
+    valued_property_offsets-->parse_name = 238;
+    valued_property_offsets-->action_bitmap = 240;
 ];
 
 
@@ -9283,15 +9287,15 @@ Constant RBNO_12 = "it does";
 
 
 Array KindHierarchy --> K0_kind (0) K1_room (0) K2_thing (0) K3_direction (0) K4_door (2) K5_container (2) K6_supporter (2) K7_backdrop (2) K8_person (2) K9_region (0) K10_man (8) K11_woman (8) K12_animal (8) K13_device (2) K14_vehicle (5) K15_player_s_holdall (5) ;
-Constant IK1_First = I89_entryway;
+Constant IK1_First = I88_mansion_grounds;
 Constant IK2_First = selfobj;
 Constant IK3_First = I46_north;
-Constant IK4_First = nothing;
+Constant IK4_First = I92_front_door;
 Constant IK5_First = nothing;
 Constant IK6_First = nothing;
 Constant IK7_First = nothing;
 Constant IK8_First = selfobj;
-Constant IK9_First = I88_firstfloor;
+Constant IK9_First = I89_firstfloor;
 Constant IK10_First = nothing;
 Constant IK11_First = nothing;
 Constant IK12_First = nothing;
@@ -9313,34 +9317,35 @@ Constant DirectionObject_9 = I55_down;
 Constant DirectionObject_10 = in_obj;
 Constant DirectionObject_11 = out_obj;
 Array Map_Storage -->
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I89_entryway
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I90_stairwell
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I91_bedroom
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I92_bathroom
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I93_kitchen
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I94_hallway
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I95_skrillex
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I96_skeletor
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I97_godzilla
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I98_mothra
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I99_enchillada
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I100_katana
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I101_tampon
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I102_bukake
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I104_upper_landing
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I105_new_hampshire
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I106_massachusetts
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I107_rhode_island
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I108_connecticut
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I109_new_york
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I110_new_jersey
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I111_pennsylvania
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I112_delaware
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I113_maryland
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I114_virginia
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I115_carolina
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I116_georgia
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I117_placeholder
+ 0 0 0 0 0 0 0 0 0 0 I92_front_door 0 ! Exits from: I88_mansion_grounds
+ 0 0 0 0 0 0 0 0 0 0 0 I92_front_door ! Exits from: I90_entryway
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I91_stairwell
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I93_bedroom
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I94_bathroom
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I95_kitchen
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I96_hallway
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I97_skrillex
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I98_skeletor
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I99_godzilla
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I100_mothra
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I101_enchillada
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I102_katana
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I103_tampon
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I104_bukkake
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I106_upper_landing
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I107_new_hampshire
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I108_massachusetts
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I109_rhode_island
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I110_connecticut
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I111_new_york
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I112_new_jersey
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I113_pennsylvania
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I114_delaware
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I115_maryland
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I116_virginia
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I117_carolina
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I118_georgia
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I119_placeholder
 ;
 
 Class VPH_Class;
@@ -9703,7 +9708,7 @@ Object selfobj ""
     with cap_short_name "Yourself"
     has mark_as_thing
     with IK2_Count 0
-    with IK2_Link nothing
+    with IK2_Link I92_front_door
     with IK8_Count 0
     with IK8_Link nothing
     with KD_Count 8
@@ -9711,249 +9716,286 @@ Object selfobj ""
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I88_firstfloor ""
+Object I88_mansion_grounds ""
+    class K1_room
+    with short_name "Mansion Grounds"
+    has proper
+    with vector 0
+    with room_index -1
+    with list_together 0
+    with cap_short_name "Mansion Grounds"
+    has mark_as_room
+    with IK1_Count 0
+    with IK1_Link I90_entryway
+    with KD_Count 1
+    with name 'mansion' 'grounds' 
+;
+
+Object I89_firstfloor ""
     class K9_region
     with short_name "FirstFloor"
     with vector 0
     with list_together 0
-    with regional_found_in [; if (TestRegionalContainment(location, I88_firstfloor)) rtrue; rfalse; ],
+    with regional_found_in [; if (TestRegionalContainment(location, I89_firstfloor)) rtrue; rfalse; ],
     with IK9_Count 0
-    with IK9_Link I103_secondfloor
+    with IK9_Link I105_secondfloor
     with KD_Count 9
     with name 'firstfloor' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I89_entryway ""
+Object I90_entryway ""
     class K1_room
     with short_name "Entryway"
-    with map_region I88_firstfloor
+    with map_region I89_firstfloor
     has proper
     with vector 0
     with room_index -1
     with list_together 0
     with cap_short_name "Entryway"
     has mark_as_room
-    with IK1_Count 0
-    with IK1_Link I90_stairwell
+    with IK1_Count 1
+    with IK1_Link I91_stairwell
     with KD_Count 1
     with name 'entryway' 
 ;
 
-Object I90_stairwell ""
+Object I91_stairwell ""
     class K1_room
     with short_name "Stairwell"
-    with map_region I88_firstfloor
+    with map_region I89_firstfloor
     has proper
     with vector 0
     with room_index -1
     with list_together 0
     with cap_short_name "Stairwell"
     has mark_as_room
-    with IK1_Count 1
-    with IK1_Link I91_bedroom
+    with IK1_Count 2
+    with IK1_Link I93_bedroom
     with KD_Count 1
     with name 'stairwell' 
 ;
 
-Object I91_bedroom ""
+Object I92_front_door ""
+    class K4_door
+    with short_name "front door"
+    with vector 0
+    with door_dir [ loc; loc = location;
+            if (loc == thedark) loc = real_location;
+            if (loc == I90_entryway) return out_obj; return in_obj; ],
+    with door_to [ loc; loc = location;
+            if (loc == thedark) loc = real_location;
+            if (loc == I90_entryway) return I88_mansion_grounds; return I90_entryway; ],
+    with found_in I90_entryway I88_mansion_grounds
+    with list_together 0
+    has mark_as_thing
+    with IK2_Count 1
+    with IK2_Link nothing
+    with IK4_Count 0
+    with IK4_Link nothing
+    with KD_Count 4
+    with name 'front' 'door' 
+    with action_bitmap 0 0 0 0 0 0 
+;
+
+Object I93_bedroom ""
     class K1_room
     with short_name "Bedroom"
-    with map_region I88_firstfloor
+    with map_region I89_firstfloor
     has proper
     with vector 0
     with room_index -1
     with list_together 0
     with cap_short_name "Bedroom"
     has mark_as_room
-    with IK1_Count 2
-    with IK1_Link I92_bathroom
+    with IK1_Count 3
+    with IK1_Link I94_bathroom
     with KD_Count 1
     with name 'bedroom' 
 ;
 
-Object I92_bathroom ""
+Object I94_bathroom ""
     class K1_room
     with short_name "Bathroom"
-    with map_region I88_firstfloor
+    with map_region I89_firstfloor
     has proper
     with vector 0
     with room_index -1
     with list_together 0
     with cap_short_name "Bathroom"
     has mark_as_room
-    with IK1_Count 3
-    with IK1_Link I93_kitchen
+    with IK1_Count 4
+    with IK1_Link I95_kitchen
     with KD_Count 1
     with name 'bathroom' 
 ;
 
-Object I93_kitchen ""
+Object I95_kitchen ""
     class K1_room
     with short_name "Kitchen"
-    with map_region I88_firstfloor
+    with map_region I89_firstfloor
     has proper
     with vector 0
     with room_index -1
     with list_together 0
     with cap_short_name "Kitchen"
     has mark_as_room
-    with IK1_Count 4
-    with IK1_Link I94_hallway
+    with IK1_Count 5
+    with IK1_Link I96_hallway
     with KD_Count 1
     with name 'kitchen' 
 ;
 
-Object I94_hallway ""
+Object I96_hallway ""
     class K1_room
     with short_name "Hallway"
-    with map_region I88_firstfloor
+    with map_region I89_firstfloor
     has proper
     with vector 0
     with room_index -1
     with list_together 0
     with cap_short_name "Hallway"
     has mark_as_room
-    with IK1_Count 5
-    with IK1_Link I95_skrillex
+    with IK1_Count 6
+    with IK1_Link I97_skrillex
     with KD_Count 1
     with name 'hallway' 
 ;
 
-Object I95_skrillex ""
+Object I97_skrillex ""
     class K1_room
     with short_name "Skrillex"
-    with map_region I88_firstfloor
+    with map_region I89_firstfloor
     has proper
     with vector 0
     with room_index -1
     with list_together 0
     with cap_short_name "Skrillex"
     has mark_as_room
-    with IK1_Count 6
-    with IK1_Link I96_skeletor
+    with IK1_Count 7
+    with IK1_Link I98_skeletor
     with KD_Count 1
     with name 'skrillex' 
 ;
 
-Object I96_skeletor ""
+Object I98_skeletor ""
     class K1_room
     with short_name "Skeletor"
-    with map_region I88_firstfloor
+    with map_region I89_firstfloor
     has proper
     with vector 0
     with room_index -1
     with list_together 0
     with cap_short_name "Skeletor"
     has mark_as_room
-    with IK1_Count 7
-    with IK1_Link I97_godzilla
+    with IK1_Count 8
+    with IK1_Link I99_godzilla
     with KD_Count 1
     with name 'skeletor' 
 ;
 
-Object I97_godzilla ""
+Object I99_godzilla ""
     class K1_room
     with short_name "Godzilla"
-    with map_region I88_firstfloor
+    with map_region I89_firstfloor
     has proper
     with vector 0
     with room_index -1
     with list_together 0
     with cap_short_name "Godzilla"
     has mark_as_room
-    with IK1_Count 8
-    with IK1_Link I98_mothra
+    with IK1_Count 9
+    with IK1_Link I100_mothra
     with KD_Count 1
     with name 'godzilla' 
 ;
 
-Object I98_mothra ""
+Object I100_mothra ""
     class K1_room
     with short_name "Mothra"
-    with map_region I88_firstfloor
+    with map_region I89_firstfloor
     has proper
     with vector 0
     with room_index -1
     with list_together 0
     with cap_short_name "Mothra"
     has mark_as_room
-    with IK1_Count 9
-    with IK1_Link I99_enchillada
+    with IK1_Count 10
+    with IK1_Link I101_enchillada
     with KD_Count 1
     with name 'mothra' 
 ;
 
-Object I99_enchillada ""
+Object I101_enchillada ""
     class K1_room
     with short_name "Enchillada"
-    with map_region I88_firstfloor
+    with map_region I89_firstfloor
     has proper
     with vector 0
     with room_index -1
     with list_together 0
     with cap_short_name "Enchillada"
     has mark_as_room
-    with IK1_Count 10
-    with IK1_Link I100_katana
+    with IK1_Count 11
+    with IK1_Link I102_katana
     with KD_Count 1
     with name 'enchillada' 
 ;
 
-Object I100_katana ""
+Object I102_katana ""
     class K1_room
     with short_name "Katana"
-    with map_region I88_firstfloor
+    with map_region I89_firstfloor
     has proper
     with vector 0
     with room_index -1
     with list_together 0
     with cap_short_name "Katana"
     has mark_as_room
-    with IK1_Count 11
-    with IK1_Link I101_tampon
+    with IK1_Count 12
+    with IK1_Link I103_tampon
     with KD_Count 1
     with name 'katana' 
 ;
 
-Object I101_tampon ""
+Object I103_tampon ""
     class K1_room
     with short_name "Tampon"
-    with map_region I88_firstfloor
+    with map_region I89_firstfloor
     has proper
     with vector 0
     with room_index -1
     with list_together 0
     with cap_short_name "Tampon"
     has mark_as_room
-    with IK1_Count 12
-    with IK1_Link I102_bukake
+    with IK1_Count 13
+    with IK1_Link I104_bukkake
     with KD_Count 1
     with name 'tampon' 
 ;
 
-Object I102_bukake ""
+Object I104_bukkake ""
     class K1_room
-    with short_name "Bukake"
-    with map_region I88_firstfloor
+    with short_name "Bukkake"
+    with map_region I89_firstfloor
     has proper
     with vector 0
     with room_index -1
     with list_together 0
-    with cap_short_name "Bukake"
+    with cap_short_name "Bukkake"
     has mark_as_room
-    with IK1_Count 13
-    with IK1_Link I104_upper_landing
+    with IK1_Count 14
+    with IK1_Link I106_upper_landing
     with KD_Count 1
-    with name 'bukake' 
+    with name 'bukkake' 
 ;
 
-Object I103_secondfloor ""
+Object I105_secondfloor ""
     class K9_region
     with short_name "SecondFloor"
     with vector 0
     with list_together 0
-    with regional_found_in [; if (TestRegionalContainment(location, I103_secondfloor)) rtrue; rfalse; ],
+    with regional_found_in [; if (TestRegionalContainment(location, I105_secondfloor)) rtrue; rfalse; ],
     with IK9_Count 1
     with IK9_Link nothing
     with KD_Count 9
@@ -9961,222 +10003,222 @@ Object I103_secondfloor ""
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I104_upper_landing ""
+Object I106_upper_landing ""
     class K1_room
     with short_name "Upper Landing"
-    with map_region I103_secondfloor
+    with map_region I105_secondfloor
     has proper
     with vector 0
     with room_index -1
     with list_together 0
     with cap_short_name "Upper Landing"
     has mark_as_room
-    with IK1_Count 14
-    with IK1_Link I105_new_hampshire
+    with IK1_Count 15
+    with IK1_Link I107_new_hampshire
     with KD_Count 1
     with name 'upper' 'landing' 
 ;
 
-Object I105_new_hampshire ""
+Object I107_new_hampshire ""
     class K1_room
     with short_name "New Hampshire"
-    with map_region I103_secondfloor
+    with map_region I105_secondfloor
     has proper
     with vector 0
     with room_index -1
     with list_together 0
     with cap_short_name "New Hampshire"
     has mark_as_room
-    with IK1_Count 15
-    with IK1_Link I106_massachusetts
+    with IK1_Count 16
+    with IK1_Link I108_massachusetts
     with KD_Count 1
     with name 'new' 'hampshire' 
 ;
 
-Object I106_massachusetts ""
+Object I108_massachusetts ""
     class K1_room
     with short_name "Massachusetts"
-    with map_region I103_secondfloor
+    with map_region I105_secondfloor
     has proper
     with vector 0
     with room_index -1
     with list_together 0
     with cap_short_name "Massachusetts"
     has mark_as_room
-    with IK1_Count 16
-    with IK1_Link I107_rhode_island
+    with IK1_Count 17
+    with IK1_Link I109_rhode_island
     with KD_Count 1
     with name 'massachusetts' 
 ;
 
-Object I107_rhode_island ""
+Object I109_rhode_island ""
     class K1_room
     with short_name "Rhode Island"
-    with map_region I103_secondfloor
+    with map_region I105_secondfloor
     has proper
     with vector 0
     with room_index -1
     with list_together 0
     with cap_short_name "Rhode Island"
     has mark_as_room
-    with IK1_Count 17
-    with IK1_Link I108_connecticut
+    with IK1_Count 18
+    with IK1_Link I110_connecticut
     with KD_Count 1
     with name 'rhode' 'island' 
 ;
 
-Object I108_connecticut ""
+Object I110_connecticut ""
     class K1_room
     with short_name "Connecticut"
-    with map_region I103_secondfloor
+    with map_region I105_secondfloor
     has proper
     with vector 0
     with room_index -1
     with list_together 0
     with cap_short_name "Connecticut"
     has mark_as_room
-    with IK1_Count 18
-    with IK1_Link I109_new_york
+    with IK1_Count 19
+    with IK1_Link I111_new_york
     with KD_Count 1
     with name 'connecticut' 
 ;
 
-Object I109_new_york ""
+Object I111_new_york ""
     class K1_room
     with short_name "New York"
-    with map_region I103_secondfloor
+    with map_region I105_secondfloor
     has proper
     with vector 0
     with room_index -1
     with list_together 0
     with cap_short_name "New York"
     has mark_as_room
-    with IK1_Count 19
-    with IK1_Link I110_new_jersey
+    with IK1_Count 20
+    with IK1_Link I112_new_jersey
     with KD_Count 1
     with name 'new' 'york' 
 ;
 
-Object I110_new_jersey ""
+Object I112_new_jersey ""
     class K1_room
     with short_name "New Jersey"
-    with map_region I103_secondfloor
+    with map_region I105_secondfloor
     has proper
     with vector 0
     with room_index -1
     with list_together 0
     with cap_short_name "New Jersey"
     has mark_as_room
-    with IK1_Count 20
-    with IK1_Link I111_pennsylvania
+    with IK1_Count 21
+    with IK1_Link I113_pennsylvania
     with KD_Count 1
     with name 'new' 'jersey' 
 ;
 
-Object I111_pennsylvania ""
+Object I113_pennsylvania ""
     class K1_room
     with short_name "Pennsylvania"
-    with map_region I103_secondfloor
+    with map_region I105_secondfloor
     has proper
     with vector 0
     with room_index -1
     with list_together 0
     with cap_short_name "Pennsylvania"
     has mark_as_room
-    with IK1_Count 21
-    with IK1_Link I112_delaware
+    with IK1_Count 22
+    with IK1_Link I114_delaware
     with KD_Count 1
     with name 'pennsylvania' 
 ;
 
-Object I112_delaware ""
+Object I114_delaware ""
     class K1_room
     with short_name "Delaware"
-    with map_region I103_secondfloor
+    with map_region I105_secondfloor
     has proper
     with vector 0
     with room_index -1
     with list_together 0
     with cap_short_name "Delaware"
     has mark_as_room
-    with IK1_Count 22
-    with IK1_Link I113_maryland
+    with IK1_Count 23
+    with IK1_Link I115_maryland
     with KD_Count 1
     with name 'delaware' 
 ;
 
-Object I113_maryland ""
+Object I115_maryland ""
     class K1_room
     with short_name "Maryland"
-    with map_region I103_secondfloor
+    with map_region I105_secondfloor
     has proper
     with vector 0
     with room_index -1
     with list_together 0
     with cap_short_name "Maryland"
     has mark_as_room
-    with IK1_Count 23
-    with IK1_Link I114_virginia
+    with IK1_Count 24
+    with IK1_Link I116_virginia
     with KD_Count 1
     with name 'maryland' 
 ;
 
-Object I114_virginia ""
+Object I116_virginia ""
     class K1_room
     with short_name "Virginia"
-    with map_region I103_secondfloor
+    with map_region I105_secondfloor
     has proper
     with vector 0
     with room_index -1
     with list_together 0
     with cap_short_name "Virginia"
     has mark_as_room
-    with IK1_Count 24
-    with IK1_Link I115_carolina
+    with IK1_Count 25
+    with IK1_Link I117_carolina
     with KD_Count 1
     with name 'virginia' 
 ;
 
-Object I115_carolina ""
+Object I117_carolina ""
     class K1_room
     with short_name "Carolina"
-    with map_region I103_secondfloor
+    with map_region I105_secondfloor
     has proper
     with vector 0
     with room_index -1
     with list_together 0
     with cap_short_name "Carolina"
     has mark_as_room
-    with IK1_Count 25
-    with IK1_Link I116_georgia
+    with IK1_Count 26
+    with IK1_Link I118_georgia
     with KD_Count 1
     with name 'carolina' 
 ;
 
-Object I116_georgia ""
+Object I118_georgia ""
     class K1_room
     with short_name "Georgia"
-    with map_region I103_secondfloor
+    with map_region I105_secondfloor
     has proper
     with vector 0
     with room_index -1
     with list_together 0
     with cap_short_name "Georgia"
     has mark_as_room
-    with IK1_Count 26
-    with IK1_Link I117_placeholder
+    with IK1_Count 27
+    with IK1_Link I119_placeholder
     with KD_Count 1
     with name 'georgia' 
 ;
 
-Object I117_placeholder ""
+Object I119_placeholder ""
     class K1_room
     with short_name "placeholder"
     with vector 0
     with room_index -1
     with list_together 0
     has mark_as_room
-    with IK1_Count 27
+    with IK1_Count 28
     with IK1_Link nothing
     with KD_Count 1
     with name 'placeholder' 
@@ -10215,7 +10257,11 @@ Array Global_Vars -->
   (0) ! 34
   (0) ! 43
   (0) ! 51
-  (I89_entryway) ! 52
+  (I88_mansion_grounds) ! 52
+  (I88_mansion_grounds) ! 53
+  (I88_mansion_grounds) ! 54
+  (I88_mansion_grounds) ! 55
+  (I88_mansion_grounds) ! 56
 ;
 
 
@@ -10227,20 +10273,20 @@ Array tab_0_2 table $2066 2  (Consult_Grammar_95)  (Consult_Grammar_96)  (Consul
 Array tab_0_3 table $0067 3  (IMMEDIATELY_RESTART_VM_R)  (IMMEDIATELY_RESTORE_SAVED_R)  TABLE_NOVALUE (IMMEDIATELY_QUIT_R)  (IMMEDIATELY_UNDO_R) ;
 Array tab_0_4 table $0068 4  TABLE_NOVALUE TABLE_NOVALUE (V26_amusing_a_victorious_pla)  TABLE_NOVALUE TABLE_NOVALUE;
 Array T1_locale_priorities table  tab_1_0 tab_1_1;
-Array tab_1_0 table $0869 NULL  TABLE_NOVALUE TABLE_NOVALUE;
-Array tab_1_1 table $446a 5  TABLE_NOVALUE TABLE_NOVALUE;
+Array tab_1_0 table $0869 NULL  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
+Array tab_1_1 table $446a 5  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
 Array T2_floor_one table  tab_2_0 tab_2_1 tab_2_2;
-Array tab_2_0 table $086b NULL  (I117_placeholder)  (I117_placeholder)  (I117_placeholder)  (I117_placeholder) ;
-Array tab_2_1 table $086c NULL  (I89_entryway)  (I117_placeholder)  (I90_stairwell)  (I117_placeholder) ;
-Array tab_2_2 table $086d NULL  (I117_placeholder)  (I117_placeholder)  (I117_placeholder)  (I117_placeholder) ;
+Array tab_2_0 table $086b NULL  (I119_placeholder)  (I119_placeholder)  (I119_placeholder)  (I119_placeholder) ;
+Array tab_2_1 table $086c NULL  (I90_entryway)  (I119_placeholder)  (I91_stairwell)  (I119_placeholder) ;
+Array tab_2_2 table $086d NULL  (I119_placeholder)  (I119_placeholder)  (I119_placeholder)  (I119_placeholder) ;
 Array T3_floor_two table  tab_3_0 tab_3_1 tab_3_2;
-Array tab_3_0 table $086b NULL  (I117_placeholder)  (I117_placeholder)  (I117_placeholder)  (I117_placeholder) ;
-Array tab_3_1 table $086c NULL  (I117_placeholder)  (I117_placeholder)  (I104_upper_landing)  (I117_placeholder) ;
-Array tab_3_2 table $086d NULL  (I117_placeholder)  (I117_placeholder)  (I117_placeholder)  (I117_placeholder) ;
+Array tab_3_0 table $086b NULL  (I119_placeholder)  (I119_placeholder)  (I119_placeholder)  (I119_placeholder) ;
+Array tab_3_1 table $086c NULL  (I119_placeholder)  (I119_placeholder)  (I106_upper_landing)  (I119_placeholder) ;
+Array tab_3_2 table $086d NULL  (I119_placeholder)  (I119_placeholder)  (I119_placeholder)  (I119_placeholder) ;
 Array T4_first_floor_available_roo --> 1 tab_4_0;
-Array tab_4_0 table $086e NULL  (I91_bedroom)  (I92_bathroom)  (I93_kitchen)  (I94_hallway)  (I95_skrillex)  (I96_skeletor)  (I97_godzilla)  (I98_mothra)  (I102_bukake)  (I99_enchillada)  (I100_katana)  (I101_tampon) ;
+Array tab_4_0 table $086e NULL  (I93_bedroom)  (I94_bathroom)  (I95_kitchen)  (I96_hallway)  (I97_skrillex)  (I98_skeletor)  (I99_godzilla)  (I100_mothra)  (I104_bukkake)  (I101_enchillada)  (I102_katana)  (I103_tampon) ;
 Array T5_second_floor_available_ro --> 1 tab_5_0;
-Array tab_5_0 table $086e NULL  (I105_new_hampshire)  (I106_massachusetts)  (I107_rhode_island)  (I108_connecticut)  (I109_new_york)  (I110_new_jersey)  (I111_pennsylvania)  (I112_delaware)  (I113_maryland)  (I114_virginia)  (I115_carolina)  (I116_georgia) ;
+Array tab_5_0 table $086e NULL  (I107_new_hampshire)  (I108_massachusetts)  (I109_rhode_island)  (I110_connecticut)  (I111_new_york)  (I112_new_jersey)  (I113_pennsylvania)  (I114_delaware)  (I115_maryland)  (I116_virginia)  (I117_carolina)  (I118_georgia) ;
 Array TB_Blanks -> 
   ! For table T0_final_question_options
   $00  ! Column 0
@@ -10250,7 +10296,7 @@ Array TB_Blanks ->
   $1b  ! Column 4
   
   ! For table T1_locale_priorities
-  $03  ! Column 1
+  $07  ! Column 1
   
   ! For table T2_floor_one
   
@@ -10373,7 +10419,7 @@ Array ActionData table
 Constant AD_RECORDS = 80;
 [ ANSTVC_7 pos state;
     if (state == 1) {
-        MStack-->pos = I89_entryway; pos++;
+        MStack-->pos = I88_mansion_grounds; pos++;
         MStack-->pos = nothing; pos++;
         MStack-->pos = nothing; pos++;
         MStack-->pos = nothing; pos++;
@@ -10806,7 +10852,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
            if (debug_rules>1) print "  [repetition with ?-1,-1? set to ", (DecimalNumber) t_0, "]^";
          ! phrase 2
          ! [2: if _1 entry is placeholder begin]
-          if (((TableLookUpEntry(ct_0,107,ct_1) == I117_placeholder)))  {
+          if (((TableLookUpEntry(ct_0,107,ct_1) == I119_placeholder)))  {
             ! phrase 3
             ! [3: now currindex is a random number from 1 to the number of rows in table 3]
              (Global_Vars-->9) =  R_DecimalNumber(1,  TableRows(T4_first_floor_available_roo) ) ; 
@@ -10838,7 +10884,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
          say__p=1;ParaContent();  print (PrintShortName) TableLookUpEntry(ct_0,107,ct_1); ParaContent();  print (PrintText) SC_11;  .L_Say1; .L_SayX1;
          ! phrase 12
          ! [12: if _2 entry is placeholder begin]
-          if (((TableLookUpEntry(ct_0,108,ct_1) == I117_placeholder)))  {
+          if (((TableLookUpEntry(ct_0,108,ct_1) == I119_placeholder)))  {
             ! phrase 13
             ! [13: now currindex is a random number from 1 to the number of rows in table 3]
              (Global_Vars-->9) =  R_DecimalNumber(1,  TableRows(T4_first_floor_available_roo) ) ; 
@@ -10870,7 +10916,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
          say__p=1;ParaContent();  print (PrintShortName) TableLookUpEntry(ct_0,108,ct_1); ParaContent();  print (PrintText) SC_11;  .L_Say2; .L_SayX2;
          ! phrase 22
          ! [22: if _3 entry is placeholder begin]
-          if (((TableLookUpEntry(ct_0,109,ct_1) == I117_placeholder)))  {
+          if (((TableLookUpEntry(ct_0,109,ct_1) == I119_placeholder)))  {
             ! phrase 23
             ! [23: now currindex is a random number from 1 to the number of rows in table 3]
              (Global_Vars-->9) =  R_DecimalNumber(1,  TableRows(T4_first_floor_available_roo) ) ; 
@@ -10920,7 +10966,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
            if (debug_rules>1) print "  [repetition with ?-1,-1? set to ", (DecimalNumber) t_0, "]^";
          ! phrase 36
          ! [36: if _1 entry is placeholder begin]
-          if (((TableLookUpEntry(ct_0,107,ct_1) == I117_placeholder)))  {
+          if (((TableLookUpEntry(ct_0,107,ct_1) == I119_placeholder)))  {
             ! phrase 37
             ! [37: now currindex is a random number from 1 to the number of rows in table 4]
              (Global_Vars-->9) =  R_DecimalNumber(1,  TableRows(T5_second_floor_available_ro) ) ; 
@@ -10952,7 +10998,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
          say__p=1;ParaContent();  print (PrintShortName) TableLookUpEntry(ct_0,107,ct_1); ParaContent();  print (PrintText) SC_11;  .L_Say6; .L_SayX6;
          ! phrase 46
          ! [46: if _2 entry is placeholder begin]
-          if (((TableLookUpEntry(ct_0,108,ct_1) == I117_placeholder)))  {
+          if (((TableLookUpEntry(ct_0,108,ct_1) == I119_placeholder)))  {
             ! phrase 47
             ! [47: now currindex is a random number from 1 to the number of rows in table 4]
              (Global_Vars-->9) =  R_DecimalNumber(1,  TableRows(T5_second_floor_available_ro) ) ; 
@@ -10984,7 +11030,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
          say__p=1;ParaContent();  print (PrintShortName) TableLookUpEntry(ct_0,108,ct_1); ParaContent();  print (PrintText) SC_11;  .L_Say7; .L_SayX7;
          ! phrase 56
          ! [56: if _3 entry is placeholder begin]
-          if (((TableLookUpEntry(ct_0,109,ct_1) == I117_placeholder)))  {
+          if (((TableLookUpEntry(ct_0,109,ct_1) == I119_placeholder)))  {
             ! phrase 57
             ! [57: now currindex is a random number from 1 to the number of rows in table 4]
              (Global_Vars-->9) =  R_DecimalNumber(1,  TableRows(T5_second_floor_available_ro) ) ; 
@@ -11022,6 +11068,402 @@ Array ActionHappened --> 0 0 0 0 0 0;
          }
 @pull ct_1; @pull ct_0;
         if (debug_rules>1) print "  [67: end repeat]^";
+      ! phrase 68
+      ! [68: now currroom is _1 in row 1 of table 1]
+       (Global_Vars-->10) = TableLookUpEntry(T2_floor_one,107,1); 
+      ! phrase 69
+      ! [69: now eastroom is _2 in row 1 of table 1]
+       (Global_Vars-->13) = TableLookUpEntry(T2_floor_one,108,1); 
+      ! phrase 70
+      ! [70: now southroom is _1 in row 2 of table 1]
+       (Global_Vars-->12) = TableLookUpEntry(T2_floor_one,107,2); 
+      ! phrase 71
+      ! [71: change east exit of currroom to eastroom]
+       AssertMapConnection((Global_Vars-->10),I52_east,(Global_Vars-->13)); 
+      ! phrase 72
+      ! [72: change south exit of currroom to southroom]
+       AssertMapConnection((Global_Vars-->10),I49_south,(Global_Vars-->12)); 
+      ! phrase 73
+      ! [73: now currroom is _2 in row 1 of table 1]
+       (Global_Vars-->10) = TableLookUpEntry(T2_floor_one,108,1); 
+      ! phrase 74
+      ! [74: now westroom is _1 in row 1 of table 1]
+       (Global_Vars-->14) = TableLookUpEntry(T2_floor_one,107,1); 
+      ! phrase 75
+      ! [75: now eastroom is _3 in row 1 of table 1]
+       (Global_Vars-->13) = TableLookUpEntry(T2_floor_one,109,1); 
+      ! phrase 76
+      ! [76: now southroom is _2 in row 2 of table 1]
+       (Global_Vars-->12) = TableLookUpEntry(T2_floor_one,108,2); 
+      ! phrase 77
+      ! [77: change west exit of currroom to westroom]
+       AssertMapConnection((Global_Vars-->10),I53_west,(Global_Vars-->14)); 
+      ! phrase 78
+      ! [78: change east exit of currroom to eastroom]
+       AssertMapConnection((Global_Vars-->10),I52_east,(Global_Vars-->13)); 
+      ! phrase 79
+      ! [79: change south exit of currroom to southroom]
+       AssertMapConnection((Global_Vars-->10),I49_south,(Global_Vars-->12)); 
+      ! phrase 80
+      ! [80: now currroom is _3 in row 1 of table 1]
+       (Global_Vars-->10) = TableLookUpEntry(T2_floor_one,109,1); 
+      ! phrase 81
+      ! [81: now westroom is _2 in row 1 of table 1]
+       (Global_Vars-->14) = TableLookUpEntry(T2_floor_one,108,1); 
+      ! phrase 82
+      ! [82: now southroom is _3 in row 2 of table 1]
+       (Global_Vars-->12) = TableLookUpEntry(T2_floor_one,109,2); 
+      ! phrase 83
+      ! [83: change west exit of currroom to westroom]
+       AssertMapConnection((Global_Vars-->10),I53_west,(Global_Vars-->14)); 
+      ! phrase 84
+      ! [84: change south exit of currroom to southroom]
+       AssertMapConnection((Global_Vars-->10),I49_south,(Global_Vars-->12)); 
+      ! phrase 85
+      ! [85: now currroom is _1 in row 2 of table 1]
+       (Global_Vars-->10) = TableLookUpEntry(T2_floor_one,107,2); 
+      ! phrase 86
+      ! [86: now northroom is _1 in row 1 of table 1]
+       (Global_Vars-->11) = TableLookUpEntry(T2_floor_one,107,1); 
+      ! phrase 87
+      ! [87: now eastroom is _2 in row 2 of table 1]
+       (Global_Vars-->13) = TableLookUpEntry(T2_floor_one,108,2); 
+      ! phrase 88
+      ! [88: now southroom is _1 in row 3 of table 1]
+       (Global_Vars-->12) = TableLookUpEntry(T2_floor_one,107,3); 
+      ! phrase 89
+      ! [89: change north exit of currroom to northroom]
+       AssertMapConnection((Global_Vars-->10),I46_north,(Global_Vars-->11)); 
+      ! phrase 90
+      ! [90: change east exit of currroom to eastroom]
+       AssertMapConnection((Global_Vars-->10),I52_east,(Global_Vars-->13)); 
+      ! phrase 91
+      ! [91: change south exit of currroom to southroom]
+       AssertMapConnection((Global_Vars-->10),I49_south,(Global_Vars-->12)); 
+      ! phrase 92
+      ! [92: now currroom is _2 in row 2 of table 1]
+       (Global_Vars-->10) = TableLookUpEntry(T2_floor_one,108,2); 
+      ! phrase 93
+      ! [93: now northroom is _2 in row 1 of table 1]
+       (Global_Vars-->11) = TableLookUpEntry(T2_floor_one,108,1); 
+      ! phrase 94
+      ! [94: now westroom is _1 in row 2 of table 1]
+       (Global_Vars-->14) = TableLookUpEntry(T2_floor_one,107,2); 
+      ! phrase 95
+      ! [95: change north exit of currroom to northroom]
+       AssertMapConnection((Global_Vars-->10),I46_north,(Global_Vars-->11)); 
+      ! phrase 96
+      ! [96: change west exit of currroom to westroom]
+       AssertMapConnection((Global_Vars-->10),I53_west,(Global_Vars-->14)); 
+      ! phrase 97
+      ! [97: now currroom is _3 in row 2 of table 1]
+       (Global_Vars-->10) = TableLookUpEntry(T2_floor_one,109,2); 
+      ! phrase 98
+      ! [98: now northroom is _3 in row 1 of table 1]
+       (Global_Vars-->11) = TableLookUpEntry(T2_floor_one,109,1); 
+      ! phrase 99
+      ! [99: now southroom is _3 in row 3 of table 1]
+       (Global_Vars-->12) = TableLookUpEntry(T2_floor_one,109,3); 
+      ! phrase 100
+      ! [100: change north exit of currroom to northroom]
+       AssertMapConnection((Global_Vars-->10),I46_north,(Global_Vars-->11)); 
+      ! phrase 101
+      ! [101: change south exit of currroom to southroom]
+       AssertMapConnection((Global_Vars-->10),I49_south,(Global_Vars-->12)); 
+      ! phrase 102
+      ! [102: now currroom is _1 in row 3 of table 1]
+       (Global_Vars-->10) = TableLookUpEntry(T2_floor_one,107,3); 
+      ! phrase 103
+      ! [103: now northroom is _1 in row 2 of table 1]
+       (Global_Vars-->11) = TableLookUpEntry(T2_floor_one,107,2); 
+      ! phrase 104
+      ! [104: now southroom is _1 in row 4 of table 1]
+       (Global_Vars-->12) = TableLookUpEntry(T2_floor_one,107,4); 
+      ! phrase 105
+      ! [105: change north exit of currroom to northroom]
+       AssertMapConnection((Global_Vars-->10),I46_north,(Global_Vars-->11)); 
+      ! phrase 106
+      ! [106: change south exit of currroom to southroom]
+       AssertMapConnection((Global_Vars-->10),I49_south,(Global_Vars-->12)); 
+      ! phrase 107
+      ! [107: now currroom is _2 in row 3 of table 1]
+       (Global_Vars-->10) = TableLookUpEntry(T2_floor_one,108,3); 
+      ! phrase 108
+      ! [108: now eastroom is _3 in row 3 of table 1]
+       (Global_Vars-->13) = TableLookUpEntry(T2_floor_one,109,3); 
+      ! phrase 109
+      ! [109: now southroom is _2 in row 4 of table 1]
+       (Global_Vars-->12) = TableLookUpEntry(T2_floor_one,108,4); 
+      ! phrase 110
+      ! [110: change east exit of currroom to eastroom]
+       AssertMapConnection((Global_Vars-->10),I52_east,(Global_Vars-->13)); 
+      ! phrase 111
+      ! [111: change south exit of currroom to southroom]
+       AssertMapConnection((Global_Vars-->10),I49_south,(Global_Vars-->12)); 
+      ! phrase 112
+      ! [112: now currroom is _3 in row 3 of table 1]
+       (Global_Vars-->10) = TableLookUpEntry(T2_floor_one,109,3); 
+      ! phrase 113
+      ! [113: now northroom is _3 in row 2 of table 1]
+       (Global_Vars-->11) = TableLookUpEntry(T2_floor_one,109,2); 
+      ! phrase 114
+      ! [114: now westroom is _2 in row 3 of table 1]
+       (Global_Vars-->14) = TableLookUpEntry(T2_floor_one,108,3); 
+      ! phrase 115
+      ! [115: now southroom is _3 in row 4 of table 1]
+       (Global_Vars-->12) = TableLookUpEntry(T2_floor_one,109,4); 
+      ! phrase 116
+      ! [116: change north exit of currroom to northroom]
+       AssertMapConnection((Global_Vars-->10),I46_north,(Global_Vars-->11)); 
+      ! phrase 117
+      ! [117: change west exit of currroom to westroom]
+       AssertMapConnection((Global_Vars-->10),I53_west,(Global_Vars-->14)); 
+      ! phrase 118
+      ! [118: change south exit of currroom to southroom]
+       AssertMapConnection((Global_Vars-->10),I49_south,(Global_Vars-->12)); 
+      ! phrase 119
+      ! [119: now currroom is _1 in row 4 of table 1]
+       (Global_Vars-->10) = TableLookUpEntry(T2_floor_one,107,4); 
+      ! phrase 120
+      ! [120: now northroom is _1 in row 3 of table 1]
+       (Global_Vars-->11) = TableLookUpEntry(T2_floor_one,107,3); 
+      ! phrase 121
+      ! [121: now eastroom is _2 in row 4 of table 1]
+       (Global_Vars-->13) = TableLookUpEntry(T2_floor_one,108,4); 
+      ! phrase 122
+      ! [122: change north exit of currroom to northroom]
+       AssertMapConnection((Global_Vars-->10),I46_north,(Global_Vars-->11)); 
+      ! phrase 123
+      ! [123: change east exit of currroom to eastroom]
+       AssertMapConnection((Global_Vars-->10),I52_east,(Global_Vars-->13)); 
+      ! phrase 124
+      ! [124: now currroom is _2 in row 4 of table 1]
+       (Global_Vars-->10) = TableLookUpEntry(T2_floor_one,108,4); 
+      ! phrase 125
+      ! [125: now northroom is _2 in row 3 of table 1]
+       (Global_Vars-->11) = TableLookUpEntry(T2_floor_one,108,3); 
+      ! phrase 126
+      ! [126: now westroom is _1 in row 4 of table 1]
+       (Global_Vars-->14) = TableLookUpEntry(T2_floor_one,107,4); 
+      ! phrase 127
+      ! [127: now eastroom is _3 in row 4 of table 1]
+       (Global_Vars-->13) = TableLookUpEntry(T2_floor_one,109,4); 
+      ! phrase 128
+      ! [128: change north exit of currroom to northroom]
+       AssertMapConnection((Global_Vars-->10),I46_north,(Global_Vars-->11)); 
+      ! phrase 129
+      ! [129: change west exit of currroom to westroom]
+       AssertMapConnection((Global_Vars-->10),I53_west,(Global_Vars-->14)); 
+      ! phrase 130
+      ! [130: change east exit of currroom to eastroom]
+       AssertMapConnection((Global_Vars-->10),I52_east,(Global_Vars-->13)); 
+      ! phrase 131
+      ! [131: now currroom is _3 in row 4 of table 1]
+       (Global_Vars-->10) = TableLookUpEntry(T2_floor_one,109,4); 
+      ! phrase 132
+      ! [132: now northroom is _3 in row 3 of table 1]
+       (Global_Vars-->11) = TableLookUpEntry(T2_floor_one,109,3); 
+      ! phrase 133
+      ! [133: now westroom is _2 in row 4 of table 1]
+       (Global_Vars-->14) = TableLookUpEntry(T2_floor_one,108,4); 
+      ! phrase 134
+      ! [134: change north exit of currroom to northroom]
+       AssertMapConnection((Global_Vars-->10),I46_north,(Global_Vars-->11)); 
+      ! phrase 135
+      ! [135: change west exit of currroom to westroom]
+       AssertMapConnection((Global_Vars-->10),I53_west,(Global_Vars-->14)); 
+      ! phrase 136
+      ! [136: now currroom is _1 in row 1 of table 2]
+       (Global_Vars-->10) = TableLookUpEntry(T3_floor_two,107,1); 
+      ! phrase 137
+      ! [137: now eastroom is _2 in row 1 of table 2]
+       (Global_Vars-->13) = TableLookUpEntry(T3_floor_two,108,1); 
+      ! phrase 138
+      ! [138: now southroom is _1 in row 2 of table 2]
+       (Global_Vars-->12) = TableLookUpEntry(T3_floor_two,107,2); 
+      ! phrase 139
+      ! [139: change east exit of currroom to eastroom]
+       AssertMapConnection((Global_Vars-->10),I52_east,(Global_Vars-->13)); 
+      ! phrase 140
+      ! [140: change south exit of currroom to southroom]
+       AssertMapConnection((Global_Vars-->10),I49_south,(Global_Vars-->12)); 
+      ! phrase 141
+      ! [141: now currroom is _2 in row 1 of table 2]
+       (Global_Vars-->10) = TableLookUpEntry(T3_floor_two,108,1); 
+      ! phrase 142
+      ! [142: now westroom is _1 in row 1 of table 2]
+       (Global_Vars-->14) = TableLookUpEntry(T3_floor_two,107,1); 
+      ! phrase 143
+      ! [143: now eastroom is _3 in row 1 of table 2]
+       (Global_Vars-->13) = TableLookUpEntry(T3_floor_two,109,1); 
+      ! phrase 144
+      ! [144: now southroom is _2 in row 2 of table 2]
+       (Global_Vars-->12) = TableLookUpEntry(T3_floor_two,108,2); 
+      ! phrase 145
+      ! [145: change west exit of currroom to westroom]
+       AssertMapConnection((Global_Vars-->10),I53_west,(Global_Vars-->14)); 
+      ! phrase 146
+      ! [146: change east exit of currroom to eastroom]
+       AssertMapConnection((Global_Vars-->10),I52_east,(Global_Vars-->13)); 
+      ! phrase 147
+      ! [147: change south exit of currroom to southroom]
+       AssertMapConnection((Global_Vars-->10),I49_south,(Global_Vars-->12)); 
+      ! phrase 148
+      ! [148: now currroom is _3 in row 1 of table 2]
+       (Global_Vars-->10) = TableLookUpEntry(T3_floor_two,109,1); 
+      ! phrase 149
+      ! [149: now westroom is _2 in row 1 of table 2]
+       (Global_Vars-->14) = TableLookUpEntry(T3_floor_two,108,1); 
+      ! phrase 150
+      ! [150: now southroom is _3 in row 2 of table 2]
+       (Global_Vars-->12) = TableLookUpEntry(T3_floor_two,109,2); 
+      ! phrase 151
+      ! [151: change west exit of currroom to westroom]
+       AssertMapConnection((Global_Vars-->10),I53_west,(Global_Vars-->14)); 
+      ! phrase 152
+      ! [152: change south exit of currroom to southroom]
+       AssertMapConnection((Global_Vars-->10),I49_south,(Global_Vars-->12)); 
+      ! phrase 153
+      ! [153: now currroom is _1 in row 2 of table 2]
+       (Global_Vars-->10) = TableLookUpEntry(T3_floor_two,107,2); 
+      ! phrase 154
+      ! [154: now northroom is _1 in row 1 of table 2]
+       (Global_Vars-->11) = TableLookUpEntry(T3_floor_two,107,1); 
+      ! phrase 155
+      ! [155: now southroom is _1 in row 3 of table 2]
+       (Global_Vars-->12) = TableLookUpEntry(T3_floor_two,107,3); 
+      ! phrase 156
+      ! [156: change north exit of currroom to northroom]
+       AssertMapConnection((Global_Vars-->10),I46_north,(Global_Vars-->11)); 
+      ! phrase 157
+      ! [157: change south exit of currroom to southroom]
+       AssertMapConnection((Global_Vars-->10),I49_south,(Global_Vars-->12)); 
+      ! phrase 158
+      ! [158: now currroom is _2 in row 2 of table 2]
+       (Global_Vars-->10) = TableLookUpEntry(T3_floor_two,108,2); 
+      ! phrase 159
+      ! [159: now northroom is _2 in row 1 of table 2]
+       (Global_Vars-->11) = TableLookUpEntry(T3_floor_two,108,1); 
+      ! phrase 160
+      ! [160: now southroom is _2 in row 3 of table 2]
+       (Global_Vars-->12) = TableLookUpEntry(T3_floor_two,108,3); 
+      ! phrase 161
+      ! [161: change north exit of currroom to northroom]
+       AssertMapConnection((Global_Vars-->10),I46_north,(Global_Vars-->11)); 
+      ! phrase 162
+      ! [162: change south exit of currroom to southroom]
+       AssertMapConnection((Global_Vars-->10),I49_south,(Global_Vars-->12)); 
+      ! phrase 163
+      ! [163: now currroom is _3 in row 2 of table 2]
+       (Global_Vars-->10) = TableLookUpEntry(T3_floor_two,109,2); 
+      ! phrase 164
+      ! [164: now northroom is _3 in row 1 of table 2]
+       (Global_Vars-->11) = TableLookUpEntry(T3_floor_two,109,1); 
+      ! phrase 165
+      ! [165: now southroom is _3 in row 3 of table 2]
+       (Global_Vars-->12) = TableLookUpEntry(T3_floor_two,109,3); 
+      ! phrase 166
+      ! [166: change north exit of currroom to northroom]
+       AssertMapConnection((Global_Vars-->10),I46_north,(Global_Vars-->11)); 
+      ! phrase 167
+      ! [167: change south exit of currroom to southroom]
+       AssertMapConnection((Global_Vars-->10),I49_south,(Global_Vars-->12)); 
+      ! phrase 168
+      ! [168: now currroom is _1 in row 3 of table 2]
+       (Global_Vars-->10) = TableLookUpEntry(T3_floor_two,107,3); 
+      ! phrase 169
+      ! [169: now northroom is _1 in row 2 of table 2]
+       (Global_Vars-->11) = TableLookUpEntry(T3_floor_two,107,2); 
+      ! phrase 170
+      ! [170: now southroom is _1 in row 4 of table 2]
+       (Global_Vars-->12) = TableLookUpEntry(T3_floor_two,107,4); 
+      ! phrase 171
+      ! [171: change north exit of currroom to northroom]
+       AssertMapConnection((Global_Vars-->10),I46_north,(Global_Vars-->11)); 
+      ! phrase 172
+      ! [172: change south exit of currroom to southroom]
+       AssertMapConnection((Global_Vars-->10),I49_south,(Global_Vars-->12)); 
+      ! phrase 173
+      ! [173: now currroom is _2 in row 3 of table 2]
+       (Global_Vars-->10) = TableLookUpEntry(T3_floor_two,108,3); 
+      ! phrase 174
+      ! [174: now northroom is _2 in row 2 of table 2]
+       (Global_Vars-->11) = TableLookUpEntry(T3_floor_two,108,2); 
+      ! phrase 175
+      ! [175: now southroom is _2 in row 4 of table 2]
+       (Global_Vars-->12) = TableLookUpEntry(T3_floor_two,108,4); 
+      ! phrase 176
+      ! [176: change north exit of currroom to northroom]
+       AssertMapConnection((Global_Vars-->10),I46_north,(Global_Vars-->11)); 
+      ! phrase 177
+      ! [177: change south exit of currroom to southroom]
+       AssertMapConnection((Global_Vars-->10),I49_south,(Global_Vars-->12)); 
+      ! phrase 178
+      ! [178: now currroom is _3 in row 3 of table 2]
+       (Global_Vars-->10) = TableLookUpEntry(T3_floor_two,109,3); 
+      ! phrase 179
+      ! [179: now northroom is _3 in row 2 of table 2]
+       (Global_Vars-->11) = TableLookUpEntry(T3_floor_two,109,2); 
+      ! phrase 180
+      ! [180: now southroom is _3 in row 4 of table 2]
+       (Global_Vars-->12) = TableLookUpEntry(T3_floor_two,109,4); 
+      ! phrase 181
+      ! [181: change north exit of currroom to northroom]
+       AssertMapConnection((Global_Vars-->10),I46_north,(Global_Vars-->11)); 
+      ! phrase 182
+      ! [182: change south exit of currroom to southroom]
+       AssertMapConnection((Global_Vars-->10),I49_south,(Global_Vars-->12)); 
+      ! phrase 183
+      ! [183: now currroom is _1 in row 4 of table 2]
+       (Global_Vars-->10) = TableLookUpEntry(T3_floor_two,107,4); 
+      ! phrase 184
+      ! [184: now northroom is _1 in row 3 of table 2]
+       (Global_Vars-->11) = TableLookUpEntry(T3_floor_two,107,3); 
+      ! phrase 185
+      ! [185: now eastroom is _2 in row 4 of table 2]
+       (Global_Vars-->13) = TableLookUpEntry(T3_floor_two,108,4); 
+      ! phrase 186
+      ! [186: change north exit of currroom to northroom]
+       AssertMapConnection((Global_Vars-->10),I46_north,(Global_Vars-->11)); 
+      ! phrase 187
+      ! [187: change east exit of currroom to eastroom]
+       AssertMapConnection((Global_Vars-->10),I52_east,(Global_Vars-->13)); 
+      ! phrase 188
+      ! [188: now currroom is _2 in row 4 of table 2]
+       (Global_Vars-->10) = TableLookUpEntry(T3_floor_two,108,4); 
+      ! phrase 189
+      ! [189: now northroom is _2 in row 3 of table 2]
+       (Global_Vars-->11) = TableLookUpEntry(T3_floor_two,108,3); 
+      ! phrase 190
+      ! [190: now westroom is _1 in row 4 of table 2]
+       (Global_Vars-->14) = TableLookUpEntry(T3_floor_two,107,4); 
+      ! phrase 191
+      ! [191: now eastroom is _3 in row 4 of table 2]
+       (Global_Vars-->13) = TableLookUpEntry(T3_floor_two,109,4); 
+      ! phrase 192
+      ! [192: change north exit of currroom to northroom]
+       AssertMapConnection((Global_Vars-->10),I46_north,(Global_Vars-->11)); 
+      ! phrase 193
+      ! [193: change west exit of currroom to westroom]
+       AssertMapConnection((Global_Vars-->10),I53_west,(Global_Vars-->14)); 
+      ! phrase 194
+      ! [194: change east exit of currroom to eastroom]
+       AssertMapConnection((Global_Vars-->10),I52_east,(Global_Vars-->13)); 
+      ! phrase 195
+      ! [195: now currroom is _3 in row 4 of table 2]
+       (Global_Vars-->10) = TableLookUpEntry(T3_floor_two,109,4); 
+      ! phrase 196
+      ! [196: now northroom is _3 in row 3 of table 2]
+       (Global_Vars-->11) = TableLookUpEntry(T3_floor_two,109,3); 
+      ! phrase 197
+      ! [197: now westroom is _2 in row 4 of table 2]
+       (Global_Vars-->14) = TableLookUpEntry(T3_floor_two,108,4); 
+      ! phrase 198
+      ! [198: change north exit of currroom to northroom]
+       AssertMapConnection((Global_Vars-->10),I46_north,(Global_Vars-->11)); 
+      ! phrase 199
+      ! [199: change west exit of currroom to westroom]
+       AssertMapConnection((Global_Vars-->10),I53_west,(Global_Vars-->14)); 
    rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -22400,8 +22842,8 @@ Constant SLOW_ROUTE_FINDING;
 #endif;
 #endif;
 
-Constant NUM_DOORS = 0;
-Constant NUM_ROOMS = 28;
+Constant NUM_DOORS = 1;
+Constant NUM_ROOMS = 29;
 
 Array DoorRoutingViable -> NUM_DOORS+1;
 
@@ -22588,7 +23030,7 @@ Array FWMatrix --> NUM_ROOMS*NUM_ROOMS;
 ];
 #ENDIF;
 
-Constant MAX_ROUTE_LENGTH = 43 + 32;
+Constant MAX_ROUTE_LENGTH = 45 + 32;
 
 [ RelationRouteTo relation from to count  handler;
 	if (count) {
@@ -27476,7 +27918,7 @@ Array Rel_Record_63 -->
             if (Y == RLANY_CAN_GET_X or RLANY_CAN_GET_Y) rfalse;
             return DefaultValueOfKOV(9);
         } else {
-            for (Z1=nothing: false: ) {
+            for (Z1=IK4_First: Z1: Z1=Z1.IK4_Link) {
                 if (Rel_Handler_63(rr, RELS_TEST, Z1, X)) {
                     if (Y == RLANY_CAN_GET_X or RLANY_CAN_GET_Y) rtrue;
                     return Z1;
@@ -27493,7 +27935,7 @@ Array Rel_Record_63 -->
                 }
             }
         } else {
-            for (Z1=nothing: false: ) {
+            for (Z1=IK4_First: Z1: Z1=Z1.IK4_Link) {
                 if (Rel_Handler_63(rr, RELS_TEST, Z1, X)) {
                     LIST_OF_TY_InsertItem(Y, Z1);
                 }
@@ -27503,7 +27945,7 @@ Array Rel_Record_63 -->
         RELS_LIST: LIST_OF_TY_SetLength(X, 0);
         if (Y == RLIST_ALL_X) {
             for (Z1=IK1_First: Z1: Z1=Z1.IK1_Link) {
-                for (Z3=nothing: false: ) {
+                for (Z3=IK4_First: Z3: Z3=Z3.IK4_Link) {
                     if (Rel_Handler_63(rr, RELS_TEST, Z1, Z3)) {
                         LIST_OF_TY_InsertItem(X, Z1, false, 0, true);
                     }
@@ -27511,7 +27953,7 @@ Array Rel_Record_63 -->
             }
         } else if (Y == RLIST_ALL_Y) {
             for (Z1=IK1_First: Z1: Z1=Z1.IK1_Link) {
-                for (Z3=nothing: false: ) {
+                for (Z3=IK4_First: Z3: Z3=Z3.IK4_Link) {
                     if (Rel_Handler_63(rr, RELS_TEST, Z1, Z3)) {
                         LIST_OF_TY_InsertItem(X, Z3, false, 0, true);
                     }
@@ -28107,6 +28549,7 @@ Constant SC_3 = "the";
 #ifndef room_index; Constant room_index = 0; #endif;
 #ifndef door_dir; Constant door_dir = 0; #endif;
 #ifndef door_to; Constant door_to = 0; #endif;
+#ifndef found_in; Constant found_in = 0; #endif;
 #ifndef absent; Constant absent = 0; #endif;
 #ifndef list_together; Constant list_together = 0; #endif;
 #ifndef cap_short_name; Constant cap_short_name = 0; #endif;

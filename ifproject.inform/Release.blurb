@@ -10,8 +10,8 @@ release to "C:\Users\Adam\Desktop\CMPS148\IF_Project\GP_AW_cmps148_IF\ifproject 
 
 ! Blorb instructions
 
-storyfile leafname "The Mansion.zblorb"
-storyfile "C:\Users\Adam\Desktop\CMPS148\IF_Project\GP_AW_cmps148_IF\ifproject.inform\Build\output.z5" include
+storyfile leafname "The Mansion.gblorb"
+storyfile "C:\Users\Adam\Desktop\CMPS148\IF_Project\GP_AW_cmps148_IF\ifproject.inform\Build\output.ulx" include
 ifiction "C:\Users\Adam\Desktop\CMPS148\IF_Project\GP_AW_cmps148_IF\ifproject.inform\Metadata.iFiction" include
 cover "C:\Program Files (x86)\Inform 7\Inform7\Extensions\Reserved\DefaultCover.jpg"
 picture 1 "C:\Program Files (x86)\Inform 7\Inform7\Extensions\Reserved\DefaultCover.jpg"
