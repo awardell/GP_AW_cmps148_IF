@@ -4294,7 +4294,7 @@ Global lightflag = false;
 ];
 
 
-Constant REQUISITION_STACK_SIZE = 3*105;
+Constant REQUISITION_STACK_SIZE = 3*106;
 Array requisition_stack --> REQUISITION_STACK_SIZE;
 Global requisition_stack_pointer = 0;
 
@@ -9411,18 +9411,19 @@ Array Map_Storage -->
  0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I169_bedroom_a
  0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I170_bedroom_b
  0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I172_placeholder
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I173_skeletor
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I174_godzilla
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I175_mothra
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I176_bukkake
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I177_connecticut
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I178_new_york
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I179_new_jersey
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I180_pennsylvania
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I181_delaware
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I182_maryland
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I183_virginia
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I184_carolina
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I173_megaraptor
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I174_skeletor
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I175_godzilla
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I176_mothra
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I177_bukkake
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I178_connecticut
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I179_new_york
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I180_new_jersey
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I181_pennsylvania
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I182_delaware
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I183_maryland
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I184_virginia
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I185_carolina
 ;
 
 Class VPH_Class;
@@ -11114,12 +11115,27 @@ Object I172_placeholder ""
     with list_together 0
     has mark_as_room
     with IK1_Count 18
-    with IK1_Link I173_skeletor
+    with IK1_Link I173_megaraptor
     with KD_Count 1
     with name 'placeholder' 
 ;
 
-Object I173_skeletor ""
+Object I173_megaraptor ""
+    class K1_room
+    with short_name "Megaraptor"
+    has proper
+    with vector 0
+    with room_index -1
+    with list_together 0
+    with cap_short_name "Megaraptor"
+    has mark_as_room
+    with IK1_Count 19
+    with IK1_Link I174_skeletor
+    with KD_Count 1
+    with name 'megaraptor' 
+;
+
+Object I174_skeletor ""
     class K1_room
     with short_name "Skeletor"
     has proper
@@ -11128,13 +11144,13 @@ Object I173_skeletor ""
     with list_together 0
     with cap_short_name "Skeletor"
     has mark_as_room
-    with IK1_Count 19
-    with IK1_Link I174_godzilla
+    with IK1_Count 20
+    with IK1_Link I175_godzilla
     with KD_Count 1
     with name 'skeletor' 
 ;
 
-Object I174_godzilla ""
+Object I175_godzilla ""
     class K1_room
     with short_name "Godzilla"
     has proper
@@ -11143,13 +11159,13 @@ Object I174_godzilla ""
     with list_together 0
     with cap_short_name "Godzilla"
     has mark_as_room
-    with IK1_Count 20
-    with IK1_Link I175_mothra
+    with IK1_Count 21
+    with IK1_Link I176_mothra
     with KD_Count 1
     with name 'godzilla' 
 ;
 
-Object I175_mothra ""
+Object I176_mothra ""
     class K1_room
     with short_name "Mothra"
     has proper
@@ -11158,13 +11174,13 @@ Object I175_mothra ""
     with list_together 0
     with cap_short_name "Mothra"
     has mark_as_room
-    with IK1_Count 21
-    with IK1_Link I176_bukkake
+    with IK1_Count 22
+    with IK1_Link I177_bukkake
     with KD_Count 1
     with name 'mothra' 
 ;
 
-Object I176_bukkake ""
+Object I177_bukkake ""
     class K1_room
     with short_name "Bukkake"
     has proper
@@ -11173,13 +11189,13 @@ Object I176_bukkake ""
     with list_together 0
     with cap_short_name "Bukkake"
     has mark_as_room
-    with IK1_Count 22
-    with IK1_Link I177_connecticut
+    with IK1_Count 23
+    with IK1_Link I178_connecticut
     with KD_Count 1
     with name 'bukkake' 
 ;
 
-Object I177_connecticut ""
+Object I178_connecticut ""
     class K1_room
     with short_name "Connecticut"
     has proper
@@ -11188,13 +11204,13 @@ Object I177_connecticut ""
     with list_together 0
     with cap_short_name "Connecticut"
     has mark_as_room
-    with IK1_Count 23
-    with IK1_Link I178_new_york
+    with IK1_Count 24
+    with IK1_Link I179_new_york
     with KD_Count 1
     with name 'connecticut' 
 ;
 
-Object I178_new_york ""
+Object I179_new_york ""
     class K1_room
     with short_name "New York"
     has proper
@@ -11203,13 +11219,13 @@ Object I178_new_york ""
     with list_together 0
     with cap_short_name "New York"
     has mark_as_room
-    with IK1_Count 24
-    with IK1_Link I179_new_jersey
+    with IK1_Count 25
+    with IK1_Link I180_new_jersey
     with KD_Count 1
     with name 'new' 'york' 
 ;
 
-Object I179_new_jersey ""
+Object I180_new_jersey ""
     class K1_room
     with short_name "New Jersey"
     has proper
@@ -11218,13 +11234,13 @@ Object I179_new_jersey ""
     with list_together 0
     with cap_short_name "New Jersey"
     has mark_as_room
-    with IK1_Count 25
-    with IK1_Link I180_pennsylvania
+    with IK1_Count 26
+    with IK1_Link I181_pennsylvania
     with KD_Count 1
     with name 'new' 'jersey' 
 ;
 
-Object I180_pennsylvania ""
+Object I181_pennsylvania ""
     class K1_room
     with short_name "Pennsylvania"
     has proper
@@ -11233,13 +11249,13 @@ Object I180_pennsylvania ""
     with list_together 0
     with cap_short_name "Pennsylvania"
     has mark_as_room
-    with IK1_Count 26
-    with IK1_Link I181_delaware
+    with IK1_Count 27
+    with IK1_Link I182_delaware
     with KD_Count 1
     with name 'pennsylvania' 
 ;
 
-Object I181_delaware ""
+Object I182_delaware ""
     class K1_room
     with short_name "Delaware"
     has proper
@@ -11248,13 +11264,13 @@ Object I181_delaware ""
     with list_together 0
     with cap_short_name "Delaware"
     has mark_as_room
-    with IK1_Count 27
-    with IK1_Link I182_maryland
+    with IK1_Count 28
+    with IK1_Link I183_maryland
     with KD_Count 1
     with name 'delaware' 
 ;
 
-Object I182_maryland ""
+Object I183_maryland ""
     class K1_room
     with short_name "Maryland"
     has proper
@@ -11263,13 +11279,13 @@ Object I182_maryland ""
     with list_together 0
     with cap_short_name "Maryland"
     has mark_as_room
-    with IK1_Count 28
-    with IK1_Link I183_virginia
+    with IK1_Count 29
+    with IK1_Link I184_virginia
     with KD_Count 1
     with name 'maryland' 
 ;
 
-Object I183_virginia ""
+Object I184_virginia ""
     class K1_room
     with short_name "Virginia"
     has proper
@@ -11278,13 +11294,13 @@ Object I183_virginia ""
     with list_together 0
     with cap_short_name "Virginia"
     has mark_as_room
-    with IK1_Count 29
-    with IK1_Link I184_carolina
+    with IK1_Count 30
+    with IK1_Link I185_carolina
     with KD_Count 1
     with name 'virginia' 
 ;
 
-Object I184_carolina ""
+Object I185_carolina ""
     class K1_room
     with short_name "Carolina"
     has proper
@@ -11293,7 +11309,7 @@ Object I184_carolina ""
     with list_together 0
     with cap_short_name "Carolina"
     has mark_as_room
-    with IK1_Count 30
+    with IK1_Count 31
     with IK1_Link nothing
     with KD_Count 1
     with name 'carolina' 
@@ -11360,9 +11376,9 @@ Array tab_3_0 table $086b NULL  (I172_placeholder)  (I172_placeholder)  (I172_pl
 Array tab_3_1 table $086c NULL  (I172_placeholder)  (I172_placeholder)  (I172_placeholder)  (I110_second_floor_corridor) ;
 Array tab_3_2 table $086d NULL  (I172_placeholder)  (I172_placeholder)  (I172_placeholder)  (I172_placeholder) ;
 Array T4_first_floor_available_roo --> 1 tab_4_0;
-Array tab_4_0 table $086e NULL  (I138_guest_room)  (I132_bathroom_one)  (I148_kitchen_dining)  (I158_pantry)  (I121_armory)  (I166_den)  (I173_skeletor)  (I174_godzilla)  (I175_mothra)  (I176_bukkake) ;
+Array tab_4_0 table $086e NULL  (I138_guest_room)  (I132_bathroom_one)  (I148_kitchen_dining)  (I121_armory)  (I166_den)  (I174_skeletor)  (I175_godzilla)  (I176_mothra)  (I177_bukkake)  (I173_megaraptor) ;
 Array T5_second_floor_available_ro --> 1 tab_5_0;
-Array tab_5_0 table $086e NULL  (I169_bedroom_a)  (I170_bedroom_b)  (I137_bathroom_two)  (I177_connecticut)  (I178_new_york)  (I179_new_jersey)  (I180_pennsylvania)  (I181_delaware)  (I182_maryland)  (I183_virginia)  (I184_carolina) ;
+Array tab_5_0 table $086e NULL  (I169_bedroom_a)  (I170_bedroom_b)  (I137_bathroom_two)  (I178_connecticut)  (I179_new_york)  (I180_new_jersey)  (I181_pennsylvania)  (I182_delaware)  (I183_maryland)  (I184_virginia)  (I185_carolina) ;
 Array TB_Blanks -> 
   ! For table T0_final_question_options
   $00  ! Column 0
@@ -25107,7 +25123,7 @@ Constant SLOW_ROUTE_FINDING;
 #endif;
 
 Constant NUM_DOORS = 4;
-Constant NUM_ROOMS = 31;
+Constant NUM_ROOMS = 32;
 
 Array DoorRoutingViable -> NUM_DOORS+1;
 
@@ -25294,7 +25310,7 @@ Array FWMatrix --> NUM_ROOMS*NUM_ROOMS;
 ];
 #ENDIF;
 
-Constant MAX_ROUTE_LENGTH = 105 + 32;
+Constant MAX_ROUTE_LENGTH = 106 + 32;
 
 [ RelationRouteTo relation from to count  handler;
 	if (count) {

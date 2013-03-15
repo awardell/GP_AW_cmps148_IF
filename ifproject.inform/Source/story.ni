@@ -310,20 +310,20 @@ placeholder		placeholder		placeholder
 placeholder		Second Floor Corridor		placeholder
 
 [temp dummy rooms - replace these]
-Skeletor, Godzilla, Mothra, Bukkake, Connecticut, New York, New Jersey, Pennsylvania, Delaware, Maryland, Virginia, and Carolina are rooms.
+Megaraptor, Skeletor, Godzilla, Mothra, Bukkake, Connecticut, New York, New Jersey, Pennsylvania, Delaware, Maryland, Virginia, and Carolina are rooms.
 
 Table 3 - First Floor Available Rooms
 name
 Guest Room
 Bathroom One
 Kitchen-Dining
-Pantry
 Armory
 Den
 Skeletor
 Godzilla
 Mothra
 Bukkake
+Megaraptor
 
 Table 4 - Second Floor Available Rooms
 name
