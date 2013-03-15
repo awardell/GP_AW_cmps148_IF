@@ -207,83 +207,15 @@ something he is holding into a container: for instance, putting a coin into a
 collection box.<p><hr><p><b>Typed commands leading to this action</b><p>
 <p class="hangingin2">&quot;put [other things] in/inside/into [something]&quot;</p><p class="hangingin2">&quot;insert [other things] in/into [something]&quot;</p><p class="hangingin2">&quot;drop [other things] in/into/down [something]&quot;</p><p><b>Rules controlling this action</b><p>
 <p class="hangingin2">instead of&nbsp;&nbsp;&nbsp;&nbsp;<i>inserting something into the fireplace</i>&nbsp;&nbsp;&nbsp;<a href="source:story.ni#line28"><img border=0 src=inform:/Reveal.png></a></p>
-<p class="hangingin2">instead of&nbsp;&nbsp;&nbsp;&nbsp;<i>inserting something into the statue's chest</i>&nbsp;&nbsp;&nbsp;<a href="source:story.ni#line156"><img border=0 src=inform:/Reveal.png></a></p>
-<p class="hangingin2">instead of&nbsp;&nbsp;&nbsp;&nbsp;<i>inserting something into the statue</i>&nbsp;&nbsp;&nbsp;<a href="source:story.ni#line158"><img border=0 src=inform:/Reveal.png></a></p>
-<p class="hangingin2">instead of&nbsp;&nbsp;&nbsp;&nbsp;<i>inserting something into the mirror</i>&nbsp;&nbsp;&nbsp;<a href="source:story.ni#line160"><img border=0 src=inform:/Reveal.png></a></p>
+<p class="hangingin2">instead of&nbsp;&nbsp;&nbsp;&nbsp;<i>inserting something into the statue's chest</i>&nbsp;&nbsp;&nbsp;<a href="source:story.ni#line180"><img border=0 src=inform:/Reveal.png></a></p>
+<p class="hangingin2">instead of&nbsp;&nbsp;&nbsp;&nbsp;<i>inserting something into the statue</i>&nbsp;&nbsp;&nbsp;<a href="source:story.ni#line182"><img border=0 src=inform:/Reveal.png></a></p>
+<p class="hangingin2">instead of&nbsp;&nbsp;&nbsp;&nbsp;<i>inserting something into the mirror</i>&nbsp;&nbsp;&nbsp;<a href="source:story.ni#line184"><img border=0 src=inform:/Reveal.png></a></p>
 <br><p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor inserting something into</i>&nbsp;&nbsp;<font color="#800000">convert insert to drop where possible rule</font>&nbsp;&nbsp;<script language="JavaScript">
-function pasteCode1645(code) {
-    var myProject = external.Project;
-
-    myProject.selectView('source');
-    myProject.pasteCode('convert insert to drop where possible rule');
-}
-</script>
-<a href="javascript:pasteCode1645()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
-function pasteCode1646(code) {
-    var myProject = external.Project;
-
-    myProject.selectView('source');
-    myProject.pasteCode('The convert insert to drop where possible rule is not listed in the check inserting it into rulebook.[=0x000A=]');
-}
-</script>
-<a href="javascript:pasteCode1646()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i></p>
-<p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor inserting something into</i>&nbsp;&nbsp;<font color="#800000">can't insert what's not held rule</font>&nbsp;&nbsp;<script language="JavaScript">
-function pasteCode1647(code) {
-    var myProject = external.Project;
-
-    myProject.selectView('source');
-    myProject.pasteCode('can[=0x0027=]t insert what[=0x0027=]s not held rule');
-}
-</script>
-<a href="javascript:pasteCode1647()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
-function pasteCode1648(code) {
-    var myProject = external.Project;
-
-    myProject.selectView('source');
-    myProject.pasteCode('The can[=0x0027=]t insert what[=0x0027=]s not held rule is not listed in the check inserting it into rulebook.[=0x000A=]');
-}
-</script>
-<a href="javascript:pasteCode1648()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i></p>
-<p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor inserting something into</i>&nbsp;&nbsp;<font color="#800000">can't insert something into itself rule</font>&nbsp;&nbsp;<script language="JavaScript">
-function pasteCode1649(code) {
-    var myProject = external.Project;
-
-    myProject.selectView('source');
-    myProject.pasteCode('can[=0x0027=]t insert something into itself rule');
-}
-</script>
-<a href="javascript:pasteCode1649()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
-function pasteCode1650(code) {
-    var myProject = external.Project;
-
-    myProject.selectView('source');
-    myProject.pasteCode('The can[=0x0027=]t insert something into itself rule is not listed in the check inserting it into rulebook.[=0x000A=]');
-}
-</script>
-<a href="javascript:pasteCode1650()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i></p>
-<p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor inserting something into</i>&nbsp;&nbsp;<font color="#800000">can't insert into closed containers rule</font>&nbsp;&nbsp;<script language="JavaScript">
-function pasteCode1651(code) {
-    var myProject = external.Project;
-
-    myProject.selectView('source');
-    myProject.pasteCode('can[=0x0027=]t insert into closed containers rule');
-}
-</script>
-<a href="javascript:pasteCode1651()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
-function pasteCode1652(code) {
-    var myProject = external.Project;
-
-    myProject.selectView('source');
-    myProject.pasteCode('The can[=0x0027=]t insert into closed containers rule is not listed in the check inserting it into rulebook.[=0x000A=]');
-}
-</script>
-<a href="javascript:pasteCode1652()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i></p>
-<p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor inserting something into</i>&nbsp;&nbsp;<font color="#800000">can't insert into what's not a container rule</font>&nbsp;&nbsp;<script language="JavaScript">
 function pasteCode1653(code) {
     var myProject = external.Project;
 
     myProject.selectView('source');
-    myProject.pasteCode('can[=0x0027=]t insert into what[=0x0027=]s not a container rule');
+    myProject.pasteCode('convert insert to drop where possible rule');
 }
 </script>
 <a href="javascript:pasteCode1653()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
@@ -291,16 +223,16 @@ function pasteCode1654(code) {
     var myProject = external.Project;
 
     myProject.selectView('source');
-    myProject.pasteCode('The can[=0x0027=]t insert into what[=0x0027=]s not a container rule is not listed in the check inserting it into rulebook.[=0x000A=]');
+    myProject.pasteCode('The convert insert to drop where possible rule is not listed in the check inserting it into rulebook.[=0x000A=]');
 }
 </script>
 <a href="javascript:pasteCode1654()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i></p>
-<p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor inserting something into</i>&nbsp;&nbsp;<font color="#800000">can't insert clothes being worn rule</font>&nbsp;&nbsp;<script language="JavaScript">
+<p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor inserting something into</i>&nbsp;&nbsp;<font color="#800000">can't insert what's not held rule</font>&nbsp;&nbsp;<script language="JavaScript">
 function pasteCode1655(code) {
     var myProject = external.Project;
 
     myProject.selectView('source');
-    myProject.pasteCode('can[=0x0027=]t insert clothes being worn rule');
+    myProject.pasteCode('can[=0x0027=]t insert what[=0x0027=]s not held rule');
 }
 </script>
 <a href="javascript:pasteCode1655()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
@@ -308,16 +240,16 @@ function pasteCode1656(code) {
     var myProject = external.Project;
 
     myProject.selectView('source');
-    myProject.pasteCode('The can[=0x0027=]t insert clothes being worn rule is not listed in the check inserting it into rulebook.[=0x000A=]');
+    myProject.pasteCode('The can[=0x0027=]t insert what[=0x0027=]s not held rule is not listed in the check inserting it into rulebook.[=0x000A=]');
 }
 </script>
 <a href="javascript:pasteCode1656()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i></p>
-<p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor inserting something into</i>&nbsp;&nbsp;<font color="#800000">can't insert if this exceeds carrying capacity rule</font>&nbsp;&nbsp;<script language="JavaScript">
+<p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor inserting something into</i>&nbsp;&nbsp;<font color="#800000">can't insert something into itself rule</font>&nbsp;&nbsp;<script language="JavaScript">
 function pasteCode1657(code) {
     var myProject = external.Project;
 
     myProject.selectView('source');
-    myProject.pasteCode('can[=0x0027=]t insert if this exceeds carrying capacity rule');
+    myProject.pasteCode('can[=0x0027=]t insert something into itself rule');
 }
 </script>
 <a href="javascript:pasteCode1657()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
@@ -325,16 +257,16 @@ function pasteCode1658(code) {
     var myProject = external.Project;
 
     myProject.selectView('source');
-    myProject.pasteCode('The can[=0x0027=]t insert if this exceeds carrying capacity rule is not listed in the check inserting it into rulebook.[=0x000A=]');
+    myProject.pasteCode('The can[=0x0027=]t insert something into itself rule is not listed in the check inserting it into rulebook.[=0x000A=]');
 }
 </script>
 <a href="javascript:pasteCode1658()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i></p>
-<br><p class="hangingin2">carry out&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor inserting something into</i>&nbsp;&nbsp;<font color="#800000">standard inserting rule</font>&nbsp;&nbsp;<script language="JavaScript">
+<p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor inserting something into</i>&nbsp;&nbsp;<font color="#800000">can't insert into closed containers rule</font>&nbsp;&nbsp;<script language="JavaScript">
 function pasteCode1659(code) {
     var myProject = external.Project;
 
     myProject.selectView('source');
-    myProject.pasteCode('standard inserting rule');
+    myProject.pasteCode('can[=0x0027=]t insert into closed containers rule');
 }
 </script>
 <a href="javascript:pasteCode1659()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
@@ -342,16 +274,16 @@ function pasteCode1660(code) {
     var myProject = external.Project;
 
     myProject.selectView('source');
-    myProject.pasteCode('The standard inserting rule is not listed in the carry out inserting it into rulebook.[=0x000A=]');
+    myProject.pasteCode('The can[=0x0027=]t insert into closed containers rule is not listed in the check inserting it into rulebook.[=0x000A=]');
 }
 </script>
 <a href="javascript:pasteCode1660()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i></p>
-<br><p class="hangingin2">report&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor inserting something into</i>&nbsp;&nbsp;<font color="#800000">concise report inserting rule</font>&nbsp;&nbsp;<script language="JavaScript">
+<p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor inserting something into</i>&nbsp;&nbsp;<font color="#800000">can't insert into what's not a container rule</font>&nbsp;&nbsp;<script language="JavaScript">
 function pasteCode1661(code) {
     var myProject = external.Project;
 
     myProject.selectView('source');
-    myProject.pasteCode('concise report inserting rule');
+    myProject.pasteCode('can[=0x0027=]t insert into what[=0x0027=]s not a container rule');
 }
 </script>
 <a href="javascript:pasteCode1661()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
@@ -359,16 +291,16 @@ function pasteCode1662(code) {
     var myProject = external.Project;
 
     myProject.selectView('source');
-    myProject.pasteCode('The concise report inserting rule is not listed in the report inserting it into rulebook.[=0x000A=]');
+    myProject.pasteCode('The can[=0x0027=]t insert into what[=0x0027=]s not a container rule is not listed in the check inserting it into rulebook.[=0x000A=]');
 }
 </script>
 <a href="javascript:pasteCode1662()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i></p>
-<p class="hangingin2">report&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor inserting something into</i>&nbsp;&nbsp;<font color="#800000">standard report inserting rule</font>&nbsp;&nbsp;<script language="JavaScript">
+<p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor inserting something into</i>&nbsp;&nbsp;<font color="#800000">can't insert clothes being worn rule</font>&nbsp;&nbsp;<script language="JavaScript">
 function pasteCode1663(code) {
     var myProject = external.Project;
 
     myProject.selectView('source');
-    myProject.pasteCode('standard report inserting rule');
+    myProject.pasteCode('can[=0x0027=]t insert clothes being worn rule');
 }
 </script>
 <a href="javascript:pasteCode1663()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
@@ -376,10 +308,78 @@ function pasteCode1664(code) {
     var myProject = external.Project;
 
     myProject.selectView('source');
-    myProject.pasteCode('The standard report inserting rule is not listed in the report inserting it into rulebook.[=0x000A=]');
+    myProject.pasteCode('The can[=0x0027=]t insert clothes being worn rule is not listed in the check inserting it into rulebook.[=0x000A=]');
 }
 </script>
 <a href="javascript:pasteCode1664()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i></p>
+<p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor inserting something into</i>&nbsp;&nbsp;<font color="#800000">can't insert if this exceeds carrying capacity rule</font>&nbsp;&nbsp;<script language="JavaScript">
+function pasteCode1665(code) {
+    var myProject = external.Project;
+
+    myProject.selectView('source');
+    myProject.pasteCode('can[=0x0027=]t insert if this exceeds carrying capacity rule');
+}
+</script>
+<a href="javascript:pasteCode1665()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
+function pasteCode1666(code) {
+    var myProject = external.Project;
+
+    myProject.selectView('source');
+    myProject.pasteCode('The can[=0x0027=]t insert if this exceeds carrying capacity rule is not listed in the check inserting it into rulebook.[=0x000A=]');
+}
+</script>
+<a href="javascript:pasteCode1666()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i></p>
+<br><p class="hangingin2">carry out&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor inserting something into</i>&nbsp;&nbsp;<font color="#800000">standard inserting rule</font>&nbsp;&nbsp;<script language="JavaScript">
+function pasteCode1667(code) {
+    var myProject = external.Project;
+
+    myProject.selectView('source');
+    myProject.pasteCode('standard inserting rule');
+}
+</script>
+<a href="javascript:pasteCode1667()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
+function pasteCode1668(code) {
+    var myProject = external.Project;
+
+    myProject.selectView('source');
+    myProject.pasteCode('The standard inserting rule is not listed in the carry out inserting it into rulebook.[=0x000A=]');
+}
+</script>
+<a href="javascript:pasteCode1668()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i></p>
+<br><p class="hangingin2">report&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor inserting something into</i>&nbsp;&nbsp;<font color="#800000">concise report inserting rule</font>&nbsp;&nbsp;<script language="JavaScript">
+function pasteCode1669(code) {
+    var myProject = external.Project;
+
+    myProject.selectView('source');
+    myProject.pasteCode('concise report inserting rule');
+}
+</script>
+<a href="javascript:pasteCode1669()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
+function pasteCode1670(code) {
+    var myProject = external.Project;
+
+    myProject.selectView('source');
+    myProject.pasteCode('The concise report inserting rule is not listed in the report inserting it into rulebook.[=0x000A=]');
+}
+</script>
+<a href="javascript:pasteCode1670()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i></p>
+<p class="hangingin2">report&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor inserting something into</i>&nbsp;&nbsp;<font color="#800000">standard report inserting rule</font>&nbsp;&nbsp;<script language="JavaScript">
+function pasteCode1671(code) {
+    var myProject = external.Project;
+
+    myProject.selectView('source');
+    myProject.pasteCode('standard report inserting rule');
+}
+</script>
+<a href="javascript:pasteCode1671()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
+function pasteCode1672(code) {
+    var myProject = external.Project;
+
+    myProject.selectView('source');
+    myProject.pasteCode('The standard report inserting rule is not listed in the report inserting it into rulebook.[=0x000A=]');
+}
+</script>
+<a href="javascript:pasteCode1672()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i></p>
 <br><p>
 <!--CONTENT ENDS-->
 </font></body></html>

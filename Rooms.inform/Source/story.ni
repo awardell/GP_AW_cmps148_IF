@@ -1,12 +1,12 @@
-"Rooms" by Gerardo Perez
+"Dr. Redrum's Cuckoo Mansion of Despair" by Gerardo Perez and Adam Wardell
 
 Use no scoring.
 
 A person can be free or locked-in.
 The player is locked-in.
-The player is in the guest room.
+The player is in the kitchen-dining.
 Trapped is a scene. Trapped begins when the player is locked-in. [after owner stops talking to you].
-
+A window is a kind of door. A window is usually locked. A window is usually closed.
 When Trapped begins:
 	say "Suddenly, all of the windows are slammed shut and barricaded.[line break]You hear a click on the front door.[line break] As you stand there, trying to collect yourself, another loud bang shakes you up. Someone or something is coming upstairs. Something big.";
 [Lock all doors to living room or lock just the front door, start beast movement algorithmn]
@@ -28,22 +28,20 @@ A painting of a bee is in the living room. The description of the painting of a 
 Instead of inserting something into the fireplace:
 	say "Perhaps you shouldn't.";
 
-The Basement is a room. "[if the player is in The Basement for the first time]A huge basement that gives off some bad vibes and a sickly smell. It seems like the most unlikely escape from this prison, but there must be some clues around. The first thing you notice is large steel cage, its door swong wide open. [end if]The cage rests in a corner. You can also see a damaged old painting on the wall, some old boxes from which a hint of moonlight seems to be peering in, and a table with various medical utilities."
-
-[There is a box in the basement. The box is pushable. The initial appearance is "A box rests in the corner."]
+The Basement is a room. "[if the player is in The Basement for the first time]A huge basement that gives off some bad vibes and a sickly smell. It seems like the most unlikely escape from this prison, but there must be some clues around. The first thing you notice is large steel cage, its door swong wide open. [end if]The cage rests in a corner. You can also see a damaged old painting on the wall and a table with various medical utilities."
 The cage is scenery in the basement. The description of the cage is "This is surely where that monster is kept. The bars of the cage seem to be heavily reinforced, yet somehow damaged. The cage's opening doesn't seem to use a traditional lock. It looks electronic, but there is no way to input a combination."
 The cage lock is part of the cage. The description of the cage lock is "A steel black box. Must be controlled remotely."
 A scenic painting is in the basement. The description of the scenic painting is "A painting of the deep blue sea melding with a beautiful red sunset."
+[Cellar door: "Escape is close. You can feel the fresh cool wind blowing in. However, there is a sturdy lock preventing you from opening the door."] 
+[after taking painting say "When picking up the painting you notice some text written on the back."]
+[The back of the painting is part of the painting.]
 
+[Note in the world index that rooms  are automatically assigned a floor if they are have a connection to one of these two rooms]
 The First Floor Corridor is a room. The basement stairs are an open unopenable door. The initial appearance is "You can see the basement stairs here." The basement stairs are below the first floor corridor and above the basement.
 
 The Second Floor Corridor is a room. The upper stairs are an open unopenable door. The initial appearance is "You can see the second floor stairs here." The upper stairs are above the first floor corridor and below the second floor corridor.
 
 [temp]The first floor corridor is south of the living room.
-[psuedocode Instead of pushing boxes away say "You push the boxes away, revealing a path leading to the cellar door"]
-[Cellar door: "Escape is close. You can feel the fresh cool wind blowing in. However, there is a sturdy lock preventing you from opening the door."] 
-[after taking painting say "When picking up the painting you notice some text written on the back."]
-[The back of the painting is part of the painting. The description is "Written on the painting is 'To my cherished comrade, {}. Please keep this close to our mutual friend, as he adores this color'."]
 
 The Study is a room. "You can tell the Doctor spends much of his time here. There are two bookshelves, a small desk covered with neat piles of papers, and a chair. You can also see a cabinet with glass doors. [if the cabinet contains a yellow gem]Something is faintly reflecting light in there.[end if]".
 [temp]The study is south of the basement. 
@@ -58,7 +56,6 @@ Understand "read [journal]" as examining.
 Before examining the journal:
 	if the player is not carrying the journal:
 		try taking the journal;
-
 
 The Armory is a room. "This room is lined with gun racks. Too bad they're all empty, as if the place had been robbed. There is also a locker to the left of the room and lots of ammo boxes strewn around."
 There are ammo boxes in the armory. The description of the ammo boxes is "The only kinds I can find are shotgun and rifle ammo."
@@ -90,7 +87,7 @@ The Guest Room is a room. "This room looks like it has never been used. There ar
 The dresser is scenery in the guest room. The dresser is a closed, openable container. 
 The dresser contains an envelope. The envelope is a closed openable container. 
 Instead of examining the envelope when the envelope is closed, say "It is sealed. There is nothing written on it."
-After opening the envelope for the first time, say "What you find inside diminishes your hopes of escaping. There are several idenfification cards of people from different states. They must have been lured in by this maniac and fed to that beast. This is probably his way of keeping accolades."
+After opening the envelope for the first time, say "What you find inside diminishes your hopes of escaping. There are several idenfification cards of people from all over the country. They must have been lured in by this maniac and fed to that beast. This is probably his way of keeping accolades."
 Mary's ID is in the envelope. The description is "Mary Schweller[line break]Date of Birth: 02-24-1953."
 Frank's ID is in the envelope. The description is "Frank Zappa[line break]Date of Birth: 12-21-1940."
 Jonathan's ID is in the envelope. The description is "Jonathan Maxwell[line break]Date of Birth: 08-12-1948."
@@ -100,18 +97,47 @@ The blue gem is a gem. The blue gem is in the dresser.
 The cobwebs are scenery in the guest room.
 There is a framed print in the guest room. The description is "[italic type]'Mi casa es su casa.'[roman type]".
 
-The Kitchen is a room. 
-[has alt. entry to control room]
+The Kitchen-Dining is a room. "A large kitchen and dining combination room. There is a fine stone-top counter separating the kitchen from the rest of the room. There are some dish cabinets with nothing but kitchen utensils inside."The printed name is "Kitchen & Dining Room".
+The dining table is scenery in the kitchen-dining. The dining table is a supporter.
+The stove is scenery in the kitchen-dining. 
+The dish cabinets are scenery in the kitchen-dining. The dish cabinets are transparent, closed, openable containers.  
+There are kitchen utensils in the dish cabinets. There are dishes in the dish cabinets.
+The kitchen counter is scenery in the kitchen-dining. The description is "What a nice polish."
+There is fake fruit on the dining table. The description of the fake fruit is "It's plastic fruit. An unreasonable rage fills your body."
+The regrigerator is scenery. The regrigerator is a closed openable container.
+Instead of taking the kitchen utensils, say "It would be better to leave these here."
+Instead of taking the dishes, say "It would be better to leave these here."
+
+[The Food Store Room should not be placed randomly. It uses northeast in order to not conflict with room placement algorithmn]
+A box is a kind of container. A box can be in-place or dislocated.
+The Food Store Room is northeast of the kitchen-dining. "There is a rack that holds unperishable food."
+There are food boxes in the food store room. Food boxes are a box. The food boxes are in-place. The initial appearance is "At the end of the room are a few boxes." The description of the boxes is "These boxes hold nothing of interest."
+Understand "box" as boxes.
+Instead of examining or opening the food boxes when the boxes are in-place:
+	say "They contain more food stuff. As you frustratedly rattle the box flaps, you notice something about the wall. From this close range, you can see hinges peering out from behind the boxes. [line break]You push the boxes aside.";
+	now the food boxes are dislocated;
+	now the secret passage is described;
+
+The secret passage is a door. The secret passage is east of the food store room and southwest of the Control Room. The secret passage is undescribed.  The description of the secret passage is "The door is painted the same color as the walls. The passage seems big enough for a single person to crawl through."
+Before going through the secret passage:
+	say "You manuever yourself through the dusty two-way path. It takes you a few minutes to reach the other room."; [maybe change message if rooms are on different floors]
+
+[The Control Room should be locked]
+The Control Room is a room.  "This room is locked from the outside. The doctor must have his reasons for keeping it secret."
+There is a big machine in the control room. The initial appearance is "A large electronic machine fills up most of the room." The description is "The only button that you can recognize is the power button. Most of the others are marked with codes like 'NR-3'. You can also see a lever on the machine."
+The lever is part of the big machine. The description is "It is marked 'Emergency Lock-Down'". 
+The card slot is part of the big machine. 
+Instead of pressing the power button:
+	try turning on the machine;
+["It won't budge"]
+[Have a switch that unbarricades windows and unlocks front door. Requires a key or something.]
+
 Room X is a room.
 [has black gem]
 Room Y is a room.
-[some picture of guys friend]
+[some more story background]
 
-[This room should be locked]
-The Control Room is a room. 
-[Have a switch that unbarricades windows and unlocks front door. Requires a key or something.]
-
-[-------------Actions----------------]
+[-------------General Actions----------------]
 Understand the command "break" as something new.
 Breaking is an action applying to one thing.  Understand "break [something]" as breaking.
 
@@ -146,9 +172,9 @@ Carry out gem-inserting:
 	otherwise:
 		say "Nothing happened.";
 Report gem-inserting:
-		say "You insert [the noun] into [the second noun]. It fits perfectly.";
-		if there is a key on the statue's hands: [probably can be abused, but whos going to try?]
-			say "The statue drops a key into its  hands.";
+	say "You insert [the noun] into [the second noun]. It fits perfectly.";
+	if there is a key on the statue's hands: [probably can be abused, but whos going to try?]
+		say "The statue drops a key into its hands.";
 
 Instead of taking a gem that is part of something (called the holder):
 	say "You remove [the noun] from [the holder].";
@@ -159,6 +185,7 @@ Instead of inserting something into the statue:
 	try gem-inserting the noun in the chest instead.
 Instead of inserting something into the mirror:
 	try gem-inserting the noun in the mirror instead.
+
 
 [Some Game Rules:
 One shot severely wounds the beast, and promptly after it moves to another room. Two shots kills it.

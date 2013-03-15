@@ -208,83 +208,17 @@ It is very simple in operation (the entire carry out stage consists only of
 'now the actor carries the noun') but many checks must be performed before it
 can be allowed to happen.<p><hr><p><b>Typed commands leading to this action</b><p>
 <p class="hangingin2">&quot;take [things]&quot;</p><p class="hangingin2">&quot;get [things]&quot;</p><p class="hangingin2">&quot;pick up [things]&quot;</p><p class="hangingin2">&quot;pick [things] up&quot;</p><p><b>Rules controlling this action</b><p>
-<p class="hangingin2">before&nbsp;&nbsp;&nbsp;&nbsp;<i>taking the small pistol for the first time</i>&nbsp;&nbsp;&nbsp;<a href="source:story.ni#line68"><img border=0 src=inform:/Reveal.png></a></p>
-<p class="hangingin2">before&nbsp;&nbsp;&nbsp;&nbsp;<i>taking ammo</i>&nbsp;&nbsp;&nbsp;<a href="source:story.ni#line70"><img border=0 src=inform:/Reveal.png></a></p>
-<br><p class="hangingin2">instead of&nbsp;&nbsp;&nbsp;&nbsp;<i>taking a gem that is part of something (called the holder)</i>&nbsp;&nbsp;&nbsp;<a href="source:story.ni#line153"><img border=0 src=inform:/Reveal.png></a></p>
+<p class="hangingin2">before&nbsp;&nbsp;&nbsp;&nbsp;<i>taking the small pistol for the first time</i>&nbsp;&nbsp;&nbsp;<a href="source:story.ni#line65"><img border=0 src=inform:/Reveal.png></a></p>
+<p class="hangingin2">before&nbsp;&nbsp;&nbsp;&nbsp;<i>taking ammo</i>&nbsp;&nbsp;&nbsp;<a href="source:story.ni#line67"><img border=0 src=inform:/Reveal.png></a></p>
+<br><p class="hangingin2">instead of&nbsp;&nbsp;&nbsp;&nbsp;<i>taking the kitchen utensils</i>&nbsp;&nbsp;&nbsp;<a href="source:story.ni#line108"><img border=0 src=inform:/Reveal.png></a></p>
+<p class="hangingin2">instead of&nbsp;&nbsp;&nbsp;&nbsp;<i>taking the dishes</i>&nbsp;&nbsp;&nbsp;<a href="source:story.ni#line109"><img border=0 src=inform:/Reveal.png></a></p>
+<p class="hangingin2">instead of&nbsp;&nbsp;&nbsp;&nbsp;<i>taking a gem that is part of something (called the holder)</i>&nbsp;&nbsp;&nbsp;<a href="source:story.ni#line177"><img border=0 src=inform:/Reveal.png></a></p>
 <br><p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor taking</i>&nbsp;&nbsp;<font color="#800000">can't take yourself rule</font>&nbsp;&nbsp;<script language="JavaScript">
-function pasteCode1575(code) {
-    var myProject = external.Project;
-
-    myProject.selectView('source');
-    myProject.pasteCode('can[=0x0027=]t take yourself rule');
-}
-</script>
-<a href="javascript:pasteCode1575()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
-function pasteCode1576(code) {
-    var myProject = external.Project;
-
-    myProject.selectView('source');
-    myProject.pasteCode('The can[=0x0027=]t take yourself rule is not listed in the check taking rulebook.[=0x000A=]');
-}
-</script>
-<a href="javascript:pasteCode1576()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i></p>
-<p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor taking</i>&nbsp;&nbsp;<font color="#800000">can't take other people rule</font>&nbsp;&nbsp;<script language="JavaScript">
-function pasteCode1577(code) {
-    var myProject = external.Project;
-
-    myProject.selectView('source');
-    myProject.pasteCode('can[=0x0027=]t take other people rule');
-}
-</script>
-<a href="javascript:pasteCode1577()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
-function pasteCode1578(code) {
-    var myProject = external.Project;
-
-    myProject.selectView('source');
-    myProject.pasteCode('The can[=0x0027=]t take other people rule is not listed in the check taking rulebook.[=0x000A=]');
-}
-</script>
-<a href="javascript:pasteCode1578()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i></p>
-<p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor taking</i>&nbsp;&nbsp;<font color="#800000">can't take component parts rule</font>&nbsp;&nbsp;<script language="JavaScript">
-function pasteCode1579(code) {
-    var myProject = external.Project;
-
-    myProject.selectView('source');
-    myProject.pasteCode('can[=0x0027=]t take component parts rule');
-}
-</script>
-<a href="javascript:pasteCode1579()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
-function pasteCode1580(code) {
-    var myProject = external.Project;
-
-    myProject.selectView('source');
-    myProject.pasteCode('The can[=0x0027=]t take component parts rule is not listed in the check taking rulebook.[=0x000A=]');
-}
-</script>
-<a href="javascript:pasteCode1580()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i></p>
-<p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor taking</i>&nbsp;&nbsp;<font color="#800000">can't take people's possessions rule</font>&nbsp;&nbsp;<script language="JavaScript">
-function pasteCode1581(code) {
-    var myProject = external.Project;
-
-    myProject.selectView('source');
-    myProject.pasteCode('can[=0x0027=]t take people[=0x0027=]s possessions rule');
-}
-</script>
-<a href="javascript:pasteCode1581()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
-function pasteCode1582(code) {
-    var myProject = external.Project;
-
-    myProject.selectView('source');
-    myProject.pasteCode('The can[=0x0027=]t take people[=0x0027=]s possessions rule is not listed in the check taking rulebook.[=0x000A=]');
-}
-</script>
-<a href="javascript:pasteCode1582()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i></p>
-<p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor taking</i>&nbsp;&nbsp;<font color="#800000">can't take items out of play rule</font>&nbsp;&nbsp;<script language="JavaScript">
 function pasteCode1583(code) {
     var myProject = external.Project;
 
     myProject.selectView('source');
-    myProject.pasteCode('can[=0x0027=]t take items out of play rule');
+    myProject.pasteCode('can[=0x0027=]t take yourself rule');
 }
 </script>
 <a href="javascript:pasteCode1583()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
@@ -292,16 +226,16 @@ function pasteCode1584(code) {
     var myProject = external.Project;
 
     myProject.selectView('source');
-    myProject.pasteCode('The can[=0x0027=]t take items out of play rule is not listed in the check taking rulebook.[=0x000A=]');
+    myProject.pasteCode('The can[=0x0027=]t take yourself rule is not listed in the check taking rulebook.[=0x000A=]');
 }
 </script>
 <a href="javascript:pasteCode1584()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i></p>
-<p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor taking</i>&nbsp;&nbsp;<font color="#800000">can't take what you're inside rule</font>&nbsp;&nbsp;<script language="JavaScript">
+<p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor taking</i>&nbsp;&nbsp;<font color="#800000">can't take other people rule</font>&nbsp;&nbsp;<script language="JavaScript">
 function pasteCode1585(code) {
     var myProject = external.Project;
 
     myProject.selectView('source');
-    myProject.pasteCode('can[=0x0027=]t take what you[=0x0027=]re inside rule');
+    myProject.pasteCode('can[=0x0027=]t take other people rule');
 }
 </script>
 <a href="javascript:pasteCode1585()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
@@ -309,16 +243,16 @@ function pasteCode1586(code) {
     var myProject = external.Project;
 
     myProject.selectView('source');
-    myProject.pasteCode('The can[=0x0027=]t take what you[=0x0027=]re inside rule is not listed in the check taking rulebook.[=0x000A=]');
+    myProject.pasteCode('The can[=0x0027=]t take other people rule is not listed in the check taking rulebook.[=0x000A=]');
 }
 </script>
 <a href="javascript:pasteCode1586()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i></p>
-<p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor taking</i>&nbsp;&nbsp;<font color="#800000">can't take what's already taken rule</font>&nbsp;&nbsp;<script language="JavaScript">
+<p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor taking</i>&nbsp;&nbsp;<font color="#800000">can't take component parts rule</font>&nbsp;&nbsp;<script language="JavaScript">
 function pasteCode1587(code) {
     var myProject = external.Project;
 
     myProject.selectView('source');
-    myProject.pasteCode('can[=0x0027=]t take what[=0x0027=]s already taken rule');
+    myProject.pasteCode('can[=0x0027=]t take component parts rule');
 }
 </script>
 <a href="javascript:pasteCode1587()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
@@ -326,16 +260,16 @@ function pasteCode1588(code) {
     var myProject = external.Project;
 
     myProject.selectView('source');
-    myProject.pasteCode('The can[=0x0027=]t take what[=0x0027=]s already taken rule is not listed in the check taking rulebook.[=0x000A=]');
+    myProject.pasteCode('The can[=0x0027=]t take component parts rule is not listed in the check taking rulebook.[=0x000A=]');
 }
 </script>
 <a href="javascript:pasteCode1588()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i></p>
-<p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor taking</i>&nbsp;&nbsp;<font color="#800000">can't take scenery rule</font>&nbsp;&nbsp;<script language="JavaScript">
+<p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor taking</i>&nbsp;&nbsp;<font color="#800000">can't take people's possessions rule</font>&nbsp;&nbsp;<script language="JavaScript">
 function pasteCode1589(code) {
     var myProject = external.Project;
 
     myProject.selectView('source');
-    myProject.pasteCode('can[=0x0027=]t take scenery rule');
+    myProject.pasteCode('can[=0x0027=]t take people[=0x0027=]s possessions rule');
 }
 </script>
 <a href="javascript:pasteCode1589()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
@@ -343,16 +277,16 @@ function pasteCode1590(code) {
     var myProject = external.Project;
 
     myProject.selectView('source');
-    myProject.pasteCode('The can[=0x0027=]t take scenery rule is not listed in the check taking rulebook.[=0x000A=]');
+    myProject.pasteCode('The can[=0x0027=]t take people[=0x0027=]s possessions rule is not listed in the check taking rulebook.[=0x000A=]');
 }
 </script>
 <a href="javascript:pasteCode1590()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i></p>
-<p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor taking</i>&nbsp;&nbsp;<font color="#800000">can only take things rule</font>&nbsp;&nbsp;<script language="JavaScript">
+<p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor taking</i>&nbsp;&nbsp;<font color="#800000">can't take items out of play rule</font>&nbsp;&nbsp;<script language="JavaScript">
 function pasteCode1591(code) {
     var myProject = external.Project;
 
     myProject.selectView('source');
-    myProject.pasteCode('can only take things rule');
+    myProject.pasteCode('can[=0x0027=]t take items out of play rule');
 }
 </script>
 <a href="javascript:pasteCode1591()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
@@ -360,16 +294,16 @@ function pasteCode1592(code) {
     var myProject = external.Project;
 
     myProject.selectView('source');
-    myProject.pasteCode('The can only take things rule is not listed in the check taking rulebook.[=0x000A=]');
+    myProject.pasteCode('The can[=0x0027=]t take items out of play rule is not listed in the check taking rulebook.[=0x000A=]');
 }
 </script>
 <a href="javascript:pasteCode1592()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i></p>
-<p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor taking</i>&nbsp;&nbsp;<font color="#800000">can't take what's fixed in place rule</font>&nbsp;&nbsp;<script language="JavaScript">
+<p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor taking</i>&nbsp;&nbsp;<font color="#800000">can't take what you're inside rule</font>&nbsp;&nbsp;<script language="JavaScript">
 function pasteCode1593(code) {
     var myProject = external.Project;
 
     myProject.selectView('source');
-    myProject.pasteCode('can[=0x0027=]t take what[=0x0027=]s fixed in place rule');
+    myProject.pasteCode('can[=0x0027=]t take what you[=0x0027=]re inside rule');
 }
 </script>
 <a href="javascript:pasteCode1593()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
@@ -377,16 +311,16 @@ function pasteCode1594(code) {
     var myProject = external.Project;
 
     myProject.selectView('source');
-    myProject.pasteCode('The can[=0x0027=]t take what[=0x0027=]s fixed in place rule is not listed in the check taking rulebook.[=0x000A=]');
+    myProject.pasteCode('The can[=0x0027=]t take what you[=0x0027=]re inside rule is not listed in the check taking rulebook.[=0x000A=]');
 }
 </script>
 <a href="javascript:pasteCode1594()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i></p>
-<p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor taking</i>&nbsp;&nbsp;<font color="#800000">use player's holdall to avoid exceeding carrying capacity rule</font>&nbsp;&nbsp;<script language="JavaScript">
+<p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor taking</i>&nbsp;&nbsp;<font color="#800000">can't take what's already taken rule</font>&nbsp;&nbsp;<script language="JavaScript">
 function pasteCode1595(code) {
     var myProject = external.Project;
 
     myProject.selectView('source');
-    myProject.pasteCode('use player[=0x0027=]s holdall to avoid exceeding carrying capacity rule');
+    myProject.pasteCode('can[=0x0027=]t take what[=0x0027=]s already taken rule');
 }
 </script>
 <a href="javascript:pasteCode1595()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
@@ -394,16 +328,16 @@ function pasteCode1596(code) {
     var myProject = external.Project;
 
     myProject.selectView('source');
-    myProject.pasteCode('The use player[=0x0027=]s holdall to avoid exceeding carrying capacity rule is not listed in the check taking rulebook.[=0x000A=]');
+    myProject.pasteCode('The can[=0x0027=]t take what[=0x0027=]s already taken rule is not listed in the check taking rulebook.[=0x000A=]');
 }
 </script>
 <a href="javascript:pasteCode1596()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i></p>
-<p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor taking</i>&nbsp;&nbsp;<font color="#800000">can't exceed carrying capacity rule</font>&nbsp;&nbsp;<script language="JavaScript">
+<p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor taking</i>&nbsp;&nbsp;<font color="#800000">can't take scenery rule</font>&nbsp;&nbsp;<script language="JavaScript">
 function pasteCode1597(code) {
     var myProject = external.Project;
 
     myProject.selectView('source');
-    myProject.pasteCode('can[=0x0027=]t exceed carrying capacity rule');
+    myProject.pasteCode('can[=0x0027=]t take scenery rule');
 }
 </script>
 <a href="javascript:pasteCode1597()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
@@ -411,16 +345,16 @@ function pasteCode1598(code) {
     var myProject = external.Project;
 
     myProject.selectView('source');
-    myProject.pasteCode('The can[=0x0027=]t exceed carrying capacity rule is not listed in the check taking rulebook.[=0x000A=]');
+    myProject.pasteCode('The can[=0x0027=]t take scenery rule is not listed in the check taking rulebook.[=0x000A=]');
 }
 </script>
 <a href="javascript:pasteCode1598()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i></p>
-<br><p class="hangingin2">carry out&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor taking</i>&nbsp;&nbsp;<font color="#800000">standard taking rule</font>&nbsp;&nbsp;<script language="JavaScript">
+<p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor taking</i>&nbsp;&nbsp;<font color="#800000">can only take things rule</font>&nbsp;&nbsp;<script language="JavaScript">
 function pasteCode1599(code) {
     var myProject = external.Project;
 
     myProject.selectView('source');
-    myProject.pasteCode('standard taking rule');
+    myProject.pasteCode('can only take things rule');
 }
 </script>
 <a href="javascript:pasteCode1599()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
@@ -428,16 +362,16 @@ function pasteCode1600(code) {
     var myProject = external.Project;
 
     myProject.selectView('source');
-    myProject.pasteCode('The standard taking rule is not listed in the carry out taking rulebook.[=0x000A=]');
+    myProject.pasteCode('The can only take things rule is not listed in the check taking rulebook.[=0x000A=]');
 }
 </script>
 <a href="javascript:pasteCode1600()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i></p>
-<br><p class="hangingin2">report&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor taking</i>&nbsp;&nbsp;<font color="#800000">standard report taking rule</font>&nbsp;&nbsp;<script language="JavaScript">
+<p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor taking</i>&nbsp;&nbsp;<font color="#800000">can't take what's fixed in place rule</font>&nbsp;&nbsp;<script language="JavaScript">
 function pasteCode1601(code) {
     var myProject = external.Project;
 
     myProject.selectView('source');
-    myProject.pasteCode('standard report taking rule');
+    myProject.pasteCode('can[=0x0027=]t take what[=0x0027=]s fixed in place rule');
 }
 </script>
 <a href="javascript:pasteCode1601()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
@@ -445,10 +379,78 @@ function pasteCode1602(code) {
     var myProject = external.Project;
 
     myProject.selectView('source');
-    myProject.pasteCode('The standard report taking rule is not listed in the report taking rulebook.[=0x000A=]');
+    myProject.pasteCode('The can[=0x0027=]t take what[=0x0027=]s fixed in place rule is not listed in the check taking rulebook.[=0x000A=]');
 }
 </script>
 <a href="javascript:pasteCode1602()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i></p>
+<p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor taking</i>&nbsp;&nbsp;<font color="#800000">use player's holdall to avoid exceeding carrying capacity rule</font>&nbsp;&nbsp;<script language="JavaScript">
+function pasteCode1603(code) {
+    var myProject = external.Project;
+
+    myProject.selectView('source');
+    myProject.pasteCode('use player[=0x0027=]s holdall to avoid exceeding carrying capacity rule');
+}
+</script>
+<a href="javascript:pasteCode1603()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
+function pasteCode1604(code) {
+    var myProject = external.Project;
+
+    myProject.selectView('source');
+    myProject.pasteCode('The use player[=0x0027=]s holdall to avoid exceeding carrying capacity rule is not listed in the check taking rulebook.[=0x000A=]');
+}
+</script>
+<a href="javascript:pasteCode1604()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i></p>
+<p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor taking</i>&nbsp;&nbsp;<font color="#800000">can't exceed carrying capacity rule</font>&nbsp;&nbsp;<script language="JavaScript">
+function pasteCode1605(code) {
+    var myProject = external.Project;
+
+    myProject.selectView('source');
+    myProject.pasteCode('can[=0x0027=]t exceed carrying capacity rule');
+}
+</script>
+<a href="javascript:pasteCode1605()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
+function pasteCode1606(code) {
+    var myProject = external.Project;
+
+    myProject.selectView('source');
+    myProject.pasteCode('The can[=0x0027=]t exceed carrying capacity rule is not listed in the check taking rulebook.[=0x000A=]');
+}
+</script>
+<a href="javascript:pasteCode1606()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i></p>
+<br><p class="hangingin2">carry out&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor taking</i>&nbsp;&nbsp;<font color="#800000">standard taking rule</font>&nbsp;&nbsp;<script language="JavaScript">
+function pasteCode1607(code) {
+    var myProject = external.Project;
+
+    myProject.selectView('source');
+    myProject.pasteCode('standard taking rule');
+}
+</script>
+<a href="javascript:pasteCode1607()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
+function pasteCode1608(code) {
+    var myProject = external.Project;
+
+    myProject.selectView('source');
+    myProject.pasteCode('The standard taking rule is not listed in the carry out taking rulebook.[=0x000A=]');
+}
+</script>
+<a href="javascript:pasteCode1608()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i></p>
+<br><p class="hangingin2">report&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor taking</i>&nbsp;&nbsp;<font color="#800000">standard report taking rule</font>&nbsp;&nbsp;<script language="JavaScript">
+function pasteCode1609(code) {
+    var myProject = external.Project;
+
+    myProject.selectView('source');
+    myProject.pasteCode('standard report taking rule');
+}
+</script>
+<a href="javascript:pasteCode1609()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
+function pasteCode1610(code) {
+    var myProject = external.Project;
+
+    myProject.selectView('source');
+    myProject.pasteCode('The standard report taking rule is not listed in the report taking rulebook.[=0x000A=]');
+}
+</script>
+<a href="javascript:pasteCode1610()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i></p>
 <br><p>
 <!--CONTENT ENDS-->
 </font></body></html>
