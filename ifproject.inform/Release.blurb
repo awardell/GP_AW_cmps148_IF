@@ -10,7 +10,7 @@ release to "C:\Users\Adam\Desktop\CMPS148\IF_Project\GP_AW_cmps148_IF\ifproject 
 
 ! Blorb instructions
 
-storyfile leafname "The Mansion.gblorb"
+storyfile leafname "Dr- Redrum's Cuckoo Mansion of .gblorb"
 storyfile "C:\Users\Adam\Desktop\CMPS148\IF_Project\GP_AW_cmps148_IF\ifproject.inform\Build\output.ulx" include
 ifiction "C:\Users\Adam\Desktop\CMPS148\IF_Project\GP_AW_cmps148_IF\ifproject.inform\Metadata.iFiction" include
 cover "C:\Program Files (x86)\Inform 7\Inform7\Extensions\Reserved\DefaultCover.jpg"
@@ -21,8 +21,8 @@ picture 1 "C:\Program Files (x86)\Inform 7\Inform7\Extensions\Reserved\DefaultCo
 placeholder [IFID] = "18DA3582-B1D4-4A62-8A2E-CB1D2E2C829A"
 placeholder [RELEASE] = "1"
 placeholder [YEAR] = "2013"
-placeholder [TITLE] = "The Mansion"
-placeholder [AUTHOR] = "Adam Wardell and Gerardo Perez"
+placeholder [TITLE] = "Dr. Redrum's Cuckoo Mansion of Despair"
+placeholder [AUTHOR] = "Gerardo Perez and Adam Wardell"
 placeholder [BLURB] = "A work of interactive fiction."
 
 ! Other material to release
