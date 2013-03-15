@@ -5,7 +5,8 @@ Use no scoring.
 A person can be free or locked-in.
 The player is locked-in.
 The player is in the kitchen-dining.
-Trapped is a scene. Trapped begins when the player is locked-in. [after owner stops talking to you].
+Trapped is a scene. Trapped begins when the player is locked-in for the first time. [after owner stops talking to you].
+Trapped ends when the player is free for the second time.
 A window is a kind of door. A window is usually locked. A window is usually closed.
 When Trapped begins:
 	say "Suddenly, all of the windows are slammed shut and barricaded.[line break]You hear a click on the front door.[line break] As you stand there, trying to collect yourself, another loud bang shakes you up. Someone or something is coming upstairs. Something big.";
@@ -13,14 +14,16 @@ When Trapped begins:
 
 A thing can be breakable or unbreakable. A thing is usually unbreakable.
 A thing can be broken or unbroken. A thing is usually unbroken. 
+A thing can be heavy or light. A thing is usually light.
 A gem is a kind of thing.
 The black gem is a gem.
-A key is a kind of thing. The purple key is a key.[cellar door key]
-The machinery key is a key. The printed name of the machinery key is "black and yellow key". [control room]
+A key is a kind of thing. The purple key is a key. The description is "A purple key of some sort." [cellar door key]
+The card key is a key. The description is "A black and yellow striped card key. There is no other labeling."[control room machine]
+[Maybe have another key around beasts neck.]
 
 The Living Room is a room. "[if the player is in the living room for the first time]What used to be such a welcoming room is now the last place you want to be in. Your first instinct is to explore the rest of the mansion to try and find a way out, or at least avoid whatever is approaching.[line break][end if]There is a small table in the middle of the room, next to the couch. The fireplace burns."
 The couch is scenery in the living room.
-The living room table is scenery in the living room. The description is "There's nothing on here. It looks like a phone used to be here, because a phone wire dangles nearby."
+The living room table is scenery in the living room. The description is "There's nothing on there, although it looks like a phone was once there, because phone wire dangles nearby."
 The phone wire is scenery in the living room.
 The fireplace is an open container in the living room. The fireplace is scenery.The description is "You peek into the fireplace, but there is nothing of interest."
 A painting of a bee is in the living room. The description of the painting of a bee is "A vividly colored painting of a bumblebee."
@@ -43,8 +46,11 @@ The Second Floor Corridor is a room. The upper stairs are an open unopenable doo
 
 [temp]The first floor corridor is south of the living room.
 
-The Study is a room. "You can tell the Doctor spends much of his time here. There are two bookshelves, a small desk covered with neat piles of papers, and a chair. You can also see a cabinet with glass doors. [if the cabinet contains a yellow gem]Something is faintly reflecting light in there.[end if]".
+The Study is a room. "You can tell the Doctor spends much of his time here. There is a bookshelve, a small desk covered with neat piles of papers, and a chair. You can also see a cabinet with [if the cabinet is broken]broken [end if]glass doors. [if the cabinet contains a yellow gem]Something is faintly reflecting light in there.[end if]".
 [temp]The study is south of the basement. 
+The bookshelf is scenery in the study. The description is "It is full of non-fiction books."
+The books are part of the bookshelf.
+Instead of examining the books, say "There's no time for that."
 The glass cabinet is a locked, openable, breakable , scenery, container in the study. The description of the cabinet is "[if the cabinet is unbroken]There's a  small lock on the cabinet, although the doors seem to be made of fragile glass.[otherwise]'I guess the lock was just for decoration.'"
 There is a gem called the yellow gem in the cabinet. The description of the yellow gem is "A beautiful yellow gem."
 The desk is scenery in the study.  The description of the desk is "Lots of business documents and paperwork. The desk has a drawer."
@@ -108,35 +114,63 @@ The regrigerator is scenery. The regrigerator is a closed openable container.
 Instead of taking the kitchen utensils, say "It would be better to leave these here."
 Instead of taking the dishes, say "It would be better to leave these here."
 
-[The Food Store Room should not be placed randomly. It uses northeast in order to not conflict with room placement algorithmn]
+[The pantry should not be placed randomly. It uses northeast in order to not conflict with room placement algorithmn]
 A box is a kind of container. A box can be in-place or dislocated.
-The Food Store Room is northeast of the kitchen-dining. "There is a rack that holds unperishable food."
-There are food boxes in the food store room. Food boxes are a box. The food boxes are in-place. The initial appearance is "At the end of the room are a few boxes." The description of the boxes is "These boxes hold nothing of interest."
+The Pantry is northeast of the kitchen-dining. "A pantry that receives little light. There is a rack that holds unperishable food."
+There are food boxes in the pantry. Food boxes are a box. The food boxes are heavy. The food boxes are in-place. The initial appearance is "At the end of the room are a few large boxes." The description of the boxes is "These boxes hold nothing of interest."
 Understand "box" as boxes.
 Instead of examining or opening the food boxes when the boxes are in-place:
 	say "They contain more food stuff. As you frustratedly rattle the box flaps, you notice something about the wall. From this close range, you can see hinges peering out from behind the boxes. [line break]You push the boxes aside.";
 	now the food boxes are dislocated;
 	now the secret passage is described;
 
-The secret passage is a door. The secret passage is east of the food store room and southwest of the Control Room. The secret passage is undescribed.  The description of the secret passage is "The door is painted the same color as the walls. The passage seems big enough for a single person to crawl through."
+The secret passage is a door. The secret passage is east of the pantry and southwest of the Control Room. The secret passage is undescribed.  The description of the secret passage is "The door is painted the same color as the walls. The passage seems big enough for a single person to crawl through."
 Before going through the secret passage:
 	say "You manuever yourself through the dusty two-way path. It takes you a few minutes to reach the other room."; [maybe change message if rooms are on different floors]
 
 [The Control Room should be locked]
 The Control Room is a room.  "This room is locked from the outside. The doctor must have his reasons for keeping it secret."
-There is a big machine in the control room. The initial appearance is "A large electronic machine fills up most of the room." The description is "The only button that you can recognize is the power button. Most of the others are marked with codes like 'NR-3'. You can also see a lever on the machine."
-The lever is part of the big machine. The description is "It is marked 'Emergency Lock-Down'". 
-The card slot is part of the big machine. 
-Instead of pressing the power button:
-	try turning on the machine;
-["It won't budge"]
-[Have a switch that unbarricades windows and unlocks front door. Requires a key or something.]
+There is a big machine in the control room. The initial appearance is "A large electronic machine fills up most of the room." The description is "The only button that you can recognize is the power button. Most of the others are marked with codes like 'NR-3'. You can also see a lever on the machine." The big can be on or off. The big machine is off. 
+The lever is part of the big machine. The description is "It's marked 'Emergency Lockdown'. Right now it's in the [if the lever is pushed up]on position (up)[otherwise]off position (down).". The lever can be pushed up or pulled down. It is pushed up.  
+The big machine can be locked or unlocked. The big machine is locked.
+The power button is part of the big machine. The description is "A big red button."
+The card slot is part of the big machine. The description is "A slot for a card key."
 
-Room X is a room.
-[has black gem]
-Room Y is a room.
+Instead of pulling the lever:
+	if the lever is pushed up and the machine is off:
+		say "The machine should be turned on first.";
+		stop the action;
+	if the lever is pushed up and the machine is on and the machine is locked:
+		say "It won't budge. You take note of the card slot on the machine.";
+		stop the action;
+	otherwise:
+		say "You hear a loud slamming all around you. Great joy fills you, and you run to the front door.";
+		now the player is free;
+
+Instead of inserting something into the card slot:
+	if the noun is not the card key:
+		say "That won't do.";
+		stop the action;
+	now the machine is unlocked;
+	now the card key is part of the card slot;
+	say "You get a beep signifying success.";
+	
+Instead of taking a card key that is part of something (called the holder):
+	say "You remove [the noun] from [the holder].";
+	now the player carries the noun;
+
+The Den is a room.  "There is a mount of a bear's head on the wall. Beside."
+The bear head is in the den. It is fixed in place. The bear head has a number called capacity. The capacity of the bear head is 1. The initial appearance is "There is a a mount of a bear head on the wall." The description is "So this guy's a hunter.[if the player has been in the armory]That explains all the guns.[end if]Instead of a real nose, the bear has a black gem on there."
+The black gem is part of the bear head.
+
+Understand "mount" as bear head.
+The den's couch is scenery in the den. 
+
+Bedroom A is a room.
 [some more story background]
 
+Bedroom B is a room. "It looks like this room was never set up.  There is no furniture, just bare, empty walls."
+The walls are scenery in Bedroom B. The description is "Tell me your secrets, wall."
 [-------------General Actions----------------]
 Understand the command "break" as something new.
 Breaking is an action applying to one thing.  Understand "break [something]" as breaking.
@@ -163,14 +197,16 @@ Check gem-inserting:
 	if the number of things that are part of the second noun is the capacity of the second noun:
 		say "There's already [capacity of the second noun] gems here. Try taking back one of them.";
 		stop the action;
+
 Carry out gem-inserting:
 	now the noun is part of the second noun;
 	if the blue gem is part of the second noun and the red gem is part of the second noun and the purple key is off-stage:
 		try putting the purple key on the statue's hands;
-	if the black gem is part of the second noun and the red gem is part of the second noun and the machinery key is off-stage:
-		try putting the machinery key on the statue's hands;
+	if the black gem is part of the second noun and the red gem is part of the second noun and the card key is off-stage:
+		try putting the card key on the statue's hands;
 	otherwise:
 		say "Nothing happened.";
+
 Report gem-inserting:
 	say "You insert [the noun] into [the second noun]. It fits perfectly.";
 	if there is a key on the statue's hands: [probably can be abused, but whos going to try?]
@@ -185,7 +221,46 @@ Instead of inserting something into the statue:
 	try gem-inserting the noun in the chest instead.
 Instead of inserting something into the mirror:
 	try gem-inserting the noun in the mirror instead.
+	
 
+Understand the command "press" as something new.
+Pressing is an action applying to one thing. Understand "press [something]" as pressing.
+
+Instead of pushing the button:
+	try pressing the button;
+
+Instead of switching on the machine:
+	if the machine is on:
+		say "It's already on.";
+		stop the action;
+	try pressing the power button;
+
+Instead of switching off the machine:
+	if the machine is off:
+		say "It's already off.";
+		stop the action;
+	try pressing the power button;
+
+Check pressing:
+	if the noun is the machine:
+		try pressing the power button;
+		stop the action;
+	if the noun is not the power button:
+		say  "Nothing happens.";
+		stop the action;
+
+Carry out pressing:
+	if the machine is off:
+		now the machine is on;
+	otherwise if the machine is on:
+		now the machine is off;
+Report pressing:
+	if the machine is on:
+		say "The machine turns on.";
+	if the machine is off:
+		say "The machine turns off.";
+
+Instead of taking something heavy, say "That's too heavy for you to carry."
 
 [Some Game Rules:
 One shot severely wounds the beast, and promptly after it moves to another room. Two shots kills it.
@@ -196,7 +271,7 @@ One shot severely wounds the beast, and promptly after it moves to another room.
 [if running away for first time, jump player to a random room]
 [maybe the player can hide under stuff in certain rooms]
 [have a point in story where player finds out who person in statue is, affecting the description (5.5)]
-
+[]
 [
 Some Alerts:
 If manDist == 1 && onSameFloor 
