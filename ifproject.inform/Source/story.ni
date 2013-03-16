@@ -1,6 +1,13 @@
 "Dr. Redrum's Cuckoo Mansion of Despair" by Gerardo Perez and Adam Wardell
 
 Use no scoring.
+Use slow route-finding.
+
+A person can be alive or dead.
+A person is usually alive.
+
+A room can be counted or uncounted.
+A room is usually uncounted.
 
 A person can be free or locked-in.
 The player is free.
@@ -59,16 +66,15 @@ The Second Floor Corridor is a room. The upper stairs are an open unopenable doo
 
 [The first floor corridor is south of the living room. (removed)]
 
-The Study is a room. "You can tell the Doctor spends much of his time here. There is a bookshelve, a small desk covered with neat piles of papers, and a chair. You can also see a cabinet with [if the cabinet is broken]broken [end if]glass doors. [if the cabinet contains a yellow gem]Something is faintly reflecting light in there.[end if]".
-[temp]The study is south of the basement. 
+The Study is a room. "You can tell the Doctor spends much of his time here. There is a bookshelf, a small desk covered with neat piles of papers, and a chair. You can also see a cabinet with [if the cabinet is broken]broken [end if]glass doors. [if the cabinet contains a yellow gem]Something is faintly reflecting light in there.[end if]".
+[[temp]The study is south of the basement. ]
 The bookshelf is scenery in the study. The description is "It is full of non-fiction books."
 The books are part of the bookshelf.
 Instead of examining the books, say "There's no time for that."
-The glass cabinet is a locked, openable, breakable , scenery, container in the study. The description of the cabinet is "[if the cabinet is unbroken]There's a  small lock on the cabinet, although the doors seem to be made of fragile glass.[otherwise]'I guess the lock was just for decoration.'"
+The glass cabinet is a locked, openable, breakable , scenery, container in the study. The description of the cabinet is "[if the cabinet is unbroken]There's a  small lock on the cabinet, although the doors seem to be made of fragile glass.[otherwise]The lock must have been for decoration."
 There is a gem called the yellow gem in the cabinet. The description of the yellow gem is "A beautiful yellow gem."
 The desk is scenery in the study.  The description of the desk is "Lots of business documents and paperwork. The desk has a drawer."
 The drawer is part of the desk. The drawer is a closed openable container. 
-The black key is in the drawer.
 A journal is in the drawer. The description of the journal is "Words words words."
 
 Understand "read [journal]" as examining.
@@ -93,7 +99,7 @@ The statue is in the master bedroom. The description of the statue is "A life-si
 The statue's chest is part of the statue. The statue's chest has a number called capacity. The capacity of the chest is 2. The description of the statue's chest is "[if the number of things that are part of the  statue's chest is 0]On its right chest are two octogonal shaped indentations that look like they might have held something.[otherwise]Right now it holds: [list of things that are part of the statue's chest][end if]." 
 The statue's hands are a supporter. The hands are part of the statue.
 
-[temp]the master bedroom is south of the study.
+[[temp]the master bedroom is south of the study.]
 
 Bathroom One is a room.  "A standard bathroom with a shower, toilet and sink. There is a large mirror with a fancy border near the sink." 
 The toilet is scenery in bathroom one. The sink is scenery in bathroom one.
@@ -116,12 +122,12 @@ The blue gem is a gem. The blue gem is in the dresser.
 The cobwebs are scenery in the guest room.
 There is a framed print in the guest room. The description is "[italic type]'Mi casa es su casa.'[roman type]".
 
-The Kitchen-Dining is a room. "A large kitchen and dining combination room. There is a fine stone-top counter separating the kitchen from the rest of the room. There are some dish cabinets with nothing but kitchen utensils inside."The printed name is "Kitchen & Dining Room".
-The dining table is scenery in the kitchen-dining. The dining table is a supporter.
-The stove is scenery in the kitchen-dining. 
-The dish cabinets are scenery in the kitchen-dining. The dish cabinets are transparent, closed, openable containers.  
+The kitchen is a room. "A large kitchen and dining combination room. There is a fine stone-top counter separating the kitchen from the rest of the room. There are some dish cabinets with nothing but kitchen utensils inside."The printed name is "Kitchen & Dining Room". Understand "dining room" as the kitchen.
+The dining table is scenery in the kitchen. The dining table is a supporter.
+The stove is scenery in the kitchen. 
+The dish cabinets are scenery in the kitchen. The dish cabinets are transparent, closed, openable containers.  
 There are kitchen utensils in the dish cabinets. There are dishes in the dish cabinets.
-The kitchen counter is scenery in the kitchen-dining. The description is "What a nice polish."
+The kitchen counter is scenery in the kitchen. The description is "What a nice polish."
 There is fake fruit on the dining table. The description of the fake fruit is "It's plastic fruit. An unreasonable rage fills your body."
 The regrigerator is scenery. The regrigerator is a closed openable container.
 Instead of taking the kitchen utensils, say "It would be better to leave these here."
@@ -129,7 +135,7 @@ Instead of taking the dishes, say "It would be better to leave these here."
 
 [The pantry should not be placed randomly. It uses northeast in order to not conflict with room placement algorithmn]
 A box is a kind of container. A box can be in-place or dislocated.
-The Pantry is northeast of the kitchen-dining. "A pantry that receives little light. There is a rack that holds unperishable food."
+The Pantry is northeast of the kitchen. "A pantry that receives little light. There is a rack that holds unperishable food."
 There are food boxes in the pantry. Food boxes are a box. The food boxes are heavy. The food boxes are in-place. The initial appearance is "At the end of the room are a few large boxes." The description of the boxes is "These boxes hold nothing of interest."
 Understand "box" as boxes.
 Instead of examining or opening the food boxes when the boxes are in-place:
@@ -172,10 +178,10 @@ Instead of taking a card key that is part of something (called the holder):
 	say "You remove [the noun] from [the holder].";
 	now the player carries the noun;
 
-The Den is a room.  "There is a mount of a bear's head on the wall. Beside."
-The bear head is in the den. It is fixed in place. The bear head has a number called capacity. The capacity of the bear head is 1. The initial appearance is "There is a a mount of a bear head on the wall." The description is "So this guy's a hunter.[if the player has been in the armory]That explains all the guns.[end if]Instead of a real nose, the bear has a black gem on there."
+The Den is a room.  "The den is comfortably furnished."
+The bear head is in the den. It is fixed in place. The bear head has a number called capacity. The capacity of the bear head is 1. The initial appearance is "There is a a mount of a bear head on the wall." The description is "So this man is a hunter. [if the player has been in the armory]That explains all of the guns back there. [end if]The bear looks frightening, but you'd much rather have one of these lurking in the mansion than that monster. [if the black gem is part of the bear head]A black gem serves as a substitute for the bear's nose."
 The black gem is part of the bear head.
-
+Understand "bear nose" as black gem.
 Understand "mount" as bear head.
 The den's couch is scenery in the den. 
 
@@ -189,6 +195,8 @@ The walls are scenery in Bedroom B. The description is "Tell me your secrets, wa
 After examining a container:
 	if the dresser is closed:
 		say "The [noun] is closed."
+[for debugging]
+Teleporting is an action applying to one visible thing. Understand "go to [any room]" as teleporting. Carry out teleporting: move the player to the noun.
 
 [-------------General Actions----------------]
 Understand the command "break" as something new.
@@ -230,8 +238,8 @@ Report gem-inserting:
 	say "You insert [the noun] into [the second noun]. It fits perfectly.";
 	if there is a key on the statue's hands and the second noun is the statue: [probably can be abused, but whos going to try?]
 		say "The statue drops a key into its hands.";
-		otherwise: 
-			say "Nothing else happened."
+	otherwise: 
+		say "Nothing else happened."
 
 Instead of taking a gem that is part of something (called the holder):
 	say "You remove [the noun] from [the holder].";
@@ -285,31 +293,6 @@ Report pressing:
 
 Instead of taking something heavy, say "That's too heavy for you to carry."
 
-[Some Game Rules:
-One shot severely wounds the beast, and promptly after it moves to another room. Two shots kills it.
-[using an action ticks beast algorithm, moving from room to room causes a bigger step]
-
-[Premise, the beast walking around is the man's best friends. He feels the best he could do was at least feed him]
-[The beast is sick and old, and starving, so it is not very agile]
-[if running away for first time, jump player to a random room]
-[maybe the player can hide under stuff in certain rooms]
-[have a point in story where player finds out who person in statue is, affecting the description (5.5)]
-[]
-[
-Some Alerts:
-If manDist == 1 && onSameFloor 
-	if onSameFloor
-	[perhaps should do something to give direction]
-		say "You can hear the beast in one of the rooms next to this one."
-If manDist == 0
-	if beastIsAbove
-		say "You can hear the beast directly above you."
-	if beastIsBelow
-		say "Loud footsteps are audible below you."
-Manhattan Distance:
-|BeastX - PlayerX| + |BeastY - PlayerY|
-]]
-
 The placeholder is a room.
 
 Table 1 - Floor One
@@ -333,7 +316,7 @@ Table 3 - First Floor Available Rooms
 name
 Guest Room
 Bathroom One
-Kitchen-Dining
+kitchen
 Armory
 Den
 Skeletor
@@ -373,7 +356,6 @@ when play begins:
 			now currRoom is name in row currIndex of Table 3;
 			now _1 entry is currRoom;
 			blank out name in row currIndex of Table 3;
-		say "[_1 entry] ";
 		if _2 entry is placeholder:
 			now currIndex is a random number from 1 to the number of rows in Table 3;
 			while there is no name in row currIndex of Table 3:
@@ -381,7 +363,6 @@ when play begins:
 			now currRoom is name in row currIndex of Table 3;
 			now _2 entry is currRoom;
 			blank out name in row currIndex of Table 3;
-		say "[_2 entry] ";
 		if _3 entry is placeholder:
 			now currIndex is a random number from 1 to the number of rows in Table 3;
 			while there is no name in row currIndex of Table 3:
@@ -389,9 +370,6 @@ when play begins:
 			now currRoom is name in row currIndex of Table 3;
 			now _3 entry is currRoom;
 			blank out name in row currIndex of Table 3;
-		say "[_3 entry]";
-		say "[line break]";
-	say "[line break]";
 	repeat through Table 2:
 		if _1 entry is placeholder:
 			now currIndex is a random number from 1 to the number of rows in Table 4;
@@ -400,7 +378,6 @@ when play begins:
 			now currRoom is name in row currIndex of Table 4;
 			now _1 entry is currRoom;
 			blank out name in row currIndex of Table 4;
-		say "[_1 entry] ";
 		if _2 entry is placeholder:
 			now currIndex is a random number from 1 to the number of rows in Table 4;
 			while there is no name in row currIndex of Table 4:
@@ -408,7 +385,6 @@ when play begins:
 			now currRoom is name in row currIndex of Table 4;
 			now _2 entry is currRoom;
 			blank out name in row currIndex of Table 4;
-		say "[_2 entry] ";
 		if _3 entry is placeholder:
 			now currIndex is a random number from 1 to the number of rows in Table 4;
 			while there is no name in row currIndex of Table 4:
@@ -416,163 +392,268 @@ when play begins:
 			now currRoom is name in row currIndex of Table 4;
 			now _3 entry is currRoom;
 			blank out name in row currIndex of Table 4;
-		say "[_3 entry]";
-		say "[line break]";
 	[CONNECT ROOMS, BOTTOM FLOOR]
 	[1,1]
 	now currRoom is _1 in row 1 of table 1;
 	now eastRoom is _2 in row 1 of table 1;
 	now southRoom is _1 in row 2 of table 1;
-	change east exit of currRoom to eastRoom;
-	change south exit of currRoom to southRoom;
+	now eastRoom is mapped east of currRoom;
+	now southRoom is mapped south of currRoom;
 	[1,2]
 	now currRoom is _2 in row 1 of table 1;
 	now westRoom is _1 in row 1 of table 1;
 	now eastRoom is _3 in row 1 of table 1;
 	now southRoom is _2 in row 2 of table 1;
-	change west exit of currRoom to westRoom;
-	change east exit of currRoom to eastRoom;
-	change south exit of currRoom to southRoom;
+	now westRoom is mapped west of currRoom;
+	now eastRoom is mapped east of currRoom;
+	now southRoom is mapped south of currRoom;
 	[1,3]
 	now currRoom is _3 in row 1 of table 1;
 	now westRoom is _2 in row 1 of table 1;
 	now southRoom is _3 in row 2 of table 1;
-	change west exit of currRoom to westRoom;
-	change south exit of currRoom to southRoom;
+	now westRoom is mapped west of currRoom;
+	now southRoom is mapped south of currRoom;
 	[2,1]
 	now currRoom is _1 in row 2 of table 1;
 	now northRoom is _1 in row 1 of table 1;
 	now eastRoom is _2 in row 2 of table 1;
 	now southRoom is _1 in row 3 of table 1;
-	change north exit of currRoom to northRoom;
-	change east exit of currRoom to eastRoom;
-	change south exit of currRoom to southRoom;
+	now northRoom is mapped north of currRoom;
+	now eastRoom is mapped east of currRoom;
+	now southRoom is mapped south of currRoom;
 	[2,2]
 	now currRoom is _2 in row 2 of table 1;
 	now northRoom is _2 in row 1 of table 1;
 	now westRoom is _1 in row 2 of table 1;
-	change north exit of currRoom to northRoom;
-	change west exit of currRoom to westRoom;
+	now northRoom is mapped north of currRoom;
+	now westRoom is mapped west of currRoom;
 	[2,3]
 	now currRoom is _3 in row 2 of table 1;
 	now northRoom is _3 in row 1 of table 1;
 	now southRoom is _3 in row 3 of table 1;
-	change north exit of currRoom to northRoom;
-	change south exit of currRoom to southRoom;
+	now northRoom is mapped north of currRoom;
+	now southRoom is mapped south of currRoom;
 	[3,1]
 	now currRoom is _1 in row 3 of table 1;
 	now northRoom is _1 in row 2 of table 1;
 	now southRoom is _1 in row 4 of table 1;
-	change north exit of currRoom to northRoom;
-	change south exit of currRoom to southRoom;
+	now northRoom is mapped north of currRoom;
+	now southRoom is mapped south of currRoom;
 	[3,2]
 	now currRoom is _2 in row 3 of table 1;
 	now eastRoom is _3 in row 3 of table 1;
 	now southRoom is _2 in row 4 of table 1;
-	change east exit of currRoom to eastRoom;
-	change south exit of currRoom to southRoom;
+	now eastRoom is mapped east of currRoom;
+	now southRoom is mapped south of currRoom;
 	[3,3]
 	now currRoom is _3 in row 3 of table 1;
 	now northRoom is _3 in row 2 of table 1;
 	now westRoom is _2 in row 3 of table 1;
 	now southRoom is _3 in row 4 of table 1;
-	change north exit of currRoom to northRoom;
-	change west exit of currRoom to westRoom;
-	change south exit of currRoom to southRoom;
+	now northRoom is mapped north of currRoom;
+	now westRoom is mapped west of currRoom;
+	now southRoom is mapped south of currRoom;
 	[4,1]
 	now currRoom is _1 in row 4 of table 1;
 	now northRoom is _1 in row 3 of table 1;
 	now eastRoom is _2 in row 4 of table 1;
-	change north exit of currRoom to northRoom;
-	change east exit of currRoom to eastRoom;
+	now northRoom is mapped north of currRoom;
+	now eastRoom is mapped east of currRoom;
 	[4,2]
 	now currRoom is _2 in row 4 of table 1;
 	now northRoom is _2 in row 3 of table 1;
 	now westRoom is _1 in row 4 of table 1;
 	now eastRoom is _3 in row 4 of table 1;
-	change north exit of currRoom to northRoom;
-	change west exit of currRoom to westRoom;
-	change east exit of currRoom to eastRoom;
+	now northRoom is mapped north of currRoom;
+	now westRoom is mapped west of currRoom;
+	now eastRoom is mapped east of currRoom;
 	[4,3]
 	now currRoom is _3 in row 4 of table 1;
 	now northRoom is _3 in row 3 of table 1;
 	now westRoom is _2 in row 4 of table 1;
-	change north exit of currRoom to northRoom;
-	change west exit of currRoom to westRoom;
+	now northRoom is mapped north of currRoom;
+	now westRoom is mapped west of currRoom;
 	[CONNECT ROOMS, TOP FLOOR]
 	[1,1]
 	now currRoom is _1 in row 1 of table 2;
 	now eastRoom is _2 in row 1 of table 2;
 	now southRoom is _1 in row 2 of table 2;
-	change east exit of currRoom to eastRoom;
-	change south exit of currRoom to southRoom;
+	now eastRoom is mapped east of currRoom;
+	now southRoom is mapped south of currRoom;
 	[1,2]
 	now currRoom is _2 in row 1 of table 2;
 	now westRoom is _1 in row 1 of table 2;
 	now eastRoom is _3 in row 1 of table 2;
 	now southRoom is _2 in row 2 of table 2;
-	change west exit of currRoom to westRoom;
-	change east exit of currRoom to eastRoom;
-	change south exit of currRoom to southRoom;
+	now westRoom is mapped west of currRoom;
+	now eastRoom is mapped east of currRoom;
+	now southRoom is mapped south of currRoom;
 	[1,3]
 	now currRoom is _3 in row 1 of table 2;
 	now westRoom is _2 in row 1 of table 2;
 	now southRoom is _3 in row 2 of table 2;
-	change west exit of currRoom to westRoom;
-	change south exit of currRoom to southRoom;
+	now westRoom is mapped west of currRoom;
+	now southRoom is mapped south of currRoom;
 	[2,1]
 	now currRoom is _1 in row 2 of table 2;
 	now northRoom is _1 in row 1 of table 2;
 	now southRoom is _1 in row 3 of table 2;
-	change north exit of currRoom to northRoom;
-	change south exit of currRoom to southRoom;
+	now northRoom is mapped north of currRoom;
+	now southRoom is mapped south of currRoom;
 	[2,2]
 	now currRoom is _2 in row 2 of table 2;
 	now northRoom is _2 in row 1 of table 2;
 	now southRoom is _2 in row 3 of table 2;
-	change north exit of currRoom to northRoom;
-	change south exit of currRoom to southRoom;
+	now northRoom is mapped north of currRoom;
+	now southRoom is mapped south of currRoom;
 	[2,3]
 	now currRoom is _3 in row 2 of table 2;
 	now northRoom is _3 in row 1 of table 2;
 	now southRoom is _3 in row 3 of table 2;
-	change north exit of currRoom to northRoom;
-	change south exit of currRoom to southRoom;
+	now northRoom is mapped north of currRoom;
+	now southRoom is mapped south of currRoom;
 	[3,1]
 	now currRoom is _1 in row 3 of table 2;
 	now northRoom is _1 in row 2 of table 2;
 	now southRoom is _1 in row 4 of table 2;
-	change north exit of currRoom to northRoom;
-	change south exit of currRoom to southRoom;
+	now northRoom is mapped north of currRoom;
+	now southRoom is mapped south of currRoom;
 	[3,2]
 	now currRoom is _2 in row 3 of table 2;
 	now northRoom is _2 in row 2 of table 2;
 	now southRoom is _2 in row 4 of table 2;
-	change north exit of currRoom to northRoom;
-	change south exit of currRoom to southRoom;
+	now northRoom is mapped north of currRoom;
+	now southRoom is mapped south of currRoom;
 	[3,3]
 	now currRoom is _3 in row 3 of table 2;
 	now northRoom is _3 in row 2 of table 2;
 	now southRoom is _3 in row 4 of table 2;
-	change north exit of currRoom to northRoom;
-	change south exit of currRoom to southRoom;
+	now northRoom is mapped north of currRoom;
+	now southRoom is mapped south of currRoom;
 	[4,1]
 	now currRoom is _1 in row 4 of table 2;
 	now northRoom is _1 in row 3 of table 2;
 	now eastRoom is _2 in row 4 of table 2;
-	change north exit of currRoom to northRoom;
-	change east exit of currRoom to eastRoom;
+	now northRoom is mapped north of currRoom;
+	now eastRoom is mapped east of currRoom;
 	[4,2]
 	now currRoom is _2 in row 4 of table 2;
 	now northRoom is _2 in row 3 of table 2;
 	now westRoom is _1 in row 4 of table 2;
 	now eastRoom is _3 in row 4 of table 2;
-	change north exit of currRoom to northRoom;
-	change west exit of currRoom to westRoom;
-	change east exit of currRoom to eastRoom;
+	now northRoom is mapped north of currRoom;
+	now westRoom is mapped west of currRoom;
+	now eastRoom is mapped east of currRoom;
 	[4,3]
 	now currRoom is _3 in row 4 of table 2;
 	now northRoom is _3 in row 3 of table 2;
 	now westRoom is _2 in row 4 of table 2;
-	change north exit of currRoom to northRoom;
-	change west exit of currRoom to westRoom;
+	now northRoom is mapped north of currRoom;
+	now westRoom is mapped west of currRoom;
+	[Now let's map it?]
+	
+[Some Game Rules:
+One shot severely wounds the beast, and promptly after it moves to another room. Two shots kills it.
+[using an action ticks beast algorithm, moving from room to room causes a bigger step]
+
+[Premise, the beast walking around is the man's best friends. He feels the best he could do was at least feed him]
+[The beast is sick and old, and starving, so it is not very agile]
+[if running away for first time, jump player to a random room]
+[maybe the player can hide under stuff in certain rooms]
+[have a point in story where player finds out who person in statue is, affecting the description (5.5)]
+[]
+[
+Some Alerts:
+If manDist == 1 && onSameFloor 
+	if onSameFloor
+	[perhaps should do something to give direction]
+		say "You can hear the beast in one of the rooms next to this one."
+If manDist == 0
+	if beastIsAbove
+		say "You can hear the beast directly above you."
+	if beastIsBelow
+		say "Loud footsteps are audible below you."
+Manhattan Distance:
+|BeastX - PlayerX| + |BeastY - PlayerY|
+]]
+
+The beast is a person.
+When play begins:
+	now currRoom is _3 in row 1 of table 2;
+	now the beast is in currRoom;
+
+Table 99 - Queue (R - a room)
+name
+placeholder
+with 50 blank rows
+
+[inform 7 pathfinding is broken, implement dfs]
+queueFront is a number that varies;
+a boolean is a kind of thing. a boolean can be affirmative or negative.
+foundspace is a boolean.
+wasteofspace is a boolean.
+
+[enqueue a room]
+To enqueue (R - a room):
+	now foundspace is negative;
+	now wasteofspace is negative;
+	if name in row 1 of table 99 is placeholder:
+		blank out name in row 1 of table 99;
+		now queueFront is 1;
+	repeat with N running from queueFront to 99:
+		if there is name in row N of table 99:
+			[i know this is bad, but need to invert this if]
+			now wasteofspace is affirmative;
+		otherwise:
+			if foundspace is negative:
+				now name in row N of table 99 is R;
+				now foundspace is affirmative;
+	if foundspace is negative:
+		repeat with N running from 1 to queueFront:
+			if there is name in row N of table 99:
+				now wasteofspace is affirmative;
+			otherwise:
+				if foundspace is negative:
+					now name in row N of table 99 is R;
+					now foundspace is affirmative;
+
+[dequeue a room]
+To decide which room is dequeue:
+	now currRoom is name in row queueFront of table 99;
+	blank out name in row queueFront of table 99;
+	now queueFront is queueFront + 1;
+	decide on currRoom;
+	
+[queue isEmpty]
+To decide if isEmpty:
+	if there is name in row queueFront of table 99:
+		if name in row queueFront of table 99 is placeholder:
+			decide on true;
+		otherwise:
+			decide on false;
+	otherwise:
+		decide on true;
+		
+To decide if isNotEmpty:
+	if isEmpty:
+		decide on false;
+	decide on true;
+
+bfsRoom is a room that varies;
+
+[To decide which room is the best stalk direction from (R - a room):
+	now R is counted;
+	enqueue R;
+	while isNotEmpty:
+		now bfsRoom is dequeue]
+			
+[the cludgy thing we've done instead of pathfinding, which we couldn't get finished]
+Every turn:
+	if the player is locked-in:
+		if the beast is alive:
+			[move the beast to the best route from the beast to the player;]
+			now currRoom is the location of the player;
+			move the player to the location of the beast, without printing a room description;
+			move the beast to a random adjacent room;
+			move the player to currRoom, without printing a room description;
+			

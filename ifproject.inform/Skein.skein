@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Skein rootNode="node-0x02BBFB60" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+<Skein rootNode="node-0x03163AC8" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Inform 7 for Windows</generator>
-  <activeNode nodeId="node-0x02BBFB60"/>
-  <item nodeId="node-0x02BBFB60">
+  <activeNode nodeId="node-0x03163AC8"/>
+  <item nodeId="node-0x03163AC8">
     <command xml:space="preserve">- start -</command>
-    <result xml:space="preserve">Suddenly, all of the windows are slammed shut and barricaded.&#x000A;You hear a click on the front door.&#x000A; As you stand there, trying to collect yourself, another loud bang shakes you up. Someone or something is coming upstairs. Something big.&#x000A;&#x000A;Den Entryway Bukkake&#x000A;Godzilla Mothra Megaraptor&#x000A;Skeletor Armory Bathroom One&#x000A;Guest Room First Floor Corridor Kitchen &amp; Dining Room&#x000A;&#x000A;Bathroom Two Connecticut New Jersey&#x000A;Delaware Bedroom A Maryland&#x000A;Carolina New York Virginia&#x000A;Bedroom B Second Floor Corridor Pennsylvania&#x000A;&#x000A;Dr. Redrum's Cuckoo Mansion of Despair&#x000A;An Interactive Fiction by Gerardo Perez and Adam Wardell&#x000A;Release 1 / Serial number 130315 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD&#x000A;&#x000A;Mansion Grounds&#x000A;Some initial description of the grounds goes here!&#x000A;&#x000A;You can see a front door here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Dr. Redrum's Cuckoo Mansion of Despair&#x000A;An Interactive Fiction by Gerardo Perez and Adam Wardell&#x000A;Release 1 / Serial number 130315 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD&#x000A;&#x000A;Mansion Grounds&#x000A;Some initial description of the grounds goes here!&#x000A;&#x000A;You can see a front door here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
-    <changed>YES</changed>
+    <changed>NO</changed>
     <temporary score="0">NO</temporary>
     <children>
-      <child nodeId="node-0x02BBFAF0"/>
-      <child nodeId="node-0x02BE9008"/>
-      <child nodeId="node-0x02C0A800"/>
-      <child nodeId="node-0x02C0A8E0"/>
+      <child nodeId="node-0x03163C68"/>
+      <child nodeId="node-0x03181A88"/>
+      <child nodeId="node-0x03181E78"/>
+      <child nodeId="node-0x031840D8"/>
     </children>
   </item>
-  <item nodeId="node-0x02BBFAF0">
+  <item nodeId="node-0x03163C68">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Bee6&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -24,11 +24,11 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BBFC40"/>
-      <child nodeId="node-0x02BE8C18"/>
+      <child nodeId="node-0x03172EE8"/>
+      <child nodeId="node-0x0317F8D0"/>
     </children>
   </item>
-  <item nodeId="node-0x02BBFC40">
+  <item nodeId="node-0x03172EE8">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">Bee4&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -36,12 +36,12 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BBFCB0"/>
-      <child nodeId="node-0x02BBFD90"/>
-      <child nodeId="node-0x02BBFF50"/>
+      <child nodeId="node-0x03172F58"/>
+      <child nodeId="node-0x03173038"/>
+      <child nodeId="node-0x031733A0"/>
     </children>
   </item>
-  <item nodeId="node-0x02BBFCB0">
+  <item nodeId="node-0x03172F58">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -49,10 +49,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BBFD20"/>
+      <child nodeId="node-0x03172FC8"/>
     </children>
   </item>
-  <item nodeId="node-0x02BBFD20">
+  <item nodeId="node-0x03172FC8">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -60,7 +60,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x02BBFD90">
+  <item nodeId="node-0x03173038">
     <command xml:space="preserve">go north</command>
     <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -68,10 +68,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BBFE00"/>
+      <child nodeId="node-0x031730A8"/>
     </children>
   </item>
-  <item nodeId="node-0x02BBFE00">
+  <item nodeId="node-0x031730A8">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -79,10 +79,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BBFE70"/>
+      <child nodeId="node-0x03173118"/>
     </children>
   </item>
-  <item nodeId="node-0x02BBFE70">
+  <item nodeId="node-0x03173118">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -90,10 +90,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BBFEE0"/>
+      <child nodeId="node-0x03173188"/>
     </children>
   </item>
-  <item nodeId="node-0x02BBFEE0">
+  <item nodeId="node-0x03173188">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Entry Hall&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -101,7 +101,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x02BBFF50">
+  <item nodeId="node-0x031733A0">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">Bee4&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -109,11 +109,11 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BDF968"/>
-      <child nodeId="node-0x02BDFAB8"/>
+      <child nodeId="node-0x03173410"/>
+      <child nodeId="node-0x0319AC70"/>
     </children>
   </item>
-  <item nodeId="node-0x02BDF968">
+  <item nodeId="node-0x03173410">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Hexagonal Room&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -121,10 +121,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BDF9D8"/>
+      <child nodeId="node-0x03173480"/>
     </children>
   </item>
-  <item nodeId="node-0x02BDF9D8">
+  <item nodeId="node-0x03173480">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Hexagonal Room&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -132,10 +132,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BDFA48"/>
+      <child nodeId="node-0x0319AA58"/>
     </children>
   </item>
-  <item nodeId="node-0x02BDFA48">
+  <item nodeId="node-0x0319AA58">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">Hexagonal Room&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -143,7 +143,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x02BDFAB8">
+  <item nodeId="node-0x0319AC70">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">Bee4&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -151,10 +151,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BDFB28"/>
+      <child nodeId="node-0x03198818"/>
     </children>
   </item>
-  <item nodeId="node-0x02BDFB28">
+  <item nodeId="node-0x03198818">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">Bee4&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -162,10 +162,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BDFB98"/>
+      <child nodeId="node-0x03198888"/>
     </children>
   </item>
-  <item nodeId="node-0x02BDFB98">
+  <item nodeId="node-0x03198888">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Bee4&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -173,10 +173,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BDFC08"/>
+      <child nodeId="node-0x031988F8"/>
     </children>
   </item>
-  <item nodeId="node-0x02BDFC08">
+  <item nodeId="node-0x031988F8">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">Bee7&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -184,10 +184,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BDFC78"/>
+      <child nodeId="node-0x03198968"/>
     </children>
   </item>
-  <item nodeId="node-0x02BDFC78">
+  <item nodeId="node-0x03198968">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">Bee2&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -195,10 +195,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BDFCE8"/>
+      <child nodeId="node-0x031989D8"/>
     </children>
   </item>
-  <item nodeId="node-0x02BDFCE8">
+  <item nodeId="node-0x031989D8">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">Bee1&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -206,10 +206,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BDFD58"/>
+      <child nodeId="node-0x03198A48"/>
     </children>
   </item>
-  <item nodeId="node-0x02BDFD58">
+  <item nodeId="node-0x03198A48">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">Bee1&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -217,10 +217,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BDFDC8"/>
+      <child nodeId="node-0x03198AB8"/>
     </children>
   </item>
-  <item nodeId="node-0x02BDFDC8">
+  <item nodeId="node-0x03198AB8">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Bee6&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -228,10 +228,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BDFE38"/>
+      <child nodeId="node-0x03198B28"/>
     </children>
   </item>
-  <item nodeId="node-0x02BDFE38">
+  <item nodeId="node-0x03198B28">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Bee9&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -239,10 +239,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BDFEA8"/>
+      <child nodeId="node-0x03198B98"/>
     </children>
   </item>
-  <item nodeId="node-0x02BDFEA8">
+  <item nodeId="node-0x03198B98">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Bee4&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -250,10 +250,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BDFF18"/>
+      <child nodeId="node-0x03198C08"/>
     </children>
   </item>
-  <item nodeId="node-0x02BDFF18">
+  <item nodeId="node-0x03198C08">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Bee4&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -261,10 +261,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BDFF88"/>
+      <child nodeId="node-0x03198C78"/>
     </children>
   </item>
-  <item nodeId="node-0x02BDFF88">
+  <item nodeId="node-0x03198C78">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Bee4&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -272,10 +272,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BDFFF8"/>
+      <child nodeId="node-0x03198CE8"/>
     </children>
   </item>
-  <item nodeId="node-0x02BDFFF8">
+  <item nodeId="node-0x03198CE8">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Bee4&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -283,10 +283,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BE0068"/>
+      <child nodeId="node-0x03198D58"/>
     </children>
   </item>
-  <item nodeId="node-0x02BE0068">
+  <item nodeId="node-0x03198D58">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Bee4&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -294,10 +294,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BE00D8"/>
+      <child nodeId="node-0x03198DC8"/>
     </children>
   </item>
-  <item nodeId="node-0x02BE00D8">
+  <item nodeId="node-0x03198DC8">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">Bee3&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -305,10 +305,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C282A0"/>
+      <child nodeId="node-0x03198E38"/>
     </children>
   </item>
-  <item nodeId="node-0x02C282A0">
+  <item nodeId="node-0x03198E38">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">Bee7&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -316,10 +316,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C28310"/>
+      <child nodeId="node-0x03198EA8"/>
     </children>
   </item>
-  <item nodeId="node-0x02C28310">
+  <item nodeId="node-0x03198EA8">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">Bee2&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -327,10 +327,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C28380"/>
+      <child nodeId="node-0x03198F18"/>
     </children>
   </item>
-  <item nodeId="node-0x02C28380">
+  <item nodeId="node-0x03198F18">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">Bee1&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -338,10 +338,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C283F0"/>
+      <child nodeId="node-0x03198F88"/>
     </children>
   </item>
-  <item nodeId="node-0x02C283F0">
+  <item nodeId="node-0x03198F88">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">Bee1&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -349,10 +349,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C28460"/>
+      <child nodeId="node-0x0317BDD0"/>
     </children>
   </item>
-  <item nodeId="node-0x02C28460">
+  <item nodeId="node-0x0317BDD0">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">Bee1&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -360,10 +360,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C284D0"/>
+      <child nodeId="node-0x0317BE40"/>
     </children>
   </item>
-  <item nodeId="node-0x02C284D0">
+  <item nodeId="node-0x0317BE40">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Bee6&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -371,10 +371,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C28540"/>
+      <child nodeId="node-0x0317BEB0"/>
     </children>
   </item>
-  <item nodeId="node-0x02C28540">
+  <item nodeId="node-0x0317BEB0">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Bee9&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -382,10 +382,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C285B0"/>
+      <child nodeId="node-0x0317BF20"/>
     </children>
   </item>
-  <item nodeId="node-0x02C285B0">
+  <item nodeId="node-0x0317BF20">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Bee4&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -393,10 +393,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C28620"/>
+      <child nodeId="node-0x0317BF90"/>
     </children>
   </item>
-  <item nodeId="node-0x02C28620">
+  <item nodeId="node-0x0317BF90">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Bee4&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -404,10 +404,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C28690"/>
+      <child nodeId="node-0x0317C000"/>
     </children>
   </item>
-  <item nodeId="node-0x02C28690">
+  <item nodeId="node-0x0317C000">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Bee4&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -415,10 +415,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C28700"/>
+      <child nodeId="node-0x0317C070"/>
     </children>
   </item>
-  <item nodeId="node-0x02C28700">
+  <item nodeId="node-0x0317C070">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Bee4&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -426,10 +426,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C28770"/>
+      <child nodeId="node-0x0317C0E0"/>
     </children>
   </item>
-  <item nodeId="node-0x02C28770">
+  <item nodeId="node-0x0317C0E0">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">Bee3&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -437,10 +437,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C287E0"/>
+      <child nodeId="node-0x0317C150"/>
     </children>
   </item>
-  <item nodeId="node-0x02C287E0">
+  <item nodeId="node-0x0317C150">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">Bee7&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -448,10 +448,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C28850"/>
+      <child nodeId="node-0x0317C1C0"/>
     </children>
   </item>
-  <item nodeId="node-0x02C28850">
+  <item nodeId="node-0x0317C1C0">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">Bee2&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -459,10 +459,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C288C0"/>
+      <child nodeId="node-0x0317C230"/>
     </children>
   </item>
-  <item nodeId="node-0x02C288C0">
+  <item nodeId="node-0x0317C230">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">Bee1&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -470,10 +470,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C28930"/>
+      <child nodeId="node-0x0317C2A0"/>
     </children>
   </item>
-  <item nodeId="node-0x02C28930">
+  <item nodeId="node-0x0317C2A0">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">Bee1&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -481,10 +481,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C289A0"/>
+      <child nodeId="node-0x0317C310"/>
     </children>
   </item>
-  <item nodeId="node-0x02C289A0">
+  <item nodeId="node-0x0317C310">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">Bee1&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -492,10 +492,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C28A10"/>
+      <child nodeId="node-0x0317C380"/>
     </children>
   </item>
-  <item nodeId="node-0x02C28A10">
+  <item nodeId="node-0x0317C380">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">Bee1&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -503,10 +503,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C29EA0"/>
+      <child nodeId="node-0x0317C3F0"/>
     </children>
   </item>
-  <item nodeId="node-0x02C29EA0">
+  <item nodeId="node-0x0317C3F0">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">Bee1&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -514,10 +514,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C29F10"/>
+      <child nodeId="node-0x0317C460"/>
     </children>
   </item>
-  <item nodeId="node-0x02C29F10">
+  <item nodeId="node-0x0317C460">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">Bee1&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -525,10 +525,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C29F80"/>
+      <child nodeId="node-0x0317C4D0"/>
     </children>
   </item>
-  <item nodeId="node-0x02C29F80">
+  <item nodeId="node-0x0317C4D0">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -536,10 +536,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C29FF0"/>
+      <child nodeId="node-0x0317C540"/>
     </children>
   </item>
-  <item nodeId="node-0x02C29FF0">
+  <item nodeId="node-0x0317C540">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -547,10 +547,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C2A060"/>
+      <child nodeId="node-0x0317F1D0"/>
     </children>
   </item>
-  <item nodeId="node-0x02C2A060">
+  <item nodeId="node-0x0317F1D0">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -558,10 +558,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C2A0D0"/>
+      <child nodeId="node-0x0317F240"/>
     </children>
   </item>
-  <item nodeId="node-0x02C2A0D0">
+  <item nodeId="node-0x0317F240">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -569,10 +569,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C2A140"/>
+      <child nodeId="node-0x0317F2B0"/>
     </children>
   </item>
-  <item nodeId="node-0x02C2A140">
+  <item nodeId="node-0x0317F2B0">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -580,10 +580,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C2A1B0"/>
+      <child nodeId="node-0x0317F320"/>
     </children>
   </item>
-  <item nodeId="node-0x02C2A1B0">
+  <item nodeId="node-0x0317F320">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -591,10 +591,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C2A220"/>
+      <child nodeId="node-0x0317F390"/>
     </children>
   </item>
-  <item nodeId="node-0x02C2A220">
+  <item nodeId="node-0x0317F390">
     <command xml:space="preserve">fuck you</command>
     <result xml:space="preserve">I only understood you as far as wanting to fuck.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -602,10 +602,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C2A290"/>
+      <child nodeId="node-0x0317F400"/>
     </children>
   </item>
-  <item nodeId="node-0x02C2A290">
+  <item nodeId="node-0x0317F400">
     <command xml:space="preserve">drink you</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -613,10 +613,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C2A300"/>
+      <child nodeId="node-0x0317F470"/>
     </children>
   </item>
-  <item nodeId="node-0x02C2A300">
+  <item nodeId="node-0x0317F470">
     <command xml:space="preserve">elaborate you</command>
     <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -624,10 +624,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C2A370"/>
+      <child nodeId="node-0x0317F4E0"/>
     </children>
   </item>
-  <item nodeId="node-0x02C2A370">
+  <item nodeId="node-0x0317F4E0">
     <command xml:space="preserve">destroy you</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -635,10 +635,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C2A3E0"/>
+      <child nodeId="node-0x0317F550"/>
     </children>
   </item>
-  <item nodeId="node-0x02C2A3E0">
+  <item nodeId="node-0x0317F550">
     <command xml:space="preserve">laugh you</command>
     <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -646,10 +646,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C2A450"/>
+      <child nodeId="node-0x0317F5C0"/>
     </children>
   </item>
-  <item nodeId="node-0x02C2A450">
+  <item nodeId="node-0x0317F5C0">
     <command xml:space="preserve">screw you</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -657,10 +657,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C2A4C0"/>
+      <child nodeId="node-0x0317F630"/>
     </children>
   </item>
-  <item nodeId="node-0x02C2A4C0">
+  <item nodeId="node-0x0317F630">
     <command xml:space="preserve">beautify you</command>
     <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -668,10 +668,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C2A530"/>
+      <child nodeId="node-0x0317F6A0"/>
     </children>
   </item>
-  <item nodeId="node-0x02C2A530">
+  <item nodeId="node-0x0317F6A0">
     <command xml:space="preserve">fuck you</command>
     <result xml:space="preserve">I only understood you as far as wanting to fuck.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -679,10 +679,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C2A5A0"/>
+      <child nodeId="node-0x0317F710"/>
     </children>
   </item>
-  <item nodeId="node-0x02C2A5A0">
+  <item nodeId="node-0x0317F710">
     <command xml:space="preserve">fuck table</command>
     <result xml:space="preserve">I only understood you as far as wanting to fuck.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -690,10 +690,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C2A610"/>
+      <child nodeId="node-0x0317F780"/>
     </children>
   </item>
-  <item nodeId="node-0x02C2A610">
+  <item nodeId="node-0x0317F780">
     <command xml:space="preserve">attack</command>
     <result xml:space="preserve">What do you want to attack?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -701,10 +701,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BE8BA8"/>
+      <child nodeId="node-0x0317F860"/>
     </children>
   </item>
-  <item nodeId="node-0x02BE8BA8">
+  <item nodeId="node-0x0317F860">
     <command xml:space="preserve">attack myself</command>
     <result xml:space="preserve">Violence isn't the answer to this one.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -712,7 +712,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x02BE8C18">
+  <item nodeId="node-0x0317F8D0">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Hexagonal Room&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -720,10 +720,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BE8C88"/>
+      <child nodeId="node-0x0317F940"/>
     </children>
   </item>
-  <item nodeId="node-0x02BE8C88">
+  <item nodeId="node-0x0317F940">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Hexagonal Room&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -731,10 +731,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BE8CF8"/>
+      <child nodeId="node-0x03181778"/>
     </children>
   </item>
-  <item nodeId="node-0x02BE8CF8">
+  <item nodeId="node-0x03181778">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Hexagonal Room&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -742,10 +742,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BE8D68"/>
+      <child nodeId="node-0x031817E8"/>
     </children>
   </item>
-  <item nodeId="node-0x02BE8D68">
+  <item nodeId="node-0x031817E8">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Hexagonal Room&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -753,10 +753,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BE8DD8"/>
+      <child nodeId="node-0x03181858"/>
     </children>
   </item>
-  <item nodeId="node-0x02BE8DD8">
+  <item nodeId="node-0x03181858">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Hexagonal Room&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -764,10 +764,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BE8E48"/>
+      <child nodeId="node-0x031818C8"/>
     </children>
   </item>
-  <item nodeId="node-0x02BE8E48">
+  <item nodeId="node-0x031818C8">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Hexagonal Room&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -775,10 +775,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BE8EB8"/>
+      <child nodeId="node-0x03181938"/>
     </children>
   </item>
-  <item nodeId="node-0x02BE8EB8">
+  <item nodeId="node-0x03181938">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">Hexagonal Room&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -786,10 +786,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BE8F28"/>
+      <child nodeId="node-0x031819A8"/>
     </children>
   </item>
-  <item nodeId="node-0x02BE8F28">
+  <item nodeId="node-0x031819A8">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">Hexagonal Room&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -797,10 +797,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BE8F98"/>
+      <child nodeId="node-0x03181A18"/>
     </children>
   </item>
-  <item nodeId="node-0x02BE8F98">
+  <item nodeId="node-0x03181A18">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">Hexagonal Room&#x000A;Waxy, translucent walls surround you on six sides; the floor and ceiling are made of the same material, gently uneven. There are exits in every direction, cut into the faces or the corners.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -808,7 +808,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x02BE9008">
+  <item nodeId="node-0x03181A88">
     <command xml:space="preserve">go east</command>
     <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -816,10 +816,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BE9078"/>
+      <child nodeId="node-0x03181AF8"/>
     </children>
   </item>
-  <item nodeId="node-0x02BE9078">
+  <item nodeId="node-0x03181AF8">
     <command xml:space="preserve">go west</command>
     <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -827,10 +827,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BE90E8"/>
+      <child nodeId="node-0x03181B68"/>
     </children>
   </item>
-  <item nodeId="node-0x02BE90E8">
+  <item nodeId="node-0x03181B68">
     <command xml:space="preserve">go up</command>
     <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -838,10 +838,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BE9158"/>
+      <child nodeId="node-0x03181BD8"/>
     </children>
   </item>
-  <item nodeId="node-0x02BE9158">
+  <item nodeId="node-0x03181BD8">
     <command xml:space="preserve">go fuck yourself</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -849,10 +849,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BE91C8"/>
+      <child nodeId="node-0x03181C48"/>
     </children>
   </item>
-  <item nodeId="node-0x02BE91C8">
+  <item nodeId="node-0x03181C48">
     <command xml:space="preserve">fuck you</command>
     <result xml:space="preserve">I only understood you as far as wanting to fuck.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -860,10 +860,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BE9238"/>
+      <child nodeId="node-0x03181CB8"/>
     </children>
   </item>
-  <item nodeId="node-0x02BE9238">
+  <item nodeId="node-0x03181CB8">
     <command xml:space="preserve">deplete you</command>
     <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -871,10 +871,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BE92A8"/>
+      <child nodeId="node-0x03181D28"/>
     </children>
   </item>
-  <item nodeId="node-0x02BE92A8">
+  <item nodeId="node-0x03181D28">
     <command xml:space="preserve">fuck myself</command>
     <result xml:space="preserve">I only understood you as far as wanting to fuck.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -882,10 +882,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C0A720"/>
+      <child nodeId="node-0x03181D98"/>
     </children>
   </item>
-  <item nodeId="node-0x02C0A720">
+  <item nodeId="node-0x03181D98">
     <command xml:space="preserve">fuck stuff</command>
     <result xml:space="preserve">I only understood you as far as wanting to fuck.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -893,10 +893,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C0A790"/>
+      <child nodeId="node-0x03181E08"/>
     </children>
   </item>
-  <item nodeId="node-0x02C0A790">
+  <item nodeId="node-0x03181E08">
     <command xml:space="preserve">fuck</command>
     <result xml:space="preserve">Real adventurers do not use such language.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -904,7 +904,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x02C0A800">
+  <item nodeId="node-0x03181E78">
     <command xml:space="preserve">go north</command>
     <result xml:space="preserve">now the new door&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -912,10 +912,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C0A870"/>
+      <child nodeId="node-0x03181EE8"/>
     </children>
   </item>
-  <item nodeId="node-0x02C0A870">
+  <item nodeId="node-0x03181EE8">
     <command xml:space="preserve">go north</command>
     <result xml:space="preserve">Upper Landing&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -923,7 +923,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x02C0A8E0">
+  <item nodeId="node-0x031840D8">
     <command xml:space="preserve">go inside</command>
     <result xml:space="preserve">(first opening the front door)&#x000A;&#x000A;Entryway&#x000A;Some initial description of the entryway goes here!&#x000A;&#x000A;You can see a front door here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -931,11 +931,11 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C0A950"/>
-      <child nodeId="node-0x02C0AA30"/>
+      <child nodeId="node-0x03184148"/>
+      <child nodeId="node-0x03184228"/>
     </children>
   </item>
-  <item nodeId="node-0x02C0A950">
+  <item nodeId="node-0x03184148">
     <command xml:space="preserve">go south</command>
     <result xml:space="preserve">Tampon&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -943,10 +943,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C0A9C0"/>
+      <child nodeId="node-0x031841B8"/>
     </children>
   </item>
-  <item nodeId="node-0x02C0A9C0">
+  <item nodeId="node-0x031841B8">
     <command xml:space="preserve">go north</command>
     <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -954,7 +954,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x02C0AA30">
+  <item nodeId="node-0x03184228">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">Bathroom One&#x000A;A standard bathroom with a shower, toilet and sink. There is a large mirror with a fancy border near the sink.&#x000A;&#x000A;You can see a mirror here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -962,10 +962,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C0AAA0"/>
+      <child nodeId="node-0x03184298"/>
     </children>
   </item>
-  <item nodeId="node-0x02C0AAA0">
+  <item nodeId="node-0x03184298">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">Pantry&#x000A;A pantry that receives little light. There is a rack that holds unperishable food.&#x000A;&#x000A;At the end of the room are a few large boxes.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -973,10 +973,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C0AB10"/>
+      <child nodeId="node-0x03184308"/>
     </children>
   </item>
-  <item nodeId="node-0x02C0AB10">
+  <item nodeId="node-0x03184308">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">Skeletor&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -984,10 +984,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C0AB80"/>
+      <child nodeId="node-0x03184378"/>
     </children>
   </item>
-  <item nodeId="node-0x02C0AB80">
+  <item nodeId="node-0x03184378">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">Den&#x000A;There is a mount of a bear's head on the wall. Beside.&#x000A;&#x000A;There is a a mount of a bear head on the wall.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -995,10 +995,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C0ABF0"/>
+      <child nodeId="node-0x031843E8"/>
     </children>
   </item>
-  <item nodeId="node-0x02C0ABF0">
+  <item nodeId="node-0x031843E8">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">First Floor Corridor&#x000A;You can see the second floor stairs here.&#x000A;&#x000A;You can see the basement stairs here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1006,10 +1006,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C0AC60"/>
+      <child nodeId="node-0x03184458"/>
     </children>
   </item>
-  <item nodeId="node-0x02C0AC60">
+  <item nodeId="node-0x03184458">
     <command xml:space="preserve">go up</command>
     <result xml:space="preserve">Second Floor Corridor&#x000A;You can see the second floor stairs here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1017,10 +1017,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C0ACD0"/>
+      <child nodeId="node-0x031844C8"/>
     </children>
   </item>
-  <item nodeId="node-0x02C0ACD0">
+  <item nodeId="node-0x031844C8">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">Bedroom A&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1028,10 +1028,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C0AD40"/>
+      <child nodeId="node-0x03184538"/>
     </children>
   </item>
-  <item nodeId="node-0x02C0AD40">
+  <item nodeId="node-0x03184538">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Virginia&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1039,10 +1039,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C0ADB0"/>
+      <child nodeId="node-0x031845A8"/>
     </children>
   </item>
-  <item nodeId="node-0x02C0ADB0">
+  <item nodeId="node-0x031845A8">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1050,10 +1050,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C0AE20"/>
+      <child nodeId="node-0x03184618"/>
     </children>
   </item>
-  <item nodeId="node-0x02C0AE20">
+  <item nodeId="node-0x03184618">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Connecticut&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1061,10 +1061,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C0AE90"/>
+      <child nodeId="node-0x03184688"/>
     </children>
   </item>
-  <item nodeId="node-0x02C0AE90">
+  <item nodeId="node-0x03184688">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Bathroom Two&#x000A;There is nothing of interest here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1072,10 +1072,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C0BB20"/>
+      <child nodeId="node-0x031846F8"/>
     </children>
   </item>
-  <item nodeId="node-0x02C0BB20">
+  <item nodeId="node-0x031846F8">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">Delaware&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1083,10 +1083,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02C0BB90"/>
+      <child nodeId="node-0x03184768"/>
     </children>
   </item>
-  <item nodeId="node-0x02C0BB90">
+  <item nodeId="node-0x03184768">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">New York&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
