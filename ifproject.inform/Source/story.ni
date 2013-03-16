@@ -3,14 +3,8 @@
 Use no scoring.
 
 A person can be free or locked-in.
-The player is locked-in.
+The player is free.
 The player is in the Mansion Grounds.
-Trapped is a scene. Trapped begins when the player is locked-in for the first time. [after owner stops talking to you].
-Trapped ends when the player is free for the second time.
-A window is a kind of door. A window is usually locked. A window is usually closed.
-When Trapped begins:
-	say "Suddenly, all of the windows are slammed shut and barricaded.[line break]You hear a click on the front door.[line break] As you stand there, trying to collect yourself, another loud bang shakes you up. Someone or something is coming upstairs. Something big.";
-[Lock all doors to living room or lock just the front door, start beast movement algorithmn]
 
 A thing can be breakable or unbreakable. A thing is usually unbreakable.
 A thing can be broken or unbroken. A thing is usually unbroken. 
@@ -25,7 +19,20 @@ The Mansion Grounds is a room. "[if the player is in the mansion grounds for the
 
 The Entryway is a room. "[if the player is in the entryway for the first time]Some initial description of the entryway goes here![end if]".
 
-The front door is a door. The front door is inside from the mansion grounds and outside from the entryway.
+The front door is a door. The front door is inside from the mansion grounds and outside from the entryway. The front door is lockable and unlocked.
+
+Every turn:
+	if the entryway is visited and the entryway was not visited:
+		now the player is locked-in;
+
+Trapped is a scene. Trapped begins when the player is locked-in for the first time. [after owner stops talking to you].
+Trapped ends when the player is free for the second time.
+A window is a kind of door. A window is usually locked. A window is usually closed.
+When Trapped begins:
+	say "Suddenly, all of the windows are slammed shut and barricaded.[line break]You hear a click on the front door.[line break] As you stand there, trying to collect yourself, another loud bang shakes you up. Someone or something is coming upstairs. Something big.";
+	now the front door is closed;
+	now the front door is locked;
+[Lock all doors to living room or lock just the front door, start beast movement algorithmn]
 
 The Living Room is a room. "[if the player is in the living room for the first time]What used to be such a welcoming room is now the last place you want to be in. Your first instinct is to explore the rest of the mansion to try and find a way out, or at least avoid whatever is approaching.[line break][end if]There is a small table in the middle of the room, next to the couch. The fireplace burns."
 The couch is scenery in the living room.
