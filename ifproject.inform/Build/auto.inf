@@ -4294,7 +4294,7 @@ Global lightflag = false;
 ];
 
 
-Constant REQUISITION_STACK_SIZE = 3*132;
+Constant REQUISITION_STACK_SIZE = 3*127;
 Array requisition_stack --> REQUISITION_STACK_SIZE;
 Global requisition_stack_pointer = 0;
 
@@ -8699,7 +8699,7 @@ Array property_metadata -->
     ! offset 49: property with_key
     "matching key" K2_thing K4_door K5_container NULL
     ! offset 54: property p13_capacity
-    "capacity" I138_statue_s_chest I143_mirror I177_bear_head NULL
+    "capacity" I137_statue_s_chest I142_mirror I176_bear_head NULL
     ! offset 59: property pluralname
     "plural-named" K1_room K2_thing K3_direction K9_region NULL
     ! offset 65: property proper
@@ -8741,7 +8741,7 @@ Array property_metadata -->
     ! offset 131: property lockable
     "lockable" K4_door K5_container NULL
     ! offset 135: property locked
-    "locked" K4_door K5_container I172_big_machine NULL
+    "locked" K4_door K5_container I171_big_machine NULL
     ! offset 140: property female
     "female" K8_person NULL
     ! offset 143: property neuter
@@ -8763,9 +8763,9 @@ Array property_metadata -->
     ! offset 166: property p67_in_place
     "in-place" K19_box NULL
     ! offset 169: property p69_on
-    "on" I172_big_machine NULL
+    "on" I171_big_machine NULL
     ! offset 172: property p71_pushed_up
-    "pushed up" I173_lever NULL
+    "pushed up" I172_lever NULL
     ! offset 175: property vector
     "<nameless>" NULL
     ! offset 177: property room_index
@@ -9365,9 +9365,9 @@ Array KindHierarchy --> K0_kind (0) K1_room (0) K2_thing (0) K3_direction (0) K4
 Constant IK1_First = I88_mansion_grounds;
 Constant IK2_First = selfobj;
 Constant IK3_First = I46_north;
-Constant IK4_First = I98_front_door;
-Constant IK5_First = I103_fireplace;
-Constant IK6_First = I106_basement_table;
+Constant IK4_First = I97_front_door;
+Constant IK5_First = I102_fireplace;
+Constant IK6_First = I105_basement_table;
 Constant IK7_First = nothing;
 Constant IK8_First = selfobj;
 Constant IK9_First = nothing;
@@ -9380,7 +9380,7 @@ Constant IK15_First = nothing;
 Constant IK16_First = nothing;
 Constant IK17_First = I92_black_gem;
 Constant IK18_First = I94_purple_key;
-Constant IK19_First = I167_food_boxes;
+Constant IK19_First = I166_food_boxes;
 Constant No_Directions = 12;
 ! Table of direction object alias constants:
 Constant DirectionObject_0 = I46_north;
@@ -9396,45 +9396,40 @@ Constant DirectionObject_9 = I55_down;
 Constant DirectionObject_10 = in_obj;
 Constant DirectionObject_11 = out_obj;
 Array Map_Storage -->
- 0 0 0 0 0 0 0 0 0 0 I98_front_door 0 ! Exits from: I88_mansion_grounds
- 0 0 0 0 0 0 0 0 0 0 0 I98_front_door ! Exits from: I97_entryway
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I99_living_room
- 0 I115_cellar_door 0 0 0 0 0 0 I118_basement_stairs 0 0 0 ! Exits from: I105_basement
- 0 0 0 I115_cellar_door 0 0 0 0 0 0 0 0 ! Exits from: I116_field
- 0 0 0 0 0 0 0 0 I120_upper_stairs I118_basement_stairs 0 0 ! Exits from: I117_first_floor_corridor
- 0 0 0 0 0 0 0 0 0 I120_upper_stairs 0 0 ! Exits from: I119_second_floor_corridor
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I121_study
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I129_armory
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I134_master_bedroom
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I140_bathroom_one
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I145_bathroom_two
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I146_guest_room
- 0 I166_pantry 0 0 0 0 0 0 0 0 0 0 ! Exits from: I156_kitchen
- 0 0 0 0 0 I156_kitchen I170_secret_passage 0 0 0 0 0 ! Exits from: I166_pantry
- 0 0 0 0 0 I170_secret_passage I186_metal_door 0 0 0 0 0 ! Exits from: I171_control_room
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I176_den
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I178_bedroom_c
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I183_bedroom_b
- 0 0 I186_metal_door 0 0 0 0 0 0 0 0 0 ! Exits from: I185_narrow_hallway_first
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I187_narrow_hallway_second
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I188_studio
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I190_utility_room
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I193_conference_room
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I196_excercise_room
+ 0 0 0 0 0 0 0 0 0 0 I97_front_door 0 ! Exits from: I88_mansion_grounds
+ 0 0 0 0 0 0 0 0 0 0 0 I97_front_door ! Exits from: I98_living_room
+ 0 I114_cellar_door 0 0 0 0 0 0 I117_basement_stairs 0 0 0 ! Exits from: I104_basement
+ 0 0 0 I114_cellar_door 0 0 0 0 0 0 0 0 ! Exits from: I115_field
+ 0 0 0 0 0 0 0 0 I119_upper_stairs I117_basement_stairs 0 0 ! Exits from: I116_first_floor_corridor
+ 0 0 0 0 0 0 0 0 0 I119_upper_stairs 0 0 ! Exits from: I118_second_floor_corridor
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I120_study
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I128_armory
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I133_master_bedroom
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I139_bathroom_one
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I144_bathroom_two
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I145_guest_room
+ 0 I165_pantry 0 0 0 0 0 0 0 0 0 0 ! Exits from: I155_kitchen
+ 0 0 0 0 0 I155_kitchen I169_secret_passage 0 0 0 0 0 ! Exits from: I165_pantry
+ 0 0 0 0 0 I169_secret_passage I185_metal_door 0 0 0 0 0 ! Exits from: I170_control_room
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I175_den
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I177_bedroom_c
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I182_bedroom_b
+ 0 0 I185_metal_door 0 0 0 0 0 0 0 0 0 ! Exits from: I184_narrow_hallway_first
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I186_narrow_hallway_second
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I187_studio
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I189_utility_room
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I192_conference_room
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I195_excercise_room
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I197_ballroom
  0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I198_placeholder
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I199_megaraptor
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I200_skeletor
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I201_godzilla
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I202_mothra
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I203_bukkake
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I204_connecticut
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I205_new_york
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I206_new_jersey
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I207_pennsylvania
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I208_delaware
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I209_maryland
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I210_virginia
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I211_carolina
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I199_connecticut
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I200_new_york
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I201_new_jersey
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I202_pennsylvania
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I203_delaware
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I204_maryland
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I205_virginia
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I206_carolina
 ;
 
 Class VPH_Class;
@@ -9822,7 +9817,7 @@ Object I88_mansion_grounds ""
     with list_together 0
     has mark_as_room
     with IK1_Count 0
-    with IK1_Link I97_entryway
+    with IK1_Link I98_living_room
     with KD_Count 1
     with name 'mansion' 'grounds' 
 ;
@@ -9856,11 +9851,11 @@ Object I92_black_gem ""
     with vector 0
     with list_together 0
     has mark_as_thing
-    with component_parent I177_bear_head
+    with component_parent I176_bear_head
     with IK2_Count 1
     with IK2_Link I94_purple_key
     with IK17_Count 0
-    with IK17_Link I125_yellow_gem
+    with IK17_Link I124_yellow_gem
     with KD_Count 17
     with name 'black' 'gem' 
     with parse_name Parse_Name_GV99
@@ -9907,7 +9902,7 @@ Object I96_control_key ""
     with list_together 0
     has mark_as_thing
     with IK2_Count 4
-    with IK2_Link I98_front_door
+    with IK2_Link I97_front_door
     with IK18_Count 2
     with IK18_Link nothing
     with KD_Count 18
@@ -9915,57 +9910,43 @@ Object I96_control_key ""
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I97_entryway ""
+Object I97_front_door ""
+    class K4_door
+    with short_name "front door"
+    with vector 0
+    with door_dir [ loc; loc = location;
+            if (loc == thedark) loc = real_location;
+            if (loc == I98_living_room) return out_obj; return in_obj; ],
+    with door_to [ loc; loc = location;
+            if (loc == thedark) loc = real_location;
+            if (loc == I98_living_room) return I88_mansion_grounds; return I98_living_room; ],
+    with found_in I98_living_room I88_mansion_grounds
+    with list_together 0
+    has mark_as_thing
+    with IK2_Count 5
+    with IK2_Link I99_couch
+    with IK4_Count 0
+    with IK4_Link I114_cellar_door
+    with KD_Count 4
+    with name 'front' 'door' 
+    with action_bitmap 0 0 0 0 0 0 
+;
+
+Object I98_living_room ""
     class K1_room
-    with short_name "Entryway"
+    with short_name "living room"
     with description text_routine_1
     with vector 0
     with room_index -1
     with list_together 0
     has mark_as_room
     with IK1_Count 1
-    with IK1_Link I99_living_room
-    with KD_Count 1
-    with name 'entryway' 
-;
-
-Object I98_front_door ""
-    class K4_door
-    with short_name "front door"
-    with vector 0
-    with door_dir [ loc; loc = location;
-            if (loc == thedark) loc = real_location;
-            if (loc == I97_entryway) return out_obj; return in_obj; ],
-    with door_to [ loc; loc = location;
-            if (loc == thedark) loc = real_location;
-            if (loc == I97_entryway) return I88_mansion_grounds; return I97_entryway; ],
-    with found_in I97_entryway I88_mansion_grounds
-    with list_together 0
-    has mark_as_thing
-    with IK2_Count 5
-    with IK2_Link I100_couch
-    with IK4_Count 0
-    with IK4_Link I115_cellar_door
-    with KD_Count 4
-    with name 'front' 'door' 
-    with action_bitmap 0 0 0 0 0 0 
-;
-
-Object I99_living_room ""
-    class K1_room
-    with short_name "Living Room"
-    with description text_routine_2
-    with vector 0
-    with room_index -1
-    with list_together 0
-    has mark_as_room
-    with IK1_Count 2
-    with IK1_Link I105_basement
+    with IK1_Link I104_basement
     with KD_Count 1
     with name 'living' 'room' 
 ;
 
-Object -> I100_couch ""
+Object -> I99_couch ""
     class K2_thing
     with short_name "couch"
     has static
@@ -9974,13 +9955,13 @@ Object -> I100_couch ""
     with list_together 0
     has mark_as_thing
     with IK2_Count 6
-    with IK2_Link I101_living_room_table
+    with IK2_Link I100_living_room_table
     with KD_Count 2
     with name 'couch' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> I101_living_room_table ""
+Object -> I100_living_room_table ""
     class K2_thing
     with short_name "living room table"
     with description SC_9
@@ -9990,13 +9971,13 @@ Object -> I101_living_room_table ""
     with list_together 0
     has mark_as_thing
     with IK2_Count 7
-    with IK2_Link I102_phone_wire
+    with IK2_Link I101_phone_wire
     with KD_Count 2
     with name 'living' 'room' 'table' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> I102_phone_wire ""
+Object -> I101_phone_wire ""
     class K2_thing
     with short_name "phone wire"
     has static
@@ -10005,13 +9986,13 @@ Object -> I102_phone_wire ""
     with list_together 0
     has mark_as_thing
     with IK2_Count 8
-    with IK2_Link I103_fireplace
+    with IK2_Link I102_fireplace
     with KD_Count 2
     with name 'phone' 'wire' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> I103_fireplace ""
+Object -> I102_fireplace ""
     class K5_container
     with short_name "fireplace"
     with description SC_10
@@ -10022,15 +10003,15 @@ Object -> I103_fireplace ""
     with list_together 0
     has mark_as_thing
     with IK2_Count 9
-    with IK2_Link I104_painting_of_a_bee
+    with IK2_Link I103_painting_of_a_bee
     with IK5_Count 0
-    with IK5_Link I124_glass_cabinet
+    with IK5_Link I123_glass_cabinet
     with KD_Count 5
     with name 'fireplace' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> I104_painting_of_a_bee ""
+Object -> I103_painting_of_a_bee ""
     class K2_thing
     with short_name "painting of a bee"
     with description SC_11
@@ -10038,27 +10019,27 @@ Object -> I104_painting_of_a_bee ""
     with list_together 0
     has mark_as_thing
     with IK2_Count 10
-    with IK2_Link I106_basement_table
+    with IK2_Link I105_basement_table
     with KD_Count 2
     with name 'painting' 'of' 'a//' 'bee' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I105_basement ""
+Object I104_basement ""
     class K1_room
     with short_name "Basement"
-    with description text_routine_3
+    with description text_routine_2
     with vector 0
     with room_index -1
     with list_together 0
     has mark_as_room
-    with IK1_Count 3
-    with IK1_Link I116_field
+    with IK1_Count 2
+    with IK1_Link I115_field
     with KD_Count 1
     with name 'basement' 
 ;
 
-Object -> I106_basement_table ""
+Object -> I105_basement_table ""
     class K6_supporter
     with short_name "basement table"
     with description SC_12
@@ -10068,15 +10049,15 @@ Object -> I106_basement_table ""
     with list_together 0
     has mark_as_thing
     with IK2_Count 11
-    with IK2_Link I107_jars_of_fluid
+    with IK2_Link I106_jars_of_fluid
     with IK6_Count 0
-    with IK6_Link I139_statue_s_hands
+    with IK6_Link I138_statue_s_hands
     with KD_Count 6
     with name 'basement' 'table' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> -> I107_jars_of_fluid ""
+Object -> -> I106_jars_of_fluid ""
     class K2_thing
     with short_name "jars of fluid"
     has proper
@@ -10086,13 +10067,13 @@ Object -> -> I107_jars_of_fluid ""
     with cap_short_name "Jars of fluid"
     has mark_as_thing
     with IK2_Count 12
-    with IK2_Link I108_syringes
+    with IK2_Link I107_syringes
     with KD_Count 2
     with name 'jars' 'of' 'fluid' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> -> I108_syringes ""
+Object -> -> I107_syringes ""
     class K2_thing
     with short_name "syringes"
     has proper
@@ -10101,13 +10082,13 @@ Object -> -> I108_syringes ""
     with cap_short_name "Syringes"
     has mark_as_thing
     with IK2_Count 13
-    with IK2_Link I109_chemicals
+    with IK2_Link I108_chemicals
     with KD_Count 2
     with name 'syringes' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> -> I109_chemicals ""
+Object -> -> I108_chemicals ""
     class K2_thing
     with short_name "chemicals"
     has proper
@@ -10116,13 +10097,13 @@ Object -> -> I109_chemicals ""
     with cap_short_name "Chemicals"
     has mark_as_thing
     with IK2_Count 14
-    with IK2_Link I110_surgical_tools
+    with IK2_Link I109_surgical_tools
     with KD_Count 2
     with name 'chemicals' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> -> I110_surgical_tools ""
+Object -> -> I109_surgical_tools ""
     class K2_thing
     with short_name "surgical tools"
     has pluralname
@@ -10131,13 +10112,13 @@ Object -> -> I110_surgical_tools ""
     with list_together 0
     has mark_as_thing
     with IK2_Count 15
-    with IK2_Link I111_cage
+    with IK2_Link I110_cage
     with KD_Count 2
     with name 'surgical' 'tools' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> I111_cage ""
+Object -> I110_cage ""
     class K2_thing
     with short_name "cage"
     with description SC_13
@@ -10146,15 +10127,15 @@ Object -> I111_cage ""
     with vector 0
     with list_together 0
     has mark_as_thing
-    with component_child I112_blood
+    with component_child I111_blood
     with IK2_Count 16
-    with IK2_Link I114_scenic_painting
+    with IK2_Link I113_scenic_painting
     with KD_Count 2
     with name 'cage' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> I114_scenic_painting ""
+Object -> I113_scenic_painting ""
     class K2_thing
     with short_name "scenic painting"
     with description SC_14
@@ -10162,13 +10143,13 @@ Object -> I114_scenic_painting ""
     with list_together 0
     has mark_as_thing
     with IK2_Count 19
-    with IK2_Link I112_blood
+    with IK2_Link I111_blood
     with KD_Count 2
     with name 'scenic' 'painting' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I112_blood ""
+Object I111_blood ""
     class K2_thing
     with short_name "blood"
     with description SC_15
@@ -10177,31 +10158,31 @@ Object I112_blood ""
     with list_together 0
     with cap_short_name "Blood"
     has mark_as_thing
-    with component_parent I111_cage
-    with component_sibling I113_cage_lock
+    with component_parent I110_cage
+    with component_sibling I112_cage_lock
     with IK2_Count 17
-    with IK2_Link I113_cage_lock
+    with IK2_Link I112_cage_lock
     with KD_Count 2
     with name 'blood' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I113_cage_lock ""
+Object I112_cage_lock ""
     class K2_thing
     with short_name "cage lock"
     with description SC_16
     with vector 0
     with list_together 0
     has mark_as_thing
-    with component_parent I111_cage
+    with component_parent I110_cage
     with IK2_Count 18
-    with IK2_Link I115_cellar_door
+    with IK2_Link I114_cellar_door
     with KD_Count 2
     with name 'cage' 'lock' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I115_cellar_door ""
+Object I114_cellar_door ""
     class K4_door
     with short_name "cellar door"
     with description SC_17
@@ -10211,23 +10192,23 @@ Object I115_cellar_door ""
     with vector 0
     with door_dir [ loc; loc = location;
             if (loc == thedark) loc = real_location;
-            if (loc == I116_field) return I51_southwest; return I46_north; ],
+            if (loc == I115_field) return I51_southwest; return I46_north; ],
     with door_to [ loc; loc = location;
             if (loc == thedark) loc = real_location;
-            if (loc == I116_field) return I105_basement; return I116_field; ],
-    with found_in I116_field I105_basement
+            if (loc == I115_field) return I104_basement; return I115_field; ],
+    with found_in I115_field I104_basement
     with list_together 0
     has mark_as_thing
     with IK2_Count 20
-    with IK2_Link I118_basement_stairs
+    with IK2_Link I117_basement_stairs
     with IK4_Count 1
-    with IK4_Link I118_basement_stairs
+    with IK4_Link I117_basement_stairs
     with KD_Count 4
     with name 'cellar' 'door' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I116_field ""
+Object I115_field ""
     class K1_room
     with short_name "Field"
     with description SC_18
@@ -10235,26 +10216,26 @@ Object I116_field ""
     with room_index -1
     with list_together 0
     has mark_as_room
-    with IK1_Count 4
-    with IK1_Link I117_first_floor_corridor
+    with IK1_Count 3
+    with IK1_Link I116_first_floor_corridor
     with KD_Count 1
     with name 'field' 
 ;
 
-Object I117_first_floor_corridor ""
+Object I116_first_floor_corridor ""
     class K1_room
     with short_name "First Floor Corridor"
     with vector 0
     with room_index -1
     with list_together 0
     has mark_as_room
-    with IK1_Count 5
-    with IK1_Link I119_second_floor_corridor
+    with IK1_Count 4
+    with IK1_Link I118_second_floor_corridor
     with KD_Count 1
     with name 'first' 'floor' 'corridor' 
 ;
 
-Object I118_basement_stairs ""
+Object I117_basement_stairs ""
     class K4_door
     with short_name "basement stairs"
     with initial SC_19
@@ -10263,36 +10244,36 @@ Object I118_basement_stairs ""
     with vector 0
     with door_dir [ loc; loc = location;
             if (loc == thedark) loc = real_location;
-            if (loc == I117_first_floor_corridor) return I55_down; return I54_up; ],
+            if (loc == I116_first_floor_corridor) return I55_down; return I54_up; ],
     with door_to [ loc; loc = location;
             if (loc == thedark) loc = real_location;
-            if (loc == I117_first_floor_corridor) return I105_basement; return I117_first_floor_corridor; ],
-    with found_in I117_first_floor_corridor I105_basement
+            if (loc == I116_first_floor_corridor) return I104_basement; return I116_first_floor_corridor; ],
+    with found_in I116_first_floor_corridor I104_basement
     with list_together 0
     has mark_as_thing
     with IK2_Count 21
-    with IK2_Link I120_upper_stairs
+    with IK2_Link I119_upper_stairs
     with IK4_Count 2
-    with IK4_Link I120_upper_stairs
+    with IK4_Link I119_upper_stairs
     with KD_Count 4
     with name 'basement' 'stairs' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I119_second_floor_corridor ""
+Object I118_second_floor_corridor ""
     class K1_room
     with short_name "Second Floor Corridor"
     with vector 0
     with room_index -1
     with list_together 0
     has mark_as_room
-    with IK1_Count 6
-    with IK1_Link I121_study
+    with IK1_Count 5
+    with IK1_Link I120_study
     with KD_Count 1
     with name 'second' 'floor' 'corridor' 
 ;
 
-Object I120_upper_stairs ""
+Object I119_upper_stairs ""
     class K4_door
     with short_name "upper stairs"
     with initial SC_20
@@ -10301,37 +10282,37 @@ Object I120_upper_stairs ""
     with vector 0
     with door_dir [ loc; loc = location;
             if (loc == thedark) loc = real_location;
-            if (loc == I119_second_floor_corridor) return I55_down; return I54_up; ],
+            if (loc == I118_second_floor_corridor) return I55_down; return I54_up; ],
     with door_to [ loc; loc = location;
             if (loc == thedark) loc = real_location;
-            if (loc == I119_second_floor_corridor) return I117_first_floor_corridor; return I119_second_floor_corridor; ],
-    with found_in I119_second_floor_corridor I117_first_floor_corridor
+            if (loc == I118_second_floor_corridor) return I116_first_floor_corridor; return I118_second_floor_corridor; ],
+    with found_in I118_second_floor_corridor I116_first_floor_corridor
     with list_together 0
     has mark_as_thing
     with IK2_Count 22
-    with IK2_Link I122_bookshelf
+    with IK2_Link I121_bookshelf
     with IK4_Count 3
-    with IK4_Link I170_secret_passage
+    with IK4_Link I169_secret_passage
     with KD_Count 4
     with name 'upper' 'stairs' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I121_study ""
+Object I120_study ""
     class K1_room
     with short_name "Study"
-    with description text_routine_4
+    with description text_routine_3
     with vector 0
     with room_index -1
     with list_together 0
     has mark_as_room
-    with IK1_Count 7
-    with IK1_Link I129_armory
+    with IK1_Count 6
+    with IK1_Link I128_armory
     with KD_Count 1
     with name 'study' 
 ;
 
-Object -> I122_bookshelf ""
+Object -> I121_bookshelf ""
     class K2_thing
     with short_name "bookshelf"
     with description SC_21
@@ -10340,18 +10321,18 @@ Object -> I122_bookshelf ""
     with vector 0
     with list_together 0
     has mark_as_thing
-    with component_child I123_books
+    with component_child I122_books
     with IK2_Count 23
-    with IK2_Link I124_glass_cabinet
+    with IK2_Link I123_glass_cabinet
     with KD_Count 2
     with name 'bookshelf' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> I124_glass_cabinet ""
+Object -> I123_glass_cabinet ""
     class K5_container
     with short_name "glass cabinet"
-    with description text_routine_5
+    with description text_routine_4
     has static
     has scenery
     has ~open
@@ -10363,15 +10344,15 @@ Object -> I124_glass_cabinet ""
     with list_together 0
     has mark_as_thing
     with IK2_Count 25
-    with IK2_Link I125_yellow_gem
+    with IK2_Link I124_yellow_gem
     with IK5_Count 1
-    with IK5_Link I127_drawer
+    with IK5_Link I126_drawer
     with KD_Count 5
     with name 'glass' 'cabinet' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> -> I125_yellow_gem ""
+Object -> -> I124_yellow_gem ""
     class K17_gem
     with short_name "yellow gem"
     with article SC_4
@@ -10380,15 +10361,15 @@ Object -> -> I125_yellow_gem ""
     with list_together 0
     has mark_as_thing
     with IK2_Count 26
-    with IK2_Link I126_desk
+    with IK2_Link I125_desk
     with IK17_Count 1
-    with IK17_Link I144_red_gem
+    with IK17_Link I143_red_gem
     with KD_Count 17
     with name 'yellow' 'gem' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> I126_desk ""
+Object -> I125_desk ""
     class K2_thing
     with short_name "desk"
     with description SC_23
@@ -10397,29 +10378,29 @@ Object -> I126_desk ""
     with vector 0
     with list_together 0
     has mark_as_thing
-    with component_child I127_drawer
+    with component_child I126_drawer
     with IK2_Count 27
-    with IK2_Link I123_books
+    with IK2_Link I122_books
     with KD_Count 2
     with name 'desk' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I123_books ""
+Object I122_books ""
     class K2_thing
     with short_name "books"
     with vector 0
     with list_together 0
     has mark_as_thing
-    with component_parent I122_bookshelf
+    with component_parent I121_bookshelf
     with IK2_Count 24
-    with IK2_Link I127_drawer
+    with IK2_Link I126_drawer
     with KD_Count 2
     with name 'books' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I127_drawer ""
+Object I126_drawer ""
     class K5_container
     with short_name "drawer"
     has ~open
@@ -10427,17 +10408,17 @@ Object I127_drawer ""
     with vector 0
     with list_together 0
     has mark_as_thing
-    with component_parent I126_desk
+    with component_parent I125_desk
     with IK2_Count 28
-    with IK2_Link I128_journal
+    with IK2_Link I127_journal
     with IK5_Count 2
-    with IK5_Link I131_locker
+    with IK5_Link I130_locker
     with KD_Count 5
     with name 'drawer' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> I128_journal ""
+Object -> I127_journal ""
     class K2_thing
     with short_name "journal"
     with description SC_24
@@ -10445,13 +10426,13 @@ Object -> I128_journal ""
     with list_together 0
     has mark_as_thing
     with IK2_Count 29
-    with IK2_Link I130_ammo_boxes
+    with IK2_Link I129_ammo_boxes
     with KD_Count 2
     with name 'journal' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I129_armory ""
+Object I128_armory ""
     class K1_room
     with short_name "Armory"
     with description SC_25
@@ -10459,13 +10440,13 @@ Object I129_armory ""
     with room_index -1
     with list_together 0
     has mark_as_room
-    with IK1_Count 8
-    with IK1_Link I134_master_bedroom
+    with IK1_Count 7
+    with IK1_Link I133_master_bedroom
     with KD_Count 1
     with name 'armory' 
 ;
 
-Object -> I130_ammo_boxes ""
+Object -> I129_ammo_boxes ""
     class K2_thing
     with short_name "ammo boxes"
     with description SC_26
@@ -10475,13 +10456,13 @@ Object -> I130_ammo_boxes ""
     with cap_short_name "Ammo boxes"
     has mark_as_thing
     with IK2_Count 30
-    with IK2_Link I131_locker
+    with IK2_Link I130_locker
     with KD_Count 2
     with name 'ammo' 'boxes' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> I131_locker ""
+Object -> I130_locker ""
     class K5_container
     with short_name "locker"
     has static
@@ -10492,15 +10473,15 @@ Object -> I131_locker ""
     with list_together 0
     has mark_as_thing
     with IK2_Count 31
-    with IK2_Link I132_gun_cleaning_equipment
+    with IK2_Link I131_gun_cleaning_equipment
     with IK5_Count 3
-    with IK5_Link I136_closet
+    with IK5_Link I135_closet
     with KD_Count 5
     with name 'locker' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> -> I132_gun_cleaning_equipment ""
+Object -> -> I131_gun_cleaning_equipment ""
     class K2_thing
     with short_name "gun cleaning equipment"
     has proper
@@ -10509,27 +10490,27 @@ Object -> -> I132_gun_cleaning_equipment ""
     with cap_short_name "Gun cleaning equipment"
     has mark_as_thing
     with IK2_Count 32
-    with IK2_Link I133_small_pistol
+    with IK2_Link I132_small_pistol
     with KD_Count 2
     with name 'gun' 'cleaning' 'equipment' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> -> I133_small_pistol ""
+Object -> -> I132_small_pistol ""
     class K2_thing
     with short_name "small pistol"
     with vector 0
     with list_together 0
     has mark_as_thing
     with IK2_Count 33
-    with IK2_Link I135_bed
+    with IK2_Link I134_bed
     with KD_Count 2
     with name 'small' 'pistol' 'gun' 
     with parse_name Parse_Name_GV95
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I134_master_bedroom ""
+Object I133_master_bedroom ""
     class K1_room
     with short_name "Master Bedroom"
     with description SC_27
@@ -10537,13 +10518,13 @@ Object I134_master_bedroom ""
     with room_index -1
     with list_together 0
     has mark_as_room
-    with IK1_Count 9
-    with IK1_Link I140_bathroom_one
+    with IK1_Count 8
+    with IK1_Link I139_bathroom_one
     with KD_Count 1
     with name 'master' 'bedroom' 
 ;
 
-Object -> I135_bed ""
+Object -> I134_bed ""
     class K2_thing
     with short_name "bed"
     with description SC_28
@@ -10553,13 +10534,13 @@ Object -> I135_bed ""
     with list_together 0
     has mark_as_thing
     with IK2_Count 34
-    with IK2_Link I136_closet
+    with IK2_Link I135_closet
     with KD_Count 2
     with name 'bed' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> I136_closet ""
+Object -> I135_closet ""
     class K5_container
     with short_name "closet"
     has static
@@ -10570,64 +10551,64 @@ Object -> I136_closet ""
     with list_together 0
     has mark_as_thing
     with IK2_Count 35
-    with IK2_Link I137_statue
+    with IK2_Link I136_statue
     with IK5_Count 4
-    with IK5_Link I147_dresser
+    with IK5_Link I146_dresser
     with KD_Count 5
     with name 'closet' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> I137_statue ""
+Object -> I136_statue ""
     class K2_thing
     with short_name "statue"
-    with description text_routine_6
+    with description text_routine_5
     with initial SC_29
     with vector 0
     with list_together 0
     has mark_as_thing
-    with component_child I138_statue_s_chest
+    with component_child I137_statue_s_chest
     with IK2_Count 36
-    with IK2_Link I138_statue_s_chest
+    with IK2_Link I137_statue_s_chest
     with KD_Count 2
     with name 'statue' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I138_statue_s_chest ""
+Object I137_statue_s_chest ""
     class K2_thing
     with short_name "statue's chest"
-    with description text_routine_7
+    with description text_routine_6
     with p13_capacity 2
     with vector 0
     with list_together 0
     has mark_as_thing
-    with component_parent I137_statue
-    with component_sibling I139_statue_s_hands
+    with component_parent I136_statue
+    with component_sibling I138_statue_s_hands
     with IK2_Count 37
-    with IK2_Link I139_statue_s_hands
+    with IK2_Link I138_statue_s_hands
     with KD_Count 2
     with name 'statue^s' 'chest' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I139_statue_s_hands ""
+Object I138_statue_s_hands ""
     class K6_supporter
     with short_name "statue's hands"
     with vector 0
     with list_together 0
     has mark_as_thing
-    with component_parent I137_statue
+    with component_parent I136_statue
     with IK2_Count 38
-    with IK2_Link I141_toilet
+    with IK2_Link I140_toilet
     with IK6_Count 1
-    with IK6_Link I157_dining_table
+    with IK6_Link I156_dining_table
     with KD_Count 6
     with name 'statue^s' 'hands' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I140_bathroom_one ""
+Object I139_bathroom_one ""
     class K1_room
     with short_name "Bathroom One"
     with description SC_30
@@ -10637,13 +10618,13 @@ Object I140_bathroom_one ""
     with list_together 0
     with cap_short_name "Bathroom One"
     has mark_as_room
-    with IK1_Count 10
-    with IK1_Link I145_bathroom_two
+    with IK1_Count 9
+    with IK1_Link I144_bathroom_two
     with KD_Count 1
     with name 'bathroom' 'one' 
 ;
 
-Object -> I141_toilet ""
+Object -> I140_toilet ""
     class K2_thing
     with short_name "toilet"
     has static
@@ -10652,13 +10633,13 @@ Object -> I141_toilet ""
     with list_together 0
     has mark_as_thing
     with IK2_Count 39
-    with IK2_Link I142_sink
+    with IK2_Link I141_sink
     with KD_Count 2
     with name 'toilet' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> I142_sink ""
+Object -> I141_sink ""
     class K2_thing
     with short_name "sink"
     has static
@@ -10667,16 +10648,16 @@ Object -> I142_sink ""
     with list_together 0
     has mark_as_thing
     with IK2_Count 40
-    with IK2_Link I143_mirror
+    with IK2_Link I142_mirror
     with KD_Count 2
     with name 'sink' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> I143_mirror ""
+Object -> I142_mirror ""
     class K2_thing
     with short_name "mirror"
-    with description text_routine_8
+    with description text_routine_7
     with p13_capacity 1
     has static
     has scenery
@@ -10684,31 +10665,31 @@ Object -> I143_mirror ""
     with vector 0
     with list_together 0
     has mark_as_thing
-    with component_child I144_red_gem
+    with component_child I143_red_gem
     with IK2_Count 41
-    with IK2_Link I144_red_gem
+    with IK2_Link I143_red_gem
     with KD_Count 2
     with name 'mirror' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I144_red_gem ""
+Object I143_red_gem ""
     class K17_gem
     with short_name "red gem"
     with vector 0
     with list_together 0
     has mark_as_thing
-    with component_parent I143_mirror
+    with component_parent I142_mirror
     with IK2_Count 42
-    with IK2_Link I147_dresser
+    with IK2_Link I146_dresser
     with IK17_Count 2
-    with IK17_Link I153_blue_gem
+    with IK17_Link I152_blue_gem
     with KD_Count 17
     with name 'red' 'gem' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I145_bathroom_two ""
+Object I144_bathroom_two ""
     class K1_room
     with short_name "Bathroom Two"
     with description SC_31
@@ -10718,13 +10699,13 @@ Object I145_bathroom_two ""
     with list_together 0
     with cap_short_name "Bathroom Two"
     has mark_as_room
-    with IK1_Count 11
-    with IK1_Link I146_guest_room
+    with IK1_Count 10
+    with IK1_Link I145_guest_room
     with KD_Count 1
     with name 'bathroom' 'two' 
 ;
 
-Object I146_guest_room ""
+Object I145_guest_room ""
     class K1_room
     with short_name "Guest Room"
     with description SC_32
@@ -10732,13 +10713,13 @@ Object I146_guest_room ""
     with room_index -1
     with list_together 0
     has mark_as_room
-    with IK1_Count 12
-    with IK1_Link I156_kitchen
+    with IK1_Count 11
+    with IK1_Link I155_kitchen
     with KD_Count 1
     with name 'guest' 'room' 
 ;
 
-Object -> I147_dresser ""
+Object -> I146_dresser ""
     class K5_container
     with short_name "dresser"
     with description SC_33
@@ -10750,15 +10731,15 @@ Object -> I147_dresser ""
     with list_together 0
     has mark_as_thing
     with IK2_Count 43
-    with IK2_Link I148_envelope
+    with IK2_Link I147_envelope
     with IK5_Count 5
-    with IK5_Link I148_envelope
+    with IK5_Link I147_envelope
     with KD_Count 5
     with name 'dresser' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> -> I148_envelope ""
+Object -> -> I147_envelope ""
     class K5_container
     with short_name "envelope"
     has ~open
@@ -10767,86 +10748,86 @@ Object -> -> I148_envelope ""
     with list_together 0
     has mark_as_thing
     with IK2_Count 44
-    with IK2_Link I149_mary_s_id
+    with IK2_Link I148_mary_s_id
     with IK5_Count 6
-    with IK5_Link I159_dish_cabinets
+    with IK5_Link I158_dish_cabinets
     with KD_Count 5
     with name 'envelope' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> -> -> I149_mary_s_id ""
+Object -> -> -> I148_mary_s_id ""
     class K2_thing
     with short_name "Mary's ID"
-    with description text_routine_9
+    with description text_routine_8
     has proper
     with vector 0
     with list_together 0
     with cap_short_name "Mary's ID"
     has mark_as_thing
     with IK2_Count 45
-    with IK2_Link I150_frank_s_id
+    with IK2_Link I149_frank_s_id
     with KD_Count 2
     with name 'mary^s' 'id' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> -> -> I150_frank_s_id ""
+Object -> -> -> I149_frank_s_id ""
     class K2_thing
     with short_name "Frank's ID"
-    with description text_routine_10
+    with description text_routine_9
     has proper
     with vector 0
     with list_together 0
     with cap_short_name "Frank's ID"
     has mark_as_thing
     with IK2_Count 46
-    with IK2_Link I151_jonathan_s_id
+    with IK2_Link I150_jonathan_s_id
     with KD_Count 2
     with name 'frank^s' 'id' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> -> -> I151_jonathan_s_id ""
+Object -> -> -> I150_jonathan_s_id ""
     class K2_thing
     with short_name "Jonathan's ID"
-    with description text_routine_11
+    with description text_routine_10
     has proper
     with vector 0
     with list_together 0
     with cap_short_name "Jonathan's ID"
     has mark_as_thing
     with IK2_Count 47
-    with IK2_Link I152_andrew_s_id
+    with IK2_Link I151_andrew_s_id
     with KD_Count 2
     with name 'jonathan^s' 'id' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> -> -> I152_andrew_s_id ""
+Object -> -> -> I151_andrew_s_id ""
     class K2_thing
     with short_name "Andrew's ID"
-    with description text_routine_12
+    with description text_routine_11
     has proper
     with vector 0
     with list_together 0
     with cap_short_name "Andrew's ID"
     has mark_as_thing
     with IK2_Count 48
-    with IK2_Link I153_blue_gem
+    with IK2_Link I152_blue_gem
     with KD_Count 2
     with name 'andrew^s' 'id' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> -> I153_blue_gem ""
+Object -> -> I152_blue_gem ""
     class K17_gem
     with short_name "blue gem"
     with vector 0
     with list_together 0
     has mark_as_thing
     with IK2_Count 49
-    with IK2_Link I154_cobwebs
+    with IK2_Link I153_cobwebs
     with IK17_Count 3
     with IK17_Link nothing
     with KD_Count 17
@@ -10854,7 +10835,7 @@ Object -> -> I153_blue_gem ""
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> I154_cobwebs ""
+Object -> I153_cobwebs ""
     class K2_thing
     with short_name "cobwebs"
     has static
@@ -10863,27 +10844,27 @@ Object -> I154_cobwebs ""
     with list_together 0
     has mark_as_thing
     with IK2_Count 50
-    with IK2_Link I155_framed_print
+    with IK2_Link I154_framed_print
     with KD_Count 2
     with name 'cobwebs' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> I155_framed_print ""
+Object -> I154_framed_print ""
     class K2_thing
     with short_name "framed print"
-    with description text_routine_13
+    with description text_routine_12
     with vector 0
     with list_together 0
     has mark_as_thing
     with IK2_Count 51
-    with IK2_Link I157_dining_table
+    with IK2_Link I156_dining_table
     with KD_Count 2
     with name 'framed' 'print' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I156_kitchen ""
+Object I155_kitchen ""
     class K1_room
     with short_name SC_34
     with description SC_35
@@ -10891,14 +10872,14 @@ Object I156_kitchen ""
     with room_index -1
     with list_together 0
     has mark_as_room
-    with IK1_Count 13
-    with IK1_Link I166_pantry
+    with IK1_Count 12
+    with IK1_Link I165_pantry
     with KD_Count 1
     with name 'kitchen' 
     with parse_name Parse_Name_GV96
 ;
 
-Object -> I157_dining_table ""
+Object -> I156_dining_table ""
     class K6_supporter
     with short_name "dining table"
     has static
@@ -10907,7 +10888,7 @@ Object -> I157_dining_table ""
     with list_together 0
     has mark_as_thing
     with IK2_Count 52
-    with IK2_Link I163_fake_fruit
+    with IK2_Link I162_fake_fruit
     with IK6_Count 2
     with IK6_Link nothing
     with KD_Count 6
@@ -10915,7 +10896,7 @@ Object -> I157_dining_table ""
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> -> I163_fake_fruit ""
+Object -> -> I162_fake_fruit ""
     class K2_thing
     with short_name "fake fruit"
     with description SC_36
@@ -10925,13 +10906,13 @@ Object -> -> I163_fake_fruit ""
     with cap_short_name "Fake fruit"
     has mark_as_thing
     with IK2_Count 58
-    with IK2_Link I158_stove
+    with IK2_Link I157_stove
     with KD_Count 2
     with name 'fake' 'fruit' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> I158_stove ""
+Object -> I157_stove ""
     class K2_thing
     with short_name "stove"
     has static
@@ -10940,13 +10921,13 @@ Object -> I158_stove ""
     with list_together 0
     has mark_as_thing
     with IK2_Count 53
-    with IK2_Link I159_dish_cabinets
+    with IK2_Link I158_dish_cabinets
     with KD_Count 2
     with name 'stove' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> I159_dish_cabinets ""
+Object -> I158_dish_cabinets ""
     class K5_container
     with short_name "dish cabinets"
     has static
@@ -10958,15 +10939,15 @@ Object -> I159_dish_cabinets ""
     with list_together 0
     has mark_as_thing
     with IK2_Count 54
-    with IK2_Link I160_kitchen_utensils
+    with IK2_Link I159_kitchen_utensils
     with IK5_Count 7
-    with IK5_Link I164_refrigerator
+    with IK5_Link I163_refrigerator
     with KD_Count 5
     with name 'dish' 'cabinets' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> -> I160_kitchen_utensils ""
+Object -> -> I159_kitchen_utensils ""
     class K2_thing
     with short_name "kitchen utensils"
     has proper
@@ -10975,13 +10956,13 @@ Object -> -> I160_kitchen_utensils ""
     with cap_short_name "Kitchen utensils"
     has mark_as_thing
     with IK2_Count 55
-    with IK2_Link I161_dishes
+    with IK2_Link I160_dishes
     with KD_Count 2
     with name 'kitchen' 'utensils' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> -> I161_dishes ""
+Object -> -> I160_dishes ""
     class K2_thing
     with short_name "dishes"
     has proper
@@ -10990,13 +10971,13 @@ Object -> -> I161_dishes ""
     with cap_short_name "Dishes"
     has mark_as_thing
     with IK2_Count 56
-    with IK2_Link I162_kitchen_counter
+    with IK2_Link I161_kitchen_counter
     with KD_Count 2
     with name 'dishes' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> I162_kitchen_counter ""
+Object -> I161_kitchen_counter ""
     class K2_thing
     with short_name "kitchen counter"
     with description SC_37
@@ -11006,13 +10987,13 @@ Object -> I162_kitchen_counter ""
     with list_together 0
     has mark_as_thing
     with IK2_Count 57
-    with IK2_Link I164_refrigerator
+    with IK2_Link I163_refrigerator
     with KD_Count 2
     with name 'kitchen' 'counter' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I164_refrigerator ""
+Object I163_refrigerator ""
     class K5_container
     with short_name "refrigerator"
     has static
@@ -11023,15 +11004,15 @@ Object I164_refrigerator ""
     with list_together 0
     has mark_as_thing
     with IK2_Count 59
-    with IK2_Link I167_food_boxes
+    with IK2_Link I166_food_boxes
     with IK5_Count 8
-    with IK5_Link I167_food_boxes
+    with IK5_Link I166_food_boxes
     with KD_Count 5
     with name 'refrigerator' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I166_pantry ""
+Object I165_pantry ""
     class K1_room
     with short_name "Pantry"
     with description SC_38
@@ -11039,13 +11020,13 @@ Object I166_pantry ""
     with room_index -1
     with list_together 0
     has mark_as_room
-    with IK1_Count 14
-    with IK1_Link I171_control_room
+    with IK1_Count 13
+    with IK1_Link I170_control_room
     with KD_Count 1
     with name 'pantry' 
 ;
 
-Object -> I167_food_boxes ""
+Object -> I166_food_boxes ""
     class K19_box
     with short_name "food boxes"
     with initial SC_39
@@ -11057,9 +11038,9 @@ Object -> I167_food_boxes ""
     with cap_short_name "Food boxes"
     has mark_as_thing
     with IK2_Count 60
-    with IK2_Link I168_rack
+    with IK2_Link I167_rack
     with IK5_Count 9
-    with IK5_Link I168_rack
+    with IK5_Link I167_rack
     with IK19_Count 0
     with IK19_Link nothing
     with KD_Count 19
@@ -11067,7 +11048,7 @@ Object -> I167_food_boxes ""
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> I168_rack ""
+Object -> I167_rack ""
     class K5_container
     with short_name "rack"
     has static
@@ -11077,15 +11058,15 @@ Object -> I168_rack ""
     with list_together 0
     has mark_as_thing
     with IK2_Count 61
-    with IK2_Link I169_nonperishable_food
+    with IK2_Link I168_nonperishable_food
     with IK5_Count 10
-    with IK5_Link I179_ottoman
+    with IK5_Link I178_ottoman
     with KD_Count 5
     with name 'rack' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> -> I169_nonperishable_food ""
+Object -> -> I168_nonperishable_food ""
     class K2_thing
     with short_name "nonperishable food"
     has proper
@@ -11094,13 +11075,13 @@ Object -> -> I169_nonperishable_food ""
     with cap_short_name "Nonperishable food"
     has mark_as_thing
     with IK2_Count 62
-    with IK2_Link I170_secret_passage
+    with IK2_Link I169_secret_passage
     with KD_Count 2
     with name 'nonperishable' 'food' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I170_secret_passage ""
+Object I169_secret_passage ""
     class K4_door
     with short_name "secret passage"
     with description SC_40
@@ -11108,24 +11089,24 @@ Object I170_secret_passage ""
     with vector 0
     with door_dir [ loc; loc = location;
             if (loc == thedark) loc = real_location;
-            if (loc == I171_control_room) return I53_west; return I47_northeast; ],
+            if (loc == I170_control_room) return I53_west; return I47_northeast; ],
     with door_to [ loc; loc = location;
             if (loc == thedark) loc = real_location;
-            if (loc == I171_control_room) return I166_pantry; return I171_control_room; ],
-    with found_in I171_control_room I166_pantry
+            if (loc == I170_control_room) return I165_pantry; return I170_control_room; ],
+    with found_in I170_control_room I165_pantry
     with list_together 0
     has mark_as_thing
     with IK2_Count 63
-    with IK2_Link I172_big_machine
+    with IK2_Link I171_big_machine
     with IK4_Count 4
-    with IK4_Link I186_metal_door
+    with IK4_Link I185_metal_door
     with KD_Count 4
     with name 'secret' 'passage' 
     with parse_name Parse_Name_GV98
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I171_control_room ""
+Object I170_control_room ""
     class K1_room
     with short_name "Control Room"
     with description SC_41
@@ -11133,13 +11114,13 @@ Object I171_control_room ""
     with room_index -1
     with list_together 0
     has mark_as_room
-    with IK1_Count 15
-    with IK1_Link I176_den
+    with IK1_Count 14
+    with IK1_Link I175_den
     with KD_Count 1
     with name 'control' 'room' 
 ;
 
-Object -> I172_big_machine ""
+Object -> I171_big_machine ""
     class K2_thing
     with short_name "big machine"
     with description SC_42
@@ -11149,63 +11130,63 @@ Object -> I172_big_machine ""
     with vector 0
     with list_together 0
     has mark_as_thing
-    with component_child I173_lever
+    with component_child I172_lever
     with IK2_Count 64
-    with IK2_Link I173_lever
+    with IK2_Link I172_lever
     with KD_Count 2
     with name 'big' 'machine' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I173_lever ""
+Object I172_lever ""
     class K2_thing
     with short_name "lever"
-    with description text_routine_14
+    with description text_routine_13
     has p71_pushed_up
     with vector 0
     with list_together 0
     has mark_as_thing
-    with component_parent I172_big_machine
-    with component_sibling I174_power_button
+    with component_parent I171_big_machine
+    with component_sibling I173_power_button
     with IK2_Count 65
-    with IK2_Link I174_power_button
+    with IK2_Link I173_power_button
     with KD_Count 2
     with name 'lever' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I174_power_button ""
+Object I173_power_button ""
     class K2_thing
     with short_name "power button"
     with description SC_44
     with vector 0
     with list_together 0
     has mark_as_thing
-    with component_parent I172_big_machine
-    with component_sibling I175_card_slot
+    with component_parent I171_big_machine
+    with component_sibling I174_card_slot
     with IK2_Count 66
-    with IK2_Link I175_card_slot
+    with IK2_Link I174_card_slot
     with KD_Count 2
     with name 'power' 'button' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I175_card_slot ""
+Object I174_card_slot ""
     class K2_thing
     with short_name "card slot"
     with description SC_45
     with vector 0
     with list_together 0
     has mark_as_thing
-    with component_parent I172_big_machine
+    with component_parent I171_big_machine
     with IK2_Count 67
-    with IK2_Link I177_bear_head
+    with IK2_Link I176_bear_head
     with KD_Count 2
     with name 'card' 'slot' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I176_den ""
+Object I175_den ""
     class K1_room
     with short_name "Den"
     with description SC_46
@@ -11213,16 +11194,16 @@ Object I176_den ""
     with room_index -1
     with list_together 0
     has mark_as_room
-    with IK1_Count 16
-    with IK1_Link I178_bedroom_c
+    with IK1_Count 15
+    with IK1_Link I177_bedroom_c
     with KD_Count 1
     with name 'den' 
 ;
 
-Object -> I177_bear_head ""
+Object -> I176_bear_head ""
     class K2_thing
     with short_name "bear head"
-    with description text_routine_15
+    with description text_routine_14
     with initial SC_47
     with p13_capacity 1
     has static
@@ -11231,14 +11212,14 @@ Object -> I177_bear_head ""
     has mark_as_thing
     with component_child I92_black_gem
     with IK2_Count 68
-    with IK2_Link I179_ottoman
+    with IK2_Link I178_ottoman
     with KD_Count 2
     with name 'bear' 'head' 'mount' 
     with parse_name Parse_Name_GV100
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I178_bedroom_c ""
+Object I177_bedroom_c ""
     class K1_room
     with short_name "Bedroom C"
     has proper
@@ -11247,13 +11228,13 @@ Object I178_bedroom_c ""
     with list_together 0
     with cap_short_name "Bedroom C"
     has mark_as_room
-    with IK1_Count 17
-    with IK1_Link I183_bedroom_b
+    with IK1_Count 16
+    with IK1_Link I182_bedroom_b
     with KD_Count 1
     with name 'bedroom' 'c//' 
 ;
 
-Object -> I179_ottoman ""
+Object -> I178_ottoman ""
     class K5_container
     with short_name "ottoman"
     with description SC_48
@@ -11265,29 +11246,29 @@ Object -> I179_ottoman ""
     with list_together 0
     has mark_as_thing
     with IK2_Count 69
-    with IK2_Link I180_photograph
+    with IK2_Link I179_photograph
     with IK5_Count 11
-    with IK5_Link I191_laundry_machine
+    with IK5_Link I190_laundry_machine
     with KD_Count 5
     with name 'ottoman' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> -> I180_photograph ""
+Object -> -> I179_photograph ""
     class K2_thing
     with short_name "photograph"
-    with description text_routine_16
+    with description text_routine_15
     with vector 0
     with list_together 0
     has mark_as_thing
     with IK2_Count 70
-    with IK2_Link I181_blank_paper
+    with IK2_Link I180_blank_paper
     with KD_Count 2
     with name 'photograph' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> -> I181_blank_paper ""
+Object -> -> I180_blank_paper ""
     class K2_thing
     with short_name "blank paper"
     has proper
@@ -11296,13 +11277,13 @@ Object -> -> I181_blank_paper ""
     with cap_short_name "Blank paper"
     has mark_as_thing
     with IK2_Count 71
-    with IK2_Link I182_bedroom_c_bed
+    with IK2_Link I181_bedroom_c_bed
     with KD_Count 2
     with name 'blank' 'paper' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I182_bedroom_c_bed ""
+Object I181_bedroom_c_bed ""
     class K2_thing
     with short_name "bedroom-c bed"
     has static
@@ -11311,13 +11292,13 @@ Object I182_bedroom_c_bed ""
     with list_together 0
     has mark_as_thing
     with IK2_Count 72
-    with IK2_Link I184_walls
+    with IK2_Link I183_walls
     with KD_Count 2
     with name 'bedroom-c' 'bed' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I183_bedroom_b ""
+Object I182_bedroom_b ""
     class K1_room
     with short_name "Bedroom B"
     with description SC_50
@@ -11327,13 +11308,13 @@ Object I183_bedroom_b ""
     with list_together 0
     with cap_short_name "Bedroom B"
     has mark_as_room
-    with IK1_Count 18
-    with IK1_Link I185_narrow_hallway_first
+    with IK1_Count 17
+    with IK1_Link I184_narrow_hallway_first
     with KD_Count 1
     with name 'bedroom' 'b//' 
 ;
 
-Object -> I184_walls ""
+Object -> I183_walls ""
     class K2_thing
     with short_name "walls"
     with description SC_51
@@ -11343,13 +11324,13 @@ Object -> I184_walls ""
     with list_together 0
     has mark_as_thing
     with IK2_Count 73
-    with IK2_Link I186_metal_door
+    with IK2_Link I185_metal_door
     with KD_Count 2
     with name 'walls' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I185_narrow_hallway_first ""
+Object I184_narrow_hallway_first ""
     class K1_room
     with short_name SC_52
     with description SC_53
@@ -11357,13 +11338,13 @@ Object I185_narrow_hallway_first ""
     with room_index -1
     with list_together 0
     has mark_as_room
-    with IK1_Count 19
-    with IK1_Link I187_narrow_hallway_second
+    with IK1_Count 18
+    with IK1_Link I186_narrow_hallway_second
     with KD_Count 1
     with name 'narrow' 'hallway' 'first' 
 ;
 
-Object I186_metal_door ""
+Object I185_metal_door ""
     class K4_door
     with short_name "metal door"
     with description SC_54
@@ -11373,15 +11354,15 @@ Object I186_metal_door ""
     with vector 0
     with door_dir [ loc; loc = location;
             if (loc == thedark) loc = real_location;
-            if (loc == I185_narrow_hallway_first) return I53_west; return I50_southeast; ],
+            if (loc == I184_narrow_hallway_first) return I53_west; return I50_southeast; ],
     with door_to [ loc; loc = location;
             if (loc == thedark) loc = real_location;
-            if (loc == I185_narrow_hallway_first) return I171_control_room; return I185_narrow_hallway_first; ],
-    with found_in I185_narrow_hallway_first I171_control_room
+            if (loc == I184_narrow_hallway_first) return I170_control_room; return I184_narrow_hallway_first; ],
+    with found_in I184_narrow_hallway_first I170_control_room
     with list_together 0
     has mark_as_thing
     with IK2_Count 74
-    with IK2_Link I189_unfinished_canvas
+    with IK2_Link I188_unfinished_canvas
     with IK4_Count 5
     with IK4_Link nothing
     with KD_Count 4
@@ -11389,20 +11370,20 @@ Object I186_metal_door ""
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I187_narrow_hallway_second ""
+Object I186_narrow_hallway_second ""
     class K1_room
     with short_name SC_55
     with vector 0
     with room_index -1
     with list_together 0
     has mark_as_room
-    with IK1_Count 20
-    with IK1_Link I188_studio
+    with IK1_Count 19
+    with IK1_Link I187_studio
     with KD_Count 1
     with name 'narrow' 'hallway' 'second' 
 ;
 
-Object I188_studio ""
+Object I187_studio ""
     class K1_room
     with short_name "Studio"
     with description SC_56
@@ -11410,13 +11391,13 @@ Object I188_studio ""
     with room_index -1
     with list_together 0
     has mark_as_room
-    with IK1_Count 21
-    with IK1_Link I190_utility_room
+    with IK1_Count 20
+    with IK1_Link I189_utility_room
     with KD_Count 1
     with name 'studio' 
 ;
 
-Object -> I189_unfinished_canvas ""
+Object -> I188_unfinished_canvas ""
     class K2_thing
     with short_name "unfinished canvas"
     with description SC_57
@@ -11425,13 +11406,13 @@ Object -> I189_unfinished_canvas ""
     with list_together 0
     has mark_as_thing
     with IK2_Count 75
-    with IK2_Link I191_laundry_machine
+    with IK2_Link I190_laundry_machine
     with KD_Count 2
     with name 'unfinished' 'canvas' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I190_utility_room ""
+Object I189_utility_room ""
     class K1_room
     with short_name "Utility Room"
     with description SC_59
@@ -11439,13 +11420,13 @@ Object I190_utility_room ""
     with room_index -1
     with list_together 0
     has mark_as_room
-    with IK1_Count 22
-    with IK1_Link I193_conference_room
+    with IK1_Count 21
+    with IK1_Link I192_conference_room
     with KD_Count 1
     with name 'utility' 'room' 
 ;
 
-Object -> I191_laundry_machine ""
+Object -> I190_laundry_machine ""
     class K5_container
     with short_name "laundry machine"
     with description SC_60
@@ -11457,7 +11438,7 @@ Object -> I191_laundry_machine ""
     with list_together 0
     has mark_as_thing
     with IK2_Count 76
-    with IK2_Link I192_blood_stained_clothes
+    with IK2_Link I191_blood_stained_clothes
     with IK5_Count 12
     with IK5_Link nothing
     with KD_Count 5
@@ -11465,7 +11446,7 @@ Object -> I191_laundry_machine ""
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> -> I192_blood_stained_clothes ""
+Object -> -> I191_blood_stained_clothes ""
     class K2_thing
     with short_name "blood-stained clothes"
     with description SC_61
@@ -11475,13 +11456,13 @@ Object -> -> I192_blood_stained_clothes ""
     with cap_short_name "Blood-stained clothes"
     has mark_as_thing
     with IK2_Count 77
-    with IK2_Link I194_conference_table
+    with IK2_Link I193_conference_table
     with KD_Count 2
     with name 'blood-stained' 'clothes' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I193_conference_room ""
+Object I192_conference_room ""
     class K1_room
     with short_name "Conference Room"
     with description SC_62
@@ -11489,13 +11470,13 @@ Object I193_conference_room ""
     with room_index -1
     with list_together 0
     has mark_as_room
-    with IK1_Count 23
-    with IK1_Link I196_excercise_room
+    with IK1_Count 22
+    with IK1_Link I195_excercise_room
     with KD_Count 1
     with name 'conference' 'room' 
 ;
 
-Object -> I194_conference_table ""
+Object -> I193_conference_table ""
     class K2_thing
     with short_name "conference table"
     has static
@@ -11504,13 +11485,13 @@ Object -> I194_conference_table ""
     with list_together 0
     has mark_as_thing
     with IK2_Count 78
-    with IK2_Link I195_chairs
+    with IK2_Link I194_chairs
     with KD_Count 2
     with name 'conference' 'table' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> I195_chairs ""
+Object -> I194_chairs ""
     class K2_thing
     with short_name "chairs"
     has static
@@ -11519,14 +11500,14 @@ Object -> I195_chairs ""
     with list_together 0
     has mark_as_thing
     with IK2_Count 79
-    with IK2_Link I197_yoga_mat
+    with IK2_Link I196_yoga_mat
     with KD_Count 2
     with name 'chairs' 'chair' 
     with parse_name Parse_Name_GV101
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I196_excercise_room ""
+Object I195_excercise_room ""
     class K1_room
     with short_name "Excercise Room"
     with description SC_63
@@ -11534,13 +11515,13 @@ Object I196_excercise_room ""
     with room_index -1
     with list_together 0
     has mark_as_room
-    with IK1_Count 24
-    with IK1_Link I198_placeholder
+    with IK1_Count 23
+    with IK1_Link I197_ballroom
     with KD_Count 1
     with name 'excercise' 'room' 
 ;
 
-Object -> I197_yoga_mat ""
+Object -> I196_yoga_mat ""
     class K2_thing
     with short_name "yoga mat"
     has static
@@ -11555,6 +11536,20 @@ Object -> I197_yoga_mat ""
     with action_bitmap 0 0 0 0 0 0 
 ;
 
+Object I197_ballroom ""
+    class K1_room
+    with short_name "Ballroom"
+    with description SC_64
+    with vector 0
+    with room_index -1
+    with list_together 0
+    has mark_as_room
+    with IK1_Count 24
+    with IK1_Link I198_placeholder
+    with KD_Count 1
+    with name 'ballroom' 
+;
+
 Object I198_placeholder ""
     class K1_room
     with short_name "placeholder"
@@ -11563,87 +11558,12 @@ Object I198_placeholder ""
     with list_together 0
     has mark_as_room
     with IK1_Count 25
-    with IK1_Link I199_megaraptor
+    with IK1_Link I199_connecticut
     with KD_Count 1
     with name 'placeholder' 
 ;
 
-Object I199_megaraptor ""
-    class K1_room
-    with short_name "Megaraptor"
-    has proper
-    with vector 0
-    with room_index -1
-    with list_together 0
-    with cap_short_name "Megaraptor"
-    has mark_as_room
-    with IK1_Count 26
-    with IK1_Link I200_skeletor
-    with KD_Count 1
-    with name 'megaraptor' 
-;
-
-Object I200_skeletor ""
-    class K1_room
-    with short_name "Skeletor"
-    has proper
-    with vector 0
-    with room_index -1
-    with list_together 0
-    with cap_short_name "Skeletor"
-    has mark_as_room
-    with IK1_Count 27
-    with IK1_Link I201_godzilla
-    with KD_Count 1
-    with name 'skeletor' 
-;
-
-Object I201_godzilla ""
-    class K1_room
-    with short_name "Godzilla"
-    has proper
-    with vector 0
-    with room_index -1
-    with list_together 0
-    with cap_short_name "Godzilla"
-    has mark_as_room
-    with IK1_Count 28
-    with IK1_Link I202_mothra
-    with KD_Count 1
-    with name 'godzilla' 
-;
-
-Object I202_mothra ""
-    class K1_room
-    with short_name "Mothra"
-    has proper
-    with vector 0
-    with room_index -1
-    with list_together 0
-    with cap_short_name "Mothra"
-    has mark_as_room
-    with IK1_Count 29
-    with IK1_Link I203_bukkake
-    with KD_Count 1
-    with name 'mothra' 
-;
-
-Object I203_bukkake ""
-    class K1_room
-    with short_name "Bukkake"
-    has proper
-    with vector 0
-    with room_index -1
-    with list_together 0
-    with cap_short_name "Bukkake"
-    has mark_as_room
-    with IK1_Count 30
-    with IK1_Link I204_connecticut
-    with KD_Count 1
-    with name 'bukkake' 
-;
-
-Object I204_connecticut ""
+Object I199_connecticut ""
     class K1_room
     with short_name "Connecticut"
     has proper
@@ -11652,13 +11572,13 @@ Object I204_connecticut ""
     with list_together 0
     with cap_short_name "Connecticut"
     has mark_as_room
-    with IK1_Count 31
-    with IK1_Link I205_new_york
+    with IK1_Count 26
+    with IK1_Link I200_new_york
     with KD_Count 1
     with name 'connecticut' 
 ;
 
-Object I205_new_york ""
+Object I200_new_york ""
     class K1_room
     with short_name "New York"
     has proper
@@ -11667,13 +11587,13 @@ Object I205_new_york ""
     with list_together 0
     with cap_short_name "New York"
     has mark_as_room
-    with IK1_Count 32
-    with IK1_Link I206_new_jersey
+    with IK1_Count 27
+    with IK1_Link I201_new_jersey
     with KD_Count 1
     with name 'new' 'york' 
 ;
 
-Object I206_new_jersey ""
+Object I201_new_jersey ""
     class K1_room
     with short_name "New Jersey"
     has proper
@@ -11682,13 +11602,13 @@ Object I206_new_jersey ""
     with list_together 0
     with cap_short_name "New Jersey"
     has mark_as_room
-    with IK1_Count 33
-    with IK1_Link I207_pennsylvania
+    with IK1_Count 28
+    with IK1_Link I202_pennsylvania
     with KD_Count 1
     with name 'new' 'jersey' 
 ;
 
-Object I207_pennsylvania ""
+Object I202_pennsylvania ""
     class K1_room
     with short_name "Pennsylvania"
     has proper
@@ -11697,13 +11617,13 @@ Object I207_pennsylvania ""
     with list_together 0
     with cap_short_name "Pennsylvania"
     has mark_as_room
-    with IK1_Count 34
-    with IK1_Link I208_delaware
+    with IK1_Count 29
+    with IK1_Link I203_delaware
     with KD_Count 1
     with name 'pennsylvania' 
 ;
 
-Object I208_delaware ""
+Object I203_delaware ""
     class K1_room
     with short_name "Delaware"
     has proper
@@ -11712,13 +11632,13 @@ Object I208_delaware ""
     with list_together 0
     with cap_short_name "Delaware"
     has mark_as_room
-    with IK1_Count 35
-    with IK1_Link I209_maryland
+    with IK1_Count 30
+    with IK1_Link I204_maryland
     with KD_Count 1
     with name 'delaware' 
 ;
 
-Object I209_maryland ""
+Object I204_maryland ""
     class K1_room
     with short_name "Maryland"
     has proper
@@ -11727,13 +11647,13 @@ Object I209_maryland ""
     with list_together 0
     with cap_short_name "Maryland"
     has mark_as_room
-    with IK1_Count 36
-    with IK1_Link I210_virginia
+    with IK1_Count 31
+    with IK1_Link I205_virginia
     with KD_Count 1
     with name 'maryland' 
 ;
 
-Object I210_virginia ""
+Object I205_virginia ""
     class K1_room
     with short_name "Virginia"
     has proper
@@ -11742,13 +11662,13 @@ Object I210_virginia ""
     with list_together 0
     with cap_short_name "Virginia"
     has mark_as_room
-    with IK1_Count 37
-    with IK1_Link I211_carolina
+    with IK1_Count 32
+    with IK1_Link I206_carolina
     with KD_Count 1
     with name 'virginia' 
 ;
 
-Object I211_carolina ""
+Object I206_carolina ""
     class K1_room
     with short_name "Carolina"
     has proper
@@ -11757,7 +11677,7 @@ Object I211_carolina ""
     with list_together 0
     with cap_short_name "Carolina"
     has mark_as_room
-    with IK1_Count 38
+    with IK1_Count 33
     with IK1_Link nothing
     with KD_Count 1
     with name 'carolina' 
@@ -11788,7 +11708,7 @@ Constant I87_i_beg_your_pardon_error = 20;
 Constant I89_trapped = 2;
 Array Global_Vars -->
   (false) ! 7
-  (SC_64) ! 24
+  (SC_65) ! 24
   (SC_2) ! 29
   (EMPTY_TEXT_VALUE) ! 30
   (EMPTY_TEXT_VALUE) ! 31
@@ -11807,7 +11727,7 @@ Array Global_Vars -->
 
 
 Array T0_final_question_options table  tab_0_0 tab_0_1 tab_0_2 tab_0_3 tab_0_4;
-Array tab_0_0 table $0064 0  (SC_65)  (SC_66)  (SC_67)  (SC_68)  (SC_69) ;
+Array tab_0_0 table $0064 0  (SC_66)  (SC_67)  (SC_68)  (SC_69)  (SC_70) ;
 Array tab_0_1 table $0465 1  (0)  (0)  (1)  (0)  (0) ;
 Array tab_0_2 table $2066 2  (Consult_Grammar_105)  (Consult_Grammar_106)  (Consult_Grammar_107)  (Consult_Grammar_108)  (Consult_Grammar_109) ;
 Array tab_0_3 table $0067 3  (IMMEDIATELY_RESTART_VM_R)  (IMMEDIATELY_RESTORE_SAVED_R)  TABLE_NOVALUE (IMMEDIATELY_QUIT_R)  (IMMEDIATELY_UNDO_R) ;
@@ -11817,16 +11737,16 @@ Array tab_1_0 table $0869 NULL  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_
 Array tab_1_1 table $446a 5  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
 Array T2_floor_one table  tab_2_0 tab_2_1 tab_2_2;
 Array tab_2_0 table $086b NULL  (I198_placeholder)  (I198_placeholder)  (I198_placeholder)  (I198_placeholder) ;
-Array tab_2_1 table $086c NULL  (I97_entryway)  (I198_placeholder)  (I198_placeholder)  (I117_first_floor_corridor) ;
+Array tab_2_1 table $086c NULL  (I98_living_room)  (I198_placeholder)  (I198_placeholder)  (I116_first_floor_corridor) ;
 Array tab_2_2 table $086d NULL  (I198_placeholder)  (I198_placeholder)  (I198_placeholder)  (I198_placeholder) ;
 Array T3_floor_two table  tab_3_0 tab_3_1 tab_3_2;
 Array tab_3_0 table $086b NULL  (I198_placeholder)  (I198_placeholder)  (I198_placeholder)  (I198_placeholder) ;
-Array tab_3_1 table $086c NULL  (I198_placeholder)  (I198_placeholder)  (I198_placeholder)  (I119_second_floor_corridor) ;
+Array tab_3_1 table $086c NULL  (I198_placeholder)  (I198_placeholder)  (I198_placeholder)  (I118_second_floor_corridor) ;
 Array tab_3_2 table $086d NULL  (I198_placeholder)  (I198_placeholder)  (I198_placeholder)  (I198_placeholder) ;
 Array T4_first_floor_available_roo --> 1 tab_4_0;
-Array tab_4_0 table $086e NULL  (I146_guest_room)  (I140_bathroom_one)  (I156_kitchen)  (I129_armory)  (I176_den)  (I185_narrow_hallway_first)  (I134_master_bedroom)  (I190_utility_room)  (I193_conference_room)  (I199_megaraptor) ;
+Array tab_4_0 table $086e NULL  (I145_guest_room)  (I139_bathroom_one)  (I155_kitchen)  (I128_armory)  (I175_den)  (I184_narrow_hallway_first)  (I133_master_bedroom)  (I189_utility_room)  (I192_conference_room)  (I197_ballroom) ;
 Array T5_second_floor_available_ro --> 1 tab_5_0;
-Array tab_5_0 table $086e NULL  (I178_bedroom_c)  (I183_bedroom_b)  (I145_bathroom_two)  (I187_narrow_hallway_second)  (I188_studio)  (I196_excercise_room)  (I207_pennsylvania)  (I208_delaware)  (I209_maryland)  (I210_virginia)  (I211_carolina) ;
+Array tab_5_0 table $086e NULL  (I177_bedroom_c)  (I182_bedroom_b)  (I144_bathroom_two)  (I186_narrow_hallway_second)  (I187_studio)  (I195_excercise_room)  (I202_pennsylvania)  (I203_delaware)  (I204_maryland)  (I205_virginia)  (I206_carolina) ;
 Array TB_Blanks -> 
   ! For table T0_final_question_options
   $00  ! Column 0
@@ -12391,7 +12311,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! when play begins:
-[ R_780 
+[ R_781 
     t_0 ! Local variable e.g. '?-1,-1?' = number
     t_1 ! Local variable e.g. '?-1,-1?' = number
     ct_0 ct_1 ! Used for table searches
@@ -12434,7 +12354,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
 
          ! phrase 11
          ! [11: say ~[_1 entry] ~]
-         say__p=1;ParaContent();  print (PrintShortName) TableLookUpEntry(ct_0,107,ct_1); ParaContent();  print (PrintText) SC_70;  .L_Say1; .L_SayX1;
+         say__p=1;ParaContent();  print (PrintShortName) TableLookUpEntry(ct_0,107,ct_1); ParaContent();  print (PrintText) SC_71;  .L_Say1; .L_SayX1;
          ! phrase 12
          ! [12: if _2 entry is placeholder begin]
           if (((TableLookUpEntry(ct_0,108,ct_1) == I198_placeholder)))  {
@@ -12466,7 +12386,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
 
          ! phrase 21
          ! [21: say ~[_2 entry] ~]
-         say__p=1;ParaContent();  print (PrintShortName) TableLookUpEntry(ct_0,108,ct_1); ParaContent();  print (PrintText) SC_70;  .L_Say2; .L_SayX2;
+         say__p=1;ParaContent();  print (PrintShortName) TableLookUpEntry(ct_0,108,ct_1); ParaContent();  print (PrintText) SC_71;  .L_Say2; .L_SayX2;
          ! phrase 22
          ! [22: if _3 entry is placeholder begin]
           if (((TableLookUpEntry(ct_0,109,ct_1) == I198_placeholder)))  {
@@ -12548,7 +12468,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
 
          ! phrase 45
          ! [45: say ~[_1 entry] ~]
-         say__p=1;ParaContent();  print (PrintShortName) TableLookUpEntry(ct_0,107,ct_1); ParaContent();  print (PrintText) SC_70;  .L_Say6; .L_SayX6;
+         say__p=1;ParaContent();  print (PrintShortName) TableLookUpEntry(ct_0,107,ct_1); ParaContent();  print (PrintText) SC_71;  .L_Say6; .L_SayX6;
          ! phrase 46
          ! [46: if _2 entry is placeholder begin]
           if (((TableLookUpEntry(ct_0,108,ct_1) == I198_placeholder)))  {
@@ -12580,7 +12500,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
 
          ! phrase 55
          ! [55: say ~[_2 entry] ~]
-         say__p=1;ParaContent();  print (PrintShortName) TableLookUpEntry(ct_0,108,ct_1); ParaContent();  print (PrintText) SC_70;  .L_Say7; .L_SayX7;
+         say__p=1;ParaContent();  print (PrintShortName) TableLookUpEntry(ct_0,108,ct_1); ParaContent();  print (PrintText) SC_71;  .L_Say7; .L_SayX7;
          ! phrase 56
          ! [56: if _3 entry is placeholder begin]
           if (((TableLookUpEntry(ct_0,109,ct_1) == I198_placeholder)))  {
@@ -13050,24 +12970,24 @@ Array ActionHappened --> 0 0 0 0 0 0;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Every turn:
-[ R_759 ;
+[ R_760 ;
       ! phrase 1
       ! [1: if the player is not in the pantry begin]
-       if (((~~((I166_pantry == ContainerOf(player))))))  {
+       if (((~~((I165_pantry == ContainerOf(player))))))  {
          ! phrase 2
          ! [2: say ~From here you can go [list of viable directions].~]
-         say__p=1;ParaContent();  print (PrintText) SC_71; ParaContent();  @push subst__v;
+         say__p=1;ParaContent();  print (PrintText) SC_72; ParaContent();  @push subst__v;
 		objectloop (subst__v ofclass Object) if (((subst__v ofclass K3_direction) && ((Adj_31_t1_v9(subst__v)))))
 		give subst__v workflag2; else give subst__v ~workflag2;
 		WriteListOfMarkedObjects(ENGLISH_BIT+NOARTICLE_BIT);
-		@pull subst__v; ParaContent();  print (PrintText) SC_72;  new_line; .L_Say11; .L_SayX11;
+		@pull subst__v; ParaContent();  print (PrintText) SC_73;  new_line; .L_Say11; .L_SayX11;
          ! phrase 3
          ! [3: otherwise]
          } else {
 
          ! phrase 4
          ! [4: say ~From here you can go southwest.~]
-         say__p=1;ParaContent();  print (PrintText) SC_73;  new_line; .L_Say12; .L_SayX12;
+         say__p=1;ParaContent();  print (PrintText) SC_74;  new_line; .L_Say12; .L_SayX12;
          ! phrase 5
          ! [5: end if]
          }
@@ -13107,7 +13027,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
 [ R_20 ;
       ! phrase 1
       ! [1: if the current item from the multiple object list is not nothing , say ~[current item from the multiple object list]: [run paragraph on]~]
-       if (((~~((multiple_object_item == nothing))))) { say__p=1;ParaContent();  print (PrintShortName) multiple_object_item; ParaContent();  print (PrintText) SC_74; ParaContent();  RunParagraphOn();  .L_Say13; .L_SayX13;  }
+       if (((~~((multiple_object_item == nothing))))) { say__p=1;ParaContent();  print (PrintShortName) multiple_object_item; ParaContent();  print (PrintText) SC_75; ParaContent();  RunParagraphOn();  .L_Say13; .L_SayX13;  }
    rfalse;
 ];
 ! No specific request
@@ -13441,68 +13361,68 @@ self = noun;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Before taking the small pistol for the first time:
-[ R_744 ;
+[ R_745 ;
    if ((PAPR_0() && (((TimesActionHasHappened-->0) == 1) && (ActionCurrentlyHappeningFlag->0)))) { ! Runs only when pattern matches
+self = noun;
+   if (debug_rules) DB_Rule(R_745, 745);
+      ! phrase 1
+      ! [1: say ~[italic type]'That bastard must have forgotten about this one.'[roman type]~]
+      say__p=1;ParaContent();  style underline; ParaContent();  print (PrintText) SC_76; ParaContent();  style roman;  .L_Say14; .L_SayX14;
+   } ! Runs only when pattern matches
+   else if (debug_rules > 1) DB_Rule(R_745, 745, true);
+   rfalse;
+];
+! No specific request
+! Before going through the secret passage:
+[ R_753 ;
+   if ((action ==##Go) &&  (actor==player) && (((MStack-->MstVON(20007,2)) == I169_secret_passage) && (true)) && ((MStack-->MstVON(20007,1)) ~= nothing)) { ! Runs only when pattern matches
+self = noun;
+   if (debug_rules) DB_Rule(R_753, 753);
+      ! phrase 1
+      ! [1: if the food boxes are dislocated begin]
+       if ((((Adj_86_t1_v9(I166_food_boxes)))))  {
+         ! phrase 2
+         ! [2: say ~You maneuver yourself through the dusty two-way path. It takes you a few minutes to reach the other room.~]
+         say__p=1;ParaContent();  print (PrintText) SC_77;  new_line; .L_Say15; .L_SayX15;
+         ! phrase 3
+         ! [3: end if]
+         }
+
+   } ! Runs only when pattern matches
+   else if (debug_rules > 1) DB_Rule(R_753, 753, true);
+   rfalse;
+];
+! No specific request
+! Before examining the journal:
+[ R_744 ;
+   if ((action ==##Examine) &&  (actor==player) && ((noun == I127_journal) && (true))) { ! Runs only when pattern matches
 self = noun;
    if (debug_rules) DB_Rule(R_744, 744);
       ! phrase 1
-      ! [1: say ~[italic type]'That bastard must have forgotten about this one.'[roman type]~]
-      say__p=1;ParaContent();  style underline; ParaContent();  print (PrintText) SC_75; ParaContent();  style roman;  .L_Say14; .L_SayX14;
+      ! [1: if the player is not carrying the journal begin]
+       if (((~~((player == CarrierOf(I127_journal))))))  {
+         ! phrase 2
+         ! [2: try taking the journal]
+          TryAction(0, player, ##Take, I127_journal, 0);; 
+         ! phrase 3
+         ! [3: end if]
+         }
+
    } ! Runs only when pattern matches
    else if (debug_rules > 1) DB_Rule(R_744, 744, true);
    rfalse;
 ];
 ! No specific request
-! Before going through the secret passage:
-[ R_752 ;
-   if ((action ==##Go) &&  (actor==player) && (((MStack-->MstVON(20007,2)) == I170_secret_passage) && (true)) && ((MStack-->MstVON(20007,1)) ~= nothing)) { ! Runs only when pattern matches
-self = noun;
-   if (debug_rules) DB_Rule(R_752, 752);
-      ! phrase 1
-      ! [1: if the food boxes are dislocated begin]
-       if ((((Adj_86_t1_v9(I167_food_boxes)))))  {
-         ! phrase 2
-         ! [2: say ~You maneuver yourself through the dusty two-way path. It takes you a few minutes to reach the other room.~]
-         say__p=1;ParaContent();  print (PrintText) SC_76;  new_line; .L_Say15; .L_SayX15;
-         ! phrase 3
-         ! [3: end if]
-         }
-
-   } ! Runs only when pattern matches
-   else if (debug_rules > 1) DB_Rule(R_752, 752, true);
-   rfalse;
-];
-! No specific request
-! Before examining the journal:
-[ R_743 ;
-   if ((action ==##Examine) &&  (actor==player) && ((noun == I128_journal) && (true))) { ! Runs only when pattern matches
-self = noun;
-   if (debug_rules) DB_Rule(R_743, 743);
-      ! phrase 1
-      ! [1: if the player is not carrying the journal begin]
-       if (((~~((player == CarrierOf(I128_journal))))))  {
-         ! phrase 2
-         ! [2: try taking the journal]
-          TryAction(0, player, ##Take, I128_journal, 0);; 
-         ! phrase 3
-         ! [3: end if]
-         }
-
-   } ! Runs only when pattern matches
-   else if (debug_rules > 1) DB_Rule(R_743, 743, true);
-   rfalse;
-];
-! No specific request
 ! Before taking ammo:
-[ R_745 ;
-   if ((action ==##Take) &&  (actor==player) && ((noun == I130_ammo_boxes) && (true))) { ! Runs only when pattern matches
+[ R_746 ;
+   if ((action ==##Take) &&  (actor==player) && ((noun == I129_ammo_boxes) && (true))) { ! Runs only when pattern matches
 self = noun;
-   if (debug_rules) DB_Rule(R_745, 745);
+   if (debug_rules) DB_Rule(R_746, 746);
       ! phrase 1
       ! [1: say ~You notice the lightness of the boxes. All empty.~]
-      say__p=1;ParaContent();  print (PrintText) SC_77;  new_line; .L_Say16; .L_SayX16;
+      say__p=1;ParaContent();  print (PrintText) SC_78;  new_line; .L_Say16; .L_SayX16;
    } ! Runs only when pattern matches
-   else if (debug_rules > 1) DB_Rule(R_745, 745, true);
+   else if (debug_rules > 1) DB_Rule(R_746, 746, true);
    rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -13550,64 +13470,64 @@ self = noun;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Instead of examining the envelope when the envelope is closed:
-[ R_746 ;
-   if ((action ==##Examine) &&  (actor==player) && ((noun == I148_envelope) && (true)) && (self=actor,true) && ((((Adj_62_t1_v9(I148_envelope)))))) { ! Runs only when pattern matches
+[ R_747 ;
+   if ((action ==##Examine) &&  (actor==player) && ((noun == I147_envelope) && (true)) && (self=actor,true) && ((((Adj_62_t1_v9(I147_envelope)))))) { ! Runs only when pattern matches
 self = noun;
-   if (debug_rules) DB_Rule(R_746, 746);
+   if (debug_rules) DB_Rule(R_747, 747);
       ! phrase 1
       ! [1: say ~It is sealed. There is nothing written on it.~]
-      say__p=1;ParaContent();  print (PrintText) SC_78;  new_line; .L_Say17; .L_SayX17;
+      say__p=1;ParaContent();  print (PrintText) SC_79;  new_line; .L_Say17; .L_SayX17;
       RulebookFails(); rtrue;
    } ! Runs only when pattern matches
-   else if (debug_rules > 1) DB_Rule(R_746, 746, true);
+   else if (debug_rules > 1) DB_Rule(R_747, 747, true);
    rfalse;
 ];
 ! No specific request
 ! Instead of examining or opening the food boxes when the boxes are in-place:
-[ R_751 ;
-   if ((action ==##Open or ##Examine) &&  (actor==player) && ((noun == I167_food_boxes) && (true)) && (self=actor,true) && ((Prop_0()))) { ! Runs only when pattern matches
+[ R_752 ;
+   if ((action ==##Open or ##Examine) &&  (actor==player) && ((noun == I166_food_boxes) && (true)) && (self=actor,true) && ((Prop_0()))) { ! Runs only when pattern matches
 self = noun;
-   if (debug_rules) DB_Rule(R_751, 751);
+   if (debug_rules) DB_Rule(R_752, 752);
       ! phrase 1
       ! [1: say ~They contain more food stuff. As you frustratedly rattle the box flaps, you notice something about the wall. From this close range, you can see hinges peering out from behind the boxes. [paragraph break]You push the boxes aside, revealing a flap door that is more than big enough for you to enter.~]
-      say__p=1;ParaContent();  print (PrintText) SC_79; ParaContent();  DivideParagraphPoint(); new_line; ParaContent();  print (PrintText) SC_80;  new_line; .L_Say18; .L_SayX18;
+      say__p=1;ParaContent();  print (PrintText) SC_80; ParaContent();  DivideParagraphPoint(); new_line; ParaContent();  print (PrintText) SC_81;  new_line; .L_Say18; .L_SayX18;
       ! phrase 2
       ! [2: now the food boxes are dislocated]
-       (Adj_86_t2_v9(I167_food_boxes)); 
+       (Adj_86_t2_v9(I166_food_boxes)); 
       ! phrase 3
       ! [3: now the secret passage is described]
-       (Adj_52_t2_v9(I170_secret_passage)); 
+       (Adj_52_t2_v9(I169_secret_passage)); 
       RulebookFails(); rtrue;
    } ! Runs only when pattern matches
-   else if (debug_rules > 1) DB_Rule(R_751, 751, true);
+   else if (debug_rules > 1) DB_Rule(R_752, 752, true);
    rfalse;
 ];
 ! No specific request
 ! Instead of inserting something into the fireplace:
-[ R_741 ;
-   if ((action ==##Insert) &&  (actor==player) && ((noun ofclass K2_thing)) && ((second == I103_fireplace) && (true))) { ! Runs only when pattern matches
+[ R_742 ;
+   if ((action ==##Insert) &&  (actor==player) && ((noun ofclass K2_thing)) && ((second == I102_fireplace) && (true))) { ! Runs only when pattern matches
 self = noun;
-   if (debug_rules) DB_Rule(R_741, 741);
+   if (debug_rules) DB_Rule(R_742, 742);
       ! phrase 1
       ! [1: say ~Perhaps you shouldn't.~]
-      say__p=1;ParaContent();  print (PrintText) SC_81;  new_line; .L_Say19; .L_SayX19;
+      say__p=1;ParaContent();  print (PrintText) SC_82;  new_line; .L_Say19; .L_SayX19;
       RulebookFails(); rtrue;
    } ! Runs only when pattern matches
-   else if (debug_rules > 1) DB_Rule(R_741, 741, true);
+   else if (debug_rules > 1) DB_Rule(R_742, 742, true);
    rfalse;
 ];
 ! No specific request
 ! Instead of inserting something into the card slot:
-[ R_754 ;
-   if ((action ==##Insert) &&  (actor==player) && ((noun ofclass K2_thing)) && ((second == I175_card_slot) && (true))) { ! Runs only when pattern matches
+[ R_755 ;
+   if ((action ==##Insert) &&  (actor==player) && ((noun ofclass K2_thing)) && ((second == I174_card_slot) && (true))) { ! Runs only when pattern matches
 self = noun;
-   if (debug_rules) DB_Rule(R_754, 754);
+   if (debug_rules) DB_Rule(R_755, 755);
       ! phrase 1
       ! [1: if the noun is not the card key begin]
        if (((~~((noun == I95_card_key)))))  {
          ! phrase 2
          ! [2: say ~That won't do.~]
-         say__p=1;ParaContent();  print (PrintText) SC_82;  new_line; .L_Say20; .L_SayX20;
+         say__p=1;ParaContent();  print (PrintText) SC_83;  new_line; .L_Say20; .L_SayX20;
          ! phrase 3
          ! [3: stop the action]
           rtrue; 
@@ -13617,161 +13537,161 @@ self = noun;
 
       ! phrase 5
       ! [5: now the machine is unlocked]
-       (Adj_67_t2_v9(I172_big_machine)); 
+       (Adj_67_t2_v9(I171_big_machine)); 
       ! phrase 6
       ! [6: now the card key is part of the card slot]
-       MakePart(I95_card_key,I175_card_slot); 
+       MakePart(I95_card_key,I174_card_slot); 
       ! phrase 7
       ! [7: say ~You get a beep signifying success.~]
-      say__p=1;ParaContent();  print (PrintText) SC_83;  new_line; .L_Say21; .L_SayX21;
-      RulebookFails(); rtrue;
-   } ! Runs only when pattern matches
-   else if (debug_rules > 1) DB_Rule(R_754, 754, true);
-   rfalse;
-];
-! No specific request
-! Instead of inserting something into the statue's chest:
-[ R_770 ;
-   if ((action ==##Insert) &&  (actor==player) && ((noun ofclass K2_thing)) && ((second == I138_statue_s_chest) && (true))) { ! Runs only when pattern matches
-self = noun;
-   if (debug_rules) DB_Rule(R_770, 770);
-      ! phrase 1
-      ! [1: try gem-inserting the noun in the chest instead]
-       TryAction(0, player, ##A82_gem_inserting_it_in, noun, I138_statue_s_chest);;  rtrue;
-      RulebookFails(); rtrue;
-   } ! Runs only when pattern matches
-   else if (debug_rules > 1) DB_Rule(R_770, 770, true);
-   rfalse;
-];
-! No specific request
-! Instead of inserting something into the statue:
-[ R_771 ;
-   if ((action ==##Insert) &&  (actor==player) && ((noun ofclass K2_thing)) && ((second == I137_statue) && (true))) { ! Runs only when pattern matches
-self = noun;
-   if (debug_rules) DB_Rule(R_771, 771);
-      ! phrase 1
-      ! [1: try gem-inserting the noun in the chest instead]
-       TryAction(0, player, ##A82_gem_inserting_it_in, noun, I138_statue_s_chest);;  rtrue;
-      RulebookFails(); rtrue;
-   } ! Runs only when pattern matches
-   else if (debug_rules > 1) DB_Rule(R_771, 771, true);
-   rfalse;
-];
-! No specific request
-! Instead of inserting something into the mirror:
-[ R_772 ;
-   if ((action ==##Insert) &&  (actor==player) && ((noun ofclass K2_thing)) && ((second == I143_mirror) && (true))) { ! Runs only when pattern matches
-self = noun;
-   if (debug_rules) DB_Rule(R_772, 772);
-      ! phrase 1
-      ! [1: try gem-inserting the noun in the mirror instead]
-       TryAction(0, player, ##A82_gem_inserting_it_in, noun, I143_mirror);;  rtrue;
-      RulebookFails(); rtrue;
-   } ! Runs only when pattern matches
-   else if (debug_rules > 1) DB_Rule(R_772, 772, true);
-   rfalse;
-];
-! No specific request
-! Instead of inserting something into the bear head:
-[ R_773 ;
-   if ((action ==##Insert) &&  (actor==player) && ((noun ofclass K2_thing)) && ((second == I177_bear_head) && (true))) { ! Runs only when pattern matches
-self = noun;
-   if (debug_rules) DB_Rule(R_773, 773);
-      ! phrase 1
-      ! [1: try gem-inserting the noun in the bear head instead]
-       TryAction(0, player, ##A82_gem_inserting_it_in, noun, I177_bear_head);;  rtrue;
-      RulebookFails(); rtrue;
-   } ! Runs only when pattern matches
-   else if (debug_rules > 1) DB_Rule(R_773, 773, true);
-   rfalse;
-];
-! No specific request
-! Instead of taking a card key that is part of something ( called the holder ):
-[ R_755 
-    t_0 ! Local variable e.g. 'holder' = thing
-    ;
-   if ((action ==##Take) &&  (actor==player) && (((I95_card_key.component_parent) ofclass K2_thing) && (t_0=((I95_card_key.component_parent)), true))) { ! Runs only when pattern matches
-self = noun;
-   if (debug_rules) DB_Rule(R_755, 755);
-      ! phrase 1
-      ! [1: say ~You remove [the noun] from [the holder].~]
-      say__p=1;ParaContent();  print (PrintText) SC_84; ParaContent();  print (the) noun; ParaContent();  print (PrintText) SC_85; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_72;  new_line; .L_Say22; .L_SayX22;
-      ! phrase 2
-      ! [2: now the player carries the noun]
-       MoveObject(noun,player); 
+      say__p=1;ParaContent();  print (PrintText) SC_84;  new_line; .L_Say21; .L_SayX21;
       RulebookFails(); rtrue;
    } ! Runs only when pattern matches
    else if (debug_rules > 1) DB_Rule(R_755, 755, true);
    rfalse;
 ];
 ! No specific request
-! Instead of examining the books:
-[ R_742 ;
-   if ((action ==##Examine) &&  (actor==player) && ((noun == I123_books) && (true))) { ! Runs only when pattern matches
+! Instead of inserting something into the statue's chest:
+[ R_771 ;
+   if ((action ==##Insert) &&  (actor==player) && ((noun ofclass K2_thing)) && ((second == I137_statue_s_chest) && (true))) { ! Runs only when pattern matches
 self = noun;
-   if (debug_rules) DB_Rule(R_742, 742);
+   if (debug_rules) DB_Rule(R_771, 771);
       ! phrase 1
-      ! [1: say ~There's no time for that.~]
-      say__p=1;ParaContent();  print (PrintText) SC_86;  new_line; .L_Say23; .L_SayX23;
+      ! [1: try gem-inserting the noun in the chest instead]
+       TryAction(0, player, ##A82_gem_inserting_it_in, noun, I137_statue_s_chest);;  rtrue;
       RulebookFails(); rtrue;
    } ! Runs only when pattern matches
-   else if (debug_rules > 1) DB_Rule(R_742, 742, true);
+   else if (debug_rules > 1) DB_Rule(R_771, 771, true);
+   rfalse;
+];
+! No specific request
+! Instead of inserting something into the statue:
+[ R_772 ;
+   if ((action ==##Insert) &&  (actor==player) && ((noun ofclass K2_thing)) && ((second == I136_statue) && (true))) { ! Runs only when pattern matches
+self = noun;
+   if (debug_rules) DB_Rule(R_772, 772);
+      ! phrase 1
+      ! [1: try gem-inserting the noun in the chest instead]
+       TryAction(0, player, ##A82_gem_inserting_it_in, noun, I137_statue_s_chest);;  rtrue;
+      RulebookFails(); rtrue;
+   } ! Runs only when pattern matches
+   else if (debug_rules > 1) DB_Rule(R_772, 772, true);
+   rfalse;
+];
+! No specific request
+! Instead of inserting something into the mirror:
+[ R_773 ;
+   if ((action ==##Insert) &&  (actor==player) && ((noun ofclass K2_thing)) && ((second == I142_mirror) && (true))) { ! Runs only when pattern matches
+self = noun;
+   if (debug_rules) DB_Rule(R_773, 773);
+      ! phrase 1
+      ! [1: try gem-inserting the noun in the mirror instead]
+       TryAction(0, player, ##A82_gem_inserting_it_in, noun, I142_mirror);;  rtrue;
+      RulebookFails(); rtrue;
+   } ! Runs only when pattern matches
+   else if (debug_rules > 1) DB_Rule(R_773, 773, true);
+   rfalse;
+];
+! No specific request
+! Instead of inserting something into the bear head:
+[ R_774 ;
+   if ((action ==##Insert) &&  (actor==player) && ((noun ofclass K2_thing)) && ((second == I176_bear_head) && (true))) { ! Runs only when pattern matches
+self = noun;
+   if (debug_rules) DB_Rule(R_774, 774);
+      ! phrase 1
+      ! [1: try gem-inserting the noun in the bear head instead]
+       TryAction(0, player, ##A82_gem_inserting_it_in, noun, I176_bear_head);;  rtrue;
+      RulebookFails(); rtrue;
+   } ! Runs only when pattern matches
+   else if (debug_rules > 1) DB_Rule(R_774, 774, true);
+   rfalse;
+];
+! No specific request
+! Instead of taking a card key that is part of something ( called the holder ):
+[ R_756 
+    t_0 ! Local variable e.g. 'holder' = thing
+    ;
+   if ((action ==##Take) &&  (actor==player) && (((I95_card_key.component_parent) ofclass K2_thing) && (t_0=((I95_card_key.component_parent)), true))) { ! Runs only when pattern matches
+self = noun;
+   if (debug_rules) DB_Rule(R_756, 756);
+      ! phrase 1
+      ! [1: say ~You remove [the noun] from [the holder].~]
+      say__p=1;ParaContent();  print (PrintText) SC_85; ParaContent();  print (the) noun; ParaContent();  print (PrintText) SC_86; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_73;  new_line; .L_Say22; .L_SayX22;
+      ! phrase 2
+      ! [2: now the player carries the noun]
+       MoveObject(noun,player); 
+      RulebookFails(); rtrue;
+   } ! Runs only when pattern matches
+   else if (debug_rules > 1) DB_Rule(R_756, 756, true);
+   rfalse;
+];
+! No specific request
+! Instead of examining the books:
+[ R_743 ;
+   if ((action ==##Examine) &&  (actor==player) && ((noun == I122_books) && (true))) { ! Runs only when pattern matches
+self = noun;
+   if (debug_rules) DB_Rule(R_743, 743);
+      ! phrase 1
+      ! [1: say ~There's no time for that.~]
+      say__p=1;ParaContent();  print (PrintText) SC_87;  new_line; .L_Say23; .L_SayX23;
+      RulebookFails(); rtrue;
+   } ! Runs only when pattern matches
+   else if (debug_rules > 1) DB_Rule(R_743, 743, true);
    rfalse;
 ];
 ! No specific request
 ! Instead of taking the kitchen utensils:
-[ R_748 ;
-   if ((action ==##Take) &&  (actor==player) && ((noun == I160_kitchen_utensils) && (true))) { ! Runs only when pattern matches
-self = noun;
-   if (debug_rules) DB_Rule(R_748, 748);
-      ! phrase 1
-      ! [1: say ~It would be better to leave these here.~]
-      say__p=1;ParaContent();  print (PrintText) SC_87;  new_line; .L_Say24; .L_SayX24;
-      RulebookFails(); rtrue;
-   } ! Runs only when pattern matches
-   else if (debug_rules > 1) DB_Rule(R_748, 748, true);
-   rfalse;
-];
-! No specific request
-! Instead of taking the dishes:
 [ R_749 ;
-   if ((action ==##Take) &&  (actor==player) && ((noun == I161_dishes) && (true))) { ! Runs only when pattern matches
+   if ((action ==##Take) &&  (actor==player) && ((noun == I159_kitchen_utensils) && (true))) { ! Runs only when pattern matches
 self = noun;
    if (debug_rules) DB_Rule(R_749, 749);
       ! phrase 1
       ! [1: say ~It would be better to leave these here.~]
-      say__p=1;ParaContent();  print (PrintText) SC_87;  new_line; .L_Say25; .L_SayX25;
+      say__p=1;ParaContent();  print (PrintText) SC_88;  new_line; .L_Say24; .L_SayX24;
       RulebookFails(); rtrue;
    } ! Runs only when pattern matches
    else if (debug_rules > 1) DB_Rule(R_749, 749, true);
    rfalse;
 ];
 ! No specific request
-! Instead of taking nonperishable food:
+! Instead of taking the dishes:
 [ R_750 ;
-   if ((action ==##Take) &&  (actor==player) && ((noun == I169_nonperishable_food) && (true))) { ! Runs only when pattern matches
+   if ((action ==##Take) &&  (actor==player) && ((noun == I160_dishes) && (true))) { ! Runs only when pattern matches
 self = noun;
    if (debug_rules) DB_Rule(R_750, 750);
       ! phrase 1
-      ! [1: say ~You have no interest in eating right now.~]
-      say__p=1;ParaContent();  print (PrintText) SC_88;  new_line; .L_Say26; .L_SayX26;
+      ! [1: say ~It would be better to leave these here.~]
+      say__p=1;ParaContent();  print (PrintText) SC_88;  new_line; .L_Say25; .L_SayX25;
       RulebookFails(); rtrue;
    } ! Runs only when pattern matches
    else if (debug_rules > 1) DB_Rule(R_750, 750, true);
    rfalse;
 ];
 ! No specific request
-! Instead of pulling the lever:
-[ R_753 ;
-   if ((action ==##Pull) &&  (actor==player) && ((noun == I173_lever) && (true))) { ! Runs only when pattern matches
+! Instead of taking nonperishable food:
+[ R_751 ;
+   if ((action ==##Take) &&  (actor==player) && ((noun == I168_nonperishable_food) && (true))) { ! Runs only when pattern matches
 self = noun;
-   if (debug_rules) DB_Rule(R_753, 753);
+   if (debug_rules) DB_Rule(R_751, 751);
+      ! phrase 1
+      ! [1: say ~You have no interest in eating right now.~]
+      say__p=1;ParaContent();  print (PrintText) SC_89;  new_line; .L_Say26; .L_SayX26;
+      RulebookFails(); rtrue;
+   } ! Runs only when pattern matches
+   else if (debug_rules > 1) DB_Rule(R_751, 751, true);
+   rfalse;
+];
+! No specific request
+! Instead of pulling the lever:
+[ R_754 ;
+   if ((action ==##Pull) &&  (actor==player) && ((noun == I172_lever) && (true))) { ! Runs only when pattern matches
+self = noun;
+   if (debug_rules) DB_Rule(R_754, 754);
       ! phrase 1
       ! [1: if the lever is pushed up and the machine is off begin]
-       if (((((Adj_89_t1_v9(I173_lever))))) && ((((Adj_88_t1_v9(I172_big_machine))))))  {
+       if (((((Adj_89_t1_v9(I172_lever))))) && ((((Adj_88_t1_v9(I171_big_machine))))))  {
          ! phrase 2
          ! [2: say ~The machine should be turned on first.~]
-         say__p=1;ParaContent();  print (PrintText) SC_89;  new_line; .L_Say27; .L_SayX27;
+         say__p=1;ParaContent();  print (PrintText) SC_90;  new_line; .L_Say27; .L_SayX27;
          ! phrase 3
          ! [3: stop the action]
           rtrue; 
@@ -13781,10 +13701,10 @@ self = noun;
 
       ! phrase 5
       ! [5: if the lever is pushed up and the machine is on and the machine is locked begin]
-       if (((((Adj_89_t1_v9(I173_lever))))) && (((((Adj_87_t1_v9(I172_big_machine))))) && ((((Adj_66_t1_v9(I172_big_machine)))))))  {
+       if (((((Adj_89_t1_v9(I172_lever))))) && (((((Adj_87_t1_v9(I171_big_machine))))) && ((((Adj_66_t1_v9(I171_big_machine)))))))  {
          ! phrase 6
          ! [6: say ~It won't budge. You take note of the card slot on the machine.~]
-         say__p=1;ParaContent();  print (PrintText) SC_90;  new_line; .L_Say28; .L_SayX28;
+         say__p=1;ParaContent();  print (PrintText) SC_91;  new_line; .L_Say28; .L_SayX28;
          ! phrase 7
          ! [7: stop the action]
           rtrue; 
@@ -13793,73 +13713,46 @@ self = noun;
          } else {
 
          ! phrase 9
-         ! [9: say ~You hear a loud slamming all around you. Great joy fills you, and you run to the front door.~]
-         say__p=1;ParaContent();  print (PrintText) SC_91;  new_line; .L_Say29; .L_SayX29;
+         ! [9: say ~You hear a loud slamming all around you. Great relief fills your spirit. You should head to the front door in the living room.~]
+         say__p=1;ParaContent();  print (PrintText) SC_92;  new_line; .L_Say29; .L_SayX29;
          ! phrase 10
-         ! [10: now the player is free]
-          (Adj_75_t2_v9(player)); 
+         ! [10: now the front door is open]
+          (Adj_61_t2_v9(I97_front_door)); 
          ! phrase 11
          ! [11: end if]
          }
 
       RulebookFails(); rtrue;
    } ! Runs only when pattern matches
-   else if (debug_rules > 1) DB_Rule(R_753, 753, true);
+   else if (debug_rules > 1) DB_Rule(R_754, 754, true);
    rfalse;
 ];
 ! No specific request
 ! Instead of pushing the button:
-[ R_774 ;
-   if ((action ==##Push) &&  (actor==player) && ((noun == I174_power_button) && (true))) { ! Runs only when pattern matches
-self = noun;
-   if (debug_rules) DB_Rule(R_774, 774);
-      ! phrase 1
-      ! [1: try pressing the button]
-       TryAction(0, player, ##A83_pressing, I174_power_button, 0);; 
-      RulebookFails(); rtrue;
-   } ! Runs only when pattern matches
-   else if (debug_rules > 1) DB_Rule(R_774, 774, true);
-   rfalse;
-];
-! No specific request
-! Instead of switching on the machine:
 [ R_775 ;
-   if ((action ==##SwitchOn) &&  (actor==player) && ((noun == I172_big_machine) && (true))) { ! Runs only when pattern matches
+   if ((action ==##Push) &&  (actor==player) && ((noun == I173_power_button) && (true))) { ! Runs only when pattern matches
 self = noun;
    if (debug_rules) DB_Rule(R_775, 775);
       ! phrase 1
-      ! [1: if the machine is on begin]
-       if ((((Adj_87_t1_v9(I172_big_machine)))))  {
-         ! phrase 2
-         ! [2: say ~It's already on.~]
-         say__p=1;ParaContent();  print (PrintText) SC_92;  new_line; .L_Say30; .L_SayX30;
-         ! phrase 3
-         ! [3: stop the action]
-          rtrue; 
-         ! phrase 4
-         ! [4: end if]
-         }
-
-      ! phrase 5
-      ! [5: try pressing the power button]
-       TryAction(0, player, ##A83_pressing, I174_power_button, 0);; 
+      ! [1: try pressing the button]
+       TryAction(0, player, ##A83_pressing, I173_power_button, 0);; 
       RulebookFails(); rtrue;
    } ! Runs only when pattern matches
    else if (debug_rules > 1) DB_Rule(R_775, 775, true);
    rfalse;
 ];
 ! No specific request
-! Instead of switching off the machine:
+! Instead of switching on the machine:
 [ R_776 ;
-   if ((action ==##SwitchOff) &&  (actor==player) && ((noun == I172_big_machine) && (true))) { ! Runs only when pattern matches
+   if ((action ==##SwitchOn) &&  (actor==player) && ((noun == I171_big_machine) && (true))) { ! Runs only when pattern matches
 self = noun;
    if (debug_rules) DB_Rule(R_776, 776);
       ! phrase 1
-      ! [1: if the machine is off begin]
-       if ((((Adj_88_t1_v9(I172_big_machine)))))  {
+      ! [1: if the machine is on begin]
+       if ((((Adj_87_t1_v9(I171_big_machine)))))  {
          ! phrase 2
-         ! [2: say ~It's already off.~]
-         say__p=1;ParaContent();  print (PrintText) SC_93;  new_line; .L_Say31; .L_SayX31;
+         ! [2: say ~It's already on.~]
+         say__p=1;ParaContent();  print (PrintText) SC_93;  new_line; .L_Say30; .L_SayX30;
          ! phrase 3
          ! [3: stop the action]
           rtrue; 
@@ -13869,43 +13762,70 @@ self = noun;
 
       ! phrase 5
       ! [5: try pressing the power button]
-       TryAction(0, player, ##A83_pressing, I174_power_button, 0);; 
+       TryAction(0, player, ##A83_pressing, I173_power_button, 0);; 
       RulebookFails(); rtrue;
    } ! Runs only when pattern matches
    else if (debug_rules > 1) DB_Rule(R_776, 776, true);
    rfalse;
 ];
 ! No specific request
+! Instead of switching off the machine:
+[ R_777 ;
+   if ((action ==##SwitchOff) &&  (actor==player) && ((noun == I171_big_machine) && (true))) { ! Runs only when pattern matches
+self = noun;
+   if (debug_rules) DB_Rule(R_777, 777);
+      ! phrase 1
+      ! [1: if the machine is off begin]
+       if ((((Adj_88_t1_v9(I171_big_machine)))))  {
+         ! phrase 2
+         ! [2: say ~It's already off.~]
+         say__p=1;ParaContent();  print (PrintText) SC_94;  new_line; .L_Say31; .L_SayX31;
+         ! phrase 3
+         ! [3: stop the action]
+          rtrue; 
+         ! phrase 4
+         ! [4: end if]
+         }
+
+      ! phrase 5
+      ! [5: try pressing the power button]
+       TryAction(0, player, ##A83_pressing, I173_power_button, 0);; 
+      RulebookFails(); rtrue;
+   } ! Runs only when pattern matches
+   else if (debug_rules > 1) DB_Rule(R_777, 777, true);
+   rfalse;
+];
+! No specific request
 ! Instead of taking a gem that is part of something ( called the holder ):
-[ R_769 
+[ R_770 
     t_0 ! Local variable e.g. 'holder' = thing
     ;
    if ((action ==##Take) &&  (actor==player) && ((noun ofclass K17_gem) && ((noun.component_parent) ofclass K2_thing) && (t_0=((noun.component_parent)), true))) { ! Runs only when pattern matches
 self = noun;
-   if (debug_rules) DB_Rule(R_769, 769);
+   if (debug_rules) DB_Rule(R_770, 770);
       ! phrase 1
       ! [1: say ~You remove [the noun] from [the holder].~]
-      say__p=1;ParaContent();  print (PrintText) SC_84; ParaContent();  print (the) noun; ParaContent();  print (PrintText) SC_85; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_72;  new_line; .L_Say32; .L_SayX32;
+      say__p=1;ParaContent();  print (PrintText) SC_85; ParaContent();  print (the) noun; ParaContent();  print (PrintText) SC_86; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_73;  new_line; .L_Say32; .L_SayX32;
       ! phrase 2
       ! [2: now the player carries the noun]
        MoveObject(noun,player); 
       RulebookFails(); rtrue;
    } ! Runs only when pattern matches
-   else if (debug_rules > 1) DB_Rule(R_769, 769, true);
+   else if (debug_rules > 1) DB_Rule(R_770, 770, true);
    rfalse;
 ];
 ! No specific request
 ! Instead of taking something heavy:
-[ R_757 ;
+[ R_758 ;
    if ((action ==##Take) &&  (actor==player) && ((noun ofclass K2_thing) && ((Adj_81_t1_v9(noun))))) { ! Runs only when pattern matches
 self = noun;
-   if (debug_rules) DB_Rule(R_757, 757);
+   if (debug_rules) DB_Rule(R_758, 758);
       ! phrase 1
       ! [1: say ~That's too heavy for you to carry.~]
-      say__p=1;ParaContent();  print (PrintText) SC_94;  new_line; .L_Say33; .L_SayX33;
+      say__p=1;ParaContent();  print (PrintText) SC_95;  new_line; .L_Say33; .L_SayX33;
       RulebookFails(); rtrue;
    } ! Runs only when pattern matches
-   else if (debug_rules > 1) DB_Rule(R_757, 757, true);
+   else if (debug_rules > 1) DB_Rule(R_758, 758, true);
    rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -13921,51 +13841,51 @@ self = noun;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! After opening the envelope for the first time:
-[ R_747 ;
+[ R_748 ;
    if ((PAPR_1() && (((TimesActionHasHappened-->1) == 1) && (ActionCurrentlyHappeningFlag->1)))) { ! Runs only when pattern matches
 self = noun;
-   if (debug_rules) DB_Rule(R_747, 747);
+   if (debug_rules) DB_Rule(R_748, 748);
       ! phrase 1
       ! [1: say ~What you find inside diminishes your hopes of escaping. There are several identification cards of people from all over the country. They must have been lured in by this maniac and fed to that beast. This is probably his way of keeping accolades.~]
-      say__p=1;ParaContent();  print (PrintText) SC_95;  new_line; .L_Say34; .L_SayX34;
+      say__p=1;ParaContent();  print (PrintText) SC_96;  new_line; .L_Say34; .L_SayX34;
       RulebookSucceeds(); rtrue;
    } ! Runs only when pattern matches
-   else if (debug_rules > 1) DB_Rule(R_747, 747, true);
+   else if (debug_rules > 1) DB_Rule(R_748, 748, true);
    rfalse;
 ];
 ! No specific request
 ! After entering the field:
-[ R_756 ;
-   if ((action ==##Enter) &&  (actor==player) && ((noun == I116_field) && (true))) { ! Runs only when pattern matches
+[ R_757 ;
+   if ((action ==##Enter) &&  (actor==player) && ((noun == I115_field) && (true))) { ! Runs only when pattern matches
 self = noun;
-   if (debug_rules) DB_Rule(R_756, 756);
+   if (debug_rules) DB_Rule(R_757, 757);
       ! phrase 1
       ! [1: now the player is free]
        (Adj_75_t2_v9(player)); 
       RulebookSucceeds(); rtrue;
    } ! Runs only when pattern matches
-   else if (debug_rules > 1) DB_Rule(R_756, 756, true);
+   else if (debug_rules > 1) DB_Rule(R_757, 757, true);
    rfalse;
 ];
 ! No specific request
 ! After examining a container:
-[ R_761 ;
+[ R_762 ;
    if ((action ==##Examine) &&  (actor==player) && ((noun ofclass K5_container))) { ! Runs only when pattern matches
 self = noun;
-   if (debug_rules) DB_Rule(R_761, 761);
+   if (debug_rules) DB_Rule(R_762, 762);
       ! phrase 1
       ! [1: if the noun is closed begin]
        if ((((Adj_62_t1_v9(noun)))))  {
          ! phrase 2
          ! [2: say ~The [noun] is closed.~]
-         say__p=1;ParaContent();  print (PrintText) SC_96; ParaContent();  print (PrintShortName) noun; ParaContent();  print (PrintText) SC_97;  new_line; .L_Say35; .L_SayX35;
+         say__p=1;ParaContent();  print (PrintText) SC_97; ParaContent();  print (PrintShortName) noun; ParaContent();  print (PrintText) SC_98;  new_line; .L_Say35; .L_SayX35;
          ! phrase 3
          ! [3: end if]
          }
 
       RulebookSucceeds(); rtrue;
    } ! Runs only when pattern matches
-   else if (debug_rules > 1) DB_Rule(R_761, 761, true);
+   else if (debug_rules > 1) DB_Rule(R_762, 762, true);
    rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -14052,7 +13972,7 @@ self = noun;
    if (debug_rules) DB_Rule(R_60, 60);
       ! phrase 1
       ! [1: say ~[listing group size in words] ~]
-      say__p=1;ParaContent();  print (number) say__n=(listing_size); ParaContent();  print (PrintText) SC_70;  .L_Say37; .L_SayX37;
+      say__p=1;ParaContent();  print (number) say__n=(listing_size); ParaContent();  print (PrintText) SC_71;  .L_Say37; .L_SayX37;
       ! phrase 2
       ! [2: carry out the printing the plural name activity with the item]
        CarryOutActivity(V1_printing_the_plural_name_, t_0); 
@@ -14265,7 +14185,7 @@ self = noun;
        if (((t_0 < 1))) {  if (ProcessRulebook(IMMEDIATELY_QUIT_R)) rtrue;   }
       ! phrase 10
       ! [10: say ~Would you like to ~]
-      say__p=1;ParaContent();  print (PrintText) SC_98;  .L_Say38; .L_SayX38;
+      say__p=1;ParaContent();  print (PrintText) SC_99;  .L_Say38; .L_SayX38;
       ! phrase 11
       ! [11: repeat through the table of final question options begin]
        @push ct_0; @push ct_1;
@@ -14292,23 +14212,23 @@ self = noun;
                    if (((t_0 == 0)))  {
                      ! phrase 18
                      ! [18: say ~?[line break]~]
-                     say__p=1;ParaContent();  print (PrintText) SC_99; ParaContent();  new_line;  .L_Say40; .L_SayX40;
+                     say__p=1;ParaContent();  print (PrintText) SC_100; ParaContent();  new_line;  .L_Say40; .L_SayX40;
                      ! phrase 19
                      ! [19: otherwise if the named options count is 1]
                       } else if (((t_0 == 1))) { 
                      ! phrase 20
                      ! [20: if the serial comma option is active , say ~,~]
-                      if ((((Adj_22_t1_v15(5))))) { say__p=1;ParaContent();  print (PrintText) SC_100;  .L_Say41; .L_SayX41;  }
+                      if ((((Adj_22_t1_v15(5))))) { say__p=1;ParaContent();  print (PrintText) SC_101;  .L_Say41; .L_SayX41;  }
                      ! phrase 21
                      ! [21: say ~ or ~]
-                     say__p=1;ParaContent();  print (PrintText) SC_101;  .L_Say42; .L_SayX42;
+                     say__p=1;ParaContent();  print (PrintText) SC_102;  .L_Say42; .L_SayX42;
                      ! phrase 22
                      ! [22: otherwise]
                      } else {
 
                      ! phrase 23
                      ! [23: say ~, ~]
-                     say__p=1;ParaContent();  print (PrintText) SC_102;  .L_Say43; .L_SayX43;
+                     say__p=1;ParaContent();  print (PrintText) SC_103;  .L_Say43; .L_SayX43;
                      ! phrase 24
                      ! [24: end if]
                      }
@@ -14337,7 +14257,7 @@ self = noun;
 [ R_68 ;
       ! phrase 1
       ! [1: say ~> [run paragraph on]~]
-      say__p=1;ParaContent();  print (PrintText) SC_103; ParaContent();  RunParagraphOn();  .L_Say44; .L_SayX44;
+      say__p=1;ParaContent();  print (PrintText) SC_104; ParaContent();  RunParagraphOn();  .L_Say44; .L_SayX44;
    rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -14590,40 +14510,40 @@ self = noun;
                 if (((t_0 ofclass K1_room)))  {
                   ! phrase 22
                   ! [22: if the domain is the location , say ~You ~]
-                   if (((t_0 == real_location))) { say__p=1;ParaContent();  print (PrintText) SC_104;  .L_Say45; .L_SayX45;  }
+                   if (((t_0 == real_location))) { say__p=1;ParaContent();  print (PrintText) SC_105;  .L_Say45; .L_SayX45;  }
                   ! phrase 23
                   ! [23: otherwise say ~In [the domain] you ~]
-                   else { say__p=1;ParaContent();  print (PrintText) SC_105; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_106;  .L_Say46; .L_SayX46;  }
+                   else { say__p=1;ParaContent();  print (PrintText) SC_106; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_107;  .L_Say46; .L_SayX46;  }
                   ! phrase 24
                   ! [24: otherwise if the domain is a supporter]
                    } else if (((t_0 ofclass K6_supporter))) { 
                   ! phrase 25
                   ! [25: say ~On [the domain] you ~]
-                  say__p=1;ParaContent();  print (PrintText) SC_107; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_106;  .L_Say47; .L_SayX47;
+                  say__p=1;ParaContent();  print (PrintText) SC_108; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_107;  .L_Say47; .L_SayX47;
                   ! phrase 26
                   ! [26: otherwise if the domain is an animal]
                    } else if (((t_0 ofclass K12_animal))) { 
                   ! phrase 27
                   ! [27: say ~On [the domain] you ~]
-                  say__p=1;ParaContent();  print (PrintText) SC_107; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_106;  .L_Say48; .L_SayX48;
+                  say__p=1;ParaContent();  print (PrintText) SC_108; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_107;  .L_Say48; .L_SayX48;
                   ! phrase 28
                   ! [28: otherwise]
                   } else {
 
                   ! phrase 29
                   ! [29: say ~In [the domain] you ~]
-                  say__p=1;ParaContent();  print (PrintText) SC_105; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_106;  .L_Say49; .L_SayX49;
+                  say__p=1;ParaContent();  print (PrintText) SC_106; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_107;  .L_Say49; .L_SayX49;
                   ! phrase 30
                   ! [30: end if]
                   }
 
                ! phrase 31
                ! [31: say ~can [if the locale paragraph count is greater than 0]also [end if]see ~]
-               say__p=1;ParaContent();  print (PrintText) SC_108; 
+               say__p=1;ParaContent();  print (PrintText) SC_109; 
 	if (~~(((((Global_Vars-->8) > 0))))) jump L_Say50;
-		ParaContent();  print (PrintText) SC_109; 
+		ParaContent();  print (PrintText) SC_110; 
 	.L_Say50; .L_SayX50;
-		ParaContent();  print (PrintText) SC_110;  .L_Say51; .L_SayX51;
+		ParaContent();  print (PrintText) SC_111;  .L_Say51; .L_SayX51;
                ! phrase 32
                ! [32: let the common holder be nothing]
                 t_2 = nothing; 
@@ -14669,10 +14589,10 @@ self = noun;
 		@pull subst__v;  .L_Say52; .L_SayX52;  }
                ! phrase 44
                ! [44: if the domain is the location , say ~ here~]
-                if (((t_0 == real_location))) { say__p=1;ParaContent();  print (PrintText) SC_111;  .L_Say53; .L_SayX53;  }
+                if (((t_0 == real_location))) { say__p=1;ParaContent();  print (PrintText) SC_112;  .L_Say53; .L_SayX53;  }
                ! phrase 45
                ! [45: say ~.[paragraph break]~]
-               say__p=1;ParaContent();  print (PrintText) SC_72; ParaContent();  DivideParagraphPoint(); new_line;  .L_Say54; .L_SayX54;
+               say__p=1;ParaContent();  print (PrintText) SC_73; ParaContent();  DivideParagraphPoint(); new_line;  .L_Say54; .L_SayX54;
                ! phrase 46
                ! [46: unfilter list recursion]
                 list_filter_routine = 0; 
@@ -14933,13 +14853,13 @@ self = noun;
 
                ! phrase 13
                ! [13: say ~On [the item] ~]
-               say__p=1;ParaContent();  print (PrintText) SC_107; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_70;  .L_Say59; .L_SayX59;
+               say__p=1;ParaContent();  print (PrintText) SC_108; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_71;  .L_Say59; .L_SayX59;
                ! phrase 14
                ! [14: list the contents of the item , as a sentence , including contents , giving brief inventory information , tersely , not listing concealed items , prefacing with is/are , listing marked items only]
                 WriteListFrom(child(t_0), 3800); 
                ! phrase 15
                ! [15: say ~.[paragraph break]~]
-               say__p=1;ParaContent();  print (PrintText) SC_72; ParaContent();  DivideParagraphPoint(); new_line;  .L_Say60; .L_SayX60;
+               say__p=1;ParaContent();  print (PrintText) SC_73; ParaContent();  DivideParagraphPoint(); new_line;  .L_Say60; .L_SayX60;
                ! phrase 16
                ! [16: end if]
                }
@@ -15007,13 +14927,13 @@ self = noun;
              (Global_Vars-->8) = (Global_Vars-->8) + 1; 
             ! phrase 11
             ! [11: say ~On [the item] ~]
-            say__p=1;ParaContent();  print (PrintText) SC_107; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_70;  .L_Say61; .L_SayX61;
+            say__p=1;ParaContent();  print (PrintText) SC_108; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_71;  .L_Say61; .L_SayX61;
             ! phrase 12
             ! [12: list the contents of the item , as a sentence , including contents , giving brief inventory information , tersely , not listing concealed items , prefacing with is/are , listing marked items only]
              WriteListFrom(child(t_0), 3800); 
             ! phrase 13
             ! [13: say ~.[paragraph break]~]
-            say__p=1;ParaContent();  print (PrintText) SC_72; ParaContent();  DivideParagraphPoint(); new_line;  .L_Say62; .L_SayX62;
+            say__p=1;ParaContent();  print (PrintText) SC_73; ParaContent();  DivideParagraphPoint(); new_line;  .L_Say62; .L_SayX62;
             ! phrase 14
             ! [14: end if]
             }
@@ -15063,7 +14983,7 @@ self = noun;
        GL__M(##Inv,2,noun); 
       ! phrase 2
       ! [2: say ~:[line break]~]
-      say__p=1;ParaContent();  print (PrintText) SC_112; ParaContent();  new_line;  .L_Say63; .L_SayX63;
+      say__p=1;ParaContent();  print (PrintText) SC_113; ParaContent();  new_line;  .L_Say63; .L_SayX63;
       ! phrase 3
       ! [3: list the contents of the player , with newlines , indented , including contents , giving inventory information , with extra indentation]
        WriteListFrom(child(player), 8215); 
@@ -16659,7 +16579,7 @@ self = noun;
           if (((~~(((MStack-->MstVO(20007,3)) == nothing)))))  {
             ! phrase 49
             ! [49: say ~ ~]
-            say__p=1;ParaContent();  print (PrintText) SC_70;  .L_Say64; .L_SayX64;
+            say__p=1;ParaContent();  print (PrintText) SC_71;  .L_Say64; .L_SayX64;
             ! phrase 50
             ! [50: if the vehicle gone by is a supporter , issue actor-based library message going action number 20 for the vehicle gone by]
              if ((((MStack-->MstVO(20007,3)) ofclass K6_supporter))) {  AGL__M(##Go,20,(MStack-->MstVO(20007,3)));   }
@@ -16714,7 +16634,7 @@ self = noun;
              AGL__M(##Go,26,noun); 
             ! phrase 66
             ! [66: say ~.~]
-            say__p=1;ParaContent();  print (PrintText) SC_72;  new_line; .L_Say65; .L_SayX65;
+            say__p=1;ParaContent();  print (PrintText) SC_73;  new_line; .L_Say65; .L_SayX65;
             ! phrase 67
             ! [67: try looking]
              TryAction(0, player, ##Look, 0, 0);; 
@@ -16727,7 +16647,7 @@ self = noun;
 
          ! phrase 70
          ! [70: say ~.~]
-         say__p=1;ParaContent();  print (PrintText) SC_72;  new_line; .L_Say66; .L_SayX66;
+         say__p=1;ParaContent();  print (PrintText) SC_73;  new_line; .L_Say66; .L_SayX66;
          ! phrase 71
          ! [71: end if]
          }
@@ -17567,15 +17487,15 @@ self = noun;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Carry out examining a thing:
-[ R_760 ;
+[ R_761 ;
    if ( (actor==player) && ((noun ofclass K2_thing))) { ! Runs only when pattern matches
 self = noun;
-   if (debug_rules) DB_Rule(R_760, 760);
+   if (debug_rules) DB_Rule(R_761, 761);
       ! phrase 1
       ! [1: now the noun is seen]
        (Adj_83_t2_v9(noun)); 
    } ! Runs only when pattern matches
-   else if (debug_rules > 1) DB_Rule(R_760, 760, true);
+   else if (debug_rules > 1) DB_Rule(R_761, 761, true);
    rfalse;
 ];
 ! No specific request
@@ -20255,7 +20175,25 @@ self = noun;
 [ R_740 ;
       ! phrase 1
       ! [1: say ~Suddenly, all of the windows are slammed shut and barricaded.[line break]You hear a click on the front door.[line break] As you stand there, trying to collect yourself, another loud bang shakes you up. Someone or something is coming upstairs. Something big.~]
-      say__p=1;ParaContent();  print (PrintText) SC_113; ParaContent();  new_line; ParaContent();  print (PrintText) SC_114; ParaContent();  new_line; ParaContent();  print (PrintText) SC_115;  new_line; .L_Say74; .L_SayX74;
+      say__p=1;ParaContent();  print (PrintText) SC_114; ParaContent();  new_line; ParaContent();  print (PrintText) SC_115; ParaContent();  new_line; ParaContent();  print (PrintText) SC_116;  new_line; .L_Say74; .L_SayX74;
+      ! phrase 2
+      ! [2: now the front door is locked]
+       (Adj_66_t2_v9(I97_front_door)); 
+   rfalse;
+];
+! ----------------------------------------------------------------------------------------------------
+
+! ----------------------------------------------------------------------------------------------------
+! Rules in rulebook: when Trapped ends (B366_when_trapped_ends)
+! ----------------------------------------------------------------------------------------------------
+! Rule 1/1 ! When Trapped ends:
+! ----------------------------------------------------------------------------------------------------
+! No specific request
+! When Trapped ends:
+[ R_741 ;
+      ! phrase 1
+      ! [1: end the story saying ~You finally make your escape from this crazy place.~]
+       deadflag=SC_117; story_complete=false; 
    rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -20267,14 +20205,14 @@ self = noun;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Carry out teleporting:
-[ R_762 ;
+[ R_763 ;
    if (actor == player) {
-   if (debug_rules) DB_Rule(R_762, 762);
+   if (debug_rules) DB_Rule(R_763, 763);
       ! phrase 1
       ! [1: move the player to the noun]
        MoveObject(player, noun, 0, false); 
    } ! Runs only when actor is the player
-   else if (debug_rules > 1) DB_Rule(R_762, 762, true);
+   else if (debug_rules > 1) DB_Rule(R_763, 763, true);
    rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -20286,15 +20224,15 @@ self = noun;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Check breaking:
-[ R_763 ;
+[ R_764 ;
    if (actor == player) {
-   if (debug_rules) DB_Rule(R_763, 763);
+   if (debug_rules) DB_Rule(R_764, 764);
       ! phrase 1
       ! [1: if the noun is not breakable begin]
        if (((~~(((Adj_77_t1_v9(noun)))))))  {
          ! phrase 2
          ! [2: say ~You can't break [italic type]that[roman type].~]
-         say__p=1;ParaContent();  print (PrintText) SC_116; ParaContent();  style underline; ParaContent();  print (PrintText) SC_117; ParaContent();  style roman; ParaContent();  print (PrintText) SC_72;  new_line; .L_Say75; .L_SayX75;
+         say__p=1;ParaContent();  print (PrintText) SC_118; ParaContent();  style underline; ParaContent();  print (PrintText) SC_119; ParaContent();  style roman; ParaContent();  print (PrintText) SC_73;  new_line; .L_Say75; .L_SayX75;
          ! phrase 3
          ! [3: stop the action]
           rtrue; 
@@ -20307,7 +20245,7 @@ self = noun;
        if (((((Adj_77_t1_v9(noun))))) && ((((Adj_79_t1_v9(noun))))))  {
          ! phrase 6
          ! [6: say ~It's already broken.~]
-         say__p=1;ParaContent();  print (PrintText) SC_118;  new_line; .L_Say76; .L_SayX76;
+         say__p=1;ParaContent();  print (PrintText) SC_120;  new_line; .L_Say76; .L_SayX76;
          ! phrase 7
          ! [7: stop the action]
           rtrue; 
@@ -20316,7 +20254,7 @@ self = noun;
          }
 
    } ! Runs only when actor is the player
-   else if (debug_rules > 1) DB_Rule(R_763, 763, true);
+   else if (debug_rules > 1) DB_Rule(R_764, 764, true);
    rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -20328,9 +20266,9 @@ self = noun;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Carry out breaking:
-[ R_764 ;
+[ R_765 ;
    if (actor == player) {
-   if (debug_rules) DB_Rule(R_764, 764);
+   if (debug_rules) DB_Rule(R_765, 765);
       ! phrase 1
       ! [1: now the noun is broken]
        (Adj_79_t2_v9(noun)); 
@@ -20345,7 +20283,7 @@ self = noun;
          }
 
    } ! Runs only when actor is the player
-   else if (debug_rules > 1) DB_Rule(R_764, 764, true);
+   else if (debug_rules > 1) DB_Rule(R_765, 765, true);
    rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -20357,14 +20295,14 @@ self = noun;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Report breaking:
-[ R_765 ;
+[ R_766 ;
    if (actor == player) {
-   if (debug_rules) DB_Rule(R_765, 765);
+   if (debug_rules) DB_Rule(R_766, 766);
       ! phrase 1
       ! [1: say ~You break [the noun] with a loud crash.~]
-      say__p=1;ParaContent();  print (PrintText) SC_119; ParaContent();  print (the) noun; ParaContent();  print (PrintText) SC_120;  new_line; .L_Say77; .L_SayX77;
+      say__p=1;ParaContent();  print (PrintText) SC_121; ParaContent();  print (the) noun; ParaContent();  print (PrintText) SC_122;  new_line; .L_Say77; .L_SayX77;
    } ! Runs only when actor is the player
-   else if (debug_rules > 1) DB_Rule(R_765, 765, true);
+   else if (debug_rules > 1) DB_Rule(R_766, 766, true);
    rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -20376,16 +20314,16 @@ self = noun;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Check gem-inserting:
-[ R_766 ;
+[ R_767 ;
    if ( (actor==player)) { ! Runs only when pattern matches
 self = noun;
-   if (debug_rules) DB_Rule(R_766, 766);
+   if (debug_rules) DB_Rule(R_767, 767);
       ! phrase 1
       ! [1: if the noun is not a gem begin]
        if (((~~((noun ofclass K17_gem)))))  {
          ! phrase 2
          ! [2: say ~It doesn't fit.~]
-         say__p=1;ParaContent();  print (PrintText) SC_121;  new_line; .L_Say78; .L_SayX78;
+         say__p=1;ParaContent();  print (PrintText) SC_123;  new_line; .L_Say78; .L_SayX78;
          ! phrase 3
          ! [3: stop the action]
           rtrue; 
@@ -20398,7 +20336,7 @@ self = noun;
        if ((( (Prop_26())  == GProperty(OBJECT_TY, second,p13_capacity))))  {
          ! phrase 6
          ! [6: say ~There's already [capacity of the second noun] gems here. Try taking back one of them.~]
-         say__p=1;ParaContent();  print (PrintText) SC_122; ParaContent(); @push self;  print (say__n=GProperty(OBJECT_TY, self=second,p13_capacity)); @pull self; ParaContent();  print (PrintText) SC_123;  new_line; .L_Say79; .L_SayX79;
+         say__p=1;ParaContent();  print (PrintText) SC_124; ParaContent(); @push self;  print (say__n=GProperty(OBJECT_TY, self=second,p13_capacity)); @pull self; ParaContent();  print (PrintText) SC_125;  new_line; .L_Say79; .L_SayX79;
          ! phrase 7
          ! [7: stop the action]
           rtrue; 
@@ -20407,7 +20345,7 @@ self = noun;
          }
 
    } ! Runs only when pattern matches
-   else if (debug_rules > 1) DB_Rule(R_766, 766, true);
+   else if (debug_rules > 1) DB_Rule(R_767, 767, true);
    rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -20419,35 +20357,35 @@ self = noun;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Carry out gem-inserting:
-[ R_767 ;
+[ R_768 ;
    if ( (actor==player)) { ! Runs only when pattern matches
 self = noun;
-   if (debug_rules) DB_Rule(R_767, 767);
+   if (debug_rules) DB_Rule(R_768, 768);
       ! phrase 1
       ! [1: now the noun is part of the second noun]
        MakePart(noun,second); 
       ! phrase 2
       ! [2: if the blue gem is part of the second noun and the red gem is part of the second noun and the purple key is off-stage begin]
-       if ((((second == (I153_blue_gem.component_parent)))) && ((((second == (I144_red_gem.component_parent)))) && ((((~~Adj_9_t1_v9(I94_purple_key)))))))  {
+       if ((((second == (I152_blue_gem.component_parent)))) && ((((second == (I143_red_gem.component_parent)))) && ((((~~Adj_9_t1_v9(I94_purple_key)))))))  {
          ! phrase 3
          ! [3: try putting the purple key on the statue's hands]
-          TryAction(0, player, ##PutOn, I94_purple_key, I139_statue_s_hands);; 
+          TryAction(0, player, ##PutOn, I94_purple_key, I138_statue_s_hands);; 
          ! phrase 4
          ! [4: end if]
          }
 
       ! phrase 5
       ! [5: if the black gem is part of the second noun and the red gem is part of the second noun and the card key is off-stage begin]
-       if ((((second == (I92_black_gem.component_parent)))) && ((((second == (I144_red_gem.component_parent)))) && ((((~~Adj_9_t1_v9(I95_card_key)))))))  {
+       if ((((second == (I92_black_gem.component_parent)))) && ((((second == (I143_red_gem.component_parent)))) && ((((~~Adj_9_t1_v9(I95_card_key)))))))  {
          ! phrase 6
          ! [6: try putting the card key on the statue's hands]
-          TryAction(0, player, ##PutOn, I95_card_key, I139_statue_s_hands);; 
+          TryAction(0, player, ##PutOn, I95_card_key, I138_statue_s_hands);; 
          ! phrase 7
          ! [7: end if]
          }
 
    } ! Runs only when pattern matches
-   else if (debug_rules > 1) DB_Rule(R_767, 767, true);
+   else if (debug_rules > 1) DB_Rule(R_768, 768, true);
    rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -20459,32 +20397,32 @@ self = noun;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Report gem-inserting:
-[ R_768 ;
+[ R_769 ;
    if ( (actor==player)) { ! Runs only when pattern matches
 self = noun;
-   if (debug_rules) DB_Rule(R_768, 768);
+   if (debug_rules) DB_Rule(R_769, 769);
       ! phrase 1
       ! [1: say ~You insert [the noun] into [the second noun]. It fits perfectly.~]
-      say__p=1;ParaContent();  print (PrintText) SC_124; ParaContent();  print (the) noun; ParaContent();  print (PrintText) SC_125; ParaContent();  print (the) second; ParaContent();  print (PrintText) SC_126;  new_line; .L_Say80; .L_SayX80;
+      say__p=1;ParaContent();  print (PrintText) SC_126; ParaContent();  print (the) noun; ParaContent();  print (PrintText) SC_127; ParaContent();  print (the) second; ParaContent();  print (PrintText) SC_128;  new_line; .L_Say80; .L_SayX80;
       ! phrase 2
       ! [2: if there is a key on the statue's hands and the second noun is the statue begin]
-       if (((Prop_27())) && (((second == I137_statue))))  {
+       if (((Prop_27())) && (((second == I136_statue))))  {
          ! phrase 3
-         ! [3: say ~The statue drops a key into its hands.~]
-         say__p=1;ParaContent();  print (PrintText) SC_127;  new_line; .L_Say81; .L_SayX81;
+         ! [3: say ~The statue drops something into its hands.~]
+         say__p=1;ParaContent();  print (PrintText) SC_129;  new_line; .L_Say81; .L_SayX81;
          ! phrase 4
          ! [4: otherwise]
          } else {
 
          ! phrase 5
          ! [5: say ~Nothing else happened.~]
-         say__p=1;ParaContent();  print (PrintText) SC_128;  new_line; .L_Say82; .L_SayX82;
+         say__p=1;ParaContent();  print (PrintText) SC_130;  new_line; .L_Say82; .L_SayX82;
          ! phrase 6
          ! [6: end if]
          }
 
    } ! Runs only when pattern matches
-   else if (debug_rules > 1) DB_Rule(R_768, 768, true);
+   else if (debug_rules > 1) DB_Rule(R_769, 769, true);
    rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -20496,15 +20434,15 @@ self = noun;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Check pressing:
-[ R_777 ;
+[ R_778 ;
    if (actor == player) {
-   if (debug_rules) DB_Rule(R_777, 777);
+   if (debug_rules) DB_Rule(R_778, 778);
       ! phrase 1
       ! [1: if the noun is the machine begin]
-       if (((noun == I172_big_machine)))  {
+       if (((noun == I171_big_machine)))  {
          ! phrase 2
          ! [2: try pressing the power button]
-          TryAction(0, player, ##A83_pressing, I174_power_button, 0);; 
+          TryAction(0, player, ##A83_pressing, I173_power_button, 0);; 
          ! phrase 3
          ! [3: stop the action]
           rtrue; 
@@ -20514,10 +20452,10 @@ self = noun;
 
       ! phrase 5
       ! [5: if the noun is not the power button begin]
-       if (((~~((noun == I174_power_button)))))  {
+       if (((~~((noun == I173_power_button)))))  {
          ! phrase 6
          ! [6: say ~Nothing happens.~]
-         say__p=1;ParaContent();  print (PrintText) SC_129;  new_line; .L_Say83; .L_SayX83;
+         say__p=1;ParaContent();  print (PrintText) SC_131;  new_line; .L_Say83; .L_SayX83;
          ! phrase 7
          ! [7: stop the action]
           rtrue; 
@@ -20526,7 +20464,7 @@ self = noun;
          }
 
    } ! Runs only when actor is the player
-   else if (debug_rules > 1) DB_Rule(R_777, 777, true);
+   else if (debug_rules > 1) DB_Rule(R_778, 778, true);
    rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -20538,27 +20476,27 @@ self = noun;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Carry out pressing:
-[ R_778 ;
+[ R_779 ;
    if (actor == player) {
-   if (debug_rules) DB_Rule(R_778, 778);
+   if (debug_rules) DB_Rule(R_779, 779);
       ! phrase 1
       ! [1: if the machine is off begin]
-       if ((((Adj_88_t1_v9(I172_big_machine)))))  {
+       if ((((Adj_88_t1_v9(I171_big_machine)))))  {
          ! phrase 2
          ! [2: now the machine is on]
-          (Adj_87_t2_v9(I172_big_machine)); 
+          (Adj_87_t2_v9(I171_big_machine)); 
          ! phrase 3
          ! [3: otherwise if the machine is on]
-          } else if ((((Adj_87_t1_v9(I172_big_machine))))) { 
+          } else if ((((Adj_87_t1_v9(I171_big_machine))))) { 
          ! phrase 4
          ! [4: now the machine is off]
-          (Adj_88_t2_v9(I172_big_machine)); 
+          (Adj_88_t2_v9(I171_big_machine)); 
          ! phrase 5
          ! [5: end if]
          }
 
    } ! Runs only when actor is the player
-   else if (debug_rules > 1) DB_Rule(R_778, 778, true);
+   else if (debug_rules > 1) DB_Rule(R_779, 779, true);
    rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -20570,31 +20508,31 @@ self = noun;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Report pressing:
-[ R_779 ;
+[ R_780 ;
    if (actor == player) {
-   if (debug_rules) DB_Rule(R_779, 779);
+   if (debug_rules) DB_Rule(R_780, 780);
       ! phrase 1
       ! [1: if the machine is on begin]
-       if ((((Adj_87_t1_v9(I172_big_machine)))))  {
+       if ((((Adj_87_t1_v9(I171_big_machine)))))  {
          ! phrase 2
          ! [2: say ~The machine turns on.~]
-         say__p=1;ParaContent();  print (PrintText) SC_130;  new_line; .L_Say84; .L_SayX84;
+         say__p=1;ParaContent();  print (PrintText) SC_132;  new_line; .L_Say84; .L_SayX84;
          ! phrase 3
          ! [3: end if]
          }
 
       ! phrase 4
       ! [4: if the machine is off begin]
-       if ((((Adj_88_t1_v9(I172_big_machine)))))  {
+       if ((((Adj_88_t1_v9(I171_big_machine)))))  {
          ! phrase 5
          ! [5: say ~The machine turns off.~]
-         say__p=1;ParaContent();  print (PrintText) SC_131;  new_line; .L_Say85; .L_SayX85;
+         say__p=1;ParaContent();  print (PrintText) SC_133;  new_line; .L_Say85; .L_SayX85;
          ! phrase 6
          ! [6: end if]
          }
 
    } ! Runs only when actor is the player
-   else if (debug_rules > 1) DB_Rule(R_779, 779, true);
+   else if (debug_rules > 1) DB_Rule(R_780, 780, true);
    rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -20836,7 +20774,7 @@ self = noun;
 ];
 ! No specific request
 ! Definition:
-[ R_758 
+[ R_759 
     t_0 ! Call parameter 'it' = object
     ;
    rfalse;
@@ -21189,7 +21127,7 @@ return ((RELATION_TY_VToVAdjective(t_0, -1)));
 
     t_0 ! Call parameter 'it' = direction
     ;
-  if (t_0 ofclass K3_direction) return (((((Resolver_5(t_0,real_location,"source", 217)) ofclass K1_room))));
+  if (t_0 ofclass K3_direction) return (((((Resolver_5(t_0,real_location,"source", 222)) ofclass K1_room))));
     rfalse;
 ];
 
@@ -22856,11 +22794,11 @@ Array B1_startup --> INITIALISE_MEMORY_R VIRTUAL_MACHINE_STARTUP_R SEED_RANDOM_N
 Array B2_turn_sequence --> PARSE_COMMAND_R GENERATE_ACTION_R R_14 R_13 TIMED_EVENTS_R ADVANCE_TIME_R UPDATE_CHRONOLOGICAL_RECORDS_R R_15 ADJUST_LIGHT_R NOTE_OBJECT_ACQUISITIONS_R R_16 NULL; ! 11 rule(s)
 Array B3_shutdown --> R_17 RESURRECT_PLAYER_IF_ASKED_R R_18 ASK_FINAL_QUESTION_R NULL; ! 4 rule(s)
 Array B4_scene_changing --> DetectSceneChange NULL; ! 1 rule(s)
-Array B5_when_play_begins --> R_780 NULL; ! 1 rule(s)
+Array B5_when_play_begins --> R_781 NULL; ! 1 rule(s)
 Constant B6_when_play_ends = EMPTY_RULEBOOK;
 Array B7_when_scene_begins --> R_57 NULL; ! 1 rule(s)
 Constant B8_when_scene_ends = EMPTY_RULEBOOK;
-Array B9_every_turn --> R_759 NULL; ! 1 rule(s)
+Array B9_every_turn --> R_760 NULL; ! 1 rule(s)
 Array B10_action_processing --> R_20 R_19 R_21 BASIC_VISIBILITY_R BASIC_ACCESSIBILITY_R CARRYING_REQUIREMENTS_R R_22 REQUESTED_ACTIONS_REQUIRE_R CARRY_OUT_REQUESTED_ACTIONS_R DESCEND_TO_SPECIFIC_ACTION_R R_23 NULL; ! 11 rule(s)
 Array B11_setting_action_variables --> R_137 R_171 R_159 NULL; ! 3 rule(s)
 Array B12_specific_action_processi --> WORK_OUT_DETAILS_OF_SPECIFIC_R R_24 R_25 R_26 R_27 R_28 R_29 R_30 NULL; ! 8 rule(s)
@@ -22871,11 +22809,11 @@ Array B16_reaching_outside --> CANT_REACH_OUTSIDE_CLOSED_R NULL; ! 1 rule(s)
 Array B17_visibility --> R_35 NULL; ! 1 rule(s)
 Constant B18_persuasion = EMPTY_RULEBOOK;
 Constant B19_unsuccessful_attempt_by = EMPTY_RULEBOOK;
-Array B20_before --> R_744 R_752 R_743 R_745 NULL; ! 4 rule(s)
-Array B21_instead --> R_746 R_751 R_741 R_754 R_770 R_771 R_772 R_773 R_755 R_742 R_748 R_749 R_750 R_753 R_774 R_775 R_776 R_769 R_757 NULL; ! 19 rule(s)
+Array B20_before --> R_745 R_753 R_744 R_746 NULL; ! 4 rule(s)
+Array B21_instead --> R_747 R_752 R_742 R_755 R_771 R_772 R_773 R_774 R_756 R_743 R_749 R_750 R_751 R_754 R_775 R_776 R_777 R_770 R_758 NULL; ! 19 rule(s)
 Constant B22_check = EMPTY_RULEBOOK;
 Constant B23_carry_out = EMPTY_RULEBOOK;
-Array B24_after --> R_747 R_756 R_761 NULL; ! 3 rule(s)
+Array B24_after --> R_748 R_757 R_762 NULL; ! 3 rule(s)
 Constant B25_report = EMPTY_RULEBOOK;
 Array B26_does_the_player_mean --> R_36 NULL; ! 1 rule(s)
 Constant B27_when_entire_game_begins = EMPTY_RULEBOOK;
@@ -23013,7 +22951,7 @@ Constant B158_check_looking = EMPTY_RULEBOOK;
 Array B159_carry_out_looking --> R_172 R_173 R_174 R_175 NULL; ! 4 rule(s)
 Array B160_report_looking --> R_176 NULL; ! 1 rule(s)
 Constant B161_check_examining = EMPTY_RULEBOOK;
-Array B162_carry_out_examining --> R_760 R_177 R_178 R_179 R_180 R_181 R_182 NULL; ! 7 rule(s)
+Array B162_carry_out_examining --> R_761 R_177 R_178 R_179 R_180 R_181 R_182 NULL; ! 7 rule(s)
 Array B163_report_examining --> R_183 NULL; ! 1 rule(s)
 Constant B164_check_looking_under = EMPTY_RULEBOOK;
 Array B165_carry_out_looking_under --> R_184 NULL; ! 1 rule(s)
@@ -23217,19 +23155,19 @@ Constant B362_check_requesting_the_pr = EMPTY_RULEBOOK;
 Array B363_carry_out_requesting_th --> ANNOUNCE_PRONOUN_MEANINGS_R NULL; ! 1 rule(s)
 Constant B364_report_requesting_the_p = EMPTY_RULEBOOK;
 Array B365_when_trapped_begins --> R_740 NULL; ! 1 rule(s)
-Constant B366_when_trapped_ends = EMPTY_RULEBOOK;
+Array B366_when_trapped_ends --> R_741 NULL; ! 1 rule(s)
 Constant B367_check_teleporting = EMPTY_RULEBOOK;
-Array B368_carry_out_teleporting --> R_762 NULL; ! 1 rule(s)
+Array B368_carry_out_teleporting --> R_763 NULL; ! 1 rule(s)
 Constant B369_report_teleporting = EMPTY_RULEBOOK;
-Array B370_check_breaking --> R_763 NULL; ! 1 rule(s)
-Array B371_carry_out_breaking --> R_764 NULL; ! 1 rule(s)
-Array B372_report_breaking --> R_765 NULL; ! 1 rule(s)
-Array B373_check_gem_inserting_it_ --> R_766 NULL; ! 1 rule(s)
-Array B374_carry_out_gem_inserting --> R_767 NULL; ! 1 rule(s)
-Array B375_report_gem_inserting_it --> R_768 NULL; ! 1 rule(s)
-Array B376_check_pressing --> R_777 NULL; ! 1 rule(s)
-Array B377_carry_out_pressing --> R_778 NULL; ! 1 rule(s)
-Array B378_report_pressing --> R_779 NULL; ! 1 rule(s)
+Array B370_check_breaking --> R_764 NULL; ! 1 rule(s)
+Array B371_carry_out_breaking --> R_765 NULL; ! 1 rule(s)
+Array B372_report_breaking --> R_766 NULL; ! 1 rule(s)
+Array B373_check_gem_inserting_it_ --> R_767 NULL; ! 1 rule(s)
+Array B374_carry_out_gem_inserting --> R_768 NULL; ! 1 rule(s)
+Array B375_report_gem_inserting_it --> R_769 NULL; ! 1 rule(s)
+Array B376_check_pressing --> R_778 NULL; ! 1 rule(s)
+Array B377_carry_out_pressing --> R_779 NULL; ! 1 rule(s)
+Array B378_report_pressing --> R_780 NULL; ! 1 rule(s)
 
 Constant BR_0 = R_8;
 Constant BR_1 = R_9;
@@ -23496,28 +23434,28 @@ Constant BR_261 = R_296;
 Constant BR_262 = R_297;
 Constant BR_263 = R_298;
 Constant BR_264 = R_299;
-Constant BR_745 = R_8;
-Constant BR_751 = R_9;
-Constant BR_752 = R_10;
-Constant BR_753 = R_11;
-Constant BR_754 = R_12;
-Constant BR_762 = R_16;
-Constant BR_763 = R_17;
-Constant BR_765 = R_18;
-Constant BR_768 = R_21;
-Constant BR_769 = R_19;
-Constant BR_770 = R_20;
-Constant BR_774 = R_22;
-Constant BR_778 = R_23;
-Constant BR_784 = R_35;
-Constant BR_786 = R_59;
-Constant BR_787 = R_60;
-Constant BR_789 = R_61;
-Constant BR_794 = R_69;
-Constant BR_795 = R_68;
-Constant BR_797 = R_70;
-Constant BR_798 = R_91;
-Constant BR_799 = R_148;
+Constant BR_746 = R_8;
+Constant BR_752 = R_9;
+Constant BR_753 = R_10;
+Constant BR_754 = R_11;
+Constant BR_755 = R_12;
+Constant BR_763 = R_16;
+Constant BR_764 = R_17;
+Constant BR_766 = R_18;
+Constant BR_769 = R_21;
+Constant BR_770 = R_19;
+Constant BR_771 = R_20;
+Constant BR_775 = R_22;
+Constant BR_779 = R_23;
+Constant BR_785 = R_35;
+Constant BR_787 = R_59;
+Constant BR_788 = R_60;
+Constant BR_790 = R_61;
+Constant BR_795 = R_69;
+Constant BR_796 = R_68;
+Constant BR_798 = R_70;
+Constant BR_799 = R_91;
+Constant BR_800 = R_148;
 
 
 
@@ -25785,7 +25723,7 @@ Constant SLOW_ROUTE_FINDING;
 #endif;
 
 Constant NUM_DOORS = 6;
-Constant NUM_ROOMS = 39;
+Constant NUM_ROOMS = 34;
 
 Array DoorRoutingViable -> NUM_DOORS+1;
 
@@ -25972,7 +25910,7 @@ Array FWMatrix --> NUM_ROOMS*NUM_ROOMS;
 ];
 #ENDIF;
 
-Constant MAX_ROUTE_LENGTH = 132 + 32;
+Constant MAX_ROUTE_LENGTH = 127 + 32;
 
 [ RelationRouteTo relation from to count  handler;
 	if (count) {
@@ -27464,120 +27402,121 @@ Array RulebookNames -->
 		if (R == R_30) { print "last specific action-processing rule"; return; } ! 703, case 2
 		if (R == R_159) { print "Setting action variables for exiting"; return; } ! 704, case 2
 		if (R == R_740) { print "When Trapped begins"; return; } ! 705, case 2
-		if (R == R_741) { print "Instead of inserting something into the fireplace"; return; } ! 706, case 2
-		if (R == R_742) { print "Instead of examining the books"; return; } ! 707, case 2
-		if (R == R_743) { print "Before examining the journal"; return; } ! 708, case 2
-		if (R == R_744) { print "Before taking the small pistol for the first time"; return; } ! 709, case 2
-		if (R == R_745) { print "Before taking ammo"; return; } ! 710, case 2
-		if (R == R_746) { print "Instead of examining the envelope when the envelope is closed"; return; } ! 711, case 2
-		if (R == R_747) { print "After opening the envelope for the first time"; return; } ! 712, case 2
-		if (R == R_748) { print "Instead of taking the kitchen utensils"; return; } ! 713, case 2
-		if (R == R_749) { print "Instead of taking the dishes"; return; } ! 714, case 2
-		if (R == R_750) { print "Instead of taking nonperishable food"; return; } ! 715, case 2
-		if (R == R_751) { print "Instead of examining or opening the food boxes when the boxes are in-place"; return; } ! 716, case 2
-		if (R == R_752) { print "Before going through the secret passage"; return; } ! 717, case 2
-		if (R == R_753) { print "Instead of pulling the lever"; return; } ! 718, case 2
-		if (R == R_754) { print "Instead of inserting something into the card slot"; return; } ! 719, case 2
-		if (R == R_755) { print "Instead of taking a card key that is part of something ( called the holder )"; return; } ! 720, case 2
-		if (R == R_756) { print "After entering the field"; return; } ! 721, case 2
-		if (R == R_757) { print "Instead of taking something heavy"; return; } ! 722, case 2
-		if (R == R_759) { print "Every turn"; return; } ! 723, case 2
-		if (R == R_760) { print "Carry out examining a thing"; return; } ! 724, case 2
-		if (R == R_761) { print "After examining a container"; return; } ! 725, case 2
-		if (R == R_762) { print "Carry out teleporting"; return; } ! 726, case 2
-		if (R == R_763) { print "Check breaking"; return; } ! 727, case 2
-		if (R == R_764) { print "Carry out breaking"; return; } ! 728, case 2
-		if (R == R_765) { print "Report breaking"; return; } ! 729, case 2
-		if (R == R_766) { print "Check gem-inserting"; return; } ! 730, case 2
-		if (R == R_767) { print "Carry out gem-inserting"; return; } ! 731, case 2
-		if (R == R_768) { print "Report gem-inserting"; return; } ! 732, case 2
-		if (R == R_769) { print "Instead of taking a gem that is part of something ( called the holder )"; return; } ! 733, case 2
-		if (R == R_770) { print "Instead of inserting something into the statue's chest"; return; } ! 734, case 2
-		if (R == R_771) { print "Instead of inserting something into the statue"; return; } ! 735, case 2
-		if (R == R_772) { print "Instead of inserting something into the mirror"; return; } ! 736, case 2
-		if (R == R_773) { print "Instead of inserting something into the bear head"; return; } ! 737, case 2
-		if (R == R_774) { print "Instead of pushing the button"; return; } ! 738, case 2
-		if (R == R_775) { print "Instead of switching on the machine"; return; } ! 739, case 2
-		if (R == R_776) { print "Instead of switching off the machine"; return; } ! 740, case 2
-		if (R == R_777) { print "Check pressing"; return; } ! 741, case 2
-		if (R == R_778) { print "Carry out pressing"; return; } ! 742, case 2
-		if (R == R_779) { print "Report pressing"; return; } ! 743, case 2
-		if (R == R_780) { print "when play begins"; return; } ! 744, case 2
-		if (R == R_8) { print "start in the correct scenes rule"; return; } ! 745, case 1
-		if (R == POSITION_PLAYER_IN_MODEL_R) { print "position player in model world rule"; return; } ! 746, case 1
-		if (R == UPDATE_CHRONOLOGICAL_RECORDS_R) { print "update chronological records rule"; return; } ! 747, case 1
-		if (R == SEED_RANDOM_NUMBER_GENERATOR_R) { print "seed random number generator rule"; return; } ! 748, case 1
-		if (R == VIRTUAL_MACHINE_STARTUP_R) { print "virtual machine startup rule"; return; } ! 749, case 1
-		if (R == INITIALISE_MEMORY_R) { print "initialise memory rule"; return; } ! 750, case 1
-		if (R == R_9) { print "when play begins stage rule"; return; } ! 751, case 1
-		if (R == R_10) { print "fix baseline scoring rule"; return; } ! 752, case 1
-		if (R == R_11) { print "display banner rule"; return; } ! 753, case 1
-		if (R == R_12) { print "initial room description rule"; return; } ! 754, case 1
-		if (R == GENERATE_ACTION_R) { print "generate action rule"; return; } ! 755, case 1
-		if (R == PARSE_COMMAND_R) { print "parse command rule"; return; } ! 756, case 1
-		if (R == TIMED_EVENTS_R) { print "timed events rule"; return; } ! 757, case 1
-		if (R == ADVANCE_TIME_R) { print "advance time rule"; return; } ! 758, case 1
-		if (R == UPDATE_CHRONOLOGICAL_RECORDS_R) { print "update chronological records rule"; return; } ! 759, case 1
-		if (R == ADJUST_LIGHT_R) { print "adjust light rule"; return; } ! 760, case 1
-		if (R == NOTE_OBJECT_ACQUISITIONS_R) { print "note object acquisitions rule"; return; } ! 761, case 1
-		if (R == R_16) { print "notify score changes rule"; return; } ! 762, case 1
-		if (R == R_17) { print "when play ends stage rule"; return; } ! 763, case 1
-		if (R == RESURRECT_PLAYER_IF_ASKED_R) { print "resurrect player if asked rule"; return; } ! 764, case 1
-		if (R == R_18) { print "print player's obituary rule"; return; } ! 765, case 1
-		if (R == ASK_FINAL_QUESTION_R) { print "ask the final question rule"; return; } ! 766, case 1
-		if (R == DetectSceneChange) { print "scene change machinery rule"; return; } ! 767, case 1
-		if (R == R_21) { print "before stage rule"; return; } ! 768, case 1
-		if (R == R_19) { print "set pronouns from items from multiple object lists rule"; return; } ! 769, case 1
-		if (R == R_20) { print "announce items from multiple object lists rule"; return; } ! 770, case 1
-		if (R == BASIC_VISIBILITY_R) { print "basic visibility rule"; return; } ! 771, case 1
-		if (R == BASIC_ACCESSIBILITY_R) { print "basic accessibility rule"; return; } ! 772, case 1
-		if (R == CARRYING_REQUIREMENTS_R) { print "carrying requirements rule"; return; } ! 773, case 1
-		if (R == R_22) { print "instead stage rule"; return; } ! 774, case 1
-		if (R == REQUESTED_ACTIONS_REQUIRE_R) { print "requested actions require persuasion rule"; return; } ! 775, case 1
-		if (R == CARRY_OUT_REQUESTED_ACTIONS_R) { print "carry out requested actions rule"; return; } ! 776, case 1
-		if (R == DESCEND_TO_SPECIFIC_ACTION_R) { print "descend to specific action-processing rule"; return; } ! 777, case 1
-		if (R == R_23) { print "end action-processing in success rule"; return; } ! 778, case 1
-		if (R == WORK_OUT_DETAILS_OF_SPECIFIC_R) { print "work out details of specific action rule"; return; } ! 779, case 1
-		if (R == ACCESS_THROUGH_BARRIERS_R) { print "access through barriers rule"; return; } ! 780, case 1
-		if (R == CANT_REACH_INSIDE_ROOMS_R) { print "can't reach inside rooms rule"; return; } ! 781, case 1
-		if (R == CANT_REACH_INSIDE_CLOSED_R) { print "can't reach inside closed containers rule"; return; } ! 782, case 1
-		if (R == CANT_REACH_OUTSIDE_CLOSED_R) { print "can't reach outside closed containers rule"; return; } ! 783, case 1
-		if (R == R_35) { print "can't act in the dark rule"; return; } ! 784, case 1
-		if (R == STANDARD_NAME_PRINTING_R) { print "standard name printing rule"; return; } ! 785, case 1
-		if (R == R_59) { print "standard printing the plural name rule"; return; } ! 786, case 1
-		if (R == R_60) { print "standard printing a number of something rule"; return; } ! 787, case 1
-		if (R == STANDARD_CONTENTS_LISTING_R) { print "standard contents listing rule"; return; } ! 788, case 1
-		if (R == R_61) { print "look around once light available rule"; return; } ! 789, case 1
-		if (R == ENABLE_GLULX_ACCEL_R) { print "enable Glulx acceleration rule"; return; } ! 790, case 1
-		if (R == PRINT_OBITUARY_HEADLINE_R) { print "print obituary headline rule"; return; } ! 791, case 1
-		if (R == PRINT_FINAL_SCORE_R) { print "print final score rule"; return; } ! 792, case 1
-		if (R == DISPLAY_FINAL_STATUS_LINE_R) { print "display final status line rule"; return; } ! 793, case 1
-		if (R == R_69) { print "print the final question rule"; return; } ! 794, case 1
-		if (R == R_68) { print "print the final prompt rule"; return; } ! 795, case 1
-		if (R == READ_FINAL_ANSWER_R) { print "read the final answer rule"; return; } ! 796, case 1
-		if (R == R_70) { print "standard respond to final question rule"; return; } ! 797, case 1
-		if (R == R_91) { print "can't take component parts rule"; return; } ! 798, case 1
-		if (R == R_148) { print "find what to enter rule"; return; } ! 799, case 1
-		if (R == QUIT_THE_GAME_R) { print "quit the game rule"; return; } ! 800, case 1
-		if (R == SAVE_THE_GAME_R) { print "save the game rule"; return; } ! 801, case 1
-		if (R == RESTORE_THE_GAME_R) { print "restore the game rule"; return; } ! 802, case 1
-		if (R == RESTART_THE_GAME_R) { print "restart the game rule"; return; } ! 803, case 1
-		if (R == VERIFY_THE_STORY_FILE_R) { print "verify the story file rule"; return; } ! 804, case 1
-		if (R == SWITCH_TRANSCRIPT_ON_R) { print "switch the story transcript on rule"; return; } ! 805, case 1
-		if (R == SWITCH_TRANSCRIPT_OFF_R) { print "switch the story transcript off rule"; return; } ! 806, case 1
-		if (R == ANNOUNCE_STORY_FILE_VERSION_R) { print "announce the story file version rule"; return; } ! 807, case 1
-		if (R == ANNOUNCE_SCORE_R) { print "announce the score rule"; return; } ! 808, case 1
-		if (R == PREFER_ABBREVIATED_R) { print "prefer abbreviated room descriptions rule"; return; } ! 809, case 1
-		if (R == REP_PREFER_ABBREVIATED_R) { print "standard report preferring abbreviated room descriptions rule"; return; } ! 810, case 1
-		if (R == PREFER_UNABBREVIATED_R) { print "prefer unabbreviated room descriptions rule"; return; } ! 811, case 1
-		if (R == REP_PREFER_UNABBREVIATED_R) { print "standard report preferring unabbreviated room descriptions rule"; return; } ! 812, case 1
-		if (R == PREFER_SOMETIMES_ABBREVIATED_R) { print "prefer sometimes abbreviated room descriptions rule"; return; } ! 813, case 1
-		if (R == REP_PREFER_SOMETIMES_ABBR_R) { print "standard report preferring sometimes abbreviated room descriptions rule"; return; } ! 814, case 1
-		if (R == SWITCH_SCORE_NOTIFY_ON_R) { print "switch score notification on rule"; return; } ! 815, case 1
-		if (R == REP_SWITCH_NOTIFY_ON_R) { print "standard report switching score notification on rule"; return; } ! 816, case 1
-		if (R == SWITCH_SCORE_NOTIFY_OFF_R) { print "switch score notification off rule"; return; } ! 817, case 1
-		if (R == REP_SWITCH_NOTIFY_OFF_R) { print "standard report switching score notification off rule"; return; } ! 818, case 1
-		if (R == ANNOUNCE_PRONOUN_MEANINGS_R) { print "announce the pronoun meanings rule"; return; } ! 819, case 1
+		if (R == R_741) { print "When Trapped ends"; return; } ! 706, case 2
+		if (R == R_742) { print "Instead of inserting something into the fireplace"; return; } ! 707, case 2
+		if (R == R_743) { print "Instead of examining the books"; return; } ! 708, case 2
+		if (R == R_744) { print "Before examining the journal"; return; } ! 709, case 2
+		if (R == R_745) { print "Before taking the small pistol for the first time"; return; } ! 710, case 2
+		if (R == R_746) { print "Before taking ammo"; return; } ! 711, case 2
+		if (R == R_747) { print "Instead of examining the envelope when the envelope is closed"; return; } ! 712, case 2
+		if (R == R_748) { print "After opening the envelope for the first time"; return; } ! 713, case 2
+		if (R == R_749) { print "Instead of taking the kitchen utensils"; return; } ! 714, case 2
+		if (R == R_750) { print "Instead of taking the dishes"; return; } ! 715, case 2
+		if (R == R_751) { print "Instead of taking nonperishable food"; return; } ! 716, case 2
+		if (R == R_752) { print "Instead of examining or opening the food boxes when the boxes are in-place"; return; } ! 717, case 2
+		if (R == R_753) { print "Before going through the secret passage"; return; } ! 718, case 2
+		if (R == R_754) { print "Instead of pulling the lever"; return; } ! 719, case 2
+		if (R == R_755) { print "Instead of inserting something into the card slot"; return; } ! 720, case 2
+		if (R == R_756) { print "Instead of taking a card key that is part of something ( called the holder )"; return; } ! 721, case 2
+		if (R == R_757) { print "After entering the field"; return; } ! 722, case 2
+		if (R == R_758) { print "Instead of taking something heavy"; return; } ! 723, case 2
+		if (R == R_760) { print "Every turn"; return; } ! 724, case 2
+		if (R == R_761) { print "Carry out examining a thing"; return; } ! 725, case 2
+		if (R == R_762) { print "After examining a container"; return; } ! 726, case 2
+		if (R == R_763) { print "Carry out teleporting"; return; } ! 727, case 2
+		if (R == R_764) { print "Check breaking"; return; } ! 728, case 2
+		if (R == R_765) { print "Carry out breaking"; return; } ! 729, case 2
+		if (R == R_766) { print "Report breaking"; return; } ! 730, case 2
+		if (R == R_767) { print "Check gem-inserting"; return; } ! 731, case 2
+		if (R == R_768) { print "Carry out gem-inserting"; return; } ! 732, case 2
+		if (R == R_769) { print "Report gem-inserting"; return; } ! 733, case 2
+		if (R == R_770) { print "Instead of taking a gem that is part of something ( called the holder )"; return; } ! 734, case 2
+		if (R == R_771) { print "Instead of inserting something into the statue's chest"; return; } ! 735, case 2
+		if (R == R_772) { print "Instead of inserting something into the statue"; return; } ! 736, case 2
+		if (R == R_773) { print "Instead of inserting something into the mirror"; return; } ! 737, case 2
+		if (R == R_774) { print "Instead of inserting something into the bear head"; return; } ! 738, case 2
+		if (R == R_775) { print "Instead of pushing the button"; return; } ! 739, case 2
+		if (R == R_776) { print "Instead of switching on the machine"; return; } ! 740, case 2
+		if (R == R_777) { print "Instead of switching off the machine"; return; } ! 741, case 2
+		if (R == R_778) { print "Check pressing"; return; } ! 742, case 2
+		if (R == R_779) { print "Carry out pressing"; return; } ! 743, case 2
+		if (R == R_780) { print "Report pressing"; return; } ! 744, case 2
+		if (R == R_781) { print "when play begins"; return; } ! 745, case 2
+		if (R == R_8) { print "start in the correct scenes rule"; return; } ! 746, case 1
+		if (R == POSITION_PLAYER_IN_MODEL_R) { print "position player in model world rule"; return; } ! 747, case 1
+		if (R == UPDATE_CHRONOLOGICAL_RECORDS_R) { print "update chronological records rule"; return; } ! 748, case 1
+		if (R == SEED_RANDOM_NUMBER_GENERATOR_R) { print "seed random number generator rule"; return; } ! 749, case 1
+		if (R == VIRTUAL_MACHINE_STARTUP_R) { print "virtual machine startup rule"; return; } ! 750, case 1
+		if (R == INITIALISE_MEMORY_R) { print "initialise memory rule"; return; } ! 751, case 1
+		if (R == R_9) { print "when play begins stage rule"; return; } ! 752, case 1
+		if (R == R_10) { print "fix baseline scoring rule"; return; } ! 753, case 1
+		if (R == R_11) { print "display banner rule"; return; } ! 754, case 1
+		if (R == R_12) { print "initial room description rule"; return; } ! 755, case 1
+		if (R == GENERATE_ACTION_R) { print "generate action rule"; return; } ! 756, case 1
+		if (R == PARSE_COMMAND_R) { print "parse command rule"; return; } ! 757, case 1
+		if (R == TIMED_EVENTS_R) { print "timed events rule"; return; } ! 758, case 1
+		if (R == ADVANCE_TIME_R) { print "advance time rule"; return; } ! 759, case 1
+		if (R == UPDATE_CHRONOLOGICAL_RECORDS_R) { print "update chronological records rule"; return; } ! 760, case 1
+		if (R == ADJUST_LIGHT_R) { print "adjust light rule"; return; } ! 761, case 1
+		if (R == NOTE_OBJECT_ACQUISITIONS_R) { print "note object acquisitions rule"; return; } ! 762, case 1
+		if (R == R_16) { print "notify score changes rule"; return; } ! 763, case 1
+		if (R == R_17) { print "when play ends stage rule"; return; } ! 764, case 1
+		if (R == RESURRECT_PLAYER_IF_ASKED_R) { print "resurrect player if asked rule"; return; } ! 765, case 1
+		if (R == R_18) { print "print player's obituary rule"; return; } ! 766, case 1
+		if (R == ASK_FINAL_QUESTION_R) { print "ask the final question rule"; return; } ! 767, case 1
+		if (R == DetectSceneChange) { print "scene change machinery rule"; return; } ! 768, case 1
+		if (R == R_21) { print "before stage rule"; return; } ! 769, case 1
+		if (R == R_19) { print "set pronouns from items from multiple object lists rule"; return; } ! 770, case 1
+		if (R == R_20) { print "announce items from multiple object lists rule"; return; } ! 771, case 1
+		if (R == BASIC_VISIBILITY_R) { print "basic visibility rule"; return; } ! 772, case 1
+		if (R == BASIC_ACCESSIBILITY_R) { print "basic accessibility rule"; return; } ! 773, case 1
+		if (R == CARRYING_REQUIREMENTS_R) { print "carrying requirements rule"; return; } ! 774, case 1
+		if (R == R_22) { print "instead stage rule"; return; } ! 775, case 1
+		if (R == REQUESTED_ACTIONS_REQUIRE_R) { print "requested actions require persuasion rule"; return; } ! 776, case 1
+		if (R == CARRY_OUT_REQUESTED_ACTIONS_R) { print "carry out requested actions rule"; return; } ! 777, case 1
+		if (R == DESCEND_TO_SPECIFIC_ACTION_R) { print "descend to specific action-processing rule"; return; } ! 778, case 1
+		if (R == R_23) { print "end action-processing in success rule"; return; } ! 779, case 1
+		if (R == WORK_OUT_DETAILS_OF_SPECIFIC_R) { print "work out details of specific action rule"; return; } ! 780, case 1
+		if (R == ACCESS_THROUGH_BARRIERS_R) { print "access through barriers rule"; return; } ! 781, case 1
+		if (R == CANT_REACH_INSIDE_ROOMS_R) { print "can't reach inside rooms rule"; return; } ! 782, case 1
+		if (R == CANT_REACH_INSIDE_CLOSED_R) { print "can't reach inside closed containers rule"; return; } ! 783, case 1
+		if (R == CANT_REACH_OUTSIDE_CLOSED_R) { print "can't reach outside closed containers rule"; return; } ! 784, case 1
+		if (R == R_35) { print "can't act in the dark rule"; return; } ! 785, case 1
+		if (R == STANDARD_NAME_PRINTING_R) { print "standard name printing rule"; return; } ! 786, case 1
+		if (R == R_59) { print "standard printing the plural name rule"; return; } ! 787, case 1
+		if (R == R_60) { print "standard printing a number of something rule"; return; } ! 788, case 1
+		if (R == STANDARD_CONTENTS_LISTING_R) { print "standard contents listing rule"; return; } ! 789, case 1
+		if (R == R_61) { print "look around once light available rule"; return; } ! 790, case 1
+		if (R == ENABLE_GLULX_ACCEL_R) { print "enable Glulx acceleration rule"; return; } ! 791, case 1
+		if (R == PRINT_OBITUARY_HEADLINE_R) { print "print obituary headline rule"; return; } ! 792, case 1
+		if (R == PRINT_FINAL_SCORE_R) { print "print final score rule"; return; } ! 793, case 1
+		if (R == DISPLAY_FINAL_STATUS_LINE_R) { print "display final status line rule"; return; } ! 794, case 1
+		if (R == R_69) { print "print the final question rule"; return; } ! 795, case 1
+		if (R == R_68) { print "print the final prompt rule"; return; } ! 796, case 1
+		if (R == READ_FINAL_ANSWER_R) { print "read the final answer rule"; return; } ! 797, case 1
+		if (R == R_70) { print "standard respond to final question rule"; return; } ! 798, case 1
+		if (R == R_91) { print "can't take component parts rule"; return; } ! 799, case 1
+		if (R == R_148) { print "find what to enter rule"; return; } ! 800, case 1
+		if (R == QUIT_THE_GAME_R) { print "quit the game rule"; return; } ! 801, case 1
+		if (R == SAVE_THE_GAME_R) { print "save the game rule"; return; } ! 802, case 1
+		if (R == RESTORE_THE_GAME_R) { print "restore the game rule"; return; } ! 803, case 1
+		if (R == RESTART_THE_GAME_R) { print "restart the game rule"; return; } ! 804, case 1
+		if (R == VERIFY_THE_STORY_FILE_R) { print "verify the story file rule"; return; } ! 805, case 1
+		if (R == SWITCH_TRANSCRIPT_ON_R) { print "switch the story transcript on rule"; return; } ! 806, case 1
+		if (R == SWITCH_TRANSCRIPT_OFF_R) { print "switch the story transcript off rule"; return; } ! 807, case 1
+		if (R == ANNOUNCE_STORY_FILE_VERSION_R) { print "announce the story file version rule"; return; } ! 808, case 1
+		if (R == ANNOUNCE_SCORE_R) { print "announce the score rule"; return; } ! 809, case 1
+		if (R == PREFER_ABBREVIATED_R) { print "prefer abbreviated room descriptions rule"; return; } ! 810, case 1
+		if (R == REP_PREFER_ABBREVIATED_R) { print "standard report preferring abbreviated room descriptions rule"; return; } ! 811, case 1
+		if (R == PREFER_UNABBREVIATED_R) { print "prefer unabbreviated room descriptions rule"; return; } ! 812, case 1
+		if (R == REP_PREFER_UNABBREVIATED_R) { print "standard report preferring unabbreviated room descriptions rule"; return; } ! 813, case 1
+		if (R == PREFER_SOMETIMES_ABBREVIATED_R) { print "prefer sometimes abbreviated room descriptions rule"; return; } ! 814, case 1
+		if (R == REP_PREFER_SOMETIMES_ABBR_R) { print "standard report preferring sometimes abbreviated room descriptions rule"; return; } ! 815, case 1
+		if (R == SWITCH_SCORE_NOTIFY_ON_R) { print "switch score notification on rule"; return; } ! 816, case 1
+		if (R == REP_SWITCH_NOTIFY_ON_R) { print "standard report switching score notification on rule"; return; } ! 817, case 1
+		if (R == SWITCH_SCORE_NOTIFY_OFF_R) { print "switch score notification off rule"; return; } ! 818, case 1
+		if (R == REP_SWITCH_NOTIFY_OFF_R) { print "standard report switching score notification off rule"; return; } ! 819, case 1
+		if (R == ANNOUNCE_PRONOUN_MEANINGS_R) { print "announce the pronoun meanings rule"; return; } ! 820, case 1
 
 		print "(nameless rule at address ", R, ")";
 	}
@@ -29135,7 +29074,7 @@ Array CheckTableEntryIsNonBlank_LU
 ];
 [ Noun_Filter_2 x;
     x=noun;
-    return ((noun == I128_journal));
+    return ((noun == I127_journal));
 ];
 [ Noun_Filter_3 x;
     x=noun;
@@ -29329,13 +29268,13 @@ if (t_0 ofclass K19_box) {if (na > 0) { na = 0; print "; "; }
     if ((AllowInShowme(p67_in_place)) && (t_0  has p67_in_place)) { if (na++ > 0) print ", "; print "in-place"; }
     if ((AllowInShowme(p67_in_place)) && (t_0  hasnt p67_in_place)) { if (na++ > 0) print ", "; print "dislocated"; }
 }
-if (t_0 == I172_big_machine) {if (na > 0) { na = 0; print "; "; }
+if (t_0 == I171_big_machine) {if (na > 0) { na = 0; print "; "; }
     if ((AllowInShowme(locked)) && (t_0  has locked)) { if (na++ > 0) print ", "; print "locked"; }
     if ((AllowInShowme(locked)) && (t_0  hasnt locked)) { if (na++ > 0) print ", "; print "unlocked"; }
     if ((AllowInShowme(p69_on)) && (t_0  has p69_on)) { if (na++ > 0) print ", "; print "on"; }
     if ((AllowInShowme(p69_on)) && (t_0  hasnt p69_on)) { if (na++ > 0) print ", "; print "off"; }
 }
-if (t_0 == I173_lever) {if (na > 0) { na = 0; print "; "; }
+if (t_0 == I172_lever) {if (na > 0) { na = 0; print "; "; }
     if ((AllowInShowme(p71_pushed_up)) && (t_0  has p71_pushed_up)) { if (na++ > 0) print ", "; print "pushed up"; }
     if ((AllowInShowme(p71_pushed_up)) && (t_0  hasnt p71_pushed_up)) { if (na++ > 0) print ", "; print "pulled down"; }
 }
@@ -29372,13 +29311,13 @@ if (t_0 ofclass K6_supporter) {if (na > 0) { na = 0; print "^"; }
 if (t_0 ofclass K8_person) {if (na > 0) { na = 0; print "^"; }
     print "carrying capacity: "; print (DecimalNumber) GProperty(OBJECT_TY, t_0, capacity), "^";
 }
-if (t_0 == I138_statue_s_chest) {if (na > 0) { na = 0; print "^"; }
+if (t_0 == I137_statue_s_chest) {if (na > 0) { na = 0; print "^"; }
     print "capacity: "; print (DecimalNumber) GProperty(OBJECT_TY, t_0, p13_capacity), "^";
 }
-if (t_0 == I143_mirror) {if (na > 0) { na = 0; print "^"; }
+if (t_0 == I142_mirror) {if (na > 0) { na = 0; print "^"; }
     print "capacity: "; print (DecimalNumber) GProperty(OBJECT_TY, t_0, p13_capacity), "^";
 }
-if (t_0 == I177_bear_head) {if (na > 0) { na = 0; print "^"; }
+if (t_0 == I176_bear_head) {if (na > 0) { na = 0; print "^"; }
     print "capacity: "; print (DecimalNumber) GProperty(OBJECT_TY, t_0, p13_capacity), "^";
 }
 
@@ -29849,7 +29788,7 @@ Verb meta 'tree'
 [ text_routine_0;
 say__p=1;
 	if (~~((TestSinglePastState(0, 2, false, 1) == 1 ))) jump L_Say86;
-		ParaContent();  print (PrintText) SC_132; 
+		ParaContent();  print (PrintText) SC_134; 
 	.L_Say86; .L_SayX86;
 		 .L_Say87; .L_SayX87;
     rtrue;
@@ -29857,141 +29796,132 @@ say__p=1;
 
 [ text_routine_1;
 say__p=1;
-	if (~~((TestSinglePastState(0, 3, false, 1) == 1 ))) jump L_Say88;
-		ParaContent();  print (PrintText) SC_133; 
+	if (~~(((TestSinglePastState(0, 3, false, 1) == 1 ) && ((((Adj_76_t1_v9(player)))))))) jump L_Say88;
+		ParaContent();  print (PrintText) SC_135; ParaContent();  new_line; 
 	.L_Say88; .L_SayX88;
-		 .L_Say89; .L_SayX89;
+		ParaContent();  print (PrintText) SC_136;  .L_Say89; .L_SayX89;
     rtrue;
 ];
 
 [ text_routine_2;
 say__p=1;
-	if (~~(((TestSinglePastState(0, 4, false, 1) == 1 ) && ((((Adj_76_t1_v9(player)))))))) jump L_Say90;
-		ParaContent();  print (PrintText) SC_134; ParaContent();  new_line; 
+	if (~~((TestSinglePastState(0, 4, false, 1) == 1 ))) jump L_Say90;
+		ParaContent();  print (PrintText) SC_137; 
 	.L_Say90; .L_SayX90;
-		ParaContent();  print (PrintText) SC_135;  .L_Say91; .L_SayX91;
+		ParaContent();  print (PrintText) SC_138;  .L_Say91; .L_SayX91;
     rtrue;
 ];
 
 [ text_routine_3;
-say__p=1;
-	if (~~((TestSinglePastState(0, 5, false, 1) == 1 ))) jump L_Say92;
-		ParaContent();  print (PrintText) SC_136; 
+say__p=1;ParaContent();  print (PrintText) SC_139; 
+	if (~~(((((Adj_79_t1_v9(I123_glass_cabinet))))))) jump L_Say92;
+		ParaContent();  print (PrintText) SC_140; 
 	.L_Say92; .L_SayX92;
-		ParaContent();  print (PrintText) SC_137;  .L_Say93; .L_SayX93;
+		ParaContent();  print (PrintText) SC_141; 
+	if (~~((((I123_glass_cabinet == ContainerOf(I124_yellow_gem)))))) jump L_Say93;
+		ParaContent();  print (PrintText) SC_142; 
+	.L_Say93; .L_SayX93;
+		 .L_Say94; .L_SayX94;
     rtrue;
 ];
 
 [ text_routine_4;
-say__p=1;ParaContent();  print (PrintText) SC_138; 
-	if (~~(((((Adj_79_t1_v9(I124_glass_cabinet))))))) jump L_Say94;
-		ParaContent();  print (PrintText) SC_139; 
-	.L_Say94; .L_SayX94;
-		ParaContent();  print (PrintText) SC_140; 
-	if (~~((((I124_glass_cabinet == ContainerOf(I125_yellow_gem)))))) jump L_Say95;
-		ParaContent();  print (PrintText) SC_141; 
-	.L_Say95; .L_SayX95;
-		 .L_Say96; .L_SayX96;
+say__p=1;
+	if (~~(((((Adj_80_t1_v9(I123_glass_cabinet))))))) jump L_Say95;
+		ParaContent();  print (PrintText) SC_143; 
+	jump L_SayX95; .L_Say95;
+		ParaContent();  print (PrintText) SC_144;  .L_Say96; .L_SayX95;
     rtrue;
 ];
 
 [ text_routine_5;
-say__p=1;
-	if (~~(((((Adj_80_t1_v9(I124_glass_cabinet))))))) jump L_Say97;
-		ParaContent();  print (PrintText) SC_142; 
-	jump L_SayX97; .L_Say97;
-		ParaContent();  print (PrintText) SC_143;  .L_Say98; .L_SayX97;
+say__p=1;ParaContent();  print (PrintText) SC_145; 
+	if (~~((((~~(((Adj_83_t1_v9(I179_photograph))))))))) jump L_Say97;
+		ParaContent();  print (PrintText) SC_146; 
+	jump L_SayX96; .L_Say97;
+		ParaContent();  print (PrintText) SC_147; 
+	.L_Say98; .L_SayX96;
+		ParaContent();  print (PrintText) SC_148;  .L_Say99; .L_SayX97;
     rtrue;
 ];
 
 [ text_routine_6;
-say__p=1;ParaContent();  print (PrintText) SC_144; 
-	if (~~((((~~(((Adj_83_t1_v9(I180_photograph))))))))) jump L_Say99;
-		ParaContent();  print (PrintText) SC_145; 
-	jump L_SayX98; .L_Say99;
-		ParaContent();  print (PrintText) SC_146; 
-	.L_Say100; .L_SayX98;
-		ParaContent();  print (PrintText) SC_147;  .L_Say101; .L_SayX99;
+say__p=1;
+	if (~~(((( (Prop_28())  == 0))))) jump L_Say100;
+		ParaContent();  print (PrintText) SC_149; 
+	jump L_SayX98; .L_Say100;
+		ParaContent();  print (PrintText) SC_150; ParaContent();  @push subst__v;
+		objectloop (subst__v ofclass Object) if (((subst__v ofclass K2_thing) && (I137_statue_s_chest == (subst__v.component_parent))))
+		give subst__v workflag2; else give subst__v ~workflag2;
+		WriteListOfMarkedObjects(ENGLISH_BIT+NOARTICLE_BIT);
+		@pull subst__v; 
+	.L_Say101; .L_SayX98;
+		ParaContent();  print (PrintText) SC_73;  .L_Say102; .L_SayX99;
     rtrue;
 ];
 
 [ text_routine_7;
-say__p=1;
-	if (~~(((( (Prop_28())  == 0))))) jump L_Say102;
-		ParaContent();  print (PrintText) SC_148; 
-	jump L_SayX100; .L_Say102;
-		ParaContent();  print (PrintText) SC_149; ParaContent();  @push subst__v;
-		objectloop (subst__v ofclass Object) if (((subst__v ofclass K2_thing) && (I138_statue_s_chest == (subst__v.component_parent))))
+say__p=1;ParaContent();  print (PrintText) SC_151; 
+	if (~~(((Prop_29())))) jump L_Say103;
+		ParaContent();  print (PrintText) SC_152; ParaContent();  @push subst__v;
+		objectloop (subst__v ofclass Object) if (((subst__v ofclass K2_thing) && (I142_mirror == (subst__v.component_parent))))
 		give subst__v workflag2; else give subst__v ~workflag2;
 		WriteListOfMarkedObjects(ENGLISH_BIT+NOARTICLE_BIT);
-		@pull subst__v; 
-	.L_Say103; .L_SayX100;
-		ParaContent();  print (PrintText) SC_72;  .L_Say104; .L_SayX101;
+		@pull subst__v; ParaContent();  print (PrintText) SC_153;  .L_Say103; .L_SayX100;
     rtrue;
 ];
 
 [ text_routine_8;
-say__p=1;ParaContent();  print (PrintText) SC_150; 
-	if (~~(((Prop_29())))) jump L_Say105;
-		ParaContent();  print (PrintText) SC_151; ParaContent();  @push subst__v;
-		objectloop (subst__v ofclass Object) if (((subst__v ofclass K2_thing) && (I143_mirror == (subst__v.component_parent))))
-		give subst__v workflag2; else give subst__v ~workflag2;
-		WriteListOfMarkedObjects(ENGLISH_BIT+NOARTICLE_BIT);
-		@pull subst__v; ParaContent();  print (PrintText) SC_152;  .L_Say105; .L_SayX102;
+say__p=1;ParaContent();  print (PrintText) SC_154; ParaContent();  new_line; ParaContent();  print (PrintText) SC_155;  .L_Say104; .L_SayX101;
     rtrue;
 ];
 
 [ text_routine_9;
-say__p=1;ParaContent();  print (PrintText) SC_153; ParaContent();  new_line; ParaContent();  print (PrintText) SC_154;  .L_Say106; .L_SayX103;
+say__p=1;ParaContent();  print (PrintText) SC_156; ParaContent();  new_line; ParaContent();  print (PrintText) SC_157;  .L_Say105; .L_SayX102;
     rtrue;
 ];
 
 [ text_routine_10;
-say__p=1;ParaContent();  print (PrintText) SC_155; ParaContent();  new_line; ParaContent();  print (PrintText) SC_156;  .L_Say107; .L_SayX104;
+say__p=1;ParaContent();  print (PrintText) SC_158; ParaContent();  new_line; ParaContent();  print (PrintText) SC_159;  .L_Say106; .L_SayX103;
     rtrue;
 ];
 
 [ text_routine_11;
-say__p=1;ParaContent();  print (PrintText) SC_157; ParaContent();  new_line; ParaContent();  print (PrintText) SC_158;  .L_Say108; .L_SayX105;
+say__p=1;ParaContent();  print (PrintText) SC_160; ParaContent();  new_line; ParaContent();  print (PrintText) SC_161;  .L_Say107; .L_SayX104;
     rtrue;
 ];
 
 [ text_routine_12;
-say__p=1;ParaContent();  print (PrintText) SC_159; ParaContent();  new_line; ParaContent();  print (PrintText) SC_160;  .L_Say109; .L_SayX106;
+say__p=1;ParaContent();  style underline; ParaContent();  print (PrintText) SC_162; ParaContent();  style roman;  .L_Say108; .L_SayX105;
     rtrue;
 ];
 
 [ text_routine_13;
-say__p=1;ParaContent();  style underline; ParaContent();  print (PrintText) SC_161; ParaContent();  style roman;  .L_Say110; .L_SayX107;
+say__p=1;ParaContent();  print (PrintText) SC_163; 
+	if (~~(((((Adj_89_t1_v9(I172_lever))))))) jump L_Say109;
+		ParaContent();  print (PrintText) SC_164; 
+	jump L_SayX106; .L_Say109;
+		ParaContent();  print (PrintText) SC_165;  .L_Say110; .L_SayX106;
     rtrue;
 ];
 
 [ text_routine_14;
-say__p=1;ParaContent();  print (PrintText) SC_162; 
-	if (~~(((((Adj_89_t1_v9(I173_lever))))))) jump L_Say111;
-		ParaContent();  print (PrintText) SC_163; 
-	jump L_SayX108; .L_Say111;
-		ParaContent();  print (PrintText) SC_164;  .L_Say112; .L_SayX108;
+say__p=1;ParaContent();  print (PrintText) SC_166; 
+	if (~~((TestSinglePastState(0, 5, false, 5)))) jump L_Say111;
+		ParaContent();  print (PrintText) SC_167; 
+	.L_Say111; .L_SayX107;
+		ParaContent();  print (PrintText) SC_168; 
+	if (~~((((I176_bear_head == (I92_black_gem.component_parent)))))) jump L_Say112;
+		ParaContent();  print (PrintText) SC_169;  .L_Say112; .L_SayX108;
     rtrue;
 ];
 
 [ text_routine_15;
-say__p=1;ParaContent();  print (PrintText) SC_165; 
-	if (~~((TestSinglePastState(0, 6, false, 5)))) jump L_Say113;
-		ParaContent();  print (PrintText) SC_166; 
+say__p=1;ParaContent();  print (PrintText) SC_170; 
+	if (~~(((((Adj_83_t1_v9(I136_statue))))))) jump L_Say113;
+		ParaContent();  print (PrintText) SC_171; 
 	.L_Say113; .L_SayX109;
-		ParaContent();  print (PrintText) SC_167; 
-	if (~~((((I177_bear_head == (I92_black_gem.component_parent)))))) jump L_Say114;
-		ParaContent();  print (PrintText) SC_168;  .L_Say114; .L_SayX110;
-    rtrue;
-];
-
-[ text_routine_16;
-say__p=1;ParaContent();  print (PrintText) SC_169; 
-	if (~~(((((Adj_83_t1_v9(I137_statue))))))) jump L_Say115;
-		ParaContent();  print (PrintText) SC_170; 
-	.L_Say115; .L_SayX111;
-		ParaContent();  print (PrintText) SC_171;  .L_Say116; .L_SayX112;
+		ParaContent();  print (PrintText) SC_172;  .L_Say114; .L_SayX110;
     rtrue;
 ];
 
@@ -30015,16 +29945,16 @@ say__p=1;ParaContent();  print (PrintText) SC_169;
 ];
 
 [ PAPR_0 ;
-if ((action ==##Take) &&  (actor==player) && ((noun == I133_small_pistol) && (true))) rtrue;
+if ((action ==##Take) &&  (actor==player) && ((noun == I132_small_pistol) && (true))) rtrue;
     rfalse;
 ];
 [ PAPR_1 ;
-if ((action ==##Open) &&  (actor==player) && ((noun == I148_envelope) && (true))) rtrue;
+if ((action ==##Open) &&  (actor==player) && ((noun == I147_envelope) && (true))) rtrue;
     rfalse;
 ];
 Array PastActionsI6Routines --> PAPR_0 PAPR_1 0 0;
 
-Constant NO_PAST_TENSE_CONDS 7;
+Constant NO_PAST_TENSE_CONDS 6;
 Constant NO_PAST_TENSE_ACTIONS 2;
 
 [ TestSinglePastState past_flag pt turn_end wanted
@@ -30044,10 +29974,9 @@ switch(pt) {
     0: new = ((((Adj_75_t1_v9(player)))));
     1: new = ((((Adj_76_t1_v9(player)))));
     2: new = (((I88_mansion_grounds == ContainerOf(player))));
-    3: new = (((I97_entryway == ContainerOf(player))));
-    4: new = (((I99_living_room == ContainerOf(player))));
-    5: new = (((I105_basement == ContainerOf(player))));
-    6: new = (((I129_armory == ContainerOf(player))));
+    3: new = (((I98_living_room == ContainerOf(player))));
+    4: new = (((I104_basement == ContainerOf(player))));
+    5: new = (((I128_armory == ContainerOf(player))));
     default: print "*** No such past tense condition ***^"; new = false;
 }
 blockv_sp = blockv_sp - 16;
@@ -32059,7 +31988,7 @@ Array Rel_Record_65 -->
 ! True or false?
 ! [ Exists x : key(x) & is('statue's hands', SupporterOf(x)) ]
 [ Prop_27  x x_ix ;
-    objectloop (x in I139_statue_s_hands) if (SupporterOf(x)==parent(x)){
+    objectloop (x in I138_statue_s_hands) if (SupporterOf(x)==parent(x)){
         if ((x ofclass K18_key)){
             rtrue;
         }
@@ -32071,7 +32000,7 @@ Array Rel_Record_65 -->
 ! [ thing(x) & is('statue's chest', (x.component_parent)) ]
 [ Prop_28  x x_ix counter;
     for (x=IK2_First: x: x=x.IK2_Link){
-        if ((I138_statue_s_chest == (x.component_parent))){
+        if ((I137_statue_s_chest == (x.component_parent))){
             counter++;
             jump NextOuterLoop_5;
         }
@@ -32084,7 +32013,7 @@ Array Rel_Record_65 -->
 ! [ Exists x : thing(x) & is('mirror', (x.component_parent)) ]
 [ Prop_29  x x_ix ;
     for (x=IK2_First: x: x=x.IK2_Link){
-        if ((I143_mirror == (x.component_parent))){
+        if ((I142_mirror == (x.component_parent))){
             rtrue;
         }
     }
@@ -32124,38 +32053,39 @@ ArgumentTypeFailed(filename, line);
 Array ConstantListPointers --> 
  0 0;
 
-Constant SC_70 = " ";
-Constant SC_115 = " As you stand there, trying to collect yourself, another loud bang shakes you up. Someone or something is coming upstairs. Something big.";
-Constant SC_85 = " from ";
-Constant SC_123 = " gems here. Try taking back one of them.";
-Constant SC_111 = " here";
-Constant SC_125 = " into ";
-Constant SC_97 = " is closed.";
-Constant SC_101 = " or ";
-Constant SC_152 = " that appears to be removable.";
-Constant SC_120 = " with a loud crash.";
-Constant SC_106 = " you ";
-Constant SC_161 = "~Mi casa es su casa.~";
-Constant SC_75 = "~That bastard must have forgotten about this one.~";
-Constant SC_102 = ", ";
-Constant SC_100 = ",";
-Constant SC_126 = ". It fits perfectly.";
-Constant SC_72 = ".";
-Constant SC_74 = ": ";
-Constant SC_112 = ":";
-Constant SC_103 = "> ";
-Constant SC_64 = ">";
-Constant SC_99 = "?";
+Constant SC_71 = " ";
+Constant SC_116 = " As you stand there, trying to collect yourself, another loud bang shakes you up. Someone or something is coming upstairs. Something big.";
+Constant SC_86 = " from ";
+Constant SC_125 = " gems here. Try taking back one of them.";
+Constant SC_112 = " here";
+Constant SC_127 = " into ";
+Constant SC_98 = " is closed.";
+Constant SC_102 = " or ";
+Constant SC_153 = " that appears to be removable.";
+Constant SC_122 = " with a loud crash.";
+Constant SC_107 = " you ";
+Constant SC_162 = "~Mi casa es su casa.~";
+Constant SC_76 = "~That bastard must have forgotten about this one.~";
+Constant SC_103 = ", ";
+Constant SC_101 = ",";
+Constant SC_128 = ". It fits perfectly.";
+Constant SC_73 = ".";
+Constant SC_75 = ": ";
+Constant SC_113 = ":";
+Constant SC_104 = "> ";
+Constant SC_65 = ">";
+Constant SC_100 = "?";
 Constant SC_22 = "A beautiful yellow gem.";
 Constant SC_44 = "A big red button.";
 Constant SC_7 = "A black and yellow striped card key. There is no other labeling.";
-Constant SC_168 = "A black gem serves as a substitute for the bear's nose.";
-Constant SC_136 = "A huge basement that gives off some bad vibes and a sickly smell. You hope for some clues. Anything that can help you escape from this foul prison. The first thing you notice is large steel cage, its door swong wide open. ";
+Constant SC_169 = "A black gem serves as a substitute for the bear's nose.";
+Constant SC_64 = "A grand ballroom that now seems like a relic of the past. Nothing here but empty space.";
+Constant SC_137 = "A huge basement that gives off some bad vibes and a sickly smell. You hope for some clues. Anything that can help you escape from this foul prison. The first thing you notice is large steel cage, its door swong wide open. ";
 Constant SC_8 = "A key marked ~Control Room~";
 Constant SC_43 = "A large electronic machine fills up most of the room.";
 Constant SC_35 = "A large kitchen and dining combination room. There is a fine stone-top counter separating the kitchen from the rest of the room. Dish cabinets with nothing but kitchen utensils inside line the place. In the northeast direction is the pantry.";
-Constant SC_144 = "A life-size statue of a man. ";
-Constant SC_171 = "A lush rainforest surrounds them.";
+Constant SC_145 = "A life-size statue of a man. ";
+Constant SC_172 = "A lush rainforest surrounds them.";
 Constant SC_14 = "A painting of the deep blue sea melding with a beautiful red sunset. It sure makes you miss the outside world.";
 Constant SC_38 = "A pantry that receives little light. There is a rack that holds nonperishable food.";
 Constant SC_53 = "A peculiar black door is connected to this hallway.";
@@ -32166,133 +32096,133 @@ Constant SC_62 = "A small conference room with nothing but an empty table and ch
 Constant SC_30 = "A standard bathroom with a shower, toilet and sink. There is a large mirror with a fancy border near the sink.";
 Constant SC_16 = "A steel black box. Must be controlled remotely.";
 Constant SC_11 = "A vividly colored painting of a bumblebee.";
-Constant SC_169 = "A younger Dr. Redrum standing next to a man. ";
+Constant SC_170 = "A younger Dr. Redrum standing next to a man. ";
 Constant SC_49 = "An ottoman is placed beside the bed.";
 Constant SC_48 = "An ottoman made of rich leather.";
-Constant SC_159 = "Andrew Kong";
+Constant SC_160 = "Andrew Kong";
 Constant SC_5 = "As good-looking as ever.";
 Constant SC_39 = "At the end of the room are a few large boxes.";
-Constant SC_160 = "Date of Birth 03-06-1950.";
-Constant SC_154 = "Date of Birth: 02-24-1953.";
-Constant SC_158 = "Date of Birth: 08-12-1948.";
-Constant SC_156 = "Date of Birth: 12-21-1940.";
+Constant SC_161 = "Date of Birth 03-06-1950.";
+Constant SC_155 = "Date of Birth: 02-24-1953.";
+Constant SC_159 = "Date of Birth: 08-12-1948.";
+Constant SC_157 = "Date of Birth: 12-21-1940.";
 Constant SC_61 = "Dried stiff. Just what goes on in this place?";
-Constant SC_155 = "Frank Zappa";
+Constant SC_156 = "Frank Zappa";
 Constant SC_17 = "Freedom is close. You can feel the fresh cool wind blowing in. However, there is a sturdy lock preventing you from opening the door.";
-Constant SC_71 = "From here you can go ";
-Constant SC_73 = "From here you can go southwest.";
+Constant SC_72 = "From here you can go ";
+Constant SC_74 = "From here you can go southwest.";
 Constant SC_2 = "Gerardo Perez and Adam Wardell";
-Constant SC_145 = "He doesn't remind you of any historical figures or anyone like that.";
-Constant SC_147 = "He shows a serene smile as he holds out both hands. You notice something peculiar about this statue's chest.";
-Constant SC_170 = "His companion looks remarkably like the statue in the master bedroom. ";
+Constant SC_146 = "He doesn't remind you of any historical figures or anyone like that.";
+Constant SC_148 = "He shows a serene smile as he holds out both hands. You notice something peculiar about this statue's chest.";
+Constant SC_171 = "His companion looks remarkably like the statue in the master bedroom. ";
 Constant SC_54 = "I need a key for this.";
-Constant SC_105 = "In ";
-Constant SC_121 = "It doesn't fit.";
+Constant SC_106 = "In ";
+Constant SC_123 = "It doesn't fit.";
 Constant SC_59 = "It houses a laundry machine and other home maintenance tools.";
 Constant SC_21 = "It is full of non-fiction books.";
-Constant SC_78 = "It is sealed. There is nothing written on it.";
+Constant SC_79 = "It is sealed. There is nothing written on it.";
 Constant SC_60 = "It looks like the latest front-loading model.";
 Constant SC_50 = "It looks like this room was never set up.  There is no furniture, just bare, empty walls.";
 Constant SC_28 = "It looks untouched. You doubt if that madman even sleeps.";
-Constant SC_90 = "It won't budge. You take note of the card slot on the machine.";
-Constant SC_87 = "It would be better to leave these here.";
-Constant SC_118 = "It's already broken.";
-Constant SC_93 = "It's already off.";
-Constant SC_92 = "It's already on.";
-Constant SC_162 = "It's marked ~Emergency Lockdown~. Right now it's in the ";
+Constant SC_91 = "It won't budge. You take note of the card slot on the machine.";
+Constant SC_88 = "It would be better to leave these here.";
+Constant SC_120 = "It's already broken.";
+Constant SC_94 = "It's already off.";
+Constant SC_93 = "It's already on.";
+Constant SC_163 = "It's marked ~Emergency Lockdown~. Right now it's in the ";
 Constant SC_36 = "It's plastic fruit. An unreasonable rage fills your body.";
 Constant SC_57 = "It's starting to take form. From what you can make out, it looks like some sort of tropical landscape.";
-Constant SC_157 = "Jonathan Maxwell";
+Constant SC_158 = "Jonathan Maxwell";
 Constant SC_34 = "Kitchen & Dining Room";
 Constant SC_15 = "Looks a few days old.";
-Constant SC_150 = "Looks expensive. ";
+Constant SC_151 = "Looks expensive. ";
 Constant SC_23 = "Lots of business documents and paperwork. The desk has a drawer.";
-Constant SC_153 = "Mary Schweller";
+Constant SC_154 = "Mary Schweller";
 Constant SC_52 = "Narrow Hallway (First Floor)";
 Constant SC_55 = "Narrow Hallway (Second Floor)";
-Constant SC_128 = "Nothing else happened.";
-Constant SC_129 = "Nothing happens.";
-Constant SC_107 = "On ";
-Constant SC_148 = "On its right chest are two octagonal shaped indentations that look like they might have held something.";
-Constant SC_81 = "Perhaps you shouldn't.";
-Constant SC_68 = "QUIT";
-Constant SC_65 = "RESTART";
-Constant SC_66 = "RESTORE a saved game";
-Constant SC_149 = "Right now it holds: ";
-Constant SC_165 = "So this man is a hunter. ";
-Constant SC_133 = "Some initial description of the entryway goes here!";
-Constant SC_132 = "Some initial description of the grounds goes here!";
-Constant SC_141 = "Something is faintly reflecting light in there.";
-Constant SC_113 = "Suddenly, all of the windows are slammed shut and barricaded.";
+Constant SC_130 = "Nothing else happened.";
+Constant SC_131 = "Nothing happens.";
+Constant SC_108 = "On ";
+Constant SC_149 = "On its right chest are two octagonal shaped indentations that look like they might have held something.";
+Constant SC_82 = "Perhaps you shouldn't.";
+Constant SC_69 = "QUIT";
+Constant SC_66 = "RESTART";
+Constant SC_67 = "RESTORE a saved game";
+Constant SC_150 = "Right now it holds: ";
+Constant SC_166 = "So this man is a hunter. ";
+Constant SC_134 = "Some initial description of the grounds goes here!";
+Constant SC_142 = "Something is faintly reflecting light in there.";
+Constant SC_114 = "Suddenly, all of the windows are slammed shut and barricaded.";
 Constant SC_51 = "Tell me your secrets, wall.";
-Constant SC_166 = "That explains all of the guns back there. ";
-Constant SC_82 = "That won't do.";
-Constant SC_94 = "That's too heavy for you to carry.";
-Constant SC_96 = "The ";
-Constant SC_167 = "The bear looks frightening, but you'd much rather have one of these lurking in the mansion than that monster. ";
-Constant SC_137 = "The cage rests in a corner. You can also see a damaged old painting on the wall and a table with various medical utilities.";
+Constant SC_167 = "That explains all of the guns back there. ";
+Constant SC_83 = "That won't do.";
+Constant SC_95 = "That's too heavy for you to carry.";
+Constant SC_97 = "The ";
+Constant SC_168 = "The bear looks frightening, but you'd much rather have one of these lurking in the mansion than that monster. ";
+Constant SC_138 = "The cage rests in a corner. You can also see a damaged old painting on the wall and a table with various medical utilities.";
 Constant SC_46 = "The den is comfortably furnished.";
 Constant SC_40 = "The door is painted the same color as the walls. The passage seems big enough for a single person to crawl through.";
-Constant SC_143 = "The lock must have been for decoration.";
-Constant SC_89 = "The machine should be turned on first.";
-Constant SC_131 = "The machine turns off.";
-Constant SC_130 = "The machine turns on.";
+Constant SC_144 = "The lock must have been for decoration.";
+Constant SC_90 = "The machine should be turned on first.";
+Constant SC_133 = "The machine turns off.";
+Constant SC_132 = "The machine turns on.";
 Constant SC_42 = "The only button that you can recognize is the power button. Most of the others are marked with codes like ~NR-3~. You can also see a lever on the machine.";
 Constant SC_26 = "The only kinds I can find are shotgun and rifle ammo.";
-Constant SC_127 = "The statue drops a key into its hands.";
+Constant SC_129 = "The statue drops something into its hands.";
 Constant SC_63 = "There are is sole yoga mat on the ground. This place would be suitable for meditation and prayer.";
 Constant SC_47 = "There is a a mount of a bear head on the wall.";
 Constant SC_27 = "There is a rather large bed in the room. The room also has a closet.";
-Constant SC_135 = "There is a small table in the middle of the room, next to the couch. The fireplace burns.";
+Constant SC_136 = "There is a small table in the middle of the room, next to the couch. The fireplace burns.";
 Constant SC_29 = "There is a statue resting a the corner of the room.";
 Constant SC_58 = "There is an unfinished canvas lying on the ground.";
 Constant SC_31 = "There is nothing of interest here.";
-Constant SC_142 = "There's a  small lock on the cabinet, although the doors seem to be made of fragile glass.";
-Constant SC_122 = "There's already ";
-Constant SC_86 = "There's no time for that.";
+Constant SC_143 = "There's a  small lock on the cabinet, although the doors seem to be made of fragile glass.";
+Constant SC_124 = "There's already ";
+Constant SC_87 = "There's no time for that.";
 Constant SC_9 = "There's nothing on there, although a nearby dangling phone wire tells you that there used to be a phone here.";
 Constant SC_3 = "These boxes hold nothing of interest.";
-Constant SC_79 = "They contain more food stuff. As you frustratedly rattle the box flaps, you notice something about the wall. From this close range, you can see hinges peering out from behind the boxes. ";
-Constant SC_146 = "This is definitely the man in that photograph. Just who is this?";
+Constant SC_80 = "They contain more food stuff. As you frustratedly rattle the box flaps, you notice something about the wall. From this close range, you can see hinges peering out from behind the boxes. ";
+Constant SC_147 = "This is definitely the man in that photograph. Just who is this?";
 Constant SC_13 = "This is surely where that monster is kept. The bars of the cage seem to be heavily reinforced, yet somehow damaged. The cage's opening doesn't seem to use a traditional lock. It looks electronic, but there is no way to input a combination.";
-Constant SC_151 = "This mirror is embedded with a ";
+Constant SC_152 = "This mirror is embedded with a ";
 Constant SC_25 = "This room is lined with gun racks. Too bad they're all empty, as if the place had been robbed. There is also a locker to the left of the room and lots of ammo boxes strewn around.";
 Constant SC_41 = "This room is locked from the outside. The doctor must have his reasons for keeping it secret.";
 Constant SC_32 = "This room looks like it has never been used. There are cobwebs everywhere.  A single bed is set up in the room, as well as a dresser.";
-Constant SC_69 = "UNDO the last command";
+Constant SC_70 = "UNDO the last command";
 Constant SC_37 = "What a nice polish.";
-Constant SC_134 = "What used to be such a welcoming room is now the last place you want to be in. Your first instinct is to explore the rest of the mansion to try and find a way out, or at least avoid whatever is approaching.";
-Constant SC_95 = "What you find inside diminishes your hopes of escaping. There are several identification cards of people from all over the country. They must have been lured in by this maniac and fed to that beast. This is probably his way of keeping accolades.";
+Constant SC_135 = "What used to be such a welcoming room is now the last place you want to be in. Your first instinct is to explore the rest of the mansion to try and find a way out, or at least avoid whatever is approaching.";
+Constant SC_96 = "What you find inside diminishes your hopes of escaping. There are several identification cards of people from all over the country. They must have been lured in by this maniac and fed to that beast. This is probably his way of keeping accolades.";
 Constant SC_12 = "Who knows why this stuff is down here.  The stains of blood inside the cage are definitely related though.";
 Constant SC_33 = "With drawer fronts crafted from reclaimed saal wood, the Stria Dresser brings rustic charm to the bedroom. In a former life, the wood was used in Indian railway trestles. Today, it's prized for its natural imperfections and character; no two pieces are exactly the same.";
-Constant SC_98 = "Would you like to ";
-Constant SC_104 = "You ";
+Constant SC_99 = "Would you like to ";
+Constant SC_105 = "You ";
 Constant SC_18 = "You are outside of the mansion.";
-Constant SC_119 = "You break ";
+Constant SC_121 = "You break ";
 Constant SC_19 = "You can see the basement stairs here.";
 Constant SC_20 = "You can see the second floor stairs here.";
-Constant SC_138 = "You can tell the Doctor spends much of his time here. There is a bookshelf, a small desk covered with neat piles of papers, and a chair. You can also see a cabinet with ";
-Constant SC_116 = "You can't break ";
-Constant SC_83 = "You get a beep signifying success.";
-Constant SC_88 = "You have no interest in eating right now.";
-Constant SC_114 = "You hear a click on the front door.";
-Constant SC_91 = "You hear a loud slamming all around you. Great joy fills you, and you run to the front door.";
-Constant SC_124 = "You insert ";
-Constant SC_76 = "You maneuver yourself through the dusty two-way path. It takes you a few minutes to reach the other room.";
-Constant SC_77 = "You notice the lightness of the boxes. All empty.";
+Constant SC_139 = "You can tell the Doctor spends much of his time here. There is a bookshelf, a small desk covered with neat piles of papers, and a chair. You can also see a cabinet with ";
+Constant SC_118 = "You can't break ";
+Constant SC_117 = "You finally make your escape from this crazy place.";
+Constant SC_84 = "You get a beep signifying success.";
+Constant SC_89 = "You have no interest in eating right now.";
+Constant SC_115 = "You hear a click on the front door.";
+Constant SC_92 = "You hear a loud slamming all around you. Great relief fills your spirit. You should head to the front door in the living room.";
+Constant SC_126 = "You insert ";
+Constant SC_77 = "You maneuver yourself through the dusty two-way path. It takes you a few minutes to reach the other room.";
+Constant SC_78 = "You notice the lightness of the boxes. All empty.";
 Constant SC_10 = "You peek into the fireplace, but there is nothing of interest.";
-Constant SC_80 = "You push the boxes aside, revealing a flap door that is more than big enough for you to enter.";
+Constant SC_81 = "You push the boxes aside, revealing a flap door that is more than big enough for you to enter.";
 Constant SC_24 = "You read the latest entry ~I never got around to sending his wife that letter. I just couldn't bear it, and left the matter as it was. The repercussions for letting the world know would be too great.~";
-Constant SC_84 = "You remove ";
-Constant SC_109 = "also ";
-Constant SC_139 = "broken ";
-Constant SC_108 = "can ";
-Constant SC_140 = "glass doors. ";
-Constant SC_164 = "off position (down).";
-Constant SC_163 = "on position (up)";
-Constant SC_110 = "see ";
-Constant SC_67 = "see some suggestions for AMUSING things to do";
-Constant SC_117 = "that";
+Constant SC_85 = "You remove ";
+Constant SC_110 = "also ";
+Constant SC_140 = "broken ";
+Constant SC_109 = "can ";
+Constant SC_141 = "glass doors. ";
+Constant SC_165 = "off position (down).";
+Constant SC_164 = "on position (up)";
+Constant SC_111 = "see ";
+Constant SC_68 = "see some suggestions for AMUSING things to do";
+Constant SC_119 = "that";
 Constant SC_4 = "the";
 
 #ifndef p0_specification; Constant p0_specification = 0; #endif;
