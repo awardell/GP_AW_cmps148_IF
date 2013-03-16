@@ -52,16 +52,15 @@ The Second Floor Corridor is a room. The upper stairs are an open unopenable doo
 
 [The first floor corridor is south of the living room. (removed)]
 
-The Study is a room. "You can tell the Doctor spends much of his time here. There is a bookshelve, a small desk covered with neat piles of papers, and a chair. You can also see a cabinet with [if the cabinet is broken]broken [end if]glass doors. [if the cabinet contains a yellow gem]Something is faintly reflecting light in there.[end if]".
-[temp]The study is south of the basement. 
+The Study is a room. "You can tell the Doctor spends much of his time here. There is a bookshelf, a small desk covered with neat piles of papers, and a chair. You can also see a cabinet with [if the cabinet is broken]broken [end if]glass doors. [if the cabinet contains a yellow gem]Something is faintly reflecting light in there.[end if]".
+[[temp]The study is south of the basement. ]
 The bookshelf is scenery in the study. The description is "It is full of non-fiction books."
 The books are part of the bookshelf.
 Instead of examining the books, say "There's no time for that."
-The glass cabinet is a locked, openable, breakable , scenery, container in the study. The description of the cabinet is "[if the cabinet is unbroken]There's a  small lock on the cabinet, although the doors seem to be made of fragile glass.[otherwise]'I guess the lock was just for decoration.'"
+The glass cabinet is a locked, openable, breakable , scenery, container in the study. The description of the cabinet is "[if the cabinet is unbroken]There's a  small lock on the cabinet, although the doors seem to be made of fragile glass.[otherwise]The lock must have been for decoration."
 There is a gem called the yellow gem in the cabinet. The description of the yellow gem is "A beautiful yellow gem."
 The desk is scenery in the study.  The description of the desk is "Lots of business documents and paperwork. The desk has a drawer."
 The drawer is part of the desk. The drawer is a closed openable container. 
-The black key is in the drawer.
 A journal is in the drawer. The description of the journal is "Words words words."
 
 Understand "read [journal]" as examining.
@@ -86,7 +85,7 @@ The statue is in the master bedroom. The description of the statue is "A life-si
 The statue's chest is part of the statue. The statue's chest has a number called capacity. The capacity of the chest is 2. The description of the statue's chest is "[if the number of things that are part of the  statue's chest is 0]On its right chest are two octogonal shaped indentations that look like they might have held something.[otherwise]Right now it holds: [list of things that are part of the statue's chest][end if]." 
 The statue's hands are a supporter. The hands are part of the statue.
 
-[temp]the master bedroom is south of the study.
+[[temp]the master bedroom is south of the study.]
 
 Bathroom One is a room.  "A standard bathroom with a shower, toilet and sink. There is a large mirror with a fancy border near the sink." 
 The toilet is scenery in bathroom one. The sink is scenery in bathroom one.
@@ -109,12 +108,12 @@ The blue gem is a gem. The blue gem is in the dresser.
 The cobwebs are scenery in the guest room.
 There is a framed print in the guest room. The description is "[italic type]'Mi casa es su casa.'[roman type]".
 
-The Kitchen-Dining is a room. "A large kitchen and dining combination room. There is a fine stone-top counter separating the kitchen from the rest of the room. There are some dish cabinets with nothing but kitchen utensils inside."The printed name is "Kitchen & Dining Room".
-The dining table is scenery in the kitchen-dining. The dining table is a supporter.
-The stove is scenery in the kitchen-dining. 
-The dish cabinets are scenery in the kitchen-dining. The dish cabinets are transparent, closed, openable containers.  
+The kitchen is a room. "A large kitchen and dining combination room. There is a fine stone-top counter separating the kitchen from the rest of the room. There are some dish cabinets with nothing but kitchen utensils inside."The printed name is "Kitchen & Dining Room". Understand "dining room" as the kitchen.
+The dining table is scenery in the kitchen. The dining table is a supporter.
+The stove is scenery in the kitchen. 
+The dish cabinets are scenery in the kitchen. The dish cabinets are transparent, closed, openable containers.  
 There are kitchen utensils in the dish cabinets. There are dishes in the dish cabinets.
-The kitchen counter is scenery in the kitchen-dining. The description is "What a nice polish."
+The kitchen counter is scenery in the kitchen. The description is "What a nice polish."
 There is fake fruit on the dining table. The description of the fake fruit is "It's plastic fruit. An unreasonable rage fills your body."
 The regrigerator is scenery. The regrigerator is a closed openable container.
 Instead of taking the kitchen utensils, say "It would be better to leave these here."
@@ -122,7 +121,7 @@ Instead of taking the dishes, say "It would be better to leave these here."
 
 [The pantry should not be placed randomly. It uses northeast in order to not conflict with room placement algorithmn]
 A box is a kind of container. A box can be in-place or dislocated.
-The Pantry is northeast of the kitchen-dining. "A pantry that receives little light. There is a rack that holds unperishable food."
+The Pantry is northeast of the kitchen. "A pantry that receives little light. There is a rack that holds unperishable food."
 There are food boxes in the pantry. Food boxes are a box. The food boxes are heavy. The food boxes are in-place. The initial appearance is "At the end of the room are a few large boxes." The description of the boxes is "These boxes hold nothing of interest."
 Understand "box" as boxes.
 Instead of examining or opening the food boxes when the boxes are in-place:
@@ -165,10 +164,10 @@ Instead of taking a card key that is part of something (called the holder):
 	say "You remove [the noun] from [the holder].";
 	now the player carries the noun;
 
-The Den is a room.  "There is a mount of a bear's head on the wall. Beside."
-The bear head is in the den. It is fixed in place. The bear head has a number called capacity. The capacity of the bear head is 1. The initial appearance is "There is a a mount of a bear head on the wall." The description is "So this guy's a hunter.[if the player has been in the armory]That explains all the guns.[end if]Instead of a real nose, the bear has a black gem on there."
+The Den is a room.  "The den is comfortably furnished."
+The bear head is in the den. It is fixed in place. The bear head has a number called capacity. The capacity of the bear head is 1. The initial appearance is "There is a a mount of a bear head on the wall." The description is "So this man is a hunter. [if the player has been in the armory]That explains all of the guns back there. [end if]The bear looks frightening, but you'd much rather have one of these lurking in the mansion than that monster. [if the black gem is part of the bear head]A black gem serves as a substitute for the bear's nose."
 The black gem is part of the bear head.
-
+Understand "bear nose" as black gem.
 Understand "mount" as bear head.
 The den's couch is scenery in the den. 
 
@@ -182,6 +181,8 @@ The walls are scenery in Bedroom B. The description is "Tell me your secrets, wa
 After examining a container:
 	if the dresser is closed:
 		say "The [noun] is closed."
+[for debugging]
+Teleporting is an action applying to one visible thing. Understand "go to [any room]" as teleporting. Carry out teleporting: move the player to the noun.
 
 [-------------General Actions----------------]
 Understand the command "break" as something new.
@@ -223,8 +224,8 @@ Report gem-inserting:
 	say "You insert [the noun] into [the second noun]. It fits perfectly.";
 	if there is a key on the statue's hands and the second noun is the statue: [probably can be abused, but whos going to try?]
 		say "The statue drops a key into its hands.";
-		otherwise: 
-			say "Nothing else happened."
+	otherwise: 
+		say "Nothing else happened."
 
 Instead of taking a gem that is part of something (called the holder):
 	say "You remove [the noun] from [the holder].";
@@ -326,7 +327,7 @@ Table 3 - First Floor Available Rooms
 name
 Guest Room
 Bathroom One
-Kitchen-Dining
+kitchen
 Armory
 Den
 Skeletor
