@@ -48,7 +48,7 @@ The cage is scenery in the basement. The description of the cage is "This is sur
 blood is part of the cage. The description of the blood is "Looks a few days old."
 The cage lock is part of the cage. The description of the cage lock is "A steel black box. Must be controlled remotely."
 A scenic painting is in the basement. The description of the scenic painting is "A painting of the deep blue sea melding with a beautiful red sunset. It sure makes you miss the outside world."
-The cellar door is a lockable locked door. It is northeast of the basement. The description is "Freedom is close. You can feel the fresh cool wind blowing in. However, there is a sturdy lock preventing you from opening the door." 
+The cellar door is a lockable locked door. It is northeast of the basement and south of the Field. The description is "Freedom is close. You can feel the fresh cool wind blowing in. However, there is a sturdy lock preventing you from opening the door." 
 The purple key unlocks the cellar door.
 
 [Note in the world index that rooms  are automatically assigned a floor if they are have a connection to one of these two rooms]
@@ -64,7 +64,7 @@ The glass cabinet is a locked, openable, breakable , scenery, container in the s
 There is a gem called the yellow gem in the cabinet. The description of the yellow gem is "A beautiful yellow gem."
 The desk is scenery in the study.  The description of the desk is "Lots of business documents and paperwork. The desk has a drawer."
 The drawer is part of the desk. The drawer is a closed openable container. 
-A journal is in the drawer. The description of the journal is "You read the latest entry 'I never got around to sending his wife that letter. I just couldn't bear it, and left the matter as it was. The repurcussions for letting the world know would be too great.'"
+A journal is in the drawer. The description of the journal is "You read the latest entry 'I never got around to sending his wife that letter. I just couldn't bear it, and left the matter as it was. The repercussions for letting the world know would be too great.'"
 
 Understand "read [journal]" as examining.
 Before examining the journal:
@@ -85,7 +85,7 @@ The Master Bedroom is a room. "There is a rather large bed in the room. The room
 The bed is scenery in the master bedroom. The description of the bed is "It looks untouched. You doubt if that madman even sleeps."
 The closet is an open enterable scenery container in the master bedroom. 
 The statue is in the master bedroom. The description of the statue is "A life-size statue of a man. [if the photograph is not seen]He doesn't remind you of any historical figures or anyone like that.[ otherwise]This is definitely the man in that photograph. Just who is this?[end if]He shows a serene smile as he holds out both hands. You notice something peculiar about this statue's chest." The initial appearance is "There is a statue resting a the corner of the room."
-The statue's chest is part of the statue. The statue's chest has a number called capacity. The capacity of the chest is 2. The description of the statue's chest is "[if the number of things that are part of the  statue's chest is 0]On its right chest are two octogonal shaped indentations that look like they might have held something.[otherwise]Right now it holds: [list of things that are part of the statue's chest][end if]." 
+The statue's chest is part of the statue. The statue's chest has a number called capacity. The capacity of the chest is 2. The description of the statue's chest is "[if the number of things that are part of the  statue's chest is 0]On its right chest are two octagonal shaped indentations that look like they might have held something.[otherwise]Right now it holds: [list of things that are part of the statue's chest][end if]." 
 The statue's hands are a supporter. The hands are part of the statue.
 
 Bathroom One is a room.  "A standard bathroom with a shower, toilet and sink. There is a large mirror with a fancy border near the sink." 
@@ -99,7 +99,7 @@ The Guest Room is a room. "This room looks like it has never been used. There ar
 The dresser is scenery in the guest room. The dresser is a closed, openable container. The description is "With drawer fronts crafted from reclaimed saal wood, the Stria Dresser brings rustic charm to the bedroom. In a former life, the wood was used in Indian railway trestles. Today, it's prized for its natural imperfections and character; no two pieces are exactly the same." 
 The dresser contains an envelope. The envelope is a closed openable container. 
 Instead of examining the envelope when the envelope is closed, say "It is sealed. There is nothing written on it."
-After opening the envelope for the first time, say "What you find inside diminishes your hopes of escaping. There are several idenfification cards of people from all over the country. They must have been lured in by this maniac and fed to that beast. This is probably his way of keeping accolades."
+After opening the envelope for the first time, say "What you find inside diminishes your hopes of escaping. There are several identification cards of people from all over the country. They must have been lured in by this maniac and fed to that beast. This is probably his way of keeping accolades."
 Mary's ID is in the envelope. The description is "Mary Schweller[line break]Date of Birth: 02-24-1953."
 Frank's ID is in the envelope. The description is "Frank Zappa[line break]Date of Birth: 12-21-1940."
 Jonathan's ID is in the envelope. The description is "Jonathan Maxwell[line break]Date of Birth: 08-12-1948."
@@ -109,33 +109,36 @@ The blue gem is a gem. The blue gem is in the dresser.
 The cobwebs are scenery in the guest room.
 There is a framed print in the guest room. The description is "[italic type]'Mi casa es su casa.'[roman type]".
 
-The kitchen is a room. "A large kitchen and dining combination room. There is a fine stone-top counter separating the kitchen from the rest of the room. Dish cabinets with nothing but kitchen utensils inside line the place."The printed name is "Kitchen & Dining Room". Understand "dining room" as the kitchen.
+The kitchen is a room. "A large kitchen and dining combination room. There is a fine stone-top counter separating the kitchen from the rest of the room. Dish cabinets with nothing but kitchen utensils inside line the place. In the northeast direction is the pantry."The printed name is "Kitchen & Dining Room". Understand "dining room" as the kitchen.
 The dining table is scenery in the kitchen. The dining table is a supporter.
 The stove is scenery in the kitchen. 
 The dish cabinets are scenery in the kitchen. The dish cabinets are transparent, closed, openable containers.  
 There are kitchen utensils in the dish cabinets. There are dishes in the dish cabinets.
 The kitchen counter is scenery in the kitchen. The description is "What a nice polish."
 There is fake fruit on the dining table. The description of the fake fruit is "It's plastic fruit. An unreasonable rage fills your body."
-The regrigerator is scenery. The regrigerator is a closed openable container.
+The refrigerator is scenery. The refrigerator is a closed openable container.
 Instead of taking the kitchen utensils, say "It would be better to leave these here."
 Instead of taking the dishes, say "It would be better to leave these here."
 
 [The pantry should not be placed randomly. It uses northeast in order to not conflict with room placement algorithmn]
 A box is a kind of container. A box can be in-place or dislocated.
-The Pantry is northeast of the kitchen. "A pantry that receives little light. There is a rack that holds unperishable food."
+The Pantry is northeast of the kitchen. "A pantry that receives little light. There is a rack that holds nonperishable food."
 There are food boxes in the pantry. Food boxes are a box. The food boxes are heavy. The food boxes are in-place. The initial appearance is "At the end of the room are a few large boxes." The description of the boxes is "These boxes hold nothing of interest."
-The rack is scenery in the pantry. The rack is an open container. It contains unperishable food.
-Instead of taking unperishable food, say "You have no interest in eating right now."
+The rack is scenery in the pantry. The rack is an open container. It contains nonperishable food.
+Instead of taking nonperishable food, say "You have no interest in eating right now."
 Understand "box" as boxes.
 Instead of examining or opening the food boxes when the boxes are in-place:
-	say "They contain more food stuff. As you frustratedly rattle the box flaps, you notice something about the wall. From this close range, you can see hinges peering out from behind the boxes. [line break]You push the boxes aside.";
+	say "They contain more food stuff. As you frustratedly rattle the box flaps, you notice something about the wall. From this close range, you can see hinges peering out from behind the boxes. [paragraph break]You push the boxes aside, revealing a flap door that is more than big enough for you to enter.";
 	now the food boxes are dislocated;
 	now the secret passage is described;
 
 The secret passage is a door. The secret passage is east of the pantry and southwest of the Control Room. The secret passage is undescribed.  The description of the secret passage is "The door is painted the same color as the walls. The passage seems big enough for a single person to crawl through."
-Before going through the secret passage:
-	say "You manuever yourself through the dusty two-way path. It takes you a few minutes to reach the other room."; [maybe change message if rooms are on different floors]
 
+Before going through the secret passage:
+	if the food boxes are dislocated:
+		say "You maneuver yourself through the dusty two-way path. It takes you a few minutes to reach the other room."; 
+	
+Understand "flap door" as the secret passage.
 [The Control Room should be locked]
 The Control Room is a room.  "This room is locked from the outside. The doctor must have his reasons for keeping it secret."
 There is a big machine in the control room. The initial appearance is "A large electronic machine fills up most of the room." The description is "The only button that you can recognize is the power button. Most of the others are marked with codes like 'NR-3'. You can also see a lever on the machine." The big can be on or off. The big machine is off. 
@@ -175,28 +178,37 @@ Understand "mount" as bear head.
 
 Bedroom C is a room.
 The ottoman is a heavy closed openable container in bedroom c. The initial appearance is "An ottoman is placed beside the bed." The description is "An ottoman made of rich leather."
-The ottoman contains a photograph. The description of the photograph is "A younger Dr. Redrum standing next to a man. [if the statue is seen]His companion looks remarkably like the statue in the master bedroom. [end if]A lush rainforest sorrounds them."
+The ottoman contains a photograph. The description of the photograph is "A younger Dr. Redrum standing next to a man. [if the statue is seen]His companion looks remarkably like the statue in the master bedroom. [end if]A lush rainforest surrounds them."
 The ottoman contains blank paper. 
 The bedroom-c bed is scenery.
 
 Bedroom B is a room. "It looks like this room was never set up.  There is no furniture, just bare, empty walls."
 The walls are scenery in Bedroom B. The description is "Tell me your secrets, wall."
 
-The Narrow Hallway First is a room. The printed name is "Narrow Hallway (First Floor)".
-The metal door is a locked lockable door. The metal door is northwest of the narrow hallway first and east of the Control Room. The initial appearance is  "A peculiar black door is connected to this hallway." The description of the metal door is "I need a key for this."
+The Narrow Hallway First is a room. "A peculiar black door is connected to this hallway." The printed name is "Narrow Hallway (First Floor)". 
+The metal door is a locked lockable door. The metal door is northwest of the narrow hallway first and east of the Control Room.  The description of the metal door is "I need a key for this."
 The control key unlocks the metal door.
 
 The Narrow Hallway Second is a room. The printed name is "Narrow Hallway (Second Floor)".
 
 The Studio is a room. "A real painter's studio." 
-The unfinished canvas is in the studio. The initial appearance is "There is an unfinished canvas lying on the ground." The description is "It's starting to take form. From what you can make out, it looks like some sort of tropical lanscape."
+The unfinished canvas is in the studio. The initial appearance is "There is an unfinished canvas lying on the ground." The description is "It's starting to take form. From what you can make out, it looks like some sort of tropical landscape."
 
 The Utility Room is a room. "It houses a laundry machine and other home maintenance tools."
 The laundry machine is scenery in the utility room. The laundry machine is a closed openable container.  The description is "It looks like the latest front-loading model."
 The laundry machine contains blood-stained clothes. The description of the clothes is "Dried stiff. Just what goes on in this place?"
 
+The Conference Room is a room. "A small conference room with nothing but an empty table and chairs."
+The conference table is scenery in the conference room. 
+The chairs are scenery in the conference room. Understand "chair" as chairs.
 
-The Field is a room. "You are ouside of the mansion."
+The Excercise Room is a room. "There are is sole yoga mat on the ground. This place would be suitable for meditation and prayer."
+[sorry, you can neither meditate nor pray, as the context would suggest]
+The yoga mat is scenery in the excercise room. 
+
+The Field is a room. "You are outside of the mansion."
+After entering the field:
+	now the player is free;
 
 [Rules]
 [def the beast is near player when mandist is 1]
@@ -204,7 +216,10 @@ Instead of taking something heavy:
 	say "That's too heavy for you to carry.";
 Definition: a direction (called thataway) is viable if the room thataway from the location is a room.
 Every turn:
-	say "From here you can go [list of viable directions]."
+	if the player is not in the pantry:
+		say "From here you can go [list of viable directions].";
+	otherwise:
+		say "From here you can go southwest.";
 Carry out examining a thing: 
 	now the noun is seen.
 	
@@ -306,7 +321,6 @@ Report pressing:
 		say "The machine turns off.";
 
 
-
 [Some Game Rules:
 One shot severely wounds the beast, and promptly after it moves to another room. Two shots kills it.
 [using an action ticks beast algorithm, moving from room to room causes a bigger step]
@@ -315,8 +329,6 @@ One shot severely wounds the beast, and promptly after it moves to another room.
 [The beast is sick and old, and starving, so it is not very agile]
 [if running away for first time, jump player to a random room]
 [maybe the player can hide under stuff in certain rooms]
-[have a point in story where player finds out who person in statue is, affecting the description (5.5)]
-[]
 [
 Some Alerts:
 If manDist == 1 && onSameFloor 
@@ -361,7 +373,7 @@ Den
 Narrow Hallway First
 Master Bedroom
 Utility Room
-Bukkake
+Conference Room
 Megaraptor
 
 Table 4 - Second Floor Available Rooms
@@ -371,7 +383,7 @@ Bedroom B
 Bathroom Two
 Narrow Hallway Second
 Studio
-New Jersey
+Excercise Room
 Pennsylvania
 Delaware
 Maryland
