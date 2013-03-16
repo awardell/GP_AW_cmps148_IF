@@ -12,6 +12,18 @@ A room is usually uncounted.
 A person can be free or locked-in.
 The player is free.
 The player is in the Mansion Grounds.
+Trapped is a scene. Trapped begins when the player is locked-in for the first time. [after owner stops talking to you].
+Trapped ends when the player is free for the second time.
+A window is a kind of door. A window is usually locked. A window is usually closed.
+
+When Trapped begins:
+	say "Suddenly, all of the windows are slammed shut and barricaded.[line break]You hear a click on the front door.[line break] As you stand there, trying to collect yourself, another loud bang shakes you up. Someone or something is coming upstairs. Something big.";
+	now the front door is closed;
+	now the front door is locked;
+[Lock all doors to living room or lock just the front door, start beast movement algorithmn]
+
+When Trapped ends:
+	end the story saying "You finally make your escape from this crazy place.";
 
 A thing can be breakable or unbreakable. A thing is usually unbreakable.
 A thing can be broken or unbroken. A thing is usually unbroken. 
@@ -31,15 +43,6 @@ The front door is a door. The front door is inside from the mansion grounds and 
 Every turn:
 	if the living room is visited and the living room was not visited:
 		now the player is locked-in;
-
-Trapped is a scene. Trapped begins when the player is locked-in for the first time. [after owner stops talking to you].
-Trapped ends when the player is free for the second time.
-A window is a kind of door. A window is usually locked. A window is usually closed.
-When Trapped begins:
-	say "Suddenly, all of the windows are slammed shut and barricaded.[line break]You hear a click on the front door.[line break] As you stand there, trying to collect yourself, another loud bang shakes you up. Someone or something is coming upstairs. Something big.";
-	now the front door is closed;
-	now the front door is locked;
-[Lock all doors to living room or lock just the front door, start beast movement algorithmn]
 
 The Living Room is a room. "[if the player is in the living room for the first time]What used to be such a welcoming room is now the last place you want to be in. Your first instinct is to explore the rest of the mansion to try and find a way out, or at least avoid whatever is approaching.[line break][end if]There is a small table in the middle of the room, next to the couch. The fireplace burns."
 The couch is scenery in the living room.
@@ -167,8 +170,8 @@ Instead of pulling the lever:
 		say "It won't budge. You take note of the card slot on the machine.";
 		stop the action;
 	otherwise:
-		say "You hear a loud slamming all around you. Great joy fills you, and you run to the front door.";
-		now the player is free;
+		say "You hear a loud slamming all around you. Great relief fills your spirit. You should head to the front door in the living room.";
+		now the front door is open;
 
 Instead of inserting something into the card slot:
 	if the noun is not the card key:
@@ -218,10 +221,14 @@ The Excercise Room is a room. "There are is sole yoga mat on the ground. This pl
 [sorry, you can neither meditate nor pray, as the context would suggest]
 The yoga mat is scenery in the excercise room. 
 
-The Field is a room. "You are outside of the mansion."
-After entering the field:
-	now the player is free;
+The Ballroom is a room.  "A grand ballroom that now seems like a relic of the past. Nothing here but empty space."
 
+The Field is a room. "You are outside of the mansion."
+
+After entering the field: [from cellar door]
+	now the player is free;
+After entering the Mansion Grounds for the second time:
+	now the player is free;
 [Rules]
 [def the beast is near player when mandist is 1]
 Instead of taking something heavy:
@@ -239,7 +246,7 @@ After examining a container:
 	if the noun is closed:
 		say "The [noun] is closed."
 [for debugging]
-Teleporting is an action applying to one visible thing. Understand "go to [any room]" as teleporting. Carry out teleporting: move the player to the noun.
+Teleporting is an action applying to one visible thing. Understand "teleport to [any room]" as teleporting. Carry out teleporting: move the player to the noun.
 
 [-------------General Actions----------------]
 Understand the command "break" as something new.
@@ -278,7 +285,7 @@ Carry out gem-inserting:
 Report gem-inserting:
 	say "You insert [the noun] into [the second noun]. It fits perfectly.";
 	if there is a key on the statue's hands and the second noun is the statue: [probably can be abused, but whos going to try?]
-		say "The statue drops a key into its hands.";
+		say "The statue drops something into its hands.";
 	otherwise: 
 		say "Nothing else happened."
 
@@ -373,7 +380,7 @@ placeholder		placeholder		placeholder
 placeholder		Second Floor Corridor		placeholder
 
 [temp dummy rooms - replace these]
-Megaraptor, Skeletor, Godzilla, Mothra, Bukkake, Connecticut, New York, New Jersey, Pennsylvania, Delaware, Maryland, Virginia, and Carolina are rooms.
+Connecticut, New York, New Jersey, Pennsylvania, Delaware, Maryland, Virginia, and Carolina are rooms.
 
 Table 3 - First Floor Available Rooms
 name
@@ -386,7 +393,7 @@ Narrow Hallway First
 Master Bedroom
 Utility Room
 Conference Room
-Megaraptor
+Ballroom
 
 Table 4 - Second Floor Available Rooms
 name
