@@ -15,7 +15,9 @@ When Trapped begins:
 A thing can be breakable or unbreakable. A thing is usually unbreakable.
 A thing can be broken or unbroken. A thing is usually unbroken. 
 A thing can be heavy or light. A thing is usually light.
+A thing can be seen or unseen. A thing is usually unseen.
 A gem is a kind of thing.
+
 The black gem is a gem.
 A key is a kind of thing. The purple key is a key. The description is "A purple key of some sort." [cellar door key]
 The card key is a key. The description is "A black and yellow striped card key. There is no other labeling."[control room machine]
@@ -61,7 +63,7 @@ The glass cabinet is a locked, openable, breakable , scenery, container in the s
 There is a gem called the yellow gem in the cabinet. The description of the yellow gem is "A beautiful yellow gem."
 The desk is scenery in the study.  The description of the desk is "Lots of business documents and paperwork. The desk has a drawer."
 The drawer is part of the desk. The drawer is a closed openable container. 
-A journal is in the drawer. The description of the journal is "Words words words."
+A journal is in the drawer. The description of the journal is "You read the latest entry 'I never got around to sending his wife that letter. I just couldn't bear it, and left the matter as it was. The repurcussions for letting the world know would be too great.'"
 
 Understand "read [journal]" as examining.
 Before examining the journal:
@@ -169,15 +171,33 @@ The bear head is in the den. It is fixed in place. The bear head has a number ca
 The black gem is part of the bear head.
 Understand "bear nose" as black gem.
 Understand "mount" as bear head.
-The den's couch is scenery in the den. 
 
-Bedroom A is a room.
+Bedroom C is a room.
+The ottoman is a fixed in place closed openable container in bedroom c. The initial appearance is "An ottoman is placed beside the bed." The description is "A leather ottoman."
+The ottoman contains a photograph. The description of the photograph is "A younger Dr. Redrum standing next to a man. [if the statue is seen]His companion looks remarkably like the statue in the master bedroom. [end if]A lush rainforest sorrounds them."
+The ottoman contains blank paper. 
+The bedroom-c bed is scenery.
+
 [some more story background]
 
 Bedroom B is a room. "It looks like this room was never set up.  There is no furniture, just bare, empty walls."
 The walls are scenery in Bedroom B. The description is "Tell me your secrets, wall."
 
+The Narrow Hallway First is a room. The printed name is "Narrow Hallway (First Floor)".
+The metal door is a locked door. The metal door is northwest of the narrow hallway first and east of the Control Room. The initial appearance is  "A peculiar black door is connected to this hallway." The description of the metal door is "I need a key for this."
+
+
+The Narrow Hallway Second is a room. The printed name is "Narrow Hallway (Second Floor)".
+
 [Rules]
+[def the beast is near player when mandist is 1]
+
+Definition: a direction (called thataway) is viable if the room thataway from the location is a room.
+Every turn:
+	say "From here you can go [list of viable directions]."
+Carry out examining a thing: 
+	now the noun is seen.
+	
 After examining a container:
 	if the dresser is closed:
 		say "The [noun] is closed."
@@ -217,8 +237,6 @@ Carry out gem-inserting:
 		try putting the purple key on the statue's hands;
 	if the black gem is part of the second noun and the red gem is part of the second noun and the card key is off-stage:
 		try putting the card key on the statue's hands;
-	otherwise:
-		say "Nothing happened.";
 
 Report gem-inserting:
 	say "You insert [the noun] into [the second noun]. It fits perfectly.";
@@ -330,18 +348,18 @@ Bathroom One
 kitchen
 Armory
 Den
-Skeletor
-Godzilla
+Narrow Hallway First
+Master Bedroom
 Mothra
 Bukkake
 Megaraptor
 
 Table 4 - Second Floor Available Rooms
 name
-Bedroom A
+Bedroom C
 Bedroom B
 Bathroom Two
-Connecticut
+Narrow Hallway Second
 New York
 New Jersey
 Pennsylvania
