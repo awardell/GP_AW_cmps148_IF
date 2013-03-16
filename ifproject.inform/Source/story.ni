@@ -17,11 +17,11 @@ A thing can be broken or unbroken. A thing is usually unbroken.
 A thing can be heavy or light. A thing is usually light.
 A thing can be seen or unseen. A thing is usually unseen.
 A gem is a kind of thing.
-
 The black gem is a gem.
+
 A key is a kind of thing. The purple key is a key. The description is "A purple key of some sort." [cellar door key]
 The card key is a key. The description is "A black and yellow striped card key. There is no other labeling."[control room machine]
-[Maybe have another key around beasts neck.]
+The control key is a key. The description is "A key marked 'Control Room'".[the beast carries the key]
 
 The Mansion Grounds is a room. "[if the player is in the mansion grounds for the first time]Some initial description of the grounds goes here![end if]".
 
@@ -39,23 +39,24 @@ A painting of a bee is in the living room. The description of the painting of a 
 Instead of inserting something into the fireplace:
 	say "Perhaps you shouldn't.";
 
-The Basement is a room. "[if the player is in The Basement for the first time]A huge basement that gives off some bad vibes and a sickly smell. It seems like the most unlikely escape from this prison, but there must be some clues around. The first thing you notice is large steel cage, its door swong wide open. [end if]The cage rests in a corner. You can also see a damaged old painting on the wall and a table with various medical utilities."
+The Basement is a room. "[if the player is in The Basement for the first time]A huge basement that gives off some bad vibes and a sickly smell. You hope for some clues. Anything that can help you escape from this foul prison. The first thing you notice is large steel cage, its door swong wide open. [end if]The cage rests in a corner. You can also see a damaged old painting on the wall and a table with various medical utilities."
+The basement table is scenery in the basement. The description is "Who knows why this stuff is down here.  The stains of blood inside the cage are definitely related though."
+There are jars of fluid, syringes, chemicals, and some surgical tools on the table.  The surgical tools are heavy. The jars are heavy.
+
 The cage is scenery in the basement. The description of the cage is "This is surely where that monster is kept. The bars of the cage seem to be heavily reinforced, yet somehow damaged. The cage's opening doesn't seem to use a traditional lock. It looks electronic, but there is no way to input a combination."
+
+blood is part of the cage. The description of the blood is "Looks a few days old."
 The cage lock is part of the cage. The description of the cage lock is "A steel black box. Must be controlled remotely."
-A scenic painting is in the basement. The description of the scenic painting is "A painting of the deep blue sea melding with a beautiful red sunset."
-[Cellar door: "Escape is close. You can feel the fresh cool wind blowing in. However, there is a sturdy lock preventing you from opening the door."] 
-[after taking painting say "When picking up the painting you notice some text written on the back."]
-[The back of the painting is part of the painting.]
+A scenic painting is in the basement. The description of the scenic painting is "A painting of the deep blue sea melding with a beautiful red sunset. It sure makes you miss the outside world."
+The cellar door is a lockable locked door. It is northeast of the basement. The description is "Freedom is close. You can feel the fresh cool wind blowing in. However, there is a sturdy lock preventing you from opening the door." 
+The purple key unlocks the cellar door.
 
 [Note in the world index that rooms  are automatically assigned a floor if they are have a connection to one of these two rooms]
 The First Floor Corridor is a room. The basement stairs are an open unopenable door. The initial appearance is "You can see the basement stairs here." The basement stairs are below the first floor corridor and above the basement.
 
 The Second Floor Corridor is a room. The upper stairs are an open unopenable door. The initial appearance is "You can see the second floor stairs here." The upper stairs are above the first floor corridor and below the second floor corridor.
 
-[The first floor corridor is south of the living room. (removed)]
-
 The Study is a room. "You can tell the Doctor spends much of his time here. There is a bookshelf, a small desk covered with neat piles of papers, and a chair. You can also see a cabinet with [if the cabinet is broken]broken [end if]glass doors. [if the cabinet contains a yellow gem]Something is faintly reflecting light in there.[end if]".
-[[temp]The study is south of the basement. ]
 The bookshelf is scenery in the study. The description is "It is full of non-fiction books."
 The books are part of the bookshelf.
 Instead of examining the books, say "There's no time for that."
@@ -80,18 +81,16 @@ Before taking the small pistol for the first time:
 Before taking ammo:
 	say "You notice the lightness of the boxes. All empty.";
 
-The Master Bedroom is a room. "There is a rather large bed in the room. It also has a closet."
+The Master Bedroom is a room. "There is a rather large bed in the room. The room also has a closet."
 The bed is scenery in the master bedroom. The description of the bed is "It looks untouched. You doubt if that madman even sleeps."
-The closet is an open enterable container in the master bedroom. 
-The statue is in the master bedroom. The description of the statue is "A life-size statue of a man. He shows a serene smile as he holds out both hands. You notice something peculiar about this statue's chest." The initial appearance is "There is a statue resting a the corner of the room."
+The closet is an open enterable scenery container in the master bedroom. 
+The statue is in the master bedroom. The description of the statue is "A life-size statue of a man. [if the photograph is not seen]He doesn't remind you of any historical figures or anyone like that.[ otherwise]This is definitely the man in that photograph. Just who is this?[end if]He shows a serene smile as he holds out both hands. You notice something peculiar about this statue's chest." The initial appearance is "There is a statue resting a the corner of the room."
 The statue's chest is part of the statue. The statue's chest has a number called capacity. The capacity of the chest is 2. The description of the statue's chest is "[if the number of things that are part of the  statue's chest is 0]On its right chest are two octogonal shaped indentations that look like they might have held something.[otherwise]Right now it holds: [list of things that are part of the statue's chest][end if]." 
 The statue's hands are a supporter. The hands are part of the statue.
 
-[[temp]the master bedroom is south of the study.]
-
 Bathroom One is a room.  "A standard bathroom with a shower, toilet and sink. There is a large mirror with a fancy border near the sink." 
 The toilet is scenery in bathroom one. The sink is scenery in bathroom one.
-The mirror is a breakable thing in Bathroom One. The mirror has a number called capacity. The capacity of the mirror is 1. The description of the mirror is "Looks expensive. [if something is part of the mirror]This mirror is embedded with a [list of things that are part of the mirror] that appears to be removable."
+The mirror is a breakable thing in Bathroom One. The mirror is scenery. The mirror has a number called capacity. The capacity of the mirror is 1. The description of the mirror is "Looks expensive. [if something is part of the mirror]This mirror is embedded with a [list of things that are part of the mirror] that appears to be removable."
 The red gem is a gem. The red gem is part of the mirror.
 
 Bathroom Two is a room. "There is nothing of interest here."
@@ -110,7 +109,7 @@ The blue gem is a gem. The blue gem is in the dresser.
 The cobwebs are scenery in the guest room.
 There is a framed print in the guest room. The description is "[italic type]'Mi casa es su casa.'[roman type]".
 
-The kitchen is a room. "A large kitchen and dining combination room. There is a fine stone-top counter separating the kitchen from the rest of the room. There are some dish cabinets with nothing but kitchen utensils inside."The printed name is "Kitchen & Dining Room". Understand "dining room" as the kitchen.
+The kitchen is a room. "A large kitchen and dining combination room. There is a fine stone-top counter separating the kitchen from the rest of the room. Dish cabinets with nothing but kitchen utensils inside line the place."The printed name is "Kitchen & Dining Room". Understand "dining room" as the kitchen.
 The dining table is scenery in the kitchen. The dining table is a supporter.
 The stove is scenery in the kitchen. 
 The dish cabinets are scenery in the kitchen. The dish cabinets are transparent, closed, openable containers.  
@@ -125,6 +124,8 @@ Instead of taking the dishes, say "It would be better to leave these here."
 A box is a kind of container. A box can be in-place or dislocated.
 The Pantry is northeast of the kitchen. "A pantry that receives little light. There is a rack that holds unperishable food."
 There are food boxes in the pantry. Food boxes are a box. The food boxes are heavy. The food boxes are in-place. The initial appearance is "At the end of the room are a few large boxes." The description of the boxes is "These boxes hold nothing of interest."
+The rack is scenery in the pantry. The rack is an open container. It contains unperishable food.
+Instead of taking unperishable food, say "You have no interest in eating right now."
 Understand "box" as boxes.
 Instead of examining or opening the food boxes when the boxes are in-place:
 	say "They contain more food stuff. As you frustratedly rattle the box flaps, you notice something about the wall. From this close range, you can see hinges peering out from behind the boxes. [line break]You push the boxes aside.";
@@ -166,32 +167,41 @@ Instead of taking a card key that is part of something (called the holder):
 	say "You remove [the noun] from [the holder].";
 	now the player carries the noun;
 
-The Den is a room.  "The den is comfortably furnished."
+The Den is a room. "The den is comfortably furnished."
 The bear head is in the den. It is fixed in place. The bear head has a number called capacity. The capacity of the bear head is 1. The initial appearance is "There is a a mount of a bear head on the wall." The description is "So this man is a hunter. [if the player has been in the armory]That explains all of the guns back there. [end if]The bear looks frightening, but you'd much rather have one of these lurking in the mansion than that monster. [if the black gem is part of the bear head]A black gem serves as a substitute for the bear's nose."
 The black gem is part of the bear head.
 Understand "bear nose" as black gem.
 Understand "mount" as bear head.
 
 Bedroom C is a room.
-The ottoman is a fixed in place closed openable container in bedroom c. The initial appearance is "An ottoman is placed beside the bed." The description is "A leather ottoman."
+The ottoman is a heavy closed openable container in bedroom c. The initial appearance is "An ottoman is placed beside the bed." The description is "An ottoman made of rich leather."
 The ottoman contains a photograph. The description of the photograph is "A younger Dr. Redrum standing next to a man. [if the statue is seen]His companion looks remarkably like the statue in the master bedroom. [end if]A lush rainforest sorrounds them."
 The ottoman contains blank paper. 
 The bedroom-c bed is scenery.
-
-[some more story background]
 
 Bedroom B is a room. "It looks like this room was never set up.  There is no furniture, just bare, empty walls."
 The walls are scenery in Bedroom B. The description is "Tell me your secrets, wall."
 
 The Narrow Hallway First is a room. The printed name is "Narrow Hallway (First Floor)".
-The metal door is a locked door. The metal door is northwest of the narrow hallway first and east of the Control Room. The initial appearance is  "A peculiar black door is connected to this hallway." The description of the metal door is "I need a key for this."
-
+The metal door is a locked lockable door. The metal door is northwest of the narrow hallway first and east of the Control Room. The initial appearance is  "A peculiar black door is connected to this hallway." The description of the metal door is "I need a key for this."
+The control key unlocks the metal door.
 
 The Narrow Hallway Second is a room. The printed name is "Narrow Hallway (Second Floor)".
 
+The Studio is a room. "A real painter's studio." 
+The unfinished canvas is in the studio. The initial appearance is "There is an unfinished canvas lying on the ground." The description is "It's starting to take form. From what you can make out, it looks like some sort of tropical lanscape."
+
+The Utility Room is a room. "It houses a laundry machine and other home maintenance tools."
+The laundry machine is scenery in the utility room. The laundry machine is a closed openable container.  The description is "It looks like the latest front-loading model."
+The laundry machine contains blood-stained clothes. The description of the clothes is "Dried stiff. Just what goes on in this place?"
+
+
+The Field is a room. "You are ouside of the mansion."
+
 [Rules]
 [def the beast is near player when mandist is 1]
-
+Instead of taking something heavy:
+	say "That's too heavy for you to carry.";
 Definition: a direction (called thataway) is viable if the room thataway from the location is a room.
 Every turn:
 	say "From here you can go [list of viable directions]."
@@ -199,7 +209,7 @@ Carry out examining a thing:
 	now the noun is seen.
 	
 After examining a container:
-	if the dresser is closed:
+	if the noun is closed:
 		say "The [noun] is closed."
 [for debugging]
 Teleporting is an action applying to one visible thing. Understand "go to [any room]" as teleporting. Carry out teleporting: move the player to the noun.
@@ -295,7 +305,7 @@ Report pressing:
 	if the machine is off:
 		say "The machine turns off.";
 
-Instead of taking something heavy, say "That's too heavy for you to carry."
+
 
 [Some Game Rules:
 One shot severely wounds the beast, and promptly after it moves to another room. Two shots kills it.
@@ -345,12 +355,12 @@ Table 3 - First Floor Available Rooms
 name
 Guest Room
 Bathroom One
-kitchen
+Kitchen
 Armory
 Den
 Narrow Hallway First
 Master Bedroom
-Mothra
+Utility Room
 Bukkake
 Megaraptor
 
@@ -360,7 +370,7 @@ Bedroom C
 Bedroom B
 Bathroom Two
 Narrow Hallway Second
-New York
+Studio
 New Jersey
 Pennsylvania
 Delaware
