@@ -10960,7 +10960,7 @@ Object -> I159_dish_cabinets ""
     with IK2_Count 54
     with IK2_Link I160_kitchen_utensils
     with IK5_Count 7
-    with IK5_Link I164_regrigerator
+    with IK5_Link I164_refrigerator
     with KD_Count 5
     with name 'dish' 'cabinets' 
     with action_bitmap 0 0 0 0 0 0 
@@ -11006,15 +11006,15 @@ Object -> I162_kitchen_counter ""
     with list_together 0
     has mark_as_thing
     with IK2_Count 57
-    with IK2_Link I164_regrigerator
+    with IK2_Link I164_refrigerator
     with KD_Count 2
     with name 'kitchen' 'counter' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I164_regrigerator ""
+Object I164_refrigerator ""
     class K5_container
-    with short_name "regrigerator"
+    with short_name "refrigerator"
     has static
     has scenery
     has ~open
@@ -11027,7 +11027,7 @@ Object I164_regrigerator ""
     with IK5_Count 8
     with IK5_Link I167_food_boxes
     with KD_Count 5
-    with name 'regrigerator' 
+    with name 'refrigerator' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
@@ -11077,7 +11077,7 @@ Object -> I168_rack ""
     with list_together 0
     has mark_as_thing
     with IK2_Count 61
-    with IK2_Link I169_unperishable_food
+    with IK2_Link I169_nonperishable_food
     with IK5_Count 10
     with IK5_Link I179_ottoman
     with KD_Count 5
@@ -11085,18 +11085,18 @@ Object -> I168_rack ""
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> -> I169_unperishable_food ""
+Object -> -> I169_nonperishable_food ""
     class K2_thing
-    with short_name "unperishable food"
+    with short_name "nonperishable food"
     has proper
     with vector 0
     with list_together 0
-    with cap_short_name "Unperishable food"
+    with cap_short_name "Nonperishable food"
     has mark_as_thing
     with IK2_Count 62
     with IK2_Link I170_secret_passage
     with KD_Count 2
-    with name 'unperishable' 'food' 
+    with name 'nonperishable' 'food' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
@@ -13462,7 +13462,7 @@ self = noun;
       ! [1: if the food boxes are dislocated begin]
        if ((((Adj_86_t1_v9(I167_food_boxes)))))  {
          ! phrase 2
-         ! [2: say ~You manuever yourself through the dusty two-way path. It takes you a few minutes to reach the other room.~]
+         ! [2: say ~You maneuver yourself through the dusty two-way path. It takes you a few minutes to reach the other room.~]
          say__p=1;ParaContent();  print (PrintText) SC_76;  new_line; .L_Say15; .L_SayX15;
          ! phrase 3
          ! [3: end if]
@@ -13534,7 +13534,7 @@ self = noun;
 !   === which is equally specific with ===
 ! Rule 12/19 ! Instead of taking the dishes:
 !   === which is equally specific with ===
-! Rule 13/19 ! Instead of taking unperishable food:
+! Rule 13/19 ! Instead of taking nonperishable food:
 !   === which is equally specific with ===
 ! Rule 14/19 ! Instead of pulling the lever:
 !   === which is equally specific with ===
@@ -13747,9 +13747,9 @@ self = noun;
    rfalse;
 ];
 ! No specific request
-! Instead of taking unperishable food:
+! Instead of taking nonperishable food:
 [ R_750 ;
-   if ((action ==##Take) &&  (actor==player) && ((noun == I169_unperishable_food) && (true))) { ! Runs only when pattern matches
+   if ((action ==##Take) &&  (actor==player) && ((noun == I169_nonperishable_food) && (true))) { ! Runs only when pattern matches
 self = noun;
    if (debug_rules) DB_Rule(R_750, 750);
       ! phrase 1
@@ -13926,7 +13926,7 @@ self = noun;
 self = noun;
    if (debug_rules) DB_Rule(R_747, 747);
       ! phrase 1
-      ! [1: say ~What you find inside diminishes your hopes of escaping. There are several idenfification cards of people from all over the country. They must have been lured in by this maniac and fed to that beast. This is probably his way of keeping accolades.~]
+      ! [1: say ~What you find inside diminishes your hopes of escaping. There are several identification cards of people from all over the country. They must have been lured in by this maniac and fed to that beast. This is probably his way of keeping accolades.~]
       say__p=1;ParaContent();  print (PrintText) SC_95;  new_line; .L_Say34; .L_SayX34;
       RulebookSucceeds(); rtrue;
    } ! Runs only when pattern matches
@@ -21189,7 +21189,7 @@ return ((RELATION_TY_VToVAdjective(t_0, -1)));
 
     t_0 ! Call parameter 'it' = direction
     ;
-  if (t_0 ofclass K3_direction) return (((((Resolver_5(t_0,real_location,"source", 216)) ofclass K1_room))));
+  if (t_0 ofclass K3_direction) return (((((Resolver_5(t_0,real_location,"source", 217)) ofclass K1_room))));
     rfalse;
 ];
 
@@ -27473,7 +27473,7 @@ Array RulebookNames -->
 		if (R == R_747) { print "After opening the envelope for the first time"; return; } ! 712, case 2
 		if (R == R_748) { print "Instead of taking the kitchen utensils"; return; } ! 713, case 2
 		if (R == R_749) { print "Instead of taking the dishes"; return; } ! 714, case 2
-		if (R == R_750) { print "Instead of taking unperishable food"; return; } ! 715, case 2
+		if (R == R_750) { print "Instead of taking nonperishable food"; return; } ! 715, case 2
 		if (R == R_751) { print "Instead of examining or opening the food boxes when the boxes are in-place"; return; } ! 716, case 2
 		if (R == R_752) { print "Before going through the secret passage"; return; } ! 717, case 2
 		if (R == R_753) { print "Instead of pulling the lever"; return; } ! 718, case 2
@@ -29866,7 +29866,7 @@ say__p=1;
 
 [ text_routine_2;
 say__p=1;
-	if (~~((TestSinglePastState(0, 4, false, 1) == 1 ))) jump L_Say90;
+	if (~~(((TestSinglePastState(0, 4, false, 1) == 1 ) && ((((Adj_76_t1_v9(player)))))))) jump L_Say90;
 		ParaContent();  print (PrintText) SC_134; ParaContent();  new_line; 
 	.L_Say90; .L_SayX90;
 		ParaContent();  print (PrintText) SC_135;  .L_Say91; .L_SayX91;
@@ -32155,9 +32155,9 @@ Constant SC_8 = "A key marked ~Control Room~";
 Constant SC_43 = "A large electronic machine fills up most of the room.";
 Constant SC_35 = "A large kitchen and dining combination room. There is a fine stone-top counter separating the kitchen from the rest of the room. Dish cabinets with nothing but kitchen utensils inside line the place. In the northeast direction is the pantry.";
 Constant SC_144 = "A life-size statue of a man. ";
-Constant SC_171 = "A lush rainforest sorrounds them.";
+Constant SC_171 = "A lush rainforest surrounds them.";
 Constant SC_14 = "A painting of the deep blue sea melding with a beautiful red sunset. It sure makes you miss the outside world.";
-Constant SC_38 = "A pantry that receives little light. There is a rack that holds unperishable food.";
+Constant SC_38 = "A pantry that receives little light. There is a rack that holds nonperishable food.";
 Constant SC_53 = "A peculiar black door is connected to this hallway.";
 Constant SC_6 = "A purple key of some sort.";
 Constant SC_56 = "A real painter's studio.";
@@ -32201,7 +32201,7 @@ Constant SC_93 = "It's already off.";
 Constant SC_92 = "It's already on.";
 Constant SC_162 = "It's marked ~Emergency Lockdown~. Right now it's in the ";
 Constant SC_36 = "It's plastic fruit. An unreasonable rage fills your body.";
-Constant SC_57 = "It's starting to take form. From what you can make out, it looks like some sort of tropical lanscape.";
+Constant SC_57 = "It's starting to take form. From what you can make out, it looks like some sort of tropical landscape.";
 Constant SC_157 = "Jonathan Maxwell";
 Constant SC_34 = "Kitchen & Dining Room";
 Constant SC_15 = "Looks a few days old.";
@@ -32213,7 +32213,7 @@ Constant SC_55 = "Narrow Hallway (Second Floor)";
 Constant SC_128 = "Nothing else happened.";
 Constant SC_129 = "Nothing happens.";
 Constant SC_107 = "On ";
-Constant SC_148 = "On its right chest are two octogonal shaped indentations that look like they might have held something.";
+Constant SC_148 = "On its right chest are two octagonal shaped indentations that look like they might have held something.";
 Constant SC_81 = "Perhaps you shouldn't.";
 Constant SC_68 = "QUIT";
 Constant SC_65 = "RESTART";
@@ -32240,7 +32240,7 @@ Constant SC_130 = "The machine turns on.";
 Constant SC_42 = "The only button that you can recognize is the power button. Most of the others are marked with codes like ~NR-3~. You can also see a lever on the machine.";
 Constant SC_26 = "The only kinds I can find are shotgun and rifle ammo.";
 Constant SC_127 = "The statue drops a key into its hands.";
-Constant SC_63 = "There are is a yoga mat on the ground.";
+Constant SC_63 = "There are is sole yoga mat on the ground. This place would be suitable for meditation and prayer.";
 Constant SC_47 = "There is a a mount of a bear head on the wall.";
 Constant SC_27 = "There is a rather large bed in the room. The room also has a closet.";
 Constant SC_135 = "There is a small table in the middle of the room, next to the couch. The fireplace burns.";
@@ -32262,12 +32262,12 @@ Constant SC_32 = "This room looks like it has never been used. There are cobwebs
 Constant SC_69 = "UNDO the last command";
 Constant SC_37 = "What a nice polish.";
 Constant SC_134 = "What used to be such a welcoming room is now the last place you want to be in. Your first instinct is to explore the rest of the mansion to try and find a way out, or at least avoid whatever is approaching.";
-Constant SC_95 = "What you find inside diminishes your hopes of escaping. There are several idenfification cards of people from all over the country. They must have been lured in by this maniac and fed to that beast. This is probably his way of keeping accolades.";
+Constant SC_95 = "What you find inside diminishes your hopes of escaping. There are several identification cards of people from all over the country. They must have been lured in by this maniac and fed to that beast. This is probably his way of keeping accolades.";
 Constant SC_12 = "Who knows why this stuff is down here.  The stains of blood inside the cage are definitely related though.";
 Constant SC_33 = "With drawer fronts crafted from reclaimed saal wood, the Stria Dresser brings rustic charm to the bedroom. In a former life, the wood was used in Indian railway trestles. Today, it's prized for its natural imperfections and character; no two pieces are exactly the same.";
 Constant SC_98 = "Would you like to ";
 Constant SC_104 = "You ";
-Constant SC_18 = "You are ouside of the mansion.";
+Constant SC_18 = "You are outside of the mansion.";
 Constant SC_119 = "You break ";
 Constant SC_19 = "You can see the basement stairs here.";
 Constant SC_20 = "You can see the second floor stairs here.";
@@ -32278,11 +32278,11 @@ Constant SC_88 = "You have no interest in eating right now.";
 Constant SC_114 = "You hear a click on the front door.";
 Constant SC_91 = "You hear a loud slamming all around you. Great joy fills you, and you run to the front door.";
 Constant SC_124 = "You insert ";
-Constant SC_76 = "You manuever yourself through the dusty two-way path. It takes you a few minutes to reach the other room.";
+Constant SC_76 = "You maneuver yourself through the dusty two-way path. It takes you a few minutes to reach the other room.";
 Constant SC_77 = "You notice the lightness of the boxes. All empty.";
 Constant SC_10 = "You peek into the fireplace, but there is nothing of interest.";
 Constant SC_80 = "You push the boxes aside, revealing a flap door that is more than big enough for you to enter.";
-Constant SC_24 = "You read the latest entry ~I never got around to sending his wife that letter. I just couldn't bear it, and left the matter as it was. The repurcussions for letting the world know would be too great.~";
+Constant SC_24 = "You read the latest entry ~I never got around to sending his wife that letter. I just couldn't bear it, and left the matter as it was. The repercussions for letting the world know would be too great.~";
 Constant SC_84 = "You remove ";
 Constant SC_109 = "also ";
 Constant SC_139 = "broken ";
