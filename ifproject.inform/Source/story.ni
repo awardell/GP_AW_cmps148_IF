@@ -29,7 +29,7 @@ The front door is a door. The front door is inside from the mansion grounds and 
 
 The Living Room is a room. "[if the player is in the living room for the first time]What used to be such a welcoming room is now the last place you want to be in. Your first instinct is to explore the rest of the mansion to try and find a way out, or at least avoid whatever is approaching.[line break][end if]There is a small table in the middle of the room, next to the couch. The fireplace burns."
 The couch is scenery in the living room.
-The living room table is scenery in the living room. The description is "There's nothing on there, although it looks like a phone was once there, because phone wire dangles nearby."
+The living room table is scenery in the living room. The description is "There's nothing on there, although a nearby dangling phone wire tells you that there used to be a phone here."
 The phone wire is scenery in the living room.
 The fireplace is an open container in the living room. The fireplace is scenery.The description is "You peek into the fireplace, but there is nothing of interest."
 A painting of a bee is in the living room. The description of the painting of a bee is "A vividly colored painting of a bumblebee."
@@ -79,8 +79,8 @@ Before taking the small pistol for the first time:
 Before taking ammo:
 	say "You notice the lightness of the boxes. All empty.";
 
-The Master Bedroom is a room. "There is a rather large bed in the room. Some things you could check are a dresser and a closet."
-The bed is scenery in the master bedroom. The description of the bed is "It looks untouched. I doubt that madman even sleeps."
+The Master Bedroom is a room. "There is a rather large bed in the room. It also has a closet."
+The bed is scenery in the master bedroom. The description of the bed is "It looks untouched. You doubt if that madman even sleeps."
 The closet is an open enterable container in the master bedroom. 
 The statue is in the master bedroom. The description of the statue is "A life-size statue of a man. He shows a serene smile as he holds out both hands. You notice something peculiar about this statue's chest." The initial appearance is "There is a statue resting a the corner of the room."
 The statue's chest is part of the statue. The statue's chest has a number called capacity. The capacity of the chest is 2. The description of the statue's chest is "[if the number of things that are part of the  statue's chest is 0]On its right chest are two octogonal shaped indentations that look like they might have held something.[otherwise]Right now it holds: [list of things that are part of the statue's chest][end if]." 
@@ -96,7 +96,7 @@ The red gem is a gem. The red gem is part of the mirror.
 Bathroom Two is a room. "There is nothing of interest here."
 
 The Guest Room is a room. "This room looks like it has never been used. There are cobwebs everywhere.  A single bed is set up in the room, as well as a dresser."
-The dresser is scenery in the guest room. The dresser is a closed, openable container. 
+The dresser is scenery in the guest room. The dresser is a closed, openable container. The description is "With drawer fronts crafted from reclaimed saal wood, the Stria Dresser brings rustic charm to the bedroom. In a former life, the wood was used in Indian railway trestles. Today, it's prized for its natural imperfections and character; no two pieces are exactly the same." 
 The dresser contains an envelope. The envelope is a closed openable container. 
 Instead of examining the envelope when the envelope is closed, say "It is sealed. There is nothing written on it."
 After opening the envelope for the first time, say "What you find inside diminishes your hopes of escaping. There are several idenfification cards of people from all over the country. They must have been lured in by this maniac and fed to that beast. This is probably his way of keeping accolades."
@@ -177,6 +177,12 @@ Bedroom A is a room.
 
 Bedroom B is a room. "It looks like this room was never set up.  There is no furniture, just bare, empty walls."
 The walls are scenery in Bedroom B. The description is "Tell me your secrets, wall."
+
+[Rules]
+After examining a container:
+	if the dresser is closed:
+		say "The [noun] is closed."
+
 [-------------General Actions----------------]
 Understand the command "break" as something new.
 Breaking is an action applying to one thing.  Understand "break [something]" as breaking.
@@ -215,8 +221,10 @@ Carry out gem-inserting:
 
 Report gem-inserting:
 	say "You insert [the noun] into [the second noun]. It fits perfectly.";
-	if there is a key on the statue's hands: [probably can be abused, but whos going to try?]
+	if there is a key on the statue's hands and the second noun is the statue: [probably can be abused, but whos going to try?]
 		say "The statue drops a key into its hands.";
+		otherwise: 
+			say "Nothing else happened."
 
 Instead of taking a gem that is part of something (called the holder):
 	say "You remove [the noun] from [the holder].";
@@ -227,6 +235,8 @@ Instead of inserting something into the statue:
 	try gem-inserting the noun in the chest instead.
 Instead of inserting something into the mirror:
 	try gem-inserting the noun in the mirror instead.
+Instead of inserting something into the  bear head:
+	try gem-inserting the noun in the bear head instead.
 	
 
 Understand the command "press" as something new.
